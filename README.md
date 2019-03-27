@@ -89,7 +89,7 @@
 
 ## 年终总结
 1. [我的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
-2. [我的2017年终总结](https://segmentfault.com/a/1190000013289875)
+2. [我的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
 
 ## 杂
