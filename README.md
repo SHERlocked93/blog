@@ -6,9 +6,9 @@
 3. [JS 静态类型检查工具 Flow](https://segmentfault.com/a/1190000014367450)
 4. [JS throttle与debounce的区别](https://segmentfault.com/a/1190000014292298)
 5. [JavaScript服务器推送技术之 WebSocket](https://segmentfault.com/a/1190000013131251)
-6. [JS中的柯里化](https://segmentfault.com/a/1190000012769779)
-7. [JS中的反柯里化](https://segmentfault.com/a/1190000012912503)
-8. [JS中的垃圾回收与内存泄漏](https://segmentfault.com/a/1190000012738358)
+6. [JS 中的柯里化](https://segmentfault.com/a/1190000012769779)
+7. [JS 中的反柯里化](https://segmentfault.com/a/1190000012912503)
+8. [JS 中的垃圾回收与内存泄漏](https://segmentfault.com/a/1190000012738358)
 9. [JS 抽象工厂模式](https://segmentfault.com/a/1190000012422055)
 10. [JS 工厂模式](https://segmentfault.com/a/1190000012422198)
 11. [JS 建造者模式](https://segmentfault.com/a/1190000012426841)
@@ -28,9 +28,8 @@
 
 ## CSS
 1. [CSS 中重要的层叠概念](https://juejin.im/post/5ba4efe36fb9a05cf52ac192)
-2. [CSS中重要的BFC](https://juejin.im/post/5b51ee276fb9a04f86062cea)
+2. [CSS 中重要的BFC](https://juejin.im/post/5b51ee276fb9a04f86062cea)
 3. [CSS margin合并问题](https://segmentfault.com/a/1190000013735912)
-4. [CSS中选择器的权重值](https://segmentfault.com/a/1190000012941923)
 
 ## 浏览器
 1. [几种浏览器存储方法及其优缺点](https://segmentfault.com/a/1190000013896386)
@@ -54,15 +53,15 @@
 9. [使用webpack的插件DllPlugin加快打包速度](https://segmentfault.com/a/1190000012925212)
 
 ## Vue 实践
-1. [Vue项目数据动态过滤实践](https://juejin.im/post/5b9394fff265da0af406ed53)
-2. [Vue项目预渲染机制引入实践](https://juejin.im/post/5b8ba25751882542f25a6cc8)
-3. [Vue项目骨架屏注入实践](https://juejin.im/post/5b79a2786fb9a01a18267362)
+1. [Vue 项目数据动态过滤实践](https://juejin.im/post/5b9394fff265da0af406ed53)
+2. [Vue 项目预渲染机制引入实践](https://juejin.im/post/5b8ba25751882542f25a6cc8)
+3. [Vue 项目骨架屏注入实践](https://juejin.im/post/5b79a2786fb9a01a18267362)
 4. [Vue 使用中的小技巧](https://juejin.im/post/5ae02f39518825672f198ac2)
 
 
 ## 正则表达式
-1. [JS正则表达式学习笔记](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)
-2. [JS 中正则表达式必知必会](https://segmentfault.com/a/1190000013267210)
+1. [JS 正则表达式学习笔记](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)
+2. [JS 正则表达式必知必会](https://segmentfault.com/a/1190000013267210)
 
 ## 源码阅读
 1. [vue\-router 源码阅读 \- 文件结构与注册机制](https://juejin.im/post/5c7160d46fb9a049d236ae79)
