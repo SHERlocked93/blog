@@ -88,7 +88,7 @@
 
 
 ## 年终总结
-1. [我的 2018 年终总结 \| 掘金年度征文](https://juejin.im/post/5c49a9326fb9a049e063b284)
+1. [我的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
 2. [我的2017年终总结 \- 个人文章](https://segmentfault.com/a/1190000013289875)
 
 
