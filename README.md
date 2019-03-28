@@ -78,6 +78,7 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 1. [\[译\] 网速敏感的视频延迟加载方案](https://juejin.im/post/5c7b84356fb9a049ab0e5630)
 2. [\[译\] 使用 Proxy 来监测 Javascript 中的类](https://juejin.im/post/5c484b76e51d45522b4f5f7d)
 3. [\[译\] 使用 Recompose 来构建高阶组件](https://juejin.im/post/5c484a43e51d452ec621b6a9)
+4. [\[译\] 监测与调试 Vue\.js 的响应式系统：计算属性树（Computed Tree）](https://juejin.im/post/5c9ca62e5188251d80672b0d)
 
 
 
