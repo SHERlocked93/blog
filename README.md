@@ -64,8 +64,8 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 
 
 ## 正则表达式
-1. [JS 正则表达式学习笔记](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)
-2. [JS 正则表达式必知必会](https://segmentfault.com/a/1190000013267210)
+1. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)
+2. [JS 活学活用正则表达式](https://segmentfault.com/a/1190000013276177)
 
 ## 源码阅读
 1. [vue\-router 源码阅读 \- 文件结构与注册机制](https://juejin.im/post/5c7160d46fb9a049d236ae79)
