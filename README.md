@@ -100,6 +100,67 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 1. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)
 
 
+## 已读书单
+推介星级
+
+- ★★★：值得一看，看了不会后悔的
+- ★★☆：可以一看，了解了解
+- ★☆☆：不推介，浪费你宝贵的生命
+ 
+### HTML
+
+- [x] ★☆☆ HTML5+CSS3 从入门到精通   <sub>`2017`</sup>
+ 
+### JavaScript
+- [x] ★★★ **JavaScript 高级程序设计** <sub>`2017`</sup>
+- [x] ★★★ **JavaScript 面向对象精要**   <sub>`2017`</sup>
+- [x] ★★★ **ES6 标准入门**   <sub>`2017`</sup>
+- [x] ★★☆ **JavaScript DOM 编程艺术**   <sub>`2017`</sup>
+- [x] ★★☆ **JavaScript 语言精粹**   <sub>`2017`</sup>
+- [x] ★★☆ **JavaScript 设计模式** - 张荣铭   <sub>`2017`</sup>
+- [x] ★★☆   **你不知道的 JavaScript 上**  <sub>`2018`</sup>
+- [x] ★★☆   **你不知道的 JavaScript 中**  <sub>`2018`</sup>
+- [x] ★★☆ **Effective JavaScript: 编写高质量 JavaScript 代码的68个有效方法**   <sub>`2017`</sup>
+- [x] ★★☆ **深入理解 ES6**  <sub>`2018`</sup>
+- [x] ★★☆ **jQuery 从入门到精通**   <sub>`2017`</sup>
+- [x] ★★☆ **jQuery 锋利的jQuery**   <sub>`2017`</sup>
+- [x] ★☆☆   **你不知道的 JavaScript 下**  <sub>`2018`</sup>
+- [x] ★☆☆ **JavaScript 模式** - 图灵   <sub>`2017`</sup>
+- [x] ★☆☆ **JavaScript 函数式编程**  <sub>`2018`</sup>
+- [x] ★☆☆ **大型 JavaScript  应用最佳实践指南**  <sub>`2018`</sup>
+- [x] ★☆☆ **Vue.js 实战**  <sub>`2018`</sup>
+
+
+ 
+### HTTP
+- [x] ★★★ **图解HTTP**   <sub>`2017`</sup>
+- [x] ★★☆ **网络是怎样连接的**  <sub>`2018`</sup>
+
+### Git
+- [x] ★★☆  **GitHub 入门与实践**  <sub>`2018`</sup>
+ 
+### Node.js
+- [x] ★★★ **深入浅出Node.js** - 朴灵   <sub>`2017`</sup>
+ 
+### CSharp
+- [x] ★★☆ **C# 从入门到精通**   <sub>`2017`</sup>
+
+ 
+### 闲书
+- [x] ★★★ **活着**   <sub>`2017`</sup>
+- [x] ★★★ **许三观卖血记**  <sub>`2018`</sup>
+- [x] ★★☆ **浮生六记**   <sub>`2017`</sup>
+- [x] ★★☆ **做人得有趣** - 李敖  <sub>`2018`</sup>
+- [x] ★★☆ **湘行散记**  <sub>`2018`</sup>
+- [x] ★★☆ **摆渡人**  <sub>`2018`</sup>
+- [x] ★☆☆ **追风筝的人**  <sub>`2018`</sup>
+- [x] ★★★ **球状闪电**  <sub>`2019`</sup>
+- [x] ★★★ **围城**  <sub>`2019`</sup>
+
+### 全剧情动画
+- [x] ★★★ **To the moon**
+- [x] ★★★ **Find Paradise**
+
 ---
 
 PS：欢迎大家关注我的公众号【前端下午茶】，一起快乐 Coding 吧~
