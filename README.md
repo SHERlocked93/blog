@@ -89,6 +89,7 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 4. [《你不知道的JavaScript》 \(中\) 读书笔记](https://juejin.im/post/5c31b9816fb9a049b78084e8)
 5. [《你不知道的JavaScript》 \(下\) 读书笔记](https://segmentfault.com/a/1190000017812997)
 6. [《JavaScript DOM 编程艺术》 读书笔记](https://segmentfault.com/a/1190000011051108)
+7. [《HTTP/2 基础教程》 读书笔记 \- 掘金](https://juejin.im/post/5cb54286e51d456e235d9be6)
 
 
 ## 年终总结
