@@ -136,6 +136,7 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 ### HTTP
 - [x] ★★★ **图解HTTP**   <sub>`2017`</sup>
 - [x] ★★☆ **网络是怎样连接的**  <sub>`2018`</sup>
+- [x] ★★☆ **HTTP/2 基础教程**  <sub>`2019`</sup>
 
 ### Git
 - [x] ★★☆  **GitHub 入门与实践**  <sub>`2018`</sup>
