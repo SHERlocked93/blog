@@ -83,13 +83,13 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 
 
 ## 读书笔记
-1. [《JavaScript 面向对象精要》 读书笔记](https://juejin.im/post/5c94452ae51d45341b068369)
-2. [《图解 HTTP》 读书笔记](https://juejin.im/post/5c938812e51d4539fc2d61a5)
-3. [《你不知道的JavaScript》 \(上\) 读书笔记](https://juejin.im/post/5c3473215188252593123478)
-4. [《你不知道的JavaScript》 \(中\) 读书笔记](https://juejin.im/post/5c31b9816fb9a049b78084e8)
-5. [《你不知道的JavaScript》 \(下\) 读书笔记](https://segmentfault.com/a/1190000017812997)
-6. [《JavaScript DOM 编程艺术》 读书笔记](https://segmentfault.com/a/1190000011051108)
-7. [《HTTP/2 基础教程》 读书笔记](https://juejin.im/post/5cb54286e51d456e235d9be6)
+1. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)
+2. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)
+3. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)
+4. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)
+5. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)
+6. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)
+7. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)
 
 
 ## 年终总结
