@@ -147,6 +147,9 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 ### CSharp
 - [x] ★★☆ **C# 从入门到精通**   <sub>`2017`</sup>
 
+### 程序员素养 & 方法论
+- [x] ★★★ **单核工作法图解**   <sub>`2019`</sup>
+- [x] ★★☆ **番茄工作法**   <sub>`2019`</sup>
  
 ### 闲书
 - [x] ★★★ **活着**   <sub>`2017`</sup>
