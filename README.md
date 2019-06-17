@@ -169,6 +169,8 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 
 ---
 
-PS：欢迎大家关注我的公众号【前端下午茶】，一起快乐 Coding 吧~
+PS：欢迎大家关注我的公众号【前端下午茶】，一起加油~
 
-![](https://user-gold-cdn.xitu.io/2019/3/26/169b8df9c9827baf?w=536&h=154&f=png&s=43808)
+![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
+
+加入「前端下午茶交流群」请关注公众号之后回复关键字 **加群**，获取加群二维码，长按识别二维码即可加群～
