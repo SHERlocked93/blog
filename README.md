@@ -12,7 +12,7 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 5. [JavaScript服务器推送技术之 WebSocket](https://segmentfault.com/a/1190000013131251)
 6. [JS 中的柯里化](https://segmentfault.com/a/1190000012769779)
 7. [JS 中的反柯里化](https://segmentfault.com/a/1190000012912503)
-8. [JS 中的垃圾回收与内存泄漏](https://segmentfault.com/a/1190000012738358
+8. [JS 中的垃圾回收与内存泄漏](https://segmentfault.com/a/1190000012738358)
 9. [JS 中的this指向](https://segmentfault.com/a/1190000012362141)
 10. [JS 执行上下文栈 / 作用域链](https://segmentfault.com/a/1190000012362182)
 11. [JS 中的 \_\_proto\_\_ 与 prototype](https://segmentfault.com/a/1190000012362383)
