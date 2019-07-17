@@ -1,5 +1,7 @@
 # SHERlocked93 个人博客
 
+来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏《JavaScript 设计模式精讲》作者，个人公众号「前端下午茶」，在下的博客都是学习过程中的总结，期待和大家共同进步～
+
 掘金专栏：https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts
 
 SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
