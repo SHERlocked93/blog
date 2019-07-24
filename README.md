@@ -2,9 +2,15 @@
 
 来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏《JavaScript 设计模式精讲》作者，个人公众号「前端下午茶」，在下的博客都是学习过程中的总结，期待和大家共同进步～
 
-掘金专栏：https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts
+在下的 [掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，也欢迎大家关注我的公众号【前端下午茶】，一起加油~
 
-SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
+![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
+
+
+另外可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
+
+![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)
+
 
 ## JavaScript
 1. [JS 中可以提升幸福度的小技巧](https://juejin.im/post/5b51e5d3f265da0f4861143c)
@@ -157,16 +163,6 @@ SegmentFault专栏：https://segmentfault.com/blog/sherlocked93
 - [x] ★★★ **To the moon**
 - [x] ★★★ **Find Paradise**
 
----
-
-PS：欢迎大家关注我的公众号【前端下午茶】，一起加油~
-
-![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
-
-
-另外可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
-
-![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)
 
 
 ---
