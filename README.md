@@ -110,6 +110,7 @@
 - [x] ★☆☆ HTML5+CSS3 从入门到精通   <sub>`2017`</sup>
  
 ### JavaScript
+- [x] ★★★ **JavaScript 设计模式与开发** 曾探 <sub>`2019`</sup>
 - [x] ★★★ **JavaScript 高级程序设计** <sub>`2017`</sup>
 - [x] ★★★ **JavaScript 面向对象精要**   <sub>`2017`</sup>
 - [x] ★★★ **ES6 标准入门**   <sub>`2017`</sup>
