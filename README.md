@@ -25,6 +25,8 @@
 10. [JS 执行上下文栈 / 作用域链](https://segmentfault.com/a/1190000012362182)
 11. [JS 中的 \_\_proto\_\_ 与 prototype](https://segmentfault.com/a/1190000012362383)
 12. [JS 异步的实现](https://segmentfault.com/a/1190000012362556)
+13. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)
+14. [「手摸手设计模式系列」 策略模式与动态表单验证](https://juejin.im/post/5d5ca0286fb9a06b317b64e7)
 
 ## CSS
 1. [CSS 中重要的层叠概念](https://juejin.im/post/5ba4efe36fb9a05cf52ac192)
