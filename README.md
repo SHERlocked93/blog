@@ -43,6 +43,11 @@
 1. [Node中的事件循环和异步API](https://segmentfault.com/a/1190000012648569)
 2. [JS与Node\.js中的事件循环](https://segmentfault.com/a/1190000012362096)
 
+## Webpack
+1. [手摸手 Webpack 多入口配置实践](https://juejin.im/post/5d7763a3f265da03c34c25ab)
+2. [使用 webpack 的插件 DllPlugin 加快打包速度](https://segmentfault.com/a/1190000012925212)
+
+
 ## 前端周边技术栈
 1. [GraphQL 从入门到实践](https://juejin.im/post/5c87b1776fb9a049ac7a0247)
 2. [前端路由跳转基本原理](https://juejin.im/post/5c52da9ee51d45221f242804)
@@ -52,7 +57,7 @@
 6. [一个骚气的文章目录自动生成器了解一下](https://juejin.im/post/5b6c29dde51d4518f5445c03)
 7. [Web Worker 初探](https://juejin.im/post/5b4af72ae51d45198d4b1388)
 8. [Git 学习笔记](https://segmentfault.com/a/1190000016665840)
-9. [使用webpack的插件DllPlugin加快打包速度](https://segmentfault.com/a/1190000012925212)
+
 
 ## Vue 实践
 1. [Vue 项目数据动态过滤实践](https://juejin.im/post/5b9394fff265da0af406ed53)
