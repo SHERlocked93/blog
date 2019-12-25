@@ -103,7 +103,8 @@
 
 ## 那些好用的工具
 1. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)
-2. [干货满满！推介几款 Mac 下非常好用的软件（上）](https://juejin.im/post/5de664e5f265da33b82bcfce)
+2. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)
+3. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)
 
 
 ## 已读书单
