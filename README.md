@@ -97,8 +97,9 @@
 
 
 ## 年终总结
-1. [我的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
-2. [我的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
+1. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
+2. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
+3. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
 
 ## 那些好用的工具
@@ -126,13 +127,13 @@
 - [x] ★★☆ **JavaScript DOM 编程艺术**   <sub>`2017`</sup>
 - [x] ★★☆ **JavaScript 语言精粹**   <sub>`2017`</sup>
 - [x] ★★☆ **JavaScript 设计模式** - 张荣铭   <sub>`2017`</sup>
-- [x] ★★☆   **你不知道的 JavaScript 上**  <sub>`2018`</sup>
-- [x] ★★☆   **你不知道的 JavaScript 中**  <sub>`2018`</sup>
+- [x] ★★☆ **你不知道的 JavaScript 上**  <sub>`2018`</sup>
+- [x] ★★☆ **你不知道的 JavaScript 中**  <sub>`2018`</sup>
 - [x] ★★☆ **Effective JavaScript: 编写高质量 JavaScript 代码的68个有效方法**   <sub>`2017`</sup>
 - [x] ★★☆ **深入理解 ES6**  <sub>`2018`</sup>
 - [x] ★★☆ **jQuery 从入门到精通**   <sub>`2017`</sup>
 - [x] ★★☆ **jQuery 锋利的jQuery**   <sub>`2017`</sup>
-- [x] ★☆☆   **你不知道的 JavaScript 下**  <sub>`2018`</sup>
+- [x] ★☆☆ **你不知道的 JavaScript 下**  <sub>`2018`</sup>
 - [x] ★☆☆ **JavaScript 模式** - 图灵   <sub>`2017`</sup>
 - [x] ★☆☆ **JavaScript 函数式编程**  <sub>`2018`</sup>
 - [x] ★☆☆ **大型 JavaScript  应用最佳实践指南**  <sub>`2018`</sup>
