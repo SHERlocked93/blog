@@ -66,6 +66,10 @@
 4. [Vue 使用中的小技巧](https://juejin.im/post/5ae02f39518825672f198ac2)
 
 
+## Linux
+1. [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/5e5f13936fb9a07cdf534c62#comment)
+
+
 ## 正则表达式
 1. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)
 2. [JS 活学活用正则表达式](https://segmentfault.com/a/1190000013276177)
