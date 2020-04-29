@@ -38,6 +38,8 @@
 2. [浅析浏览器渲染原理](https://segmentfault.com/a/1190000012960187)
 3. [浅谈浏览器缓存](https://segmentfault.com/a/1190000012573337)
 
+## Nginx
+1. [Nginx 从入门到实践，万字详解！](https://juejin.im/post/5ea931866fb9a043815146fb)
 
 ## Node
 1. [Node中的事件循环和异步API](https://segmentfault.com/a/1190000012648569)
