@@ -21,10 +21,10 @@
 
 
 ## JavaScript
-1. [JS 中可以提升幸福度的小技巧](https://juejin.im/post/5b51e5d3f265da0f4861143c)  <sub>`2017`</sup>
-2. [JS 中的 this 指向](https://segmentfault.com/a/1190000012362141)  <sub>`2017`</sup>
-3. [JS 执行上下文栈 / 作用域链](https://segmentfault.com/a/1190000012362182)  <sub>`2017`</sup>
-4. [JS 中的 \_\_proto\_\_ 与 prototype](https://segmentfault.com/a/1190000012362383)  <sub>`2017`</sup>
+1. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)  <sub>`2019`</sup>
+2. [「手摸手设计模式系列」 策略模式与动态表单验证](https://juejin.im/post/5d5ca0286fb9a06b317b64e7)  <sub>`2019`</sup>
+3. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)  <sub>`2018`</sup>
+4. [JS 活学活用正则表达式](https://segmentfault.com/a/1190000013276177)  <sub>`2018`</sup>
 5. [JS 中的 offset、scroll、client 总结](https://segmentfault.com/a/1190000015961743)  <sub>`2018`</sup>
 6. [JS 静态类型检查工具 Flow](https://segmentfault.com/a/1190000014367450)  <sub>`2018`</sup>
 7. [JS throttle 与 debounce 的区别](https://segmentfault.com/a/1190000014292298)  <sub>`2018`</sup>
@@ -33,10 +33,10 @@
 10. [JS 中的反柯里化](https://segmentfault.com/a/1190000012912503)  <sub>`2018`</sup>
 11. [JS 中的垃圾回收与内存泄漏](https://segmentfault.com/a/1190000012738358)  <sub>`2018`</sup>
 12. [JS 异步的实现](https://segmentfault.com/a/1190000012362556)  <sub>`2017`</sup>
-13. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)  <sub>`2018`</sup>
-14. [JS 活学活用正则表达式](https://segmentfault.com/a/1190000013276177)  <sub>`2018`</sup>
-15. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)  <sub>`2019`</sup>
-16. [「手摸手设计模式系列」 策略模式与动态表单验证](https://juejin.im/post/5d5ca0286fb9a06b317b64e7)  <sub>`2019`</sup>
+13. [JS 执行上下文栈 / 作用域链](https://segmentfault.com/a/1190000012362182)  <sub>`2017`</sup>
+14. [JS 中的 \_\_proto\_\_ 与 prototype](https://segmentfault.com/a/1190000012362383)  <sub>`2017`</sup>
+15. [JS 中可以提升幸福度的小技巧](https://juejin.im/post/5b51e5d3f265da0f4861143c)  <sub>`2017`</sup>
+16. [JS 中的 this 指向](https://segmentfault.com/a/1190000012362141)  <sub>`2017`</sup>
 
 ## CSS
 1. [CSS 中重要的层叠概念](https://juejin.im/post/5ba4efe36fb9a05cf52ac192)  <sub>`2018`</sup>
@@ -99,13 +99,13 @@
 
 ## 读书笔记
 1. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)  <sub>`2019`</sup>
-2. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)  <sub>`2017`</sup>
+2. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)  <sub>`2019`</sup>
 3. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)  <sub>`2019`</sup>
 4. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)  <sub>`2019`</sup>
 5. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)  <sub>`2019`</sup>
-6. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)  <sub>`2017`</sup>
-7. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)  <sub>`2019`</sup>
-8. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)  <sub>`2019`</sup>
+6. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)  <sub>`2019`</sup>
+7. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)  <sub>`2017`</sup>
+8. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)  <sub>`2017`</sup>
 
 
 ## 那些好用的工具
@@ -114,7 +114,7 @@
 3. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)  <sub>`2019`</sup>
 
 
-## 已读书单
+## 已读书单 (按照推介星级排序)
 推介星级
 
 - ★★★：值得一看，看了不会后悔的
@@ -179,7 +179,7 @@
 - [x] ★★☆ **浮生六记**   <sub>`2017`</sup>
 - [x] ★★☆ **做人得有趣** - 李敖  <sub>`2018`</sup>
 - [x] ★★☆ **湘行散记**  <sub>`2018`</sup>
-- [x] ★★☆ **摆渡人**  <sub>`2018`</sup>
+- [x] ★☆☆ **摆渡人**  <sub>`2018`</sup>
 - [x] ★☆☆ **追风筝的人**  <sub>`2018`</sup>
 
 ### 全剧情动画
