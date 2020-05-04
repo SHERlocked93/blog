@@ -87,6 +87,7 @@
 
 ## Linux
 1. [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/5e5f13936fb9a07cdf534c62#comment)  <sub>`2020`</sup>
+2. [CentOS 安装部署 Yapi](https://juejin.im/post/5eafb85a5188256d4c5578c1)  <sub>`2020`</sup>
 
 
 ## 翻译
