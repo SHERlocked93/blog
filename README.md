@@ -110,7 +110,7 @@
 
 
 ## 那些好用的工具
-1. [生命在于折腾！这些桌面好物提升你的搬砖幸福度](https://juejin.im/post/5ee9fca5f265da02d3377e38)  <sub>`2020`</sup>
+1. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://juejin.im/post/5ee9fca5f265da02d3377e38)  <sub>`2020`</sup>
 1. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)  <sub>`2019`</sup>
 2. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)  <sub>`2019`</sup>
 3. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)  <sub>`2019`</sup>
