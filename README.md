@@ -11,7 +11,9 @@
 
 ![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)
 
-
+## 作品
+1. [wx-updata: 官方 setData 最佳替代品，只修改 data 中你想修改的部分 ✈️](https://github.com/SHERlocked93/wx-updata)
+2. [progress-catalog: 一个好玩的目录自动生成插件😜](https://github.com/SHERlocked93/progress-catalog)
 
 
 ## 年终总结
