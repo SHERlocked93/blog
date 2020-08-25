@@ -63,7 +63,8 @@
 
 
 ## 前端周边技术栈
-1. [开发微信小程序，我为什么放弃 setData，使用 upData](https://juejin.im/post/5f17efb55188252e7811dcdd#comment)  <sub>`2020`</sub>
+1. [强烈推介的几个微信小程序开发小技巧，简单又实用](https://segmentfault.com/a/1190000023748392)  <sub>`2020`</sub>
+1. [开发微信小程序，我为什么放弃 setData，使用 upData](https://juejin.im/post/5f17efb55188252e7811dcdd)  <sub>`2020`</sub>
 1. [GraphQL 从入门到实践](https://juejin.im/post/5c87b1776fb9a049ac7a0247)  <sub>`2019`</sub>
 2. [前端路由跳转基本原理](https://juejin.im/post/5c52da9ee51d45221f242804)  <sub>`2019`</sub>
 3. [使用 API 自动生成工具优化前端工作流](https://juejin.im/post/5bf6b4806fb9a049ae07884a)  <sub>`2018`</sub>
