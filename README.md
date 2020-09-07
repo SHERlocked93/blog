@@ -12,7 +12,7 @@
 ![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)
 
 > ## 作品
-1. [wx-updata: 官方 setData 最佳替代品，只修改 data 中你想修改的部分 ✈️](https://github.com/SHERlocked93/wx-updata)
+1. [wx-updata: 微信小程序官方 setData 最佳替代品，只修改 data 中你想修改的部分 ✈️](https://github.com/SHERlocked93/wx-updata)
 2. [progress-catalog: 一个好玩的目录自动生成插件 😜](https://github.com/SHERlocked93/progress-catalog)
 
 
@@ -90,7 +90,7 @@
 
 
 > ## Linux
-1. [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/5e5f13936fb9a07cdf534c62#comment)  <sub>`2020`</sub>
+1. [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/5e5f13936fb9a07cdf534c62)  <sub>`2020`</sub>
 2. [CentOS 安装部署 Yapi](https://juejin.im/post/5eafb85a5188256d4c5578c1)  <sub>`2020`</sub>
 
 
