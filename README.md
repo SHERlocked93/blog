@@ -102,6 +102,7 @@
 2. [\[译\] 使用 Proxy 来监测 Javascript 中的类](https://juejin.im/post/5c484b76e51d45522b4f5f7d)  <sub>`2019`</sub>
 3. [\[译\] 使用 Recompose 来构建高阶组件](https://juejin.im/post/5c484a43e51d452ec621b6a9)  <sub>`2019`</sub>
 4. [\[译\] 监测与调试 Vue\.js 的响应式系统：计算属性树（Computed Tree）](https://juejin.im/post/5c9ca62e5188251d80672b0d)  <sub>`2019`</sub>
+5. [Chrome 87 新特性解读，多年来 Chrome 性能最大提升！](https://juejin.cn/post/6896451677063544846)  <sub>`2020`</sub>
 
 
 
