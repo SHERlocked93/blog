@@ -122,6 +122,7 @@
 1. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)  <sub>`2019`</sub>
 2. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)  <sub>`2019`</sub>
 3. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)  <sub>`2019`</sub>
+3. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903488653784416263)  <sub>`2020`</sub>
 
 
 > ## 已读书单 (按照推介星级排序)
