@@ -11,18 +11,18 @@
 
 ![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)
 
-> ## 作品
+### 作品
 1. [wx-updata: 微信小程序官方 setData 最佳替代品，只修改 data 中你想修改的部分 ✈️](https://github.com/SHERlocked93/wx-updata)
 2. [progress-catalog: 一个好玩的目录自动生成插件 😜](https://github.com/SHERlocked93/progress-catalog)
 
-
-> ## 年终总结
+## 博客
+### 年终总结
 1. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
 2. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
 3. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
 
-> ## JavaScript
+### JavaScript
 1. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)  <sub>`2019`</sub>
 2. [「手摸手设计模式系列」 策略模式与动态表单验证](https://juejin.im/post/5d5ca0286fb9a06b317b64e7)  <sub>`2019`</sub>
 3. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)  <sub>`2018`</sub>
@@ -40,32 +40,32 @@
 15. [JS 中可以提升幸福度的小技巧](https://juejin.im/post/5b51e5d3f265da0f4861143c)  <sub>`2017`</sub>
 16. [JS 中的 this 指向](https://segmentfault.com/a/1190000012362141)  <sub>`2017`</sub>
 
-> ## CSS
+### CSS
 1. [CSS 中重要的层叠概念](https://juejin.im/post/5ba4efe36fb9a05cf52ac192)  <sub>`2018`</sub>
 2. [CSS 中重要的 BFC](https://juejin.im/post/5b51ee276fb9a04f86062cea)  <sub>`2018`</sub>
 3. [CSS margin 合并问题](https://segmentfault.com/a/1190000013735912)  <sub>`2018`</sub>
 
-> ## 浏览器
+### 浏览器
 1. [几种浏览器存储方法及其优缺点](https://segmentfault.com/a/1190000013896386)  <sub>`2018`</sub>
 2. [浅析浏览器渲染原理](https://segmentfault.com/a/1190000012960187)  <sub>`2018`</sub>
 3. [浅谈浏览器缓存](https://segmentfault.com/a/1190000012573337)  <sub>`2017`</sub>
 
-> ## Nginx
+### Nginx
 1. [Nginx 从入门到实践，万字详解！](https://juejin.im/post/5ea931866fb9a043815146fb)  <sub>`2020`</sub>
 
-> ## Docker
+### Docker
 1. [手摸手带你 Docker 从入门到实践](https://juejin.im/post/6875323565479034894)  <sub>`2020`</sub>
 
-> ## Node
+### Node
 1. [Node 中的事件循环和异步API](https://segmentfault.com/a/1190000012648569)  <sub>`2017`</sub>
 2. [JS 与 Node\.js 中的事件循环](https://segmentfault.com/a/1190000012362096)  <sub>`2017`</sub>
 
-> ## Webpack
+### Webpack
 1. [手摸手 Webpack 多入口配置实践](https://juejin.im/post/5d7763a3f265da03c34c25ab)  <sub>`2019`</sub>
 2. [使用 webpack 的插件 DllPlugin 加快打包速度](https://segmentfault.com/a/1190000012925212)  <sub>`2018`</sub>
 
 
-> ## 前端周边技术栈
+### 前端周边技术栈
 1. [强烈推介的几个微信小程序开发小技巧，简单又实用](https://segmentfault.com/a/1190000023748392)  <sub>`2020`</sub>
 1. [开发微信小程序，我为什么放弃 setData，使用 upData](https://juejin.im/post/5f17efb55188252e7811dcdd)  <sub>`2020`</sub>
 1. [GraphQL 从入门到实践](https://juejin.im/post/5c87b1776fb9a049ac7a0247)  <sub>`2019`</sub>
@@ -78,26 +78,26 @@
 8. [Git 学习笔记](https://segmentfault.com/a/1190000016665840)  <sub>`2018`</sub>
 
 
-> ## Vue 实践
+### Vue 实践
 1. [Vue 项目数据动态过滤实践](https://juejin.im/post/5b9394fff265da0af406ed53)  <sub>`2018`</sub>
 2. [Vue 项目预渲染机制引入实践](https://juejin.im/post/5b8ba25751882542f25a6cc8)  <sub>`2018`</sub>
 3. [Vue 项目骨架屏注入实践](https://juejin.im/post/5b79a2786fb9a01a18267362)  <sub>`2018`</sub>
 4. [Vue 使用中的小技巧](https://juejin.im/post/5ae02f39518825672f198ac2)  <sub>`2018`</sub>
 
 
-> ## 源码阅读
+### 源码阅读
 1. [vue\-router 源码阅读 \- 文件结构与注册机制](https://juejin.im/post/5c7160d46fb9a049d236ae79)  <sub>`2019`</sub>
 2. [Vue源码阅读 \- 文件结构与运行机制](https://juejin.im/post/5b38830de51d455888216675)  <sub>`2018`</sub>
 3. [Vue源码阅读 \- 依赖收集原理](https://juejin.im/post/5b40c8495188251af3632dfa)  <sub>`2018`</sub>
 4. [Vue源码阅读 \- 批量异步更新与nextTick原理](https://juejin.im/post/5b50760f5188251ad06b61be)  <sub>`2018`</sub>
 
 
-> ## Linux
+### Linux
 1. [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/5e5f13936fb9a07cdf534c62)  <sub>`2020`</sub>
 2. [CentOS 安装部署 Yapi](https://juejin.im/post/5eafb85a5188256d4c5578c1)  <sub>`2020`</sub>
 
 
-> ## 翻译
+### 翻译
 1. [\[译\] 网速敏感的视频延迟加载方案](https://juejin.im/post/5c7b84356fb9a049ab0e5630)  <sub>`2019`</sub>
 2. [\[译\] 使用 Proxy 来监测 Javascript 中的类](https://juejin.im/post/5c484b76e51d45522b4f5f7d)  <sub>`2019`</sub>
 3. [\[译\] 使用 Recompose 来构建高阶组件](https://juejin.im/post/5c484a43e51d452ec621b6a9)  <sub>`2019`</sub>
@@ -106,7 +106,7 @@
 
 
 
-> ## 读书笔记
+### 阅读摘要
 1. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)  <sub>`2019`</sub>
 2. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)  <sub>`2019`</sub>
 3. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)  <sub>`2019`</sub>
@@ -117,15 +117,17 @@
 8. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)  <sub>`2017`</sub>
 
 
-> ## 那些好用的工具
+### 那些好用的工具
 1. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://juejin.im/post/5ee9fca5f265da02d3377e38)  <sub>`2020`</sub>
 1. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)  <sub>`2019`</sub>
 2. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)  <sub>`2019`</sub>
 3. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)  <sub>`2019`</sub>
 3. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903488653784416263)  <sub>`2020`</sub>
 
+### 理财
+- [x] ★★★ **[我最近在看什么 - 富爸爸穷爸爸](https://juejin.cn/post/6910778442489430023)**   <sub>`2020`</sub>
 
-> ## 已读书单 (按照推介星级排序)
+## 已读书单 (按照推介星级排序)
 推介星级
 
 - ★★★：值得一看，看了不会后悔的
