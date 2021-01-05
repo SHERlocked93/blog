@@ -1,15 +1,10 @@
 # SHERlocked93 个人博客
 
-来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏 [<JavaScript 设计模式精讲>](https://www.imooc.com/read/38)作者，个人公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex)，在下的博客都是学习过程中的总结，期待在这里和大家共同进步 ～
+来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏 [<JavaScript 设计模式精讲>](https://www.imooc.com/read/38) 作者，个人公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex)，在下的博客都是学习过程中的总结，期待在这里和大家共同进步 ～
 
 在下的 [掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，也欢迎大家关注我的公众号【前端下午茶】，一起加油~
 
 ![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
-
-
-另外可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
-
-![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)
 
 ### 作品
 1. [wx-updata: 微信小程序官方 setData 最佳替代品，只修改 data 中你想修改的部分 ✈️](https://github.com/SHERlocked93/wx-updata)
@@ -21,8 +16,8 @@
 2. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
 3. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
-### [数据结构与算法入门 TypeScript 版](https://github.com/SHERlocked93/ts-datastructures-algorithms)
-
+### 数据结构与算法入门 TypeScript 版
+代码参见[仓库](https://github.com/SHERlocked93/ts-datastructures-algorithms)
 
 ### JavaScript
 1. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)  <sub>`2019`</sub>
@@ -124,7 +119,7 @@
 1. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)  <sub>`2019`</sub>
 2. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)  <sub>`2019`</sub>
 3. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)  <sub>`2019`</sub>
-3. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903488653784416263)  <sub>`2020`</sub>
+3. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903689654797598728)  <sub>`2020`</sub>
 
 ### 理财
 1. [我最近在看什么 - 富爸爸穷爸爸](https://juejin.cn/post/6910778442489430023)   <sub>`2020`</sub>
@@ -210,6 +205,8 @@
 
 ---
 
-PS：对设计模式感兴趣的同学可以看一下我在慕课网写的专栏《JavaScript 设计模式精讲》
+> PS：对设计模式感兴趣的同学可以看一下我在慕课网写的专栏 [<JavaScript 设计模式精讲>](https://www.imooc.com/read/38)
+>
+> 另外，如果你苦于编程之路无人交流，可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
 
-![](https://i.loli.net/2019/07/26/5d3a5587e85d266784.png)
+![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)
