@@ -21,6 +21,8 @@
 2. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
 3. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
+### [数据结构与算法入门 TypeScript 版](https://github.com/SHERlocked93/ts-datastructures-algorithms)
+
 
 ### JavaScript
 1. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)  <sub>`2019`</sub>
@@ -125,7 +127,7 @@
 3. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903488653784416263)  <sub>`2020`</sub>
 
 ### 理财
-1. **[我最近在看什么 - 富爸爸穷爸爸](https://juejin.cn/post/6910778442489430023)**   <sub>`2020`</sub>
+1. [我最近在看什么 - 富爸爸穷爸爸](https://juejin.cn/post/6910778442489430023)   <sub>`2020`</sub>
 
 ## 已读书单 (按照推介星级排序)
 推介星级
