@@ -1,8 +1,6 @@
 # SHERlocked93 个人博客
 
-来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏 [<JavaScript 设计模式精讲>](https://www.imooc.com/read/38) 作者，个人公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex)，在下的博客都是学习过程中的总结，期待在这里和大家共同进步 ～
-
-在下的 [掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，也欢迎大家关注我的公众号【前端下午茶】，一起加油~
+来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38) 作者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
 
 ![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
 
@@ -16,7 +14,7 @@
 2. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
 3. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
-### 数据结构与算法入门 TypeScript 版
+### 从零开始学算法 TypeScript 版
 代码参见[仓库](https://github.com/SHERlocked93/ts-datastructures-algorithms)
 
 ### JavaScript
@@ -130,6 +128,10 @@
 - ★★★：值得一看，看了不会后悔的
 - ★★☆：可以一看，了解了解
 - ★☆☆：不推介，浪费你宝贵的生命
+
+### 数据结构 & 算法
+
+- [x] ★★★ 算法图解   <sub>`2021`</sub>
 
 ### HTML
 
