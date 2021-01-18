@@ -1,9 +1,5 @@
 # SHERlocked93 个人博客
 
-来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38) 作者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
-
-![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
-
 ### 作品
 1. [wx-updata: 微信小程序官方 setData 最佳替代品，只修改 data 中你想修改的部分 ✈️](https://github.com/SHERlocked93/wx-updata)
 2. [progress-catalog: 一个好玩的目录自动生成插件 😜](https://github.com/SHERlocked93/progress-catalog)
@@ -18,6 +14,7 @@
 代码参见[仓库](https://github.com/SHERlocked93/ts-datastructures-algorithms)
 
 ### JavaScript
+1. [这些 JS 中强大的操作符，总有几个你没听说过](https://juejin.cn/post/6918902650964557838)  <sub>`2021`</sub>
 1. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)  <sub>`2019`</sub>
 2. [「手摸手设计模式系列」 策略模式与动态表单验证](https://juejin.im/post/5d5ca0286fb9a06b317b64e7)  <sub>`2019`</sub>
 3. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)  <sub>`2018`</sub>
@@ -206,6 +203,10 @@
 
 
 ---
+
+来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38) 作者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
+
+![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
 
 > PS：对设计模式感兴趣的同学可以看一下我在慕课网写的专栏 [<JavaScript 设计模式精讲>](https://www.imooc.com/read/38)
 >
