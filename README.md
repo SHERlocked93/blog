@@ -17,6 +17,7 @@
 1. [这些 JS 中强大的操作符，总有几个你没听说过](https://juejin.cn/post/6918902650964557838)  <sub>`2021`</sub>
 1. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)  <sub>`2019`</sub>
 2. [「手摸手设计模式系列」 策略模式与动态表单验证](https://juejin.im/post/5d5ca0286fb9a06b317b64e7)  <sub>`2019`</sub>
+2. [JS 闭包与高阶函数](https://www.imooc.com/read/38/article/478)  <sub>`2019`</sub>
 3. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)  <sub>`2018`</sub>
 4. [JS 活学活用正则表达式](https://segmentfault.com/a/1190000013276177)  <sub>`2018`</sub>
 5. [JS 中的 offset、scroll、client 总结](https://segmentfault.com/a/1190000015961743)  <sub>`2018`</sub>
