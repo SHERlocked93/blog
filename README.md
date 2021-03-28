@@ -9,6 +9,7 @@
 
 ### 年终总结
 
+1. [SHERlocked93 的 2020 年终总结](https://segmentfault.com/a/1190000039728447)
 1. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
 1. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
 1. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
