@@ -14,10 +14,6 @@
 1. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
 1. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
-### 从零开始学算法 TypeScript 版
-
-代码参见[仓库](https://github.com/SHERlocked93/ts-datastructures-algorithms)
-
 ### JavaScript
 
 1. [这些 JS 中强大的操作符，总有几个你没听说过](https://juejin.cn/post/6918902650964557838)  <sub>`2021`</sub>
@@ -38,6 +34,38 @@
 1. [JS 中的 \_\_proto\_\_ 与 prototype](https://segmentfault.com/a/1190000012362383)  <sub>`2017`</sub>
 1. [JS 中可以提升幸福度的小技巧](https://juejin.im/post/5b51e5d3f265da0f4861143c)  <sub>`2017`</sub>
 1. [JS 中的 this 指向](https://segmentfault.com/a/1190000012362141)  <sub>`2017`</sub>
+
+### JavaScript 设计模式
+
+1. [开篇 ： 为什么学习设计模式？](https://www.imooc.com/read/38/article/476)
+1. [this、new、bind、call、apply](https://www.imooc.com/read/38/article/477)
+1. [闭包与高阶函数](https://www.imooc.com/read/38/article/478)
+1. [ES6 中可能遇到的知识点](https://www.imooc.com/read/38/article/479)
+1. [继承与原型链](https://www.imooc.com/read/38/article/480)
+1. [设计原则](https://www.imooc.com/read/38/article/506)
+1. [单例模式：游戏的存档](https://www.imooc.com/read/38/article/481)
+1. [工厂模式：去小餐馆下馆子](https://www.imooc.com/read/38/article/482)
+1. [抽象工厂模式：又去小餐馆下馆子](https://www.imooc.com/read/38/article/483)
+1. [建造者模式：组装小汽车](https://www.imooc.com/read/38/article/484)
+1. [代理模式：找明星拍广告](https://www.imooc.com/read/38/article/486)
+1. [享元模式：驾考现场的考试车](https://www.imooc.com/read/38/article/487)
+1. [适配器模式：电源适配器](https://www.imooc.com/read/38/article/488)
+1. [装饰者模式：给新房子装修](https://www.imooc.com/read/38/article/489)
+1. [外观模式：遥控无人机](https://www.imooc.com/read/38/article/490)
+1. [组合模式：文档结构树](https://www.imooc.com/read/38/article/491)
+1. [桥接模式：组装变频洗衣机](https://www.imooc.com/read/38/article/492)
+1. [发布-订阅模式：去 adadis 买鞋](https://www.imooc.com/read/38/article/493)
+1. [策略模式：给螺丝刀换刀头](https://www.imooc.com/read/38/article/494)
+1. [状态模式：交通灯](https://www.imooc.com/read/38/article/495)
+1. [模板方法模式：咖啡厅制作咖啡](https://www.imooc.com/read/38/article/496)
+1. [迭代器模式：银行的点钞机](https://www.imooc.com/read/38/article/497)
+1. [命令模式：江湖通缉令](https://www.imooc.com/read/38/article/498)
+1. [职责链模式：领导，我想请个假](https://www.imooc.com/read/38/article/499)
+1. [中介者模式：找媒人介绍对象](https://www.imooc.com/read/38/article/500)
+1. [关于 MVC、MVP、MVVM](https://www.imooc.com/read/38/article/501)
+1. [模块模式](https://www.imooc.com/read/38/article/502)
+1. [链模式](https://www.imooc.com/read/38/article/503)
+1. [中间件](https://www.imooc.com/read/38/article/504)
 
 ### CSS
 
@@ -101,6 +129,10 @@
 1. [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/5e5f13936fb9a07cdf534c62)  <sub>`2020`</sub>
 1. [CentOS 安装部署 Yapi](https://juejin.im/post/5eafb85a5188256d4c5578c1)  <sub>`2020`</sub>
 
+### 从零开始学算法 TypeScript 版
+
+代码参见[仓库](https://github.com/SHERlocked93/ts-datastructures-algorithms)
+
 ### 翻译
 
 1. [\[译\] 网速敏感的视频延迟加载方案](https://juejin.im/post/5c7b84356fb9a049ab0e5630)  <sub>`2019`</sub>
@@ -133,6 +165,8 @@
 
 1. [我最近在看什么 - 富爸爸穷爸爸](https://juejin.cn/post/6910778442489430023)   <sub>`2020`</sub>
 
+---
+
 ## 已读书单 (按照推介星级排序)
 
 推介星级
@@ -140,6 +174,17 @@
 - ★★★：值得一看，看了不会后悔
 - ★★☆：可以一看，了解了解
 - ★☆☆：不推介，浪费你宝贵的生命
+
+### 数据结构 & 算法
+
+> | 书名 | 阅读时间 | 推介等级 ↓ |
+> | ---- | -------- | --------- |
+> | **我的第一本算法书**     | `2021`     | ★★★    |
+> | **算法图解**     |  `2021`    |  ★★★    |
+
+下面是我推介的算法书籍，按需自取，个人觉得每个等级看一两本即可
+
+![算法书籍推介](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/%E7%AE%97%E6%B3%95%E4%B9%A6%E7%B1%8D%E6%8E%A8%E4%BB%8B-tintFB.png)
 
 ### JavaScript & Node.js & HTML
 
@@ -167,7 +212,6 @@
 > | **大型 JavaScript 应用最佳实践指南**   | `2018`   | ★☆☆       |
 > | **Vue.js 实战**   | `2018`   | ★☆☆       |
 
-
 ### HTTP
 
 > | 书名 | 阅读时间 | 推介等级 ↓ |
@@ -187,18 +231,6 @@
 > | 书名 | 阅读时间 | 推介等级 ↓ |
 > | ---- | -------- | --------- |
 > | **C# 从入门到精通**     |  `2017`    |  ★★☆    |
-
-### 数据结构 & 算法
-
-> | 书名 | 阅读时间 | 推介等级 ↓ |
-> | ---- | -------- | --------- |
-> | **我的第一本算法书**     | `2021`     | ★★★    |
-> | **算法图解**     |  `2021`    |  ★★★    |
-
-下面是我推介的算法书籍，按需自取，个人觉得每个等级看一两本即可
-
-![算法书籍推介](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/%E7%AE%97%E6%B3%95%E4%B9%A6%E7%B1%8D%E6%8E%A8%E4%BB%8B-tintFB.png)
-
 
 ### 程序员素养 & 方法论
 
@@ -238,7 +270,8 @@
 ---
 
 来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38)
-作者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
+作者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**
+前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
 
 ![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
 
