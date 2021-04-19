@@ -35,38 +35,6 @@
 1. [JS 中可以提升幸福度的小技巧](https://juejin.im/post/5b51e5d3f265da0f4861143c)  <sub>`2017`</sub>
 1. [JS 中的 this 指向](https://segmentfault.com/a/1190000012362141)  <sub>`2017`</sub>
 
-### JavaScript 设计模式
-
-1. [开篇 ： 为什么学习设计模式？](https://www.imooc.com/read/38/article/476)
-1. [this、new、bind、call、apply](https://www.imooc.com/read/38/article/477)
-1. [闭包与高阶函数](https://www.imooc.com/read/38/article/478)
-1. [ES6 中可能遇到的知识点](https://www.imooc.com/read/38/article/479)
-1. [继承与原型链](https://www.imooc.com/read/38/article/480)
-1. [设计原则](https://www.imooc.com/read/38/article/506)
-1. [单例模式：游戏的存档](https://www.imooc.com/read/38/article/481)
-1. [工厂模式：去小餐馆下馆子](https://www.imooc.com/read/38/article/482)
-1. [抽象工厂模式：又去小餐馆下馆子](https://www.imooc.com/read/38/article/483)
-1. [建造者模式：组装小汽车](https://www.imooc.com/read/38/article/484)
-1. [代理模式：找明星拍广告](https://www.imooc.com/read/38/article/486)
-1. [享元模式：驾考现场的考试车](https://www.imooc.com/read/38/article/487)
-1. [适配器模式：电源适配器](https://www.imooc.com/read/38/article/488)
-1. [装饰者模式：给新房子装修](https://www.imooc.com/read/38/article/489)
-1. [外观模式：遥控无人机](https://www.imooc.com/read/38/article/490)
-1. [组合模式：文档结构树](https://www.imooc.com/read/38/article/491)
-1. [桥接模式：组装变频洗衣机](https://www.imooc.com/read/38/article/492)
-1. [发布-订阅模式：去 adadis 买鞋](https://www.imooc.com/read/38/article/493)
-1. [策略模式：给螺丝刀换刀头](https://www.imooc.com/read/38/article/494)
-1. [状态模式：交通灯](https://www.imooc.com/read/38/article/495)
-1. [模板方法模式：咖啡厅制作咖啡](https://www.imooc.com/read/38/article/496)
-1. [迭代器模式：银行的点钞机](https://www.imooc.com/read/38/article/497)
-1. [命令模式：江湖通缉令](https://www.imooc.com/read/38/article/498)
-1. [职责链模式：领导，我想请个假](https://www.imooc.com/read/38/article/499)
-1. [中介者模式：找媒人介绍对象](https://www.imooc.com/read/38/article/500)
-1. [关于 MVC、MVP、MVVM](https://www.imooc.com/read/38/article/501)
-1. [模块模式](https://www.imooc.com/read/38/article/502)
-1. [链模式](https://www.imooc.com/read/38/article/503)
-1. [中间件](https://www.imooc.com/read/38/article/504)
-
 ### CSS
 
 1. [CSS 中重要的层叠概念](https://juejin.im/post/5ba4efe36fb9a05cf52ac192)  <sub>`2018`</sub>
@@ -165,6 +133,38 @@
 
 1. [我最近在看什么 - 富爸爸穷爸爸](https://juejin.cn/post/6910778442489430023)   <sub>`2020`</sub>
 
+### JavaScript 设计模式
+
+1. [开篇 ： 为什么学习设计模式？](https://www.imooc.com/read/38/article/476)
+1. [this、new、bind、call、apply](https://www.imooc.com/read/38/article/477)
+1. [闭包与高阶函数](https://www.imooc.com/read/38/article/478)
+1. [ES6 中可能遇到的知识点](https://www.imooc.com/read/38/article/479)
+1. [继承与原型链](https://www.imooc.com/read/38/article/480)
+1. [设计原则](https://www.imooc.com/read/38/article/506)
+1. [单例模式：游戏的存档](https://www.imooc.com/read/38/article/481)
+1. [工厂模式：去小餐馆下馆子](https://www.imooc.com/read/38/article/482)
+1. [抽象工厂模式：又去小餐馆下馆子](https://www.imooc.com/read/38/article/483)
+1. [建造者模式：组装小汽车](https://www.imooc.com/read/38/article/484)
+1. [代理模式：找明星拍广告](https://www.imooc.com/read/38/article/486)
+1. [享元模式：驾考现场的考试车](https://www.imooc.com/read/38/article/487)
+1. [适配器模式：电源适配器](https://www.imooc.com/read/38/article/488)
+1. [装饰者模式：给新房子装修](https://www.imooc.com/read/38/article/489)
+1. [外观模式：遥控无人机](https://www.imooc.com/read/38/article/490)
+1. [组合模式：文档结构树](https://www.imooc.com/read/38/article/491)
+1. [桥接模式：组装变频洗衣机](https://www.imooc.com/read/38/article/492)
+1. [发布-订阅模式：去 adadis 买鞋](https://www.imooc.com/read/38/article/493)
+1. [策略模式：给螺丝刀换刀头](https://www.imooc.com/read/38/article/494)
+1. [状态模式：交通灯](https://www.imooc.com/read/38/article/495)
+1. [模板方法模式：咖啡厅制作咖啡](https://www.imooc.com/read/38/article/496)
+1. [迭代器模式：银行的点钞机](https://www.imooc.com/read/38/article/497)
+1. [命令模式：江湖通缉令](https://www.imooc.com/read/38/article/498)
+1. [职责链模式：领导，我想请个假](https://www.imooc.com/read/38/article/499)
+1. [中介者模式：找媒人介绍对象](https://www.imooc.com/read/38/article/500)
+1. [关于 MVC、MVP、MVVM](https://www.imooc.com/read/38/article/501)
+1. [模块模式](https://www.imooc.com/read/38/article/502)
+1. [链模式](https://www.imooc.com/read/38/article/503)
+1. [中间件](https://www.imooc.com/read/38/article/504)
+
 ---
 
 ## 已读书单 (按照推介星级排序)
@@ -246,6 +246,7 @@
 
 > | 书名 | 阅读时间 | 推介等级 ↓ |
 > | ---- | -------- | --------- |
+> | **高效能人士的七个习惯**  - 史蒂芬·柯维     | `2021`     | ★★★     |
 > | **富爸爸穷爸爸**  - 清崎     | `2020`     | ★★★     |
 > | **三体**  - 刘慈欣     | `2020`     | ★★★     |
 > | **神们自己**  - 阿西莫夫     | `2020`     | ★★★     |
@@ -270,8 +271,7 @@
 ---
 
 来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38)
-作者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**
-前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
+作者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
 
 ![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
 
