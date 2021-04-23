@@ -112,6 +112,7 @@
 
 ### 阅读摘要
 
+1. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)  <sub>`2021`</sub>
 1. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)  <sub>`2019`</sub>
 1. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)  <sub>`2019`</sub>
 1. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)  <sub>`2019`</sub>
