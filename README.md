@@ -97,45 +97,6 @@
 1. [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/5e5f13936fb9a07cdf534c62)  <sub>`2020`</sub>
 1. [CentOS 安装部署 Yapi](https://juejin.im/post/5eafb85a5188256d4c5578c1)  <sub>`2020`</sub>
 
-### 从零开始学算法 TypeScript 版
-
-代码参见[仓库](https://github.com/SHERlocked93/ts-datastructures-algorithms)
-
-### 翻译
-
-1. [\[译\] 网速敏感的视频延迟加载方案](https://juejin.im/post/5c7b84356fb9a049ab0e5630)  <sub>`2019`</sub>
-1. [\[译\] 使用 Proxy 来监测 Javascript 中的类](https://juejin.im/post/5c484b76e51d45522b4f5f7d)  <sub>`2019`</sub>
-1. [\[译\] 使用 Recompose 来构建高阶组件](https://juejin.im/post/5c484a43e51d452ec621b6a9)  <sub>`2019`</sub>
-1. [\[译\] 监测与调试 Vue\.js 的响应式系统：计算属性树（Computed Tree）](https://juejin.im/post/5c9ca62e5188251d80672b0d)  <sub>`2019`</sub>
-1. [Chrome 87 新特性解读，多年来 Chrome 性能最大提升！](https://juejin.cn/post/6896451677063544846)  <sub>`2020`</sub>
-1. [Chrome 89 新功能一览，性能提升明显，大量 DevTools 新特性](https://juejin.cn/post/6935452749987315742)  <sub>`2021`</sub>
-
-### 阅读摘要
-
-1. [《快速阅读》阅读摘要](https://segmentfault.com/a/1190000039912076)  <sub>`2021`</sub>
-1. [《白帽子讲Web安全》阅读摘要](https://segmentfault.com/a/1190000039906667)  <sub>`2021`</sub>
-1. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)  <sub>`2021`</sub>
-1. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)  <sub>`2019`</sub>
-1. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)  <sub>`2019`</sub>
-1. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)  <sub>`2019`</sub>
-1. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)  <sub>`2019`</sub>
-1. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)  <sub>`2019`</sub>
-1. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)  <sub>`2019`</sub>
-1. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)  <sub>`2017`</sub>
-1. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)  <sub>`2017`</sub>
-
-### 那些好用的工具
-
-1. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://juejin.im/post/5ee9fca5f265da02d3377e38)  <sub>`2020`</sub>
-1. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)  <sub>`2019`</sub>
-1. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)  <sub>`2019`</sub>
-1. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)  <sub>`2019`</sub>
-1. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903689654797598728)  <sub>`2020`</sub>
-
-### 理财
-
-1. [我最近在看什么 - 富爸爸穷爸爸](https://juejin.cn/post/6910778442489430023)   <sub>`2020`</sub>
-
 ### JavaScript 设计模式
 
 1. [开篇 ： 为什么学习设计模式？](https://www.imooc.com/read/38/article/476)
@@ -168,6 +129,46 @@
 1. [链模式](https://www.imooc.com/read/38/article/503)
 1. [中间件](https://www.imooc.com/read/38/article/504)
 
+### 从零开始学算法 TypeScript 版
+
+代码参见[仓库](https://github.com/SHERlocked93/ts-datastructures-algorithms)
+
+### 翻译
+
+1. [Chrome 89 新功能一览，性能提升明显，大量 DevTools 新特性](https://juejin.cn/post/6935452749987315742)  <sub>`2021`</sub>
+1. [Chrome 87 新特性解读，多年来 Chrome 性能最大提升！](https://juejin.cn/post/6896451677063544846)  <sub>`2020`</sub>
+1. [\[译\] 使用 Recompose 来构建高阶组件](https://juejin.im/post/5c484a43e51d452ec621b6a9)  <sub>`2019`</sub>
+1. [\[译\] 监测与调试 Vue\.js 的响应式系统：计算属性树（Computed Tree）](https://juejin.im/post/5c9ca62e5188251d80672b0d)  <sub>`2019`</sub>
+1. [\[译\] 网速敏感的视频延迟加载方案](https://juejin.im/post/5c7b84356fb9a049ab0e5630)  <sub>`2019`</sub>
+1. [\[译\] 使用 Proxy 来监测 Javascript 中的类](https://juejin.im/post/5c484b76e51d45522b4f5f7d)  <sub>`2019`</sub>
+
+### 阅读摘要
+
+1. [《快速阅读》阅读摘要](https://segmentfault.com/a/1190000039912076)  <sub>`2021`</sub>
+1. [《白帽子讲Web安全》阅读摘要](https://segmentfault.com/a/1190000039906667)  <sub>`2021`</sub>
+1. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)  <sub>`2021`</sub>
+1. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)  <sub>`2019`</sub>
+1. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)  <sub>`2019`</sub>
+1. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)  <sub>`2019`</sub>
+1. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)  <sub>`2019`</sub>
+1. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)  <sub>`2019`</sub>
+1. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)  <sub>`2019`</sub>
+1. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)  <sub>`2017`</sub>
+1. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)  <sub>`2017`</sub>
+
+### 那些好用的工具
+
+1. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://juejin.im/post/5ee9fca5f265da02d3377e38)  <sub>`2020`</sub>
+1. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)  <sub>`2019`</sub>
+1. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)  <sub>`2019`</sub>
+1. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)  <sub>`2019`</sub>
+1. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903689654797598728)  <sub>`2020`</sub>
+
+
+### 理财
+
+1. [我最近在看什么 - 富爸爸穷爸爸](https://juejin.cn/post/6910778442489430023)   <sub>`2020`</sub>
+
 ---
 
 ## 已读书单 (按照推介星级排序)
@@ -198,6 +199,7 @@
 > | **深入理解 ES6**   | `2018`   | ★★☆       |
 > | **jQuery 从入门到精通**    | `2017`   | ★★☆       |
 > | **jQuery 锋利的jQuery**    | `2017`   | ★★☆       |
+> | **Web 安全开发指南**     |  `2021`    | ★☆☆     |
 > | **HTML5+CSS3 从入门到精通**     |  `2017`    | ★☆☆     |
 > | **你不知道的 JavaScript 下**   | `2018`   | ★☆☆       |
 > | **JavaScript 模式** - 图灵    | `2017`   | ★☆☆       |
@@ -265,6 +267,7 @@
 > | **许三观卖血记**  - 余华     | `2018`     | ★★★     |
 > | **球状闪电**  - 刘慈欣     | `2019`     | ★★★     |
 > | **围城**  - 钱钟书     | `2019`     | ★★★     |
+> | **如何阅读一本书**  - 艾德勒      | `2021`     | ★★☆     |
 > | **祸害万年在/假设/六道众生/天生我材/十亿年后的来客/我是谁/蛇发族/人生不相见/田园** - 何夕       | `2019`     | ★★☆     |
 > | **浮生六记**  - 沈复     | `2017`     | ★★☆     |
 > | **做人得有趣** - 李敖     | `2018`     | ★★☆     |
