@@ -55,6 +55,10 @@
 
 1. [手摸手带你 Docker 从入门到实践](https://juejin.im/post/6875323565479034894)  <sub>`2020`</sub>
 
+### 数据库
+
+1. [MySQL 从入门到实践，万字详解！](https://juejin.cn/post/7005019784429469704)  <sub>`2021`</sub>
+
 ### Node
 
 1. [Node 中的事件循环和异步API](https://segmentfault.com/a/1190000012648569)  <sub>`2017`</sub>
