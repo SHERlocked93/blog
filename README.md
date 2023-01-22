@@ -3,49 +3,49 @@
 ### 作品
 
 1. [wx-updata: 微信小程序官方 setData 最佳替代品，只修改 data 中你想修改的部分 ✈️](https://github.com/SHERlocked93/wx-updata)
-1. [progress-catalog: 一个好玩的目录自动生成插件 😜](https://github.com/SHERlocked93/progress-catalog)
+2. [progress-catalog: 一个好玩的目录自动生成插件 😜](https://github.com/SHERlocked93/progress-catalog)
 
 ## 博客
 
 ### 年终总结
 
 1. [SHERlocked93 的 2020 年终总结](https://segmentfault.com/a/1190000039728447)
-1. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
-1. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
-1. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
+2. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
+3. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
+4. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
 ### JavaScript
 
 1. [这些 JS 中强大的操作符，总有几个你没听说过](https://juejin.cn/post/6918902650964557838)
-1. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)
-1. [「手摸手设计模式系列」 策略模式与动态表单验证](https://juejin.im/post/5d5ca0286fb9a06b317b64e7)
-1. [JS 闭包与高阶函数](https://www.imooc.com/read/38/article/478)
-1. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)
-1. [JS 活学活用正则表达式](https://segmentfault.com/a/1190000013276177)
-1. [JS 中的 offset、scroll、client 总结](https://segmentfault.com/a/1190000015961743)
-1. [JS 静态类型检查工具 Flow](https://segmentfault.com/a/1190000014367450)
-1. [JS throttle 与 debounce 的区别](https://segmentfault.com/a/1190000014292298)
-1. [JavaScript 服务器推送技术之 WebSocket](https://segmentfault.com/a/1190000013131251)
-1. [JS 中的柯里化](https://segmentfault.com/a/1190000012769779)
-1. [JS 中的反柯里化](https://segmentfault.com/a/1190000012912503)
-1. [JS 中的垃圾回收与内存泄漏](https://segmentfault.com/a/1190000012738358)
-1. [JS 异步的实现](https://segmentfault.com/a/1190000012362556)
-1. [JS 执行上下文栈 / 作用域链](https://segmentfault.com/a/1190000012362182)
-1. [JS 中的 \_\_proto\_\_ 与 prototype](https://segmentfault.com/a/1190000012362383)
-1. [JS 中可以提升幸福度的小技巧](https://juejin.im/post/5b51e5d3f265da0f4861143c)
-1. [JS 中的 this 指向](https://segmentfault.com/a/1190000012362141)
+2. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)
+3. [「手摸手设计模式系列」 策略模式与动态表单验证](https://juejin.im/post/5d5ca0286fb9a06b317b64e7)
+4. [JS 闭包与高阶函数](https://www.imooc.com/read/38/article/478)
+5. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)
+6. [JS 活学活用正则表达式](https://segmentfault.com/a/1190000013276177)
+7. [JS 中的 offset、scroll、client 总结](https://segmentfault.com/a/1190000015961743)
+8. [JS 静态类型检查工具 Flow](https://segmentfault.com/a/1190000014367450)
+9. [JS throttle 与 debounce 的区别](https://segmentfault.com/a/1190000014292298)
+10. [JavaScript 服务器推送技术之 WebSocket](https://segmentfault.com/a/1190000013131251)
+11. [JS 中的柯里化](https://segmentfault.com/a/1190000012769779)
+12. [JS 中的反柯里化](https://segmentfault.com/a/1190000012912503)
+13. [JS 中的垃圾回收与内存泄漏](https://segmentfault.com/a/1190000012738358)
+14. [JS 异步的实现](https://segmentfault.com/a/1190000012362556)
+15. [JS 执行上下文栈 / 作用域链](https://segmentfault.com/a/1190000012362182)
+16. [JS 中的 \_\_proto\_\_ 与 prototype](https://segmentfault.com/a/1190000012362383)
+17. [JS 中可以提升幸福度的小技巧](https://juejin.im/post/5b51e5d3f265da0f4861143c)
+18. [JS 中的 this 指向](https://segmentfault.com/a/1190000012362141)
 
 ### CSS
 
 1. [CSS 中重要的层叠概念](https://juejin.im/post/5ba4efe36fb9a05cf52ac192)
-1. [CSS 中重要的 BFC](https://juejin.im/post/5b51ee276fb9a04f86062cea)
-1. [CSS margin 合并问题](https://segmentfault.com/a/1190000013735912)
+2. [CSS 中重要的 BFC](https://juejin.im/post/5b51ee276fb9a04f86062cea)
+3. [CSS margin 合并问题](https://segmentfault.com/a/1190000013735912)
 
 ### 浏览器
 
 1. [几种浏览器存储方法及其优缺点](https://segmentfault.com/a/1190000013896386)
-1. [浅析浏览器渲染原理](https://segmentfault.com/a/1190000012960187)
-1. [浅谈浏览器缓存](https://segmentfault.com/a/1190000012573337)
+2. [浅析浏览器渲染原理](https://segmentfault.com/a/1190000012960187)
+3. [浅谈浏览器缓存](https://segmentfault.com/a/1190000012573337)
 
 ### Nginx
 
@@ -62,76 +62,76 @@
 ### Node
 
 1. [Node 中的事件循环和异步API](https://segmentfault.com/a/1190000012648569)
-1. [JS 与 Node\.js 中的事件循环](https://segmentfault.com/a/1190000012362096)
+2. [JS 与 Node\.js 中的事件循环](https://segmentfault.com/a/1190000012362096)
 
 ### Webpack
 
 1. [手摸手 Webpack 多入口配置实践](https://juejin.im/post/5d7763a3f265da03c34c25ab)
-1. [使用 webpack 的插件 DllPlugin 加快打包速度](https://segmentfault.com/a/1190000012925212)
+2. [使用 webpack 的插件 DllPlugin 加快打包速度](https://segmentfault.com/a/1190000012925212)
 
 ### 前端周边技术栈
 
 1. [强烈推介的几个微信小程序开发小技巧，简单又实用](https://segmentfault.com/a/1190000023748392)
-1. [开发微信小程序，我为什么放弃 setData，使用 upData](https://juejin.im/post/5f17efb55188252e7811dcdd)
-1. [GraphQL 从入门到实践](https://juejin.im/post/5c87b1776fb9a049ac7a0247)
-1. [前端路由跳转基本原理](https://juejin.im/post/5c52da9ee51d45221f242804)
-1. [使用 API 自动生成工具优化前端工作流](https://juejin.im/post/5bf6b4806fb9a049ae07884a)
-1. [windows 本地安装部署 Easy Mock](https://juejin.im/post/5b9b6f79e51d450e6e039766)
-1. [使用 Jenkins 持续集成前端项目并自动化部署到 Nginx 服务器](https://juejin.im/post/5b9769e5e51d450e531c548e)
-1. [一个骚气的文章目录自动生成器了解一下](https://juejin.im/post/5b6c29dde51d4518f5445c03)
-1. [Web Worker 初探](https://juejin.im/post/5b4af72ae51d45198d4b1388)
-1. [Git 学习笔记](https://segmentfault.com/a/1190000016665840)
+2. [开发微信小程序，我为什么放弃 setData，使用 upData](https://juejin.im/post/5f17efb55188252e7811dcdd)
+3. [GraphQL 从入门到实践](https://juejin.im/post/5c87b1776fb9a049ac7a0247)
+4. [前端路由跳转基本原理](https://juejin.im/post/5c52da9ee51d45221f242804)
+5. [使用 API 自动生成工具优化前端工作流](https://juejin.im/post/5bf6b4806fb9a049ae07884a)
+6. [windows 本地安装部署 Easy Mock](https://juejin.im/post/5b9b6f79e51d450e6e039766)
+7. [使用 Jenkins 持续集成前端项目并自动化部署到 Nginx 服务器](https://juejin.im/post/5b9769e5e51d450e531c548e)
+8. [一个骚气的文章目录自动生成器了解一下](https://juejin.im/post/5b6c29dde51d4518f5445c03)
+9. [Web Worker 初探](https://juejin.im/post/5b4af72ae51d45198d4b1388)
+10. [Git 学习笔记](https://segmentfault.com/a/1190000016665840)
 
 ### Vue 实践
 
 1. [Vue 项目数据动态过滤实践](https://juejin.im/post/5b9394fff265da0af406ed53)
-1. [Vue 项目预渲染机制引入实践](https://juejin.im/post/5b8ba25751882542f25a6cc8)
-1. [Vue 项目骨架屏注入实践](https://juejin.im/post/5b79a2786fb9a01a18267362)
-1. [Vue 使用中的小技巧](https://juejin.im/post/5ae02f39518825672f198ac2)
+2. [Vue 项目预渲染机制引入实践](https://juejin.im/post/5b8ba25751882542f25a6cc8)
+3. [Vue 项目骨架屏注入实践](https://juejin.im/post/5b79a2786fb9a01a18267362)
+4. [Vue 使用中的小技巧](https://juejin.im/post/5ae02f39518825672f198ac2)
 
 ### 源码阅读
 
 1. [vue\-router 源码阅读 \- 文件结构与注册机制](https://juejin.im/post/5c7160d46fb9a049d236ae79)
-1. [Vue源码阅读 \- 文件结构与运行机制](https://juejin.im/post/5b38830de51d455888216675)
-1. [Vue源码阅读 \- 依赖收集原理](https://juejin.im/post/5b40c8495188251af3632dfa)
-1. [Vue源码阅读 \- 批量异步更新与nextTick原理](https://juejin.im/post/5b50760f5188251ad06b61be)
+2. [Vue源码阅读 \- 文件结构与运行机制](https://juejin.im/post/5b38830de51d455888216675)
+3. [Vue源码阅读 \- 依赖收集原理](https://juejin.im/post/5b40c8495188251af3632dfa)
+4. [Vue源码阅读 \- 批量异步更新与nextTick原理](https://juejin.im/post/5b50760f5188251ad06b61be)
 
 ### Linux
 
 1. [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/5e5f13936fb9a07cdf534c62)
-1. [CentOS 安装部署 Yapi](https://juejin.im/post/5eafb85a5188256d4c5578c1)
+2. [CentOS 安装部署 Yapi](https://juejin.im/post/5eafb85a5188256d4c5578c1)
 
 ### JavaScript 设计模式
 
 1. [开篇 ： 为什么学习设计模式？](https://www.imooc.com/read/38/article/476)
-1. [this、new、bind、call、apply](https://www.imooc.com/read/38/article/477)
-1. [闭包与高阶函数](https://www.imooc.com/read/38/article/478)
-1. [ES6 中可能遇到的知识点](https://www.imooc.com/read/38/article/479)
-1. [继承与原型链](https://www.imooc.com/read/38/article/480)
-1. [设计原则](https://www.imooc.com/read/38/article/506)
-1. [单例模式：游戏的存档](https://www.imooc.com/read/38/article/481)
-1. [工厂模式：去小餐馆下馆子](https://www.imooc.com/read/38/article/482)
-1. [抽象工厂模式：又去小餐馆下馆子](https://www.imooc.com/read/38/article/483)
-1. [建造者模式：组装小汽车](https://www.imooc.com/read/38/article/484)
-1. [代理模式：找明星拍广告](https://www.imooc.com/read/38/article/486)
-1. [享元模式：驾考现场的考试车](https://www.imooc.com/read/38/article/487)
-1. [适配器模式：电源适配器](https://www.imooc.com/read/38/article/488)
-1. [装饰者模式：给新房子装修](https://www.imooc.com/read/38/article/489)
-1. [外观模式：遥控无人机](https://www.imooc.com/read/38/article/490)
-1. [组合模式：文档结构树](https://www.imooc.com/read/38/article/491)
-1. [桥接模式：组装变频洗衣机](https://www.imooc.com/read/38/article/492)
-1. [发布-订阅模式：去 adadis 买鞋](https://www.imooc.com/read/38/article/493)
-1. [策略模式：给螺丝刀换刀头](https://www.imooc.com/read/38/article/494)
-1. [状态模式：交通灯](https://www.imooc.com/read/38/article/495)
-1. [模板方法模式：咖啡厅制作咖啡](https://www.imooc.com/read/38/article/496)
-1. [迭代器模式：银行的点钞机](https://www.imooc.com/read/38/article/497)
-1. [命令模式：江湖通缉令](https://www.imooc.com/read/38/article/498)
-1. [职责链模式：领导，我想请个假](https://www.imooc.com/read/38/article/499)
-1. [中介者模式：找媒人介绍对象](https://www.imooc.com/read/38/article/500)
-1. [关于 MVC、MVP、MVVM](https://www.imooc.com/read/38/article/501)
-1. [模块模式](https://www.imooc.com/read/38/article/502)
-1. [链模式](https://www.imooc.com/read/38/article/503)
-1. [中间件](https://www.imooc.com/read/38/article/504)
+2. [this、new、bind、call、apply](https://www.imooc.com/read/38/article/477)
+3. [闭包与高阶函数](https://www.imooc.com/read/38/article/478)
+4. [ES6 中可能遇到的知识点](https://www.imooc.com/read/38/article/479)
+5. [继承与原型链](https://www.imooc.com/read/38/article/480)
+6. [设计原则](https://www.imooc.com/read/38/article/506)
+7. [单例模式：游戏的存档](https://www.imooc.com/read/38/article/481)
+8. [工厂模式：去小餐馆下馆子](https://www.imooc.com/read/38/article/482)
+9. [抽象工厂模式：又去小餐馆下馆子](https://www.imooc.com/read/38/article/483)
+10. [建造者模式：组装小汽车](https://www.imooc.com/read/38/article/484)
+11. [代理模式：找明星拍广告](https://www.imooc.com/read/38/article/486)
+12. [享元模式：驾考现场的考试车](https://www.imooc.com/read/38/article/487)
+13. [适配器模式：电源适配器](https://www.imooc.com/read/38/article/488)
+14. [装饰者模式：给新房子装修](https://www.imooc.com/read/38/article/489)
+15. [外观模式：遥控无人机](https://www.imooc.com/read/38/article/490)
+16. [组合模式：文档结构树](https://www.imooc.com/read/38/article/491)
+17. [桥接模式：组装变频洗衣机](https://www.imooc.com/read/38/article/492)
+18. [发布-订阅模式：去 adadis 买鞋](https://www.imooc.com/read/38/article/493)
+19. [策略模式：给螺丝刀换刀头](https://www.imooc.com/read/38/article/494)
+20. [状态模式：交通灯](https://www.imooc.com/read/38/article/495)
+21. [模板方法模式：咖啡厅制作咖啡](https://www.imooc.com/read/38/article/496)
+22. [迭代器模式：银行的点钞机](https://www.imooc.com/read/38/article/497)
+23. [命令模式：江湖通缉令](https://www.imooc.com/read/38/article/498)
+24. [职责链模式：领导，我想请个假](https://www.imooc.com/read/38/article/499)
+25. [中介者模式：找媒人介绍对象](https://www.imooc.com/read/38/article/500)
+26. [关于 MVC、MVP、MVVM](https://www.imooc.com/read/38/article/501)
+27. [模块模式](https://www.imooc.com/read/38/article/502)
+28. [链模式](https://www.imooc.com/read/38/article/503)
+29. [中间件](https://www.imooc.com/read/38/article/504)
 
 ### 从零开始学算法 TypeScript 版
 
@@ -140,11 +140,11 @@
 ### 翻译
 
 1. [Chrome 89 新功能一览，性能提升明显，大量 DevTools 新特性](https://juejin.cn/post/6935452749987315742)
-1. [Chrome 87 新特性解读，多年来 Chrome 性能最大提升！](https://juejin.cn/post/6896451677063544846)
-1. [\[译\] 使用 Recompose 来构建高阶组件](https://juejin.im/post/5c484a43e51d452ec621b6a9)
-1. [\[译\] 监测与调试 Vue\.js 的响应式系统：计算属性树（Computed Tree）](https://juejin.im/post/5c9ca62e5188251d80672b0d)
-1. [\[译\] 网速敏感的视频延迟加载方案](https://juejin.im/post/5c7b84356fb9a049ab0e5630)
-1. [\[译\] 使用 Proxy 来监测 Javascript 中的类](https://juejin.im/post/5c484b76e51d45522b4f5f7d)
+2. [Chrome 87 新特性解读，多年来 Chrome 性能最大提升！](https://juejin.cn/post/6896451677063544846)
+3. [\[译\] 使用 Recompose 来构建高阶组件](https://juejin.im/post/5c484a43e51d452ec621b6a9)
+4. [\[译\] 监测与调试 Vue\.js 的响应式系统：计算属性树（Computed Tree）](https://juejin.im/post/5c9ca62e5188251d80672b0d)
+5. [\[译\] 网速敏感的视频延迟加载方案](https://juejin.im/post/5c7b84356fb9a049ab0e5630)
+6. [\[译\] 使用 Proxy 来监测 Javascript 中的类](https://juejin.im/post/5c484b76e51d45522b4f5f7d)
 
 ### 阅读摘要
 
@@ -249,6 +249,7 @@
 
 > | 书名 | 阅读时间   | 推介等级 ↓ |
 > |--------| -------- | --------- |
+> | **刻意练习**  - 安德斯·艾利克森         | `2023` | ★★★ |
 > | **认知觉醒**  - 周玲 | `2022` | ★★★ |
 > | **只管去做**  - 邹小强   | `2021` | ★★★      |
 > | **单核工作法图解**     | `2019` | ★★★      |
