@@ -9,10 +9,11 @@
 
 ### 年终总结
 
-1. [SHERlocked93 的 2020 年终总结](https://segmentfault.com/a/1190000039728447)
-2. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
-3. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
-4. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
+1. [SHERlocked93 的 2021 年终总结](https://segmentfault.com/a/1190000043359299)
+2. [SHERlocked93 的 2020 年终总结](https://segmentfault.com/a/1190000039728447)
+3. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
+4. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
+5. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
 ### JavaScript
 
