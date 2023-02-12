@@ -150,21 +150,22 @@
 
 ### 阅读摘要
 
-1. [《刻意练习》+《刻意学习》阅读摘要](https://segmentfault.com/a/1190000043357952)
-2. [《张鑫旭12年技术写作经验》live 笔记](https://segmentfault.com/a/1190000043356203)
-3. [《认知觉醒》阅读摘要](https://segmentfault.com/a/1190000043356158)
-4. [《论持久战》阅读摘要](https://www.zhihu.com/question/30674909/answer/2290872826)
-5. [《快速阅读》阅读摘要](https://segmentfault.com/a/1190000039912076)
-6. [《白帽子讲Web安全》阅读摘要](https://segmentfault.com/a/1190000039906667)
-7. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)
-8. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)
-9. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)
-10. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)
-11. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)
-12. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)
-13. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)
-14. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)
-15. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)
+1. [《认知驱动》阅读摘要](https://segmentfault.com/a/1190000043414863)
+2. [《刻意练习》+《刻意学习》阅读摘要](https://segmentfault.com/a/1190000043357952)
+3. [《张鑫旭12年技术写作经验》live 笔记](https://segmentfault.com/a/1190000043356203)
+4. [《认知觉醒》阅读摘要](https://segmentfault.com/a/1190000043356158)
+5. [《论持久战》阅读摘要](https://www.zhihu.com/question/30674909/answer/2290872826)
+6. [《快速阅读》阅读摘要](https://segmentfault.com/a/1190000039912076)
+7. [《白帽子讲Web安全》阅读摘要](https://segmentfault.com/a/1190000039906667)
+8. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)
+9. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)
+10. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)
+11. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)
+12. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)
+13. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)
+14. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)
+15. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)
+16. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)
 
 ### 那些好用的工具
 
@@ -254,6 +255,7 @@
 
 > | 书名 | 阅读时间   | 推介等级 ↓ |
 > |--------| -------- | --------- |
+> | **认知驱动**  - 周玲    | `2023` | ★★★ |
 > | **刻意练习**  - 安德斯·艾利克森         | `2023` | ★★★ |
 > | **认知觉醒**  - 周玲 | `2022` | ★★★ |
 > | **只管去做**  - 邹小强   | `2021` | ★★★      |
