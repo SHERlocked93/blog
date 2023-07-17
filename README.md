@@ -284,6 +284,7 @@
 > | **认知觉醒**  - 周玲            | `2022` | ★★★ |
 > | **只管去做**  - 邹小强           | `2021` | ★★★      |
 > | **单核工作法图解**               | `2019` | ★★★      |
+> | **纳瓦尔宝典**  - 乔根森          | `2023` | ★★☆ |
 > | **小强升职记**  - 邹小强          | `2023` | ★★☆ |
 > | **拖延心理学**  - 简·博克         | `2023` | ★★☆ |
 > | **心流**  - 米哈里             | `2023` | ★★☆      |
@@ -335,8 +336,7 @@
 ---
 
 来自南京的前端打字员，本硕毕业于北京理工大学，慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38)
-作者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**前端下午茶
-**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
+作者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
 
 ![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
 
