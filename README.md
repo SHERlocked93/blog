@@ -18,6 +18,11 @@
 5. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
 6. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
+### CPP
+
+1. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
+
+
 ### JavaScript
 
 1. [这些 JS 中强大的操作符，总有几个你没听说过](https://juejin.cn/post/6918902650964557838)
