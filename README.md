@@ -18,10 +18,11 @@
 5. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
 6. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
-### CPP
+### C/CPP & QT 
 
-1. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
-2. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
+1. [Mac 上使用 CLion开发 QT6 配置](https://juejin.cn/post/7313043317722071059)
+2. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
+3. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
 
 
 ### JavaScript
