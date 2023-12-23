@@ -20,7 +20,7 @@
 
 ### C/CPP & QT 
 
-1. [Mac 上使用 CLion开发 QT6 配置](https://juejin.cn/post/7313043317722071059)
+1. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
 2. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
 3. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
 
@@ -184,7 +184,8 @@
 3. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)
 4. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)
 5. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903689654797598728)
-6. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://juejin.cn/post/7067703148734840869/)
+6. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://juejin.cn/post/7315304715809390592)
+7. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://juejin.cn/post/7067703148734840869)
 
 ### 理财
 
