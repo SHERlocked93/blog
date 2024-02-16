@@ -11,18 +11,19 @@
 
 ### 年终总结
 
-1. [SHERlocked93 的 2022 年终总结](https://segmentfault.com/a/1190000043367010)
-2. [SHERlocked93 的 2021 年终总结](https://segmentfault.com/a/1190000043359299)
-3. [SHERlocked93 的 2020 年终总结](https://segmentfault.com/a/1190000039728447)
-4. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
-5. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
-6. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
+1. [SHERlocked93 的 2023 年终总结](https://segmentfault.com/a/1190000044634219)
+2. [SHERlocked93 的 2022 年终总结](https://segmentfault.com/a/1190000043367010)
+3. [SHERlocked93 的 2021 年终总结](https://segmentfault.com/a/1190000043359299)
+4. [SHERlocked93 的 2020 年终总结](https://segmentfault.com/a/1190000039728447)
+5. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
+6. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
+7. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
 
 ### C/CPP & QT 
 
-1. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
-2. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
-3. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
+1. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)  <sub>`2023`</sub>
+2. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)  <sub>`2023`</sub>
+3. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)  <sub>`2023`</sub>
 
 ### Vue 实践
 
