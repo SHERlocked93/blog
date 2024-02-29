@@ -11,7 +11,7 @@
 
 ### 年终总结
 
-1. [SHERlocked93 的 2023 年终总结](https://segmentfault.com/a/1190000044634219)
+1. [SHERlocked93 的 2023 年终总结](https://segmentfault.com/a/1190000044634219)  <sub>`2024`</sub>
 2. [SHERlocked93 的 2022 年终总结](https://segmentfault.com/a/1190000043367010)
 3. [SHERlocked93 的 2021 年终总结](https://segmentfault.com/a/1190000043359299)
 4. [SHERlocked93 的 2020 年终总结](https://segmentfault.com/a/1190000039728447)
@@ -21,9 +21,10 @@
 
 ### C/CPP & QT 
 
-1. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)  <sub>`2023`</sub>
-2. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)  <sub>`2023`</sub>
-3. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)  <sub>`2023`</sub>
+1. [记一次使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
+2. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)  <sub>`2023`</sub>
+3. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)  <sub>`2023`</sub>
+4. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)  <sub>`2023`</sub>
 
 ### Vue 实践
 
