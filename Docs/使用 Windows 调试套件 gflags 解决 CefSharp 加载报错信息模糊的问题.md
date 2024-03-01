@@ -1,4 +1,4 @@
-# 记一次使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题
+# 使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题
 
 [TOC]
 
