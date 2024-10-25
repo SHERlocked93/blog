@@ -21,10 +21,11 @@
 
 ### C/CPP & QT 
 
-1. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
-2. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)  <sub>`2023`</sub>
-3. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)  <sub>`2023`</sub>
-4. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)  <sub>`2023`</sub>
+1. [《Effective C++》阅读摘要声明](https://juejin.cn/post/7429677850514784308)  <sub>`2024`</sub>
+2. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
+3. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)  <sub>`2023`</sub>
+4. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)  <sub>`2023`</sub>
+5. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)  <sub>`2023`</sub>
 
 ### Vue 实践
 
@@ -206,6 +207,7 @@
 
 > | 书名                        | 阅读时间   | 推介等级 ↓ |
 > |---------------------------|--------|--------|
+> | **Effective C++**  - Scott Meyers | `2024` | ★★★    |
 > | **CPU眼中的C/C++**  - 阿布编程   | `2023` | ★★★    |
 > | **C++ Primer**  - Lippman | `2023` | ★★★    |
 
