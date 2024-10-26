@@ -21,7 +21,7 @@
 
 ### C/CPP & QT 
 
-1. [《Effective C++》阅读摘要声明](https://juejin.cn/post/7429677850514784308)  <sub>`2024`</sub>
+1. [《Effective C++》阅读摘要](https://juejin.cn/post/7429677850514784308)  <sub>`2024`</sub>
 2. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
 3. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)  <sub>`2023`</sub>
 4. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)  <sub>`2023`</sub>
