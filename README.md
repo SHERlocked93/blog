@@ -21,11 +21,12 @@
 
 ### C/CPP & QT 
 
-1. [《Effective C++》阅读摘要](https://juejin.cn/post/7429677850514784308)  <sub>`2024`</sub>
-2. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
-3. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)  <sub>`2023`</sub>
-4. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)  <sub>`2023`</sub>
-5. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)  <sub>`2023`</sub>
+1. [C++ 为什么需要 extern "C"](https://juejin.cn/post/7457569911742349312)  <sub>`2025`</sub>
+2. [《Effective C++》阅读摘要](https://juejin.cn/post/7429677850514784308)  <sub>`2024`</sub>
+3. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
+4. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)  <sub>`2023`</sub>
+5. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)  <sub>`2023`</sub>
+6. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)  <sub>`2023`</sub>
 
 ### Vue 实践
 
@@ -355,7 +356,7 @@
 
 ---
 
-来自南京的前端打字员，慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38)
+来自南京的程序员，慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38)
 作者，[《React Cookbook中文版》](https://item.jd.com/13680953.html)首译、[《斯坦福程序设计入门课：JavaScript实现》](https://item.jd.com/13096560.html)合作译者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
 
 ![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
