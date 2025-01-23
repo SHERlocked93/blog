@@ -24,9 +24,9 @@
 1. [C++ 为什么需要 extern "C"](https://juejin.cn/post/7457569911742349312)  <sub>`2025`</sub>
 2. [《Effective C++》阅读摘要](https://juejin.cn/post/7429677850514784308)  <sub>`2024`</sub>
 3. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
-4. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)  <sub>`2023`</sub>
-5. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)  <sub>`2023`</sub>
-6. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)  <sub>`2023`</sub>
+4. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
+5. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
+6. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
 
 ### Vue 实践
 
@@ -162,9 +162,9 @@
 
 ### 阅读摘要
 
-1. [掌控情绪，成为自己的主宰——读《蛤蟆先生去看心理医生》](https://segmentfault.com/a/1190000043590970)  <sub>`2023`</sub>
-2. [《认知驱动》阅读摘要](https://segmentfault.com/a/1190000043414863)  <sub>`2023`</sub>
-3. [《刻意练习》+《刻意学习》阅读摘要](https://segmentfault.com/a/1190000043357952)  <sub>`2023`</sub>
+1. [掌控情绪，成为自己的主宰——读《蛤蟆先生去看心理医生》](https://segmentfault.com/a/1190000043590970)
+2. [《认知驱动》阅读摘要](https://segmentfault.com/a/1190000043414863)
+3. [《刻意练习》+《刻意学习》阅读摘要](https://segmentfault.com/a/1190000043357952)
 4. [《张鑫旭12年技术写作经验》live 笔记](https://segmentfault.com/a/1190000043356203)
 5. [《认知觉醒》阅读摘要](https://segmentfault.com/a/1190000043356158)
 6. [《论持久战》阅读摘要](https://www.zhihu.com/question/30674909/answer/2290872826)
@@ -187,7 +187,7 @@
 3. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)
 4. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)
 5. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903689654797598728)
-6. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://juejin.cn/post/7315304715809390592)  <sub>`2023`</sub>
+6. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://juejin.cn/post/7315304715809390592)
 7. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://juejin.cn/post/7067703148734840869)
 
 ### 理财
@@ -206,11 +206,12 @@
 
 ### `C` & `C++`
 
-> | 书名                        | 阅读时间   | 推介等级 ↓ |
-> |---------------------------|--------|--------|
+> | 书名                                | 阅读时间   | 推介等级 ↓ |
+> |-----------------------------------|--------|--------|
+> | **高级 C/C++编译技术**  - 米兰．斯恃瓦诺维奇     | `2025` | ★★★    |
 > | **Effective C++**  - Scott Meyers | `2024` | ★★★    |
-> | **CPU眼中的C/C++**  - 阿布编程   | `2023` | ★★★    |
-> | **C++ Primer**  - Lippman | `2023` | ★★★    |
+> | **CPU眼中的C/C++**  - 阿布编程           | `2023` | ★★★    |
+> | **C++ Primer**  - Lippman         | `2023` | ★★★    |
 
 ### `Linux`
 
