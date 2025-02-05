@@ -162,24 +162,25 @@
 
 ### 阅读摘要
 
-1. [《小强升职记》、《把时间当作朋友》 、《心流》 、《拖延心理学》、《微习惯》、《前方高能》、《自律 100 天》阅读摘要](https://juejin.cn/post/7467200003523805210) <sub>`2025`</sub>
-2. [掌控情绪，成为自己的主宰——读《蛤蟆先生去看心理医生》](https://segmentfault.com/a/1190000043590970)
-3. [《认知驱动》阅读摘要](https://segmentfault.com/a/1190000043414863)
-4. [《刻意练习》+《刻意学习》阅读摘要](https://segmentfault.com/a/1190000043357952)
-5. [《张鑫旭12年技术写作经验》live 笔记](https://segmentfault.com/a/1190000043356203)
-6. [《认知觉醒》阅读摘要](https://segmentfault.com/a/1190000043356158)
-7. [《论持久战》阅读摘要](https://www.zhihu.com/question/30674909/answer/2290872826)
-8. [《快速阅读》阅读摘要](https://segmentfault.com/a/1190000039912076)
-9. [《白帽子讲Web安全》阅读摘要](https://segmentfault.com/a/1190000039906667)
-10. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)
-11. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)
-12. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)
-13. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)
-14. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)
-15. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)
-16. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)
-17. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)
-18. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)
+1. [《把时间当作朋友》李笑来 阅读摘要](https://juejin.cn/post/7467851517435133962) <sub>`2025`</sub>
+2. [《小强升职记》、《心流》 、《拖延心理学》、《微习惯》、《前方高能》、《自律 100 天》阅读摘要](https://juejin.cn/post/7467200003523805210) <sub>`2025`</sub>
+3. [掌控情绪，成为自己的主宰——读《蛤蟆先生去看心理医生》](https://segmentfault.com/a/1190000043590970)
+4. [《认知驱动》阅读摘要](https://segmentfault.com/a/1190000043414863)
+5. [《刻意练习》+《刻意学习》阅读摘要](https://segmentfault.com/a/1190000043357952)
+6. [《张鑫旭12年技术写作经验》live 笔记](https://segmentfault.com/a/1190000043356203)
+7. [《认知觉醒》阅读摘要](https://segmentfault.com/a/1190000043356158)
+8. [《论持久战》阅读摘要](https://www.zhihu.com/question/30674909/answer/2290872826)
+9. [《快速阅读》阅读摘要](https://segmentfault.com/a/1190000039912076)
+10. [《白帽子讲Web安全》阅读摘要](https://segmentfault.com/a/1190000039906667)
+11. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)
+12. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)
+13. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)
+14. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)
+15. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)
+16. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)
+17. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)
+18. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)
+19. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)
 
 ### 那些好用的工具
 
