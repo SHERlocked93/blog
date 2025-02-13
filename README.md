@@ -22,11 +22,10 @@
 ### C/CPP & QT 
 
 1. [C++ 为什么需要 extern "C"](https://juejin.cn/post/7457569911742349312)  <sub>`2025`</sub>
-2. [《Effective C++》阅读摘要](https://juejin.cn/post/7429677850514784308)  <sub>`2024`</sub>
-3. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
-4. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
-5. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
-6. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
+2. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
+3. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
+4. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
+5. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
 
 ### Vue 实践
 
@@ -162,25 +161,26 @@
 
 ### 阅读摘要
 
-1. [《把时间当作朋友》李笑来 阅读摘要](https://juejin.cn/post/7467851517435133962) <sub>`2025`</sub>
-2. [《小强升职记》、《心流》 、《拖延心理学》、《微习惯》、《前方高能》、《自律 100 天》阅读摘要](https://juejin.cn/post/7467200003523805210) <sub>`2025`</sub>
-3. [掌控情绪，成为自己的主宰——读《蛤蟆先生去看心理医生》](https://segmentfault.com/a/1190000043590970)
-4. [《认知驱动》阅读摘要](https://segmentfault.com/a/1190000043414863)
-5. [《刻意练习》+《刻意学习》阅读摘要](https://segmentfault.com/a/1190000043357952)
-6. [《张鑫旭12年技术写作经验》live 笔记](https://segmentfault.com/a/1190000043356203)
-7. [《认知觉醒》阅读摘要](https://segmentfault.com/a/1190000043356158)
-8. [《论持久战》阅读摘要](https://www.zhihu.com/question/30674909/answer/2290872826)
-9. [《快速阅读》阅读摘要](https://segmentfault.com/a/1190000039912076)
-10. [《白帽子讲Web安全》阅读摘要](https://segmentfault.com/a/1190000039906667)
-11. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)
-12. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)
-13. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)
-14. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)
-15. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)
-16. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)
-17. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)
-18. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)
-19. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)
+1. [《Effective C++》阅读摘要](https://juejin.cn/post/7429677850514784308)  <sub>`2024`</sub>
+2. [《把时间当作朋友》李笑来 阅读摘要](https://juejin.cn/post/7467851517435133962) <sub>`2025`</sub>
+3. [《小强升职记》、《心流》 、《拖延心理学》、《微习惯》、《前方高能》、《自律 100 天》阅读摘要](https://juejin.cn/post/7467200003523805210) <sub>`2025`</sub>
+4. [掌控情绪，成为自己的主宰——读《蛤蟆先生去看心理医生》](https://segmentfault.com/a/1190000043590970)
+5. [《认知驱动》阅读摘要](https://segmentfault.com/a/1190000043414863)
+6. [《刻意练习》+《刻意学习》阅读摘要](https://segmentfault.com/a/1190000043357952)
+7. [《张鑫旭12年技术写作经验》live 笔记](https://segmentfault.com/a/1190000043356203)
+8. [《认知觉醒》阅读摘要](https://segmentfault.com/a/1190000043356158)
+9. [《论持久战》阅读摘要](https://www.zhihu.com/question/30674909/answer/2290872826)
+10. [《快速阅读》阅读摘要](https://segmentfault.com/a/1190000039912076)
+11. [《白帽子讲Web安全》阅读摘要](https://segmentfault.com/a/1190000039906667)
+12. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)
+13. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)
+14. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)
+15. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)
+16. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)
+17. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)
+18. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)
+19. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)
+20. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)
 
 ### 那些好用的工具
 
@@ -303,7 +303,7 @@
 > | **认知觉醒**  - 周玲                | `2022` | ★★★    |
 > | **只管去做**  - 邹小强               | `2021` | ★★★    |
 > | **单核工作法图解**  - 史蒂夫·诺特伯格       | `2019` | ★★★    |
-> | **软技能：代码之外的生存指南**  - 约翰·森梅兹             | `2024` | ★★☆    |
+> | **软技能：代码之外的生存指南**  - 约翰·森梅兹   | `2024` | ★★☆    |
 > | **微习惯**  - 斯蒂芬·盖斯             | `2023` | ★★☆    |
 > | **纳瓦尔宝典**  - 乔根森              | `2023` | ★★☆    |
 > | **小强升职记**  - 邹小强              | `2023` | ★★☆    |
