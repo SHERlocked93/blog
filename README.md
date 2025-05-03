@@ -21,11 +21,12 @@
 
 ### C/CPP & QT 
 
-1. [C++ 为什么需要 extern "C"](https://juejin.cn/post/7457569911742349312)  <sub>`2025`</sub>
-2. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
-3. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
-4. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
-5. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
+1. [C++ 中 VS 项目引入公共配置文件](https://juejin.cn/post/7500070714624540682)  <sub>`2025`</sub>
+2. [C++ 为什么需要 extern "C"](https://juejin.cn/post/7457569911742349312)  <sub>`2025`</sub>
+3. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
+4. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
+5. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
+6. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
 
 ### Vue 实践
 
