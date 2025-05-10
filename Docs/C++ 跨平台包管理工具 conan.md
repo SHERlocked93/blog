@@ -61,13 +61,13 @@ conan install .
 
 之后 conan 会在文件根目录生成 `.cmake`、`.sh`、`.bat` 等等一堆文件，这些文件都是 conan 生成的，用来给项目引入第三方库的脚本文件，如何引入我们在后面介绍。
 
-上面的方式会在根目录下生成一堆文件，一般我会在根目录下放一个 thridparty 目录，将 conan 生成的文件都放在这个目录下，这样方便管理，然后一些本地的第三方库或者驱动也用 `mklink /d` 命令创建软链接，指向对应文件夹，这样方便管理。
+上面的方式会在根目录下生成一堆文件，一般我会在根目录下放一个 `thridparty` 目录，将 conan 生成的文件都放在这个目录下，这样方便管理，然后一些本地的第三方库或者驱动也用 `mklink /d` 命令创建软链接，指向对应文件夹，这样方便管理。
 
 这是最小化配置的 conan 配置，我们可以在 `conanfile.txt` 或 `conanfile.py` 中配置更多的选项，比如指定第三方库的版本、指定第三方库的构建类型、指定第三方库的构建选项等等。
 
-下面介绍一下在项目中如何引入 conan。
+下面介绍一下在 VS 项目中如何引入 conan。
 
-## 2 VS 项目中引入 conan
+## 2. VS 项目中引入 conan
 
 ### 2.1 修改配置文件
 
@@ -128,7 +128,16 @@ conan install . -s build_type=Release --build=missing --deployer-package=*
 
 此时会在 `thirdparty/conan` 目录下生成 `conandeps.props` 等 VS 属性表，然后我们可以通过公共配置文件的方式引入生成的 VS 属性表，关于 VS 公共配置文件的使用方式参考 [<C++ 中 VS 项目引入公共配置文件>](https://juejin.cn/post/7500070714624540682) 
 
-我们要引入的配置文件是 conan 在 install 的时候生成的 `conandeps.props`，在项目配置 `.vcxproj` 中加入：
+### 2.2 引入 VS 项目
+
+对于上面的 generators 为 `"MSBuildToolchain", "MSBuildDeps"`，使用的是 Microsoft Visual Studio 的 MSBuild 编译工具链，此时在 `conan install` 命令会生成 `props` 文件供 VS 引入，如果使用的 generators 是 `"CMakeToolchain", "CMakeDeps"`，那么会生成 CMake 相关的一系列文件，可以从 `CMakeLists.txt` 文件中引入 conan 管理的库。
+
+其中：
+
+- `-Deps`：为三方库的所有依赖项生成 CMake 配置文件；
+- `-Toolchain`：根据传递给 conan 的系统、编译器、架构等信息，生成 CMake 构建三方库所需的所有信息。还会生成 cmake-presets 文件，以供一些 IDE 集成。
+
+现在我们要引入的配置文件是 conan 在 install 的时候生成的 `conandeps.props`，在项目配置 `.vcxproj` 中加入：
 
 ```xml
 <Import Project="$(SolutionDir)\thirdparty\conan\conandeps.props" Condition="exists('$(SolutionDir)\thirdparty\conan\conandeps.props')" Label="conandeps" />
@@ -140,14 +149,19 @@ conan install . -s build_type=Release --build=missing --deployer-package=*
 
 ![conandeps.props](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/202505031506521.png)
 
-第三方库的 props 配置文件中会分别引入其 Debug 和 Rlease 版本的目录配置和变量配置，其中指定了将第三方库目录和包含目录存放的具体位置，在项目 `.vcxproj` 中引入 `conandeps.props` 之后重启 VS，就可以从 conan 的缓存目录里直接 `#include` 相应库的头文件了。 
+第三方库的 props 配置文件中会分别引入其 Debug 和 Rlease 版本的目录配置和变量配置，其中指定了将第三方库目录和包含目录存放的具体位置，在项目 `.vcxproj` 中cli引入 `conandeps.props` 之后重启 VS，就可以从 conan 的缓存目录里直接 `#include` 相应库的头文件了。 
 
-> NOTE! 确保你的 cmake 命令是 Win 环境下的（如果也有 Cygwin 环境下的 cmake，将环境变量中的 `C:\Program Files\CMake\bin` 移动到前面），否则 conan 会找不到你的 VS 编译器。 ex:
+---
+
+网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下，你的点赞是我更新的最大动力！~
+
+> 参考文档：
 >
-> ![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/202505031539713.png)
+> 1. [conan使用(一)--安装和应用 - 星星,风,阳光 - 博客园](https://www.cnblogs.com/xl2432/p/11873394.html)
+> 2. [chu's blog - 从零开始的C++包管理器CONAN上手指南](http://chu-studio.com/posts/2019/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84C++%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8CONAN%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97)
 
 
+PS：本文同步更新于在下的博客 [Github - SHERlocked93/blog](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FSHERlocked93%2Fblog) 系列文章中，欢迎大家关注我的公众号 `CPP下午茶`，直接搜索即可添加，持续为大家推送 CPP 以及 CPP 周边相关优质技术文，共同进步，一起加油~
 
-[conan使用(一)--安装和应用 - 星星,风,阳光 - 博客园](https://www.cnblogs.com/xl2432/p/11873394.html)
+另外可以加入「前端下午茶交流qun」，vx 搜索  `sherlocked_93` 加我，备注 **1**，我拉你～
 
-[chu's blog - 从零开始的C++包管理器CONAN上手指南](http://chu-studio.com/posts/2019/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84C++%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8CONAN%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97)
