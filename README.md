@@ -21,7 +21,7 @@
 
 ### C/CPP & QT 
 
-1. [CPP 从 0 到 1 完成一个支持 future/promise 的 Windows 异步串口通信库](https://juejin.cn/post/7513029089147158567)  <sub>`2025`</sub>
+1. [C++ 从 0 到 1 完成一个支持 future/promise 的 Windows 异步串口通信库](https://juejin.cn/post/7513029089147158567)  <sub>`2025`</sub>
 2. [C++ 的 VS 项目中引入跨平台包管理工具 conan](https://juejin.cn/post/7502360105469542419)  <sub>`2025`</sub>
 3. [C++ 的 VS 项目引入公共配置文件](https://juejin.cn/post/7500070714624540682)  <sub>`2025`</sub>
 4. [C++ 为什么需要 extern "C"](https://juejin.cn/post/7457569911742349312)  <sub>`2025`</sub>
