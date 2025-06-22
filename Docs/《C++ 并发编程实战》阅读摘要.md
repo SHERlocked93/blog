@@ -44,7 +44,7 @@ int main() {
 
 
 
-🍓另外，如果线程对象不 `join()` 或 `detach()`，程序会在 `std::thread` 对象析构时崩溃（析构时调用 `std::terminate`）。
+🍓如果线程对象不 `join()` 或 `detach()`，程序会在 `std::thread` 对象析构时崩溃（析构时调用 `std::terminate`）。
 
 - C++ 标准（C++11 及以上）设计 `std::thread` 时，要求线程的生命周期管理必须显式由程序员控制。
 - 不调用 `join()` 或 `detach()` 意味着线程的状态未明确定义：
@@ -155,9 +155,148 @@ void main() {
 }
 ```
 
+### 移交线程归属权
 
+在 `std::thread` 对象析构前，必须明确这个线程是 `join` 还是 `detach`。不然，便会导致关联的线程终结。赋值操作也有类似的原则：只要 `std::thread` 对象正管控着一个线程，就不能简单地向它赋新值，否则该线程会因此被遗弃并 `terminate`。
+
+`std::thread` 支持移动操作，可以通过函数函数传出线程对象来转移线程归属权，也可以用右值作为参数传递（也只能是右值，因为线程不可复制）给函数。
+
+### 在运行时选择线程数量
+
+`std::thread::hardware_concurrency()` 可以获取程序在运行中可以真正并发的线程数，多核系统中，返回值可能是CPU核芯的数量。
+
+### 识别线程
+
+使用 `std::this_thread::get_id()` 可以获取线程 ID，在一些场景中，可以采用线程 ID 作为键值的关联容器，利用这种容器存储信息以便在线程间互相传递。
 
 ## 第 3 章 在线程间共享数据
+
+### 用互斥保护数据
+
+通过构造 `std::mutex` 的实例来创建互斥，调用成员函数 lock() 对其加锁，调用 `unlock()` 解锁；
+
+`std::lock_guard<T>`，在构造时给互斥加锁，在析构时解锁，从而保证互斥总被正确解锁。
+
+`std::scoped_lock` 可以同时锁多个互斥量，从而避免多个互斥量循环等待导致死锁的情况；
+
+### 死锁
+
+避免死锁的建议：始终按相同顺序对两个互斥加锁；
+
+即使没有牵涉锁，也会发生死锁现象。假定有两个线程，各自关联了 `std::thread` 实例，若它们同时在对方的 `std::thread` 实例上调用 `join()`，就能制造出死锁现象却不涉及锁操作。为了防范这个情况，需要注意，只要另一线程有可能正在等待当前线程，那么当前线程千万不能反过来等待它。
+
+避免死锁的建议：
+
+1. **避免嵌套锁**，假如已经持有锁，就不要试图获取第二个锁；万一确实需要多个锁，应该使用 `std::lock` 或 `std::scoped_lock` 对多个互斥量同时加锁；
+2. 持锁时避免调用由用户提供的程序接口；
+3. **固定顺序获取锁**，如果需要多个锁是必要的，却无法 `std::lock()` 同时加锁，只能退而求其次，在每个线程内部都依从固定顺序获取这些锁；
+4. **按层级加锁**，按特定方式规定加锁次序；
+
+### 初始化过程中保护共享数据
+
+`std::once_flag` 和 `std::call_once` 提供了一种线程安全的方式，确保某段初始化代码只执行一次，哪怕有多个线程并发访问，非常适用于**单例模式**或者**懒加载初始化**场景。
+
+```c++
+#include <iostream>
+#include <mutex>
+#include <thread>
+
+class Singleton {
+  static Singleton* instance;
+  static std::once_flag initFlag;
+  Singleton() { std::cout << "Singleton constructor\n"; }
+
+ public:
+  static Singleton& getInstance() {
+    std::call_once(initFlag, []() {  // 只会初始化一次
+      instance = new Singleton();
+    });
+    return *instance;
+  }
+
+  void sayHello() { std::cout << "Hello from Singleton!\n"; }
+};
+
+Singleton* Singleton::instance = nullptr;
+std::once_flag Singleton::initFlag;
+
+int main() {
+  auto task = []() {
+    Singleton::getInstance().sayHello();
+  };
+
+  std::thread t1(task), t2(task), t3(task);
+
+  t1.join();
+  t2.join();
+  t3.join();
+}
+```
+
+或者可以直接用静态声明，C11 规定静态数据的初始化只会在某一线程上单独发生，且不会在初始化完成前越过静态数据的声明继续运行，所以下面的方式可以替代 `std::call_once`
+
+```c++
+class my_class;
+Singleton& getInstance()   // 线程安全的初始化，C++11标准保证其正确性
+{
+    static Singleton instance;  
+    return instance;
+}
+```
+
+### 读写锁分离
+
+读写互斥：允许单独一个写线程进行完全排他的访问，也允许多个读线程共享数据或并发访问。
+
+```c++
+class SharedData {
+ public:
+  void write(int val) {
+    std::unique_lock<std::shared_mutex> lock(mutex_);
+    std::cout << "Writing " << val << " by " << std::this_thread::get_id() << "\n";
+    data_ = val;
+    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+  }
+
+  void read() {
+    std::shared_lock<std::shared_mutex> lock(mutex_);
+    std::cout << "Reading " << data_ << " by " << std::this_thread::get_id() << "\n";
+    std::this_thread::sleep_for(std::chrono::milliseconds(50));
+  }
+
+ private:
+  int data_ = 0;
+  std::shared_mutex mutex_;
+};
+
+int main() {
+  SharedData shared;
+  std::vector<std::thread> threads;
+  // 启动多个读线程
+  for (int i = 0; i < 5; ++i) threads.emplace_back([&] { shared.read(); });
+
+  // 启动一个写线程
+  threads.emplace_back([&] { shared.write(42); });
+
+  // 启动多个读线程
+  for (int i = 0; i < 5; ++i) threads.emplace_back([&] { shared.read(); });
+
+  for (auto& t : threads) t.join();
+}
+```
+
+这里多个线程可以同时读操作，但写操作是独占的，需要其他读线程释放锁才会执行，在写线程执行时，其他读线程会被阻塞。
+
+标准库中的 `std::shared_mutex` 一般实现是写优先，防止写线程被饿死。
+
+不要在持有共享锁的同时尝试获取独占锁，容易死锁。
+
+### 递归加锁
+
+`std::recursive_mutex` 让线程在同一互斥量上多次重复加锁，而无须解锁，其工作方式与 `std::mutex` 相似，不同之处是，其允许同一线程对某互斥的同一实例多次加锁。必须先释放全部的锁，才可以让另一个线程锁住该互斥。如对它调用了 3 次 `lock()` ，就必须调用 3 次 `unlock()`。
+
+使用递归锁需要谨慎，可能你并不需要递归锁。
+
 ## 第 4 章 并发操作的同步
 ## 第 5 章 C++内存模型和原子操作
 ## 第 6 章 设计基于锁的井发数据结构
