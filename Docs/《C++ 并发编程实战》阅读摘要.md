@@ -293,10 +293,127 @@ int main() {
 
 ## 第 4 章 并发操作的同步
 
+### 条件变量
+
+条件变量是与互斥相关联的一种用于多线程之间关于共享数据状态改变的通信机制，当一个线程的行为依赖于另外一个线程对共享数据状态的改变时，这时候就可以使用条件变量。本质上是忙等待（busy-wait）的一种优化，即设置一个线程不断轮训的方式；。
+
+条件变量将**解锁与挂起封装成原子操作**：等待一个条件变量时，会**解开**与该条件变量相关的锁，条件满足时该互斥量会被自动加锁，所以，在完成操作之后需要解锁。
+
+下面是一个典型的条件变量使用场景：
+
+```c++
+std::mutex mut;
+std::queue<int> data_queue;  // ⇽---  ①
+std::condition_variable data_cond;
+
+void data_preparation_thread() {  // 生产线程乙
+  while (more_data_to_prepare()) {
+    int const data = prepare_data();
+    {
+      std::lock_guard<std::mutex> lk(mut);
+      data_queue.push(data);  // ⇽---  ②
+    }
+    data_cond.notify_one();  // ⇽---  ③
+  }
+}
+void data_processing_thread() { // 消费线程甲
+  while (true) {
+    std::unique_lock<std::mutex> lk(mut, std::defer_lock);  // ⇽---  ④
+    data_cond.wait(lk, [] { return !data_queue.empty(); });
+    int data = data_queue.front();
+    data_queue.pop();
+    lk.unlock();  // ⇽---  ⑥
+
+    process(data);
+    if (is_last_chunk(data)) break;
+  }
+}
+```
+
+这里使用一个互斥锁来保护数据队列 1，2 处在互斥锁的保护下操作数据队列，3 处由于操作了数据队列，所以通知一个正在等待的线程以处理数据，4 处声明了一个 `std::unique_lock`，然后注意了，下面使用了一个条件变量来检查是否满足 lambda 表达式中的条件，如果：
+
+1. 不满足则会**释放** `mut` 然后阻塞线程继续等待被 `std::condition_variable` 来 `notify`，此时线程会让出 CPU，不消耗资源；
+2. 满足则会**锁住** `mut` 并且往下执行，所以在不需要互斥锁的时候，需要**解锁**操作；
+
+`wait()` 期间，条件变量可以多次查验给定的条件，次数不受限制；在查验时，互斥总会被锁住；另外，当且仅当传入的判定函数返回 true 时，`wait()` 才会立即返回。如果线程甲重新获得互斥，并且查验条件，而这一行为却不是直接响应线程乙的通知 `notify`，则称之为虚假唤醒（spurious wake）。
+
+由上面的代码示例，我们将条件变量、锁、队列等封装成一个线程安全的队列容器：
+
+```c++
+template <typename T>
+class threadsafe_queue {
+  mutable std::mutex mtx_;  // ①互斥必须用mutable修饰（针对const对象，准许其数据成员发生变动）
+  std::queue<T> data_queue;
+  std::condition_variable cv_;
+
+ public:
+  threadsafe_queue() {}
+  threadsafe_queue(threadsafe_queue const& other) {
+    std::lock_guard<std::mutex> lk(other.mtx_);
+    data_queue = other.data_queue;
+  }
+  void push(T new_value) {
+    std::lock_guard<std::mutex> lk(mtx_);
+    data_queue.push(new_value);
+    cv_.notify_one();
+  }
+  void wait_and_pop(T& value) {
+    std::unique_lock<std::mutex> lk(mtx_);
+    cv_.wait(lk, [this] { return !data_queue.empty(); });
+    value = data_queue.front();
+    data_queue.pop();
+  }
+  std::shared_ptr<T> wait_and_pop() {
+    std::unique_lock<std::mutex> lk(mtx_);
+    cv_.wait(lk, [this] { return !data_queue.empty(); });
+    std::shared_ptr<T> res(std::make_shared<T>(data_queue.front()));
+    data_queue.pop();
+    return res;
+  }
+  bool try_pop(T& value) {
+    std::lock_guard<std::mutex> lk(mtx_);
+    if (data_queue.empty()) return false;
+    value = data_queue.front();
+    data_queue.pop();
+    return true;
+  }
+  std::shared_ptr<T> try_pop() {
+    std::lock_guard<std::mutex> lk(mtx_);
+    if (data_queue.empty()) return std::shared_ptr<T>();
+    std::shared_ptr<T> res(std::make_shared<T>(data_queue.front()));
+    data_queue.pop();
+    return res;
+  }
+  bool empty() const {
+    std::lock_guard<std::mutex> lk(mtx_);
+    return data_queue.empty();
+  }
+};
+
+// 下面是使用示例
+threadsafe_queue<data_chunk> data_queue;  // ⇽---  ①
+void data_preparation_thread() {
+  while (more_data_to_prepare()) {
+    data_chunk const data = prepare_data();
+    data_queue.push(data);  // ⇽---  ②
+  }
+}
+void data_processing_thread() {
+  while (true) {
+    data_chunk data;
+    data_queue.wait_and_pop(data);  // ⇽---  ③
+    process(data);
+    if (is_last_chunk(data)) break;
+  }
+}
+```
+
+### 使用 future 等待一次性事件
+
 
 
 ## 第 5 章 C++内存模型和原子操作
-## 第 6 章 设计基于锁的井发数据结构
+## 第 6 章 设计基于锁的并发数据结构
 ## 第 7 章 设计无锁数据结构
 ## 第 8 章 设计共发代码
 ## 第 9 章 高级线程管理
