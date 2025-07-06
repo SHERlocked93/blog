@@ -303,7 +303,7 @@ int main() {
 
 ```c++
 std::mutex mut;
-std::queue<int> data_queue;  // ⇽---  ①
+std::queue<int> data_queue;  // ①
 std::condition_variable data_cond;
 
 void data_preparation_thread() {  // 生产线程乙
@@ -311,18 +311,18 @@ void data_preparation_thread() {  // 生产线程乙
     int const data = prepare_data();
     {
       std::lock_guard<std::mutex> lk(mut);
-      data_queue.push(data);  // ⇽---  ②
+      data_queue.push(data);  // ②
     }
-    data_cond.notify_one();  // ⇽---  ③
+    data_cond.notify_one();  // ③
   }
 }
 void data_processing_thread() { // 消费线程甲
   while (true) {
-    std::unique_lock<std::mutex> lk(mut, std::defer_lock);  // ⇽---  ④
+    std::unique_lock<std::mutex> lk(mut, std::defer_lock);  // ④
     data_cond.wait(lk, [] { return !data_queue.empty(); });
     int data = data_queue.front();
     data_queue.pop();
-    lk.unlock();  // ⇽---  ⑥
+    lk.unlock();  // ⑥
 
     process(data);
     if (is_last_chunk(data)) break;
@@ -333,11 +333,13 @@ void data_processing_thread() { // 消费线程甲
 这里使用一个互斥锁来保护数据队列 1，2 处在互斥锁的保护下操作数据队列，3 处由于操作了数据队列，所以通知一个正在等待的线程以处理数据，4 处声明了一个 `std::unique_lock`，然后注意了，下面使用了一个条件变量来检查是否满足 lambda 表达式中的条件，如果：
 
 1. 不满足则会**释放** `mut` 然后阻塞线程继续等待被 `std::condition_variable` 来 `notify`，此时线程会让出 CPU，不消耗资源；
-2. 满足则会**锁住** `mut` 并且往下执行，所以在不需要互斥锁的时候，需要**解锁**操作；
+2. 满足则会**锁住** `mut` 并且往下执行，所以在不需要互斥锁的时候，需要**解锁**操作； 
 
-`wait()` 期间，条件变量可以多次查验给定的条件，次数不受限制；在查验时，互斥总会被锁住；另外，当且仅当传入的判定函数返回 true 时，`wait()` 才会立即返回。如果线程甲重新获得互斥，并且查验条件，而这一行为却不是直接响应线程乙的通知 `notify`，则称之为虚假唤醒（spurious wake）。
+`wait()` 期间，条件变量可以多次查验给定的条件，次数不受限制；在查验时，互斥总会被锁住；另外，当且仅当传入的判定函数返回 true 时，`wait()` 才会立即返回。如果线程甲重新获得互斥，并且查验条件，而这一行为却不是直接响应线程乙的通知 `notify`，则称之为**虚假唤醒**（Spurious Wakeup）。
 
-由上面的代码示例，我们将条件变量、锁、队列等封装成一个线程安全的队列容器：
+**唤醒丢失**（Lost Wakeup） 是指在多线程环境中，由于线程间的竞争或调度问题，一个线程在等待条件变量时错过了其他线程发出的唤醒信号（notify_one() 或 notify_all()）。这通常发生在通知信号发出时，等待线程尚未进入 wait() 状态，导致信号被“丢失”，等待线程可能永远无法被唤醒。
+
+由上面的代码示例，将条件变量、锁、队列等封装成一个线程安全的队列容器：
 
 ```c++
 template <typename T>
@@ -391,30 +393,56 @@ class threadsafe_queue {
 };
 
 // 下面是使用示例
-threadsafe_queue<data_chunk> data_queue;  // ⇽---  ①
+threadsafe_queue<data_chunk> data_queue;  // ①
 void data_preparation_thread() {
   while (more_data_to_prepare()) {
     data_chunk const data = prepare_data();
-    data_queue.push(data);  // ⇽---  ②
+    data_queue.push(data);  // ②
   }
 }
 void data_processing_thread() {
   while (true) {
     data_chunk data;
-    data_queue.wait_and_pop(data);  // ⇽---  ③
+    data_queue.wait_and_pop(data);  // ③
     process(data);
     if (is_last_chunk(data)) break;
   }
 }
 ```
 
-### 使用 future 等待一次性事件
+### 使用 future
+
+若线程需等待某个特定的一次性事件发生，可以一个 future 代表目标事件。一旦目标事件发生，future 即进入就绪状态，无法重置。
+
+C++ 标准库有两种 future，分别为独占 `std::future<>` 和共享 `std::shared_future<>`，同一事件仅允许关联唯一一个 `std::future` 实例，但可以关联多个`std::shared_future` 实例。只要目标事件发生，与 `std::shared_future` 关联的所有实例就会同时就绪，并且，都可以访问与该目标事件关联的数据。
+
+获取 `std::future` 可以有好几种方法：
 
 若线程需等待某个特定的一次性事件发生，则可取 `future` 代表目标事件，一旦目标事件发生， `future` 即进入就绪状态，无法逆转。
 
+1. `std::async` 处可获得 `std::future` 对象，运行的函数一旦完成，其返回值就由该对象最后持有。若要用到这个值，只需在 future 对象上调用 get()，当前线程就会阻塞，以便 future 准备妥当并返回该值。
+2. `std::packaged_task<>` 连结了 future 对象与函数（或可调用对象）。`std::packaged_task<>` 在执行任务时，会调用关联的函数（或可调用对象），把返回值保存为future 的内部数据，并令 future 准备就绪。相当于 `std::function` 的异步版本。
+3. `std::promise<T>` 给出了一种异步求值的方法，某个 `std::future<T>` 对象与结果关联，能延后读出需要求取的值。
 
+基于时间段的等待可由 `std::chrono::duration<>` 来完成。例如：等待 future 状态变为就绪需要 35 毫秒：
+
+```c++
+std::future<int> f = std::async(some_task);
+if(f.wait_for(std::chrono::milliseconds(35))==std::future_status::ready)
+  do_something_with(f.get());
+```
+等待函数会返回状态值，表示是等待是超时，还是继续等待。等待 future 超时返回 `std::future_status::timeout`，当 future 状态改变，则会返回 `std::future_status::ready` 。当与future相关的任务延迟了，则会返回 `std::future_status::deferred` 。
+
+基于时间点的等待常使用带有后缀 `_until` 的等待函数。
+
+`std::latch` 是 C++20 引入的一次性同步工具，适合等待多个事件完成。比如等待多个 future 对象有结果。
+
+`std::barrier` 是 C++20 引入的循环同步工具，主要用于多阶段线程协作。
 
 ## 第 5 章 C++内存模型和原子操作
+
+
+
 ## 第 6 章 设计基于锁的并发数据结构
 ## 第 7 章 设计无锁数据结构
 ## 第 8 章 设计共发代码
