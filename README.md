@@ -21,14 +21,15 @@
 
 ### C/CPP & QT 
 
-1. [C++ 从 0 到 1 完成一个支持 future/promise 的 Windows 异步串口通信库](https://juejin.cn/post/7513029089147158567)  <sub>`2025`</sub>
-2. [C++ 的 VS 项目中引入跨平台包管理工具 conan](https://juejin.cn/post/7502360105469542419)  <sub>`2025`</sub>
-3. [C++ 的 VS 项目引入公共配置文件](https://juejin.cn/post/7500070714624540682)  <sub>`2025`</sub>
-4. [C++ 为什么需要 extern "C"](https://juejin.cn/post/7457569911742349312)  <sub>`2025`</sub>
-5. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
-6. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
-7. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
-8. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
+1. [C++ 中的编译和链接](https://juejin.cn/post/7526575166382424114)  <sub>`2025`</sub>
+2. [C++ 从 0 到 1 完成一个支持 future/promise 的 Windows 异步串口通信库](https://juejin.cn/post/7513029089147158567)  <sub>`2025`</sub>
+3. [C++ 的 VS 项目中引入跨平台包管理工具 conan](https://juejin.cn/post/7502360105469542419)  <sub>`2025`</sub>
+4. [C++ 的 VS 项目引入公共配置文件](https://juejin.cn/post/7500070714624540682)  <sub>`2025`</sub>
+5. [C++ 为什么需要 extern "C"](https://juejin.cn/post/7457569911742349312)  <sub>`2025`</sub>
+6. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
+7. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
+8. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
+9. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
 
 ### Vue 实践
 
