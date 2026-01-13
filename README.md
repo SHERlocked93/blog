@@ -4,14 +4,15 @@
 
 ### 作品
 
-1. [wx-updata: 微信小程序官方 setData 最佳替代品，只修改 data 中你想修改的部分 ✈️](https://github.com/SHERlocked93/wx-updata)
-2. [progress-catalog: 一个好玩的目录自动生成插件 😜](https://github.com/SHERlocked93/progress-catalog)
+1. [SHERlocked93/EasyByteParserCpp: 按INI文件配置从字节串中解析数据并导出map/JSON格式数据](https://github.com/SHERlocked93/EasyByteParserCpp)
+2. [wx-updata: 微信小程序官方 setData 最佳替代品，只修改 data 中你想修改的部分 ✈️](https://github.com/SHERlocked93/wx-updata)
+3. [progress-catalog: 一个好玩的目录自动生成插件 😜](https://github.com/SHERlocked93/progress-catalog)
 
 ## 博客
 
 ### 年终总结
 
-1. [SHERlocked93 的 2023 年终总结](https://segmentfault.com/a/1190000044634219)  <sub>`2024`</sub>
+1. [SHERlocked93 的 2023 年终总结](https://segmentfault.com/a/1190000044634219)
 2. [SHERlocked93 的 2022 年终总结](https://segmentfault.com/a/1190000043367010)
 3. [SHERlocked93 的 2021 年终总结](https://segmentfault.com/a/1190000043359299)
 4. [SHERlocked93 的 2020 年终总结](https://segmentfault.com/a/1190000039728447)
