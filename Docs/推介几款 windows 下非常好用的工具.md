@@ -1,22 +1,18 @@
-
-
 # 推介几款 windows 下非常好用的工具
 
-[TOC]
-
-![](https://i.loli.net/2019/12/25/tk54zCWj1oFiPTu.jpg)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/01c137be30aa037df61abec4f3eadfd244837af28e10cfe67adb75bf6a0a67d4.jpg)
 
 在下工具控一枚，平时会留意收集各种各样给我们生活生产带来便捷的工具，毕竟人生苦短；下面主要介绍一些我在 Windows 系统上发现的一些好用的工具，并且会一笔带过主要优点特点，具体详细用法可以搜一下，相关帖子挺多的，每个都详细介绍的话篇章那就太长啦。
 
 本文是 [<那些好用的工具>](https://github.com/SHERlocked93/blog?tab=readme-ov-file#%E9%82%A3%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7) 系列文章之一：
 
-1. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://juejin.im/post/5ee9fca5f265da02d3377e38)
-2. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)
-3. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)
-4. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)
-5. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903689654797598728)
-6. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://juejin.cn/post/7315304715809390592)
-7. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://juejin.cn/post/7067703148734840869)
+1. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://github.com/SHERlocked93/blog/blob/master/Docs/%E7%94%9F%E5%91%BD%E5%9C%A8%E4%BA%8E%E6%8A%98%E8%85%BE%EF%BC%81%E8%BF%99%E4%BA%9B%E6%A1%8C%E9%9D%A2%E5%A5%BD%E7%89%A9%E6%8F%90%E5%8D%87%E4%BD%A0%E7%9A%84%E6%90%AC%E7%A0%96%E5%B9%B8%E7%A6%8F%E5%BA%A6.md)
+2. [推介几款 windows 下非常好用的工具](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20windows%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7.md)
+3. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%80%E5%BC%B9%EF%BC%89.md)
+4. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%BC%B9%EF%BC%89.md)
+5. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%89%E5%BC%B9%EF%BC%89.md)
+6. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E5%9B%9B%E5%BC%B9%EF%BC%89.md)
+7. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%A5%BD%E7%94%A8%E4%B8%8D%E5%8D%A1%EF%BC%8C%E8%BF%99%E4%BA%9B%E6%8F%92%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE%E8%AE%A9%E4%BD%A0%E7%9A%84%20Webstorm%20%E6%9B%B4%E7%89%9B%E9%80%BC%EF%BC%81.md)
 
 另外，我弄了个 [Github 仓库](https://github.com/SHERlocked93/awesome-tools)记录这些好用的软件，包含 Mac/Win/IDE/浏览器 里好用的应用和插件，将经常会更新，也可以给我提 issue，人生苦短，如果你不知道使用什么样的软件，不妨试试我推荐的这些软件，可称为 SHERlocked93 严选。
 
@@ -28,7 +24,7 @@
 
 值得一提的是搜索关键词功能，让我们可以非常便捷的打开相应网站或在对应网站搜索，比如输入`gg 我的存款呢？`就可以直接使用默认浏览器在谷歌搜索中搜索了，我们还可以自定义输入其他关键字，只需把搜索链接中的关键字换成`{query}` ~
 
-![](https://i.loli.net/2019/01/03/5c2e27585eb71.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/86781dde6697c672fe642de7330fbe1007abeae96499e2d41c6462c0138e53f4.png)
 
 ## 2. Ditto
 
@@ -38,7 +34,7 @@
 
 只需设置寥寥几个快捷键，就可以很方便的操作剪切板，带来极大幸福~
 
-![](https://i.loli.net/2019/01/03/5c2e140547472.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/9e6338963baf079f67451da0aa1e461ad3288a243fabb9774de668ef3559c43e.png)
 
 ## 3. Winsnap
 
@@ -46,7 +42,7 @@
 
 它可以使用全屏、应用程序、窗口、对象等捕捉模式，更牛的是它还可以在截图的时候同时选择和捕捉多个对象，按住`Ctrl`或`Shift`选择多个窗口或对象...这个就比较厉害了，不信你试试？
 
-![](https://i.loli.net/2019/01/03/5c2e1bff50446.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/a73685119bfedf35b5d78d295da2f4584246a058aaa026c3d5f7ca346de396ee.png)
 
 ## 4. Cmder
 
@@ -68,7 +64,7 @@ gs=git status $*
 
 记得安装完在配置`Setting-Startup-Environment`里面加上`set LANG=zh_CN.UTF8`，否则输出的一些中文会乱码；
 
-![](https://i.loli.net/2019/01/03/5c2e1cee1ba1d.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/6c4c4085da6cc64ee4b1fd0eeef98c653da42a59f7cb206ecd508e3b5066388b.png)
 
 ## 5. Typora
 
@@ -76,7 +72,7 @@ gs=git status $*
 
 另外 Typora 还支持 Latex、`[TOC]`动态目录、拖拽图片自动生成本地预览链接、自定义主题等方便的功能；
 
-![](https://i.loli.net/2019/01/03/5c2e27367a215.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/541f24d8d782c606d9c1a17e850501a37989fdc969e89ce381422935b9181e64.png)
 
 ## 6. Quick Look
 
@@ -84,7 +80,7 @@ gs=git status $*
 
 用它来看一些代码什么的，甚至不需要 Sublime\VSCode 启动就可以直接看了，如果只是速览一下的话是非常适合的了。
 
-![](https://i.loli.net/2019/01/04/5c2eb5f3a8429.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/4bf371965eb186a1d53df9d1292e0820b6687ca47015373646b4090c80ff529d.png)
 
 ## 7. Myper Splash
 
@@ -92,7 +88,7 @@ gs=git status $*
 
 另外 MyperSplash 可以设置自动每天自动更换壁纸或锁屏，每天早晨来到办公室点亮屏幕就可以看到 Awesome 的锁屏或壁纸，让你带着好心情开启一天的工作。
 
-![](https://i.loli.net/2019/01/04/5c2eb8b503cea.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/c05542ea2dbef77c0786f22ad20d3a620b60a9715aae0d60936624ae3d8e2194.png)
 
 ## 8. GifCam / ScreenToGif
 
@@ -100,17 +96,17 @@ gs=git status $*
 
 GifCam 小巧便捷，如果希望快速录屏分享，那么它是不二选择，可以选择录屏帧率，录制的过程可以调整窗口大小和位置，也可以暂停和继续，足以满足大部分的使用场景；
 
-![](https://i.loli.net/2019/01/04/5c2ebe13b641f.gif)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/423aed8ba4c7855f8d7c0bf38bf4664fc1a08da4dd89b97aaaf382e1f0d19a0a.gif)
 
 SceenToGif 的编辑功能更为强大，可以单独操作录制的帧，删除或者加快或者修改，试试看吧~
 
-![](https://i.loli.net/2019/01/04/5c2ebe43f24a7.gif)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/0be09b7ee466c88ef3d8a20a9c2fb52840d21d7b58684357e1c59db0cad43d05.gif)
 
 ## 9. Free Download Manage
 
 [Free Download Manage](https://www.freedownloadmanager.org/) (FDM) 是一款免费的下载工具，如果你已经受够了国内一些软件的广告和限速，那么 FDM 是一个不错的选择，另外多线程、断点续传、计划任务等功能让 FDM 值得推介。
 
-![](https://i.loli.net/2019/01/04/5c2ebf112069d.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/3d102b9a44b9d713c9a65d79701b9e1e1d44f649b0ca7f0bbb3a71d6cf914eff.png)
 
 ## 10. Sourcetree
 
@@ -118,4 +114,4 @@ SceenToGif 的编辑功能更为强大，可以单独操作录制的帧，删除
 
 Sourcetree 可以大大简化你的代码操作，特别是对于一些不甚熟悉 Git 命令的人来说灰常实用；一些对 Git 操作比较熟练的用户也可以用它来提升效率，减少出错。
 
-![](https://i.loli.net/2019/01/04/5c2ec0ec203f1.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/175779a7c317621e8a68d4b96d1067a193f37b66615387a7f9938c856d336aec.png)

@@ -1,9 +1,5 @@
 # C++ 中左值引用和右值引用
 
-[TOC]
-
-
-
 最近看拷贝复制部分内容的时候看到移动构造函数和移动赋值运算符的声明中有个 `&&` 符号，另外在看多线程的时候也看到了这个符号，所以把这个右值引用集中学习了一下，同时做了一些输出，希望也可以帮助到大家。
 
 C 语言中的左/右值和 C++ 中的左/右值是不一样的，C 语言中的左值可以位于赋值语句的左侧，右值不能，比较直观，但 C++ 中的左值和右值里面的内容就比较多一些。
@@ -55,7 +51,7 @@ int&& q = std::move(m);    // 正确：std::move可以将左值转换为右值
 
 看《C++ Primer》这本书到的拷贝控制这一章的时候，就会经常碰到右值引用符号 `&&` ，它 常常用在移动构造函数和移动赋值运算符上。
 
-![CPP拷贝控制](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/%E6%8B%B7%E8%B4%9D%E6%8E%A7%E5%88%B6-20231016-GFSbVF.png)
+![CPP拷贝控制](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/%E6%8B%B7%E8%B4%9D%E6%8E%A7%E5%88%B6-20231016-GFSbVF.png)
 
 移动构造函数和移动赋值运算符要求传入右值，这时需要使用 `std::move` 获取右值。
 
@@ -209,13 +205,6 @@ int main()
 
 ---
 
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下哦，你的点赞是我更新的最大动力！ 🤣~
-
-
 > 参考文档：
 >
 > 1. [MDN - 引用声明符：`&&`](https://learn.microsoft.com/zh-cn/cpp/cpp/rvalue-reference-declarator-amp-amp?view=msvc-170)
-
-PS：本文收录在在下的博客 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog) 系列文章中，欢迎大家关注我的公众号 `前端下午茶`，直接搜索即可添加或者点[这里](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/TJt4p2-19-56-21.jpg)添加，持续为大家推送前端以及前端周边相关优质技术文，共同进步，一起加油~
-
-另外可以加入「前端下午茶交流群」微信群，微信搜索  `sherlocked_93` 加我好友，备注**加群**，我拉你入群～

@@ -1,7 +1,5 @@
 # C++ 中 Linux 下 Socket 编程
 
-[TOC]
-
 Socket 套接字是网络间不同计算机上的进程通信的一种常用方法，利用三元组（ip地址，协议，端口）就可以唯一标识网络中的进程，网络中的进程通信可以利用这个标志与其它进程进行交互。Socket 也是对 TCP/IP 协议族的一种封装，是应用层与 TCP/IP 协议族通信的中间软件抽象层。
 
 ## 1. Socket 基本概念与基本流程
@@ -20,11 +18,11 @@ Linux 平台下，`socket()` 返回的值被称为文件描述符 fd（File Desc
 
 客户端下就不需要 `bind` 分配 IP 和端口号，而是由 `connect` 自动分配端口号加上自身的 IP，然后使用 `write/read` 和服务端交换数据，最后 `close` 关闭连接。
 
-![Linux平台下的socket通信](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/cpp-socket%E9%80%9A%E4%BF%A1linux.drawio-20231019-YzDlxj.png)
+![Linux平台下的socket通信](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/cpp-socket%E9%80%9A%E4%BF%A1linux.drawio-20231019-YzDlxj.png)
 
 Windows 平台和 Linux 的差别较小，在创建套接字之前需要调用 `WSAStartUp()`，关闭连接使用 `closesocket()`，关闭连接之后使用 `WSACleanUp()` 注销，其他没差别了，所以在项目中可以很方便地使用通过 `_WIN32_` 宏来判断环境写跨端代码。
 
-![Win平台下的socket通信](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/cpp-socket%E9%80%9A%E4%BF%A1win.drawio-20231019-P18SzD.png)
+![Win平台下的socket通信](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/cpp-socket%E9%80%9A%E4%BF%A1win.drawio-20231019-P18SzD.png)
 
 ## 2. 套接字创建
 
@@ -48,7 +46,7 @@ int udpFD = socket(PF_INET, SOCK_DGRAM，IPPROTO_UDP);
 
 分别解释一下这两行，socket 第一个参数 `PF_INET` 表示是 IPv4 协议族，有时候用 `AF_INET` 宏，`PF` 的意思是 Protocol Family 协议族，`AF` 意为 Address Family，在 `socket.h` 文件中可以看到，其实是同一个值。
 
-![socket.h中的define](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/image-20230824151529147-20230824-3PeJgh.png)
+![socket.h中的define](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/image-20230824151529147-20230824-3PeJgh.png)
 
 第一个参数还有其他取值 `PF_INET6` 表示 IPv6，`PF_LOCAL` 表示本地协议 UNIX 协议族，这些都不常用，还有其他的就更不常用了。
 
@@ -62,13 +60,13 @@ TCP 用**重传机制**（Retransmission）保证数据一定传递到，如果�
 
 传输数据没有数据边界，`write` 好几次，可能一次 `read` 就全取出，也可能 `write` 一次，需要 `read` 好几次才取出（粘包问题）。这是因为调用 `write` 函数时，`write` 在数据被移到输出 I/O 缓冲的时候就已经返回了，TCP 协议会保证在适当的时候（不管是分别传送还是一次性传送）传向对方的输入 I/O 缓冲，这时对方调用 `read` 函数会从输入缓冲读取数据。
 
-![TCP套接字的IO缓冲](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/TCP%E5%A5%97%E6%8E%A5%E5%AD%97%E7%9A%84IO%E7%BC%93%E5%86%B2.drawio-20230829-r7UdCu.png)
+![TCP套接字的IO缓冲](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/TCP%E5%A5%97%E6%8E%A5%E5%AD%97%E7%9A%84IO%E7%BC%93%E5%86%B2.drawio-20230829-r7UdCu.png)
 
 每个套接字创建时，I/O 缓冲就会自动创建，并且每个套接字中单独存在。即使关闭套接字，输出缓冲中遗留的数据也会继续传递，但输入缓冲中的数据会丢失。
 
 `write` 到输出缓冲区后，TCP 会将内容分段（Segmentation）并封装为 TCP 数据包进行发送。TCP 的封包主要是增加 TCP 首部，一些重要的字段比如 `Win`（窗口）、`Seq`（序列号）、`Len`（数据段长度）、`Ack`（确认号，确认接受到了哪些字节）等等，可以打开 `wireshark` 看一下具体的包。接收方在接收到这些数据包后，重新组装成原始的字节流。
 
-![TCP包](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/image-20230829155648493-20230829-l6GUjX.png)
+![TCP包](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/image-20230829155648493-20230829-l6GUjX.png)
 
 至于一次传输的数据量大小，则取决于 TCP 的**滑动窗口**（Sliding Window）和**拥塞控制**（Congestion Control），它们可以动态地调整 TCP 数据传输的速度以及窗口大小，以此来实现流量控制并防止网络拥塞。
 
@@ -94,7 +92,6 @@ UDP 套接字的特点如下：
 2. 传输的数据有数据边界，`write` 几次，如果没有丢失的话也就需要 `read` 几次。
 3. 限制每次传输的数据大小。
 4. 传输的数据可能丢失也可能损毁。
-
 
 ## 3. 基于 TCP 的套接字
 
@@ -243,13 +240,14 @@ int shutdown(int sock, int howto);
 //     SHUT_WR : 断开输出流，套接字无法传输数据
 //     SHUT_RDWR : 同时断开 I/O 流
 ```
+
 #### 3.5.2 Time-Wait 状态
 
 当使用 TCP 协议进行通信时，其中一方主动关闭连接后，会进入 Time-Wait 状态。在该状态下，该端口在一段时间内不接受新的连接请求。这个时间段通常是两倍的最大段生存时间 MSL（Maximum Segment Lifetime），MSL 的值在不同操作系统中可能有所不同，一般为 30 秒到几分钟。
 
 Time-Wait 状态的持续时间是为了保证网络中所有的剩余数据包都能够传递到目的地或被丢弃，以及确保所有的连接关闭消息都能够传达给对方。在 Time-Wait 状态下，端口会保持开放，以便接收对方可能发送的最后一个确认（ACK）包。这样做可以确保双方都能成功关闭连接，并防止已关闭连接的端口被新的连接误用。此时如果连接，会报 `bind() error` 错，需要等待一段时间之后才可以重新连这个端口。
 
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/image-20230905144451817-20230905-JkCOh2.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/image-20230905144451817-20230905-JkCOh2.png)
 
 Time-Wait 不仅存在于服务器端，不管是服务器端还是客户端，先断开连接的套接字必然会有 Time-Wait。但客户端 Time-Wait 并没有多少感知，因为客户端每次都会动态分配端口号，因此无需过多关注 Time-Wait 状态。
 
@@ -301,7 +299,7 @@ int main(int argc, char *argv[]) {
     error_handling("listen() error");
 
   clnt_adr_sz = sizeof(clnt_adr);
-  
+
   // 调用 5 次 accept 函数，共为 5 个客户端提供服务
   for (i = 0; i < 5; i++) {
     clnt_sock = accept(serv_sock, (struct sockaddr *)&clnt_adr, &clnt_adr_sz);   // 受理连接
@@ -395,7 +393,7 @@ ssize_t recvfrom(int sock, void *buff, size_t nbytes, int flags,
 
 所有套接字都应分配 IP 地址和端口，只是直接分配还是自动分配的区别，TCP 和 UDP 的服务端需要 `bind` 一个本地的端口（地址一般用 `INADDR_ANY`），TCP 客户端套接字是在调用 `connect` 函数时自动分配 IP 和端口号，而 UDP 的客户端一般在首次调用 `sendto` 的时候会给套接字自动分配 IP （主机 IP）和端口，分配的 IP 和端口号会保留到程序结束。
 
-![cpp-socket通信linux_udp](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/cpp-socket%E9%80%9A%E4%BF%A1linux_udp.drawio-20230905-L02C1f.png)
+![cpp-socket通信linux_udp](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/cpp-socket%E9%80%9A%E4%BF%A1linux_udp.drawio-20230905-L02C1f.png)
 
 与 TCP 发送多次一次就可以接收到不同，UDP 里 `sendto` 发送几次，就需要调用几次 `recvfrom`。
 
@@ -443,7 +441,7 @@ int main(int argc, char *argv[]) {
     clnt_adr_sz = sizeof(clnt_adr);
     str_len = recvfrom(serv_sock, message, BUF_SIZE, 0, (struct sockaddr *)&clnt_adr, &clnt_adr_sz);  // 读
     printf("Received data: %s from:%s\n", message, inet_ntoa(clnt_adr.sin_addr));
-    
+
     // 通过上面的函数调用同时获取数据传输端的地址，利用该地址进行逆向重传
     sendto(serv_sock, message, str_len, 0, (struct sockaddr *)&clnt_adr, clnt_adr_sz);
   }
@@ -513,15 +511,8 @@ struct hostent *gethostbyaddr(const char *addr, socklen_t len, int family);
 
 关于 `socket` 编程的更多内容，比如多线程服务器端、`epoll` 等，我们将在下一篇文章里继续讨论。
 
-
 ***
-
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下哦，你的点赞是我更新的最大动力！\~
 
 > 参考文档：
 >
 > 1.  [TCP/IP网络编程](https://book.douban.com/subject/25911735/)
-
-PS：本文收录在在下的博客 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog) 系列文章中，欢迎大家关注我的公众号 `CPP下午茶`，直接搜索即可添加，持续为大家推送 CPP 以及 CPP 周边相关优质技术文，共同进步，一起加油\~
-
-另外可以加入「前端下午茶交流qun」，vx 搜索  `sherlocked_93` 加我，备注 **1**，我拉你～

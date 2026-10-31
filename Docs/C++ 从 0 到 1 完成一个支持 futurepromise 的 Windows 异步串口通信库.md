@@ -135,7 +135,6 @@ class ConsumerManager {
 };
 ```
 
-
 消息相关的模板类 `Message` 作为通信的消息容器，继承自 `MessageBase`，通过模板支持多种返回类型，并提供 `execute` 方法作为消费线程的入口，使用者可以传递一个返回值类型给 `Message` 类，消费者管理类会在消费消息之后通过 `Message` 传递返回值给使用者：
 
 ```c++
@@ -261,7 +260,7 @@ int main() {
     // 主循环：处理用户输入
     std::string line;
     std::cout << "请按回车发送随机数据，输入 'quit' 退出..." << std::endl;
-    
+
     while (std::getline(std::cin, line)) {
         if (line == "quit") break;
 
@@ -269,13 +268,13 @@ int main() {
         auto task = std::make_unique<Message<SerialRet>>([&serialTask]() -> SerialRet {
             auto fut = serialTask.sendAsync(generateRandomData());
             auto [ret, response] = fut.get();
-            
+
             if (ret > 0) {
                 std::cout << "任务完成，收到响应: " << bytes2hexStr(response) << std::endl;
             } else {
                 std::cout << "任务失败，错误代码: " << ret << std::endl;
             }
-            
+
             return std::make_tuple(ret, response);
         });
 
@@ -302,10 +301,3 @@ int main() {
 这个库已在生产环境中验证，支持高并发场景下的稳定运行。如果你在项目中需要进行串口通信，不妨试试这个库，也可以在这个基础上进行修改迭代，欢迎给提 pr 提 issue 一起讨论啊！
 
 ---
-
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下，你的点赞是我更新的最大动力！~
-
-PS：本文同步更新于在下的博客 [Github - SHERlocked93/blog](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FSHERlocked93%2Fblog) 系列文章中，欢迎大家关注我的公众号 `CPP下午茶`，直接搜索即可添加，持续为大家推送 CPP 以及 CPP 周边相关优质技术文，共同进步，一起加油~
-
-另外可以加入「前端下午茶交流qun」，vx 搜索  `sherlocked_93` 加我，备注 **1**，我拉你～
-

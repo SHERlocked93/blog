@@ -2,6 +2,8 @@
 
 > 做程序员，不做码农
 
+[在线博客](https://sherlocked93.github.io/blog/) 使用 VitePress 默认主题，支持文章分类、全文搜索与深浅色阅读。
+
 ### 作品
 
 1. [SHERlocked93/EasyByteParserCpp: 按INI文件配置从字节串中解析数据并导出map/JSON格式数据](https://github.com/SHERlocked93/EasyByteParserCpp)
@@ -10,197 +12,194 @@
 
 ## 博客
 
+[在线阅读](https://sherlocked93.github.io/blog/) · 以下文章链接在 GitHub 中打开。
+
 ### 年终总结
 
-1. [SHERlocked93 的 2023 年终总结](https://segmentfault.com/a/1190000044634219)
-2. [SHERlocked93 的 2022 年终总结](https://segmentfault.com/a/1190000043367010)
-3. [SHERlocked93 的 2021 年终总结](https://segmentfault.com/a/1190000043359299)
-4. [SHERlocked93 的 2020 年终总结](https://segmentfault.com/a/1190000039728447)
-5. [SHERlocked93 的 2019 年终总结](https://juejin.im/post/5e55ca3e6fb9a07c820fab8a)
-6. [SHERlocked93 的 2018 年终总结](https://juejin.im/post/5c49a9326fb9a049e063b284)
-7. [SHERlocked93 的 2017 年终总结](https://segmentfault.com/a/1190000013289875)
+1. [SHERlocked93 的 2023 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2023%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+2. [SHERlocked93 的 2022 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2022%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+3. [2021年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2021%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+4. [2020 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2020%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+5. [SHERlocked93 的 2019 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2019%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+6. [SHERlocked93 的 2018 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2018%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+7. [SHERlocked93 的 2017 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2017%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
 
-### C/CPP & QT 
+### C/CPP & QT
 
-1. [摄像头 RTSP 流视频多路实时监控解决方案实践](https://juejin.cn/post/7585377403632386094)  <sub>`2025`</sub>
-2. [C++ 中的编译和链接](https://juejin.cn/post/7526575166382424114)  <sub>`2025`</sub>
-3. [C++ 从 0 到 1 完成一个支持 future/promise 的 Windows 异步串口通信库](https://juejin.cn/post/7513029089147158567)  <sub>`2025`</sub>
-4. [C++ 的 VS 项目中引入跨平台包管理工具 conan](https://juejin.cn/post/7502360105469542419)  <sub>`2025`</sub>
-5. [C++ 的 VS 项目引入公共配置文件](https://juejin.cn/post/7500070714624540682)  <sub>`2025`</sub>
-6. [C++ 为什么需要 extern "C"](https://juejin.cn/post/7457569911742349312)  <sub>`2025`</sub>
-7. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://juejin.cn/post/7340574992256696329)  <sub>`2024`</sub>
-8. [Mac 上 CLion 搭建 QT6.6 开发环境](https://juejin.cn/post/7313043317722071059)
-9. [C++ 中 Linux 下 Socket 编程](https://juejin.cn/post/7291483859488735271)
-10. [C++ 中的左值引用和右值引用](https://juejin.cn/post/7290182739166281767)
+1. [摄像头 RTSP 流视频多路实时监控解决方案实践](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%91%84%E5%83%8F%E5%A4%B4%20RTSP%20%E6%B5%81%E8%A7%86%E9%A2%91%E5%A4%9A%E8%B7%AF%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%AE%9E%E8%B7%B5.md)
+2. [C++ 中的编译和链接](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E9%93%BE%E6%8E%A5.md)
+3. [C++ 中 VS 项目引入公共配置文件](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%AD%20VS%20%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BC%95%E5%85%A5%E5%85%AC%E5%85%B1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
+4. [C++ 为什么需要 extern "C"](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%20extern%20C.md)
+5. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%BD%BF%E7%94%A8%20Windows%20%E8%B0%83%E8%AF%95%E5%A5%97%E4%BB%B6%20gflags%20%E8%A7%A3%E5%86%B3%20CefSharp%20%E5%8A%A0%E8%BD%BD%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF%E6%A8%A1%E7%B3%8A%E7%9A%84%E9%97%AE%E9%A2%98.md)
+6. [Mac 上使用 CLion开发 QT6 配置](https://github.com/SHERlocked93/blog/blob/master/Docs/Mac%E4%B8%8A%E4%BD%BF%E7%94%A8CLion%E5%BC%80%E5%8F%91QT6%E9%85%8D%E7%BD%AE.md)
+7. [C++ 中 Linux 下 Socket 编程](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%AD%20Linux%20%E4%B8%8B%20Socket%20%E7%BC%96%E7%A8%8B.md)
+8. [C++ 中左值引用和右值引用](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%AD%E7%9A%84%E5%B7%A6%E5%80%BC%E5%BC%95%E7%94%A8%E5%92%8C%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8.md)
+9. [C++ 并发编程实战](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8AC++%20%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
 
 ### Vue 实践
 
-1. [Vue 项目数据动态过滤实践](https://juejin.im/post/5b9394fff265da0af406ed53)
-2. [Vue 项目预渲染机制引入实践](https://juejin.im/post/5b8ba25751882542f25a6cc8)
-3. [Vue 项目骨架屏注入实践](https://juejin.im/post/5b79a2786fb9a01a18267362)
-4. [Vue 使用中的小技巧](https://juejin.im/post/5ae02f39518825672f198ac2)
+1. [浏览器垃圾回收机制与 Vue 项目内存泄漏分析](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%E4%B8%8E%20Vue%20%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E5%88%86%E6%9E%90.md)
+2. [Vue项目数据动态过滤实践](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E9%A1%B9%E7%9B%AE%E6%95%B0%E6%8D%AE%E5%8A%A8%E6%80%81%E8%BF%87%E6%BB%A4%E5%AE%9E%E8%B7%B5.md)
+3. [Vue项目预渲染机制引入实践](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E9%A1%B9%E7%9B%AE%E9%A2%84%E6%B8%B2%E6%9F%93%E6%9C%BA%E5%88%B6%E5%BC%95%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
+4. [Vue项目骨架屏注入实践](https://github.com/SHERlocked93/blog/blob/master/Docs/%E9%AA%A8%E6%9E%B6%E5%B1%8F%E5%AE%9E%E8%B7%B5.md)
+5. [Vue 使用中的小技巧](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%20%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.md)
+6. [Vue-router应用如何做锚点定位](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8%E5%A6%82%E4%BD%95%E5%81%9A%E9%94%9A%E7%82%B9%E5%AE%9A%E4%BD%8D.md)
 
 ### 源码阅读
 
-1. [vue\-router 源码阅读 \- 文件结构与注册机制](https://juejin.im/post/5c7160d46fb9a049d236ae79)
-2. [Vue源码阅读 \- 文件结构与运行机制](https://juejin.im/post/5b38830de51d455888216675)
-3. [Vue源码阅读 \- 依赖收集原理](https://juejin.im/post/5b40c8495188251af3632dfa)
-4. [Vue源码阅读 \- 批量异步更新与nextTick原理](https://juejin.im/post/5b50760f5188251ad06b61be)
+1. [vue-router 源码阅读 - 文件结构与注册机制](https://github.com/SHERlocked93/blog/blob/master/Docs/vue-router%20%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E4%B8%8E%E6%B3%A8%E5%86%8C%E6%9C%BA%E5%88%B6.md)
+2. [Vue源码阅读 - 批量异步更新与nextTick原理](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E6%89%B9%E9%87%8F%E5%BC%82%E6%AD%A5%E6%9B%B4%E6%96%B0%E4%B8%8EnextTick.md)
+3. [Vue源码阅读 - 依赖收集原理](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E4%BE%9D%E8%B5%96%E6%94%B6%E9%9B%86%E5%8E%9F%E7%90%86.md)
+4. [Vue源码阅读 - 文件结构与运行机制](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.md)
+5. [vue-router 源码阅读 -](https://github.com/SHERlocked93/blog/blob/master/Docs/vue-router%20%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-.md)
+6. [Vue源码阅读 - 组件化](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E7%BB%84%E4%BB%B6%E5%8C%96.md)
 
 ### JavaScript
 
-1. [这些 JS 中强大的操作符，总有几个你没听说过](https://juejin.cn/post/6918902650964557838)
-2. [「手摸手设计模式系列」 享元模式与资源池](https://juejin.im/post/5d5b913f6fb9a06acf2b5cf2)
-3. [「手摸手设计模式系列」 策略模式与动态表单验证](https://juejin.im/post/5d5ca0286fb9a06b317b64e7)
-4. [JS 闭包与高阶函数](https://www.imooc.com/read/38/article/478)
-5. [JS 正则表达式必知必会](https://juejin.im/post/5b61b0f86fb9a04fd343af8f)
-6. [JS 活学活用正则表达式](https://segmentfault.com/a/1190000013276177)
-7. [JS 中的 offset、scroll、client 总结](https://segmentfault.com/a/1190000015961743)
-8. [JS 静态类型检查工具 Flow](https://segmentfault.com/a/1190000014367450)
-9. [JS throttle 与 debounce 的区别](https://segmentfault.com/a/1190000014292298)
-10. [JavaScript 服务器推送技术之 WebSocket](https://segmentfault.com/a/1190000013131251)
-11. [JS 中的柯里化](https://segmentfault.com/a/1190000012769779)
-12. [JS 中的反柯里化](https://segmentfault.com/a/1190000012912503)
-13. [JS 中的垃圾回收与内存泄漏](https://segmentfault.com/a/1190000012738358)
-14. [JS 异步的实现](https://segmentfault.com/a/1190000012362556)
-15. [JS 执行上下文栈 / 作用域链](https://segmentfault.com/a/1190000012362182)
-16. [JS 中的 \_\_proto\_\_ 与 prototype](https://segmentfault.com/a/1190000012362383)
-17. [JS 中可以提升幸福度的小技巧](https://juejin.im/post/5b51e5d3f265da0f4861143c)
-18. [JS 中的 this 指向](https://segmentfault.com/a/1190000012362141)
+1. [JavaScript 函数式编程技巧 - 反柯里化](https://github.com/SHERlocked93/blog/blob/master/Docs/JavaScript%20%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7%20-%20%E5%8F%8D%E6%9F%AF%E9%87%8C%E5%8C%96.md)
+2. [JavaScript 函数式编程技巧 - 柯里化](https://github.com/SHERlocked93/blog/blob/master/Docs/JavaScript%20%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7%20-%20%E6%9F%AF%E9%87%8C%E5%8C%96.md)
+3. [JS 中的offset、scroll、client](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E4%B8%AD%E7%9A%84offset%E3%80%81scroll%E3%80%81client.md)
+4. [JS 正则表达式必知必会](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A.md)
+5. [JS 中可以提升幸福度的小技巧](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E4%B8%AD%E5%8F%AF%E4%BB%A5%E6%8F%90%E5%8D%87%E5%B9%B8%E7%A6%8F%E5%BA%A6%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.md)
+6. [JS 静态类型检查工具 Flow](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E9%9D%99%E6%80%81%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E5%B7%A5%E5%85%B7%20Flow.md)
+7. [JS throttle与debounce的区别](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20throttle%E4%B8%8Edebounce%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+8. [JS 活学活用正则表达式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E6%B4%BB%E5%AD%A6%E6%B4%BB%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
+9. [JS 异步的实现](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E5%BC%82%E6%AD%A5%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
+10. [JS 中的 __proto__ 与 prototype](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E4%B8%AD%E7%9A%84%20__proto__%20%E4%B8%8E%20prototype.md)
+11. [JS 执行上下文栈 / 作用域链](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E6%A0%88%20%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE.md)
+12. [JS 中的this指向](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E4%B8%AD%E7%9A%84this%E6%8C%87%E5%90%91.md)
+13. [JavaScript 算法简单入门](https://github.com/SHERlocked93/blog/blob/master/Docs/JavaScript%20%E7%AE%97%E6%B3%95%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8.md)
 
 ### CSS
 
-1. [CSS 中重要的层叠概念](https://juejin.im/post/5ba4efe36fb9a05cf52ac192)
-2. [CSS 中重要的 BFC](https://juejin.im/post/5b51ee276fb9a04f86062cea)
-3. [CSS margin 合并问题](https://segmentfault.com/a/1190000013735912)
+1. [CSS 中的层叠和块级格式化上下文](https://github.com/SHERlocked93/blog/blob/master/Docs/CSS%20%E4%B8%AD%E7%9A%84%E5%B1%82%E5%8F%A0%E5%92%8C%E5%9D%97%E7%BA%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87.md)
+2. [CSS margin合并问题](https://github.com/SHERlocked93/blog/blob/master/Docs/CSS%20margin%E5%90%88%E5%B9%B6%E9%97%AE%E9%A2%98.md)
+3. [CSS中选择器的权重值](https://github.com/SHERlocked93/blog/blob/master/Docs/CSS%E4%B8%AD%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E6%9D%83%E9%87%8D%E5%80%BC.md)
 
 ### 浏览器
 
-1. [几种浏览器存储方法及其优缺点](https://segmentfault.com/a/1190000013896386)
-2. [浅析浏览器渲染原理](https://segmentfault.com/a/1190000012960187)
-3. [浅谈浏览器缓存](https://segmentfault.com/a/1190000012573337)
+1. [JavaScript 服务器推送技术之 WebSocket](https://github.com/SHERlocked93/blog/blob/master/Docs/JavaScript%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E9%80%81%E6%8A%80%E6%9C%AF%E4%B9%8B%20WebSocket.md)
+2. [浏览器中的垃圾回收与内存泄漏](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E4%B8%8E%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F.md)
+3. [几种浏览器存储方法及其优缺点](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%87%A0%E7%A7%8D%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AD%98%E5%82%A8%E6%96%B9%E6%B3%95%E5%8F%8A%E5%85%B6%E4%BC%98%E7%BC%BA%E7%82%B9.md)
+4. [浅析浏览器渲染原理](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%B5%85%E6%9E%90%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86.md)
+5. [浅谈浏览器缓存](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%B5%85%E8%B0%88%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98.md)
 
 ### Nginx
 
-1. [Nginx 从入门到实践，万字详解！](https://juejin.im/post/5ea931866fb9a043815146fb)
+1. [Nginx 从入门到实践，万字详解！](https://github.com/SHERlocked93/blog/blob/master/Docs/Nginx%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%EF%BC%8C%E4%B8%87%E5%AD%97%E8%AF%A6%E8%A7%A3%EF%BC%81.md)
+2. [使用Jenkins持续集成前端项目并自动化部署到Tomcat/Nginx服务器](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%BD%BF%E7%94%A8Jenkins%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%B9%B6%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0TomcatNginx%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 
 ### Docker
 
-1. [手摸手带你 Docker 从入门到实践](https://juejin.im/post/6875323565479034894)
+1. [手摸手带你 Docker 从入门到实践](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%E5%B8%A6%E4%BD%A0%20Docker%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5.md)
 
 ### 数据库
 
-1. [MySQL 从入门到实践，万字详解！](https://juejin.cn/post/7005019784429469704)
+1. [MySQL 从入门到实践，万字详解！](https://github.com/SHERlocked93/blog/blob/master/Docs/MySQL%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%EF%BC%8C%E4%B8%87%E5%AD%97%E8%AF%A6%E8%A7%A3%EF%BC%81.md)
 
 ### Node
 
-1. [Node 中的事件循环和异步API](https://segmentfault.com/a/1190000012648569)
-2. [JS 与 Node\.js 中的事件循环](https://segmentfault.com/a/1190000012362096)
+1. [Node中的事件循环和异步API](https://github.com/SHERlocked93/blog/blob/master/Docs/Node%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E5%92%8C%E5%BC%82%E6%AD%A5API.md)
+2. [JS与Node.js中的事件循环](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%E4%B8%8ENode.js%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.md)
 
 ### Webpack
 
-1. [手摸手 Webpack 多入口配置实践](https://juejin.im/post/5d7763a3f265da03c34c25ab)
-2. [使用 webpack 的插件 DllPlugin 加快打包速度](https://segmentfault.com/a/1190000012925212)
+1. [Webpack 打包太慢? 试试 Dllplugin](https://github.com/SHERlocked93/blog/blob/master/Docs/Webpack%20%E6%89%93%E5%8C%85%E5%A4%AA%E6%85%A2%20%E8%AF%95%E8%AF%95%20Dllplugin.md)
+2. [手摸手 Webpack 多入口配置实践](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%20Webpack%20%E5%A4%9A%E5%85%A5%E5%8F%A3%E9%85%8D%E7%BD%AE%E5%AE%9E%E8%B7%B5.md)
 
 ### 前端周边技术栈
 
-1. [强烈推介的几个微信小程序开发小技巧，简单又实用](https://segmentfault.com/a/1190000023748392)
-2. [开发微信小程序，我为什么放弃 setData，使用 upData](https://juejin.im/post/5f17efb55188252e7811dcdd)
-3. [GraphQL 从入门到实践](https://juejin.im/post/5c87b1776fb9a049ac7a0247)
-4. [前端路由跳转基本原理](https://juejin.im/post/5c52da9ee51d45221f242804)
-5. [使用 API 自动生成工具优化前端工作流](https://juejin.im/post/5bf6b4806fb9a049ae07884a)
-6. [windows 本地安装部署 Easy Mock](https://juejin.im/post/5b9b6f79e51d450e6e039766)
-7. [使用 Jenkins 持续集成前端项目并自动化部署到 Nginx 服务器](https://juejin.im/post/5b9769e5e51d450e531c548e)
-8. [一个骚气的文章目录自动生成器了解一下](https://juejin.im/post/5b6c29dde51d4518f5445c03)
-9. [Web Worker 初探](https://juejin.im/post/5b4af72ae51d45198d4b1388)
-10. [Git 学习笔记](https://segmentfault.com/a/1190000016665840)
+1. [CPP 从 0 到 1 完成一个支持 future/promise 的 Windows 异步串口通信库](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%BB%8E%200%20%E5%88%B0%201%20%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AA%E6%94%AF%E6%8C%81%20futurepromise%20%E7%9A%84%20Windows%20%E5%BC%82%E6%AD%A5%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1%E5%BA%93.md)
+2. [我与思否一起成长这4年丨思否 9 周年](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%88%91%E4%B8%8E%E6%80%9D%E5%90%A6%E4%B8%80%E8%B5%B7%E6%88%90%E9%95%BF%E8%BF%99%E5%87%A0%E5%B9%B4%E4%B8%A8%E6%80%9D%E5%90%A6%209%20%E5%91%A8%E5%B9%B4.md)
+3. [这些 JS 中强大的操作符，总有几个你没听说过](https://github.com/SHERlocked93/blog/blob/master/Docs/%E8%BF%99%E4%BA%9BJS%E4%B8%AD%E7%9A%84%E6%93%8D%E4%BD%9C%E7%AC%A6%EF%BC%8C%E6%80%BB%E6%9C%89%E5%87%A0%E4%B8%AA%E4%BD%A0%E6%B2%A1%E5%90%AC%E8%AF%B4%E8%BF%87.md)
+4. [强烈推介的几个微信小程序开发小技巧，简单又实用](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%BC%BA%E7%83%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E5%87%A0%E4%B8%AA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%8C%E7%AE%80%E5%8D%95%E5%8F%88%E5%AE%9E%E7%94%A8.md)
+5. [开发微信小程序，我为什么放弃 setData，使用 upData](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E6%94%BE%E5%BC%83%20setData%EF%BC%8C%E4%BD%BF%E7%94%A8%20upData.md)
+6. [GraphQL 从入门到实践](https://github.com/SHERlocked93/blog/blob/master/Docs/GraphQL%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5.md)
+7. [前端路由跳转基本原理](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)
+8. [使用API自动生成工具优化前端工作流](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%BD%BF%E7%94%A8API%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%E4%BC%98%E5%8C%96%E5%89%8D%E7%AB%AF%E5%B7%A5%E4%BD%9C%E6%B5%81.md)
+9. [Git](https://github.com/SHERlocked93/blog/blob/master/Docs/Git%E7%AC%94%E8%AE%B0.md)
+10. [windows本地安装部署 Easy Mock](https://github.com/SHERlocked93/blog/blob/master/Docs/windows%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%20Easy%20Mock.md)
+11. [一个骚气的文章目录自动生成器了解一下](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%B8%80%E4%B8%AA%E9%AA%9A%E6%B0%94%E7%9A%84%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%99%A8%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B.md)
+12. [Web Worker 初探](https://github.com/SHERlocked93/blog/blob/master/Docs/Web%20Worker%20%E5%88%9D%E6%8E%A2.md)
+13. [「中高级前端进阶」一小时教你手写前端脚手架](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8C%E4%B8%AD%E9%AB%98%E7%BA%A7%E5%89%8D%E7%AB%AF%E8%BF%9B%E9%98%B6%E3%80%8D%E4%B8%80%E5%B0%8F%E6%97%B6%E6%95%99%E4%BD%A0%E6%89%8B%E5%86%99%E5%89%8D%E7%AB%AF%E8%84%9A%E6%89%8B%E6%9E%B6.md)
+14. [把自己作为方法](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E6%8A%8A%E8%87%AA%E5%B7%B1%E4%BD%9C%E4%B8%BA%E6%96%B9%E6%B3%95%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+15. [框架这么多，到底怎么学？](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%A1%86%E6%9E%B6%E8%BF%99%E4%B9%88%E5%A4%9A%EF%BC%8C%E5%88%B0%E5%BA%95%E6%80%8E%E4%B9%88%E5%AD%A6%EF%BC%9F.md)
+16. [前端性能优化技术分享](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB-%E9%92%B1%E6%98%B1.md)
+17. [手摸手带你实现一个张一鸣年会上念的互联网黑话的生成器](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%BC%A0%E4%B8%80%E9%B8%A3%E5%B9%B4%E4%BC%9A%E4%B8%8A%E5%BF%B5%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E9%BB%91%E8%AF%9D%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8.md)
 
 ### Linux
 
-1. [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/5e5f13936fb9a07cdf534c62)
-2. [CentOS 安装部署 Yapi](https://juejin.im/post/5eafb85a5188256d4c5578c1)
+1. [CentOS 安装部署 Yapi](https://github.com/SHERlocked93/blog/blob/master/Docs/CentOS%207%20%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%20Yapi.md)
+2. [CentOS 基础知识](https://github.com/SHERlocked93/blog/blob/master/Docs/CentOS%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
 
 ### JavaScript 设计模式
 
-1. [开篇 ： 为什么学习设计模式？](https://www.imooc.com/read/38/article/476)
-2. [this、new、bind、call、apply](https://www.imooc.com/read/38/article/477)
-3. [闭包与高阶函数](https://www.imooc.com/read/38/article/478)
-4. [ES6 中可能遇到的知识点](https://www.imooc.com/read/38/article/479)
-5. [继承与原型链](https://www.imooc.com/read/38/article/480)
-6. [设计原则](https://www.imooc.com/read/38/article/506)
-7. [单例模式：游戏的存档](https://www.imooc.com/read/38/article/481)
-8. [工厂模式：去小餐馆下馆子](https://www.imooc.com/read/38/article/482)
-9. [抽象工厂模式：又去小餐馆下馆子](https://www.imooc.com/read/38/article/483)
-10. [建造者模式：组装小汽车](https://www.imooc.com/read/38/article/484)
-11. [代理模式：找明星拍广告](https://www.imooc.com/read/38/article/486)
-12. [享元模式：驾考现场的考试车](https://www.imooc.com/read/38/article/487)
-13. [适配器模式：电源适配器](https://www.imooc.com/read/38/article/488)
-14. [装饰者模式：给新房子装修](https://www.imooc.com/read/38/article/489)
-15. [外观模式：遥控无人机](https://www.imooc.com/read/38/article/490)
-16. [组合模式：文档结构树](https://www.imooc.com/read/38/article/491)
-17. [桥接模式：组装变频洗衣机](https://www.imooc.com/read/38/article/492)
-18. [发布-订阅模式：去 adadis 买鞋](https://www.imooc.com/read/38/article/493)
-19. [策略模式：给螺丝刀换刀头](https://www.imooc.com/read/38/article/494)
-20. [状态模式：交通灯](https://www.imooc.com/read/38/article/495)
-21. [模板方法模式：咖啡厅制作咖啡](https://www.imooc.com/read/38/article/496)
-22. [迭代器模式：银行的点钞机](https://www.imooc.com/read/38/article/497)
-23. [命令模式：江湖通缉令](https://www.imooc.com/read/38/article/498)
-24. [职责链模式：领导，我想请个假](https://www.imooc.com/read/38/article/499)
-25. [中介者模式：找媒人介绍对象](https://www.imooc.com/read/38/article/500)
-26. [关于 MVC、MVP、MVVM](https://www.imooc.com/read/38/article/501)
-27. [模块模式](https://www.imooc.com/read/38/article/502)
-28. [链模式](https://www.imooc.com/read/38/article/503)
-29. [中间件](https://www.imooc.com/read/38/article/504)
-
-### 从零开始学算法 TypeScript 版
-
-代码参见[仓库](https://github.com/SHERlocked93/ts-datastructures-algorithms)
+1. [「手摸手设计模式系列」  策略模式与动态表单验证](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8C%E6%89%8B%E6%91%B8%E6%89%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%B3%BB%E5%88%97%E3%80%8D%20%20%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%8A%A8%E6%80%81%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81.md)
+2. [「手摸手设计模式系列」  享元模式与资源池](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8C%E6%89%8B%E6%91%B8%E6%89%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%B3%BB%E5%88%97%E3%80%8D%20%20%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%B5%84%E6%BA%90%E6%B1%A0.md)
+3. [JS 观察者模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md)
+4. [JS 桥接模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F.md)
+5. [JS 状态模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F.md)
+6. [JS 利用高阶函数实现函数缓存(备忘模式)](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E5%88%A9%E7%94%A8%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E5%87%BD%E6%95%B0%E7%BC%93%E5%AD%98(%E5%A4%87%E5%BF%98%E6%A8%A1%E5%BC%8F).md)
+7. [JS 适配器模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.md)
+8. [JS 外观模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F.md)
+9. [JS 回调模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E5%9B%9E%E8%B0%83%E6%A8%A1%E5%BC%8F.md)
+10. [ JS 单例模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
+11. [JS 原型模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F.md)
+12. [JS 建造者模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F.md)
+13. [JS 工厂模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F.md)
+14. [JS 抽象工厂模式](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F.md)
 
 ### 翻译
 
-1. [Chrome 89 新功能一览，性能提升明显，大量 DevTools 新特性](https://juejin.cn/post/6935452749987315742)
-2. [Chrome 87 新特性解读，多年来 Chrome 性能最大提升！](https://juejin.cn/post/6896451677063544846)
-3. [\[译\] 使用 Recompose 来构建高阶组件](https://juejin.im/post/5c484a43e51d452ec621b6a9)
-4. [\[译\] 监测与调试 Vue\.js 的响应式系统：计算属性树（Computed Tree）](https://juejin.im/post/5c9ca62e5188251d80672b0d)
-5. [\[译\] 网速敏感的视频延迟加载方案](https://juejin.im/post/5c7b84356fb9a049ab0e5630)
-6. [\[译\] 使用 Proxy 来监测 Javascript 中的类](https://juejin.im/post/5c484b76e51d45522b4f5f7d)
+1. [Chrome 89 新功能一览，性能提升明显，大量 DevTools 新特性](https://github.com/SHERlocked93/blog/blob/master/Docs/Chrome%2089%20%E6%96%B0%E5%8A%9F%E8%83%BD%E4%B8%80%E8%A7%88%EF%BC%8C%E5%A4%A7%E9%87%8F%20DevTools%20%E6%96%B0%E7%89%B9%E6%80%A7.md)
+2. [Chrome 87 新特性解读，多年来 Chrome 性能最大提升！](https://github.com/SHERlocked93/blog/blob/master/Docs/Chrome%2087%20%E6%96%B0%E7%89%B9%E6%80%A7%E8%A7%A3%E8%AF%BB%EF%BC%8C%E5%A4%9A%E5%B9%B4%E6%9D%A5%20Chrome%20%E6%80%A7%E8%83%BD%E6%9C%80%E5%A4%A7%E6%8F%90%E5%8D%87%EF%BC%81.md)
+3. [\[译\] 监测与调试 Vue.js 的响应式系统：计算属性树（Computed Tree）](https://github.com/SHERlocked93/blog/blob/master/Docs/%5B%E8%AF%91%5D%20%E7%9B%91%E6%B5%8B%E4%B8%8E%E8%B0%83%E8%AF%95%20Vue.js%20%E7%9A%84%E5%93%8D%E5%BA%94%E5%BC%8F%E7%B3%BB%E7%BB%9F%EF%BC%9A%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7%E6%A0%91%EF%BC%88Computed%20Tree%EF%BC%89.md)
+4. [\[译\] 网速敏感的视频延迟加载方案](https://github.com/SHERlocked93/blog/blob/master/Docs/%5B%E8%AF%91%5D%20%E7%BD%91%E9%80%9F%E6%95%8F%E6%84%9F%E7%9A%84%E8%A7%86%E9%A2%91%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E6%96%B9%E6%A1%88.md)
+5. [\[译\] 使用 Proxy 来监测 Javascript 中的类](https://github.com/SHERlocked93/blog/blob/master/Docs/%5B%E8%AF%91%5D%20%E4%BD%BF%E7%94%A8%20Proxy%20%E6%9D%A5%E7%9B%91%E6%B5%8B%20Javascript%20%E4%B8%AD%E7%9A%84%E7%B1%BB.md)
+6. [\[译\] 使用 Recompose 来构建高阶组件](https://github.com/SHERlocked93/blog/blob/master/Docs/%5B%E8%AF%91%5D%20%E4%BD%BF%E7%94%A8%20Recompose%20%E6%9D%A5%E6%9E%84%E5%BB%BA%E9%AB%98%E9%98%B6%E7%BB%84%E4%BB%B6.md)
 
 ### 阅读摘要
 
-1. [《Effective C++》阅读摘要](https://juejin.cn/post/7429677850514784308)  <sub>`2024`</sub>
-2. [《把时间当作朋友》李笑来 阅读摘要](https://juejin.cn/post/7467851517435133962) <sub>`2025`</sub>
-3. [《小强升职记》、《心流》 、《拖延心理学》、《微习惯》、《前方高能》、《自律 100 天》阅读摘要](https://juejin.cn/post/7467200003523805210) <sub>`2025`</sub>
-4. [掌控情绪，成为自己的主宰——读《蛤蟆先生去看心理医生》](https://segmentfault.com/a/1190000043590970)
-5. [《认知驱动》阅读摘要](https://segmentfault.com/a/1190000043414863)
-6. [《刻意练习》+《刻意学习》阅读摘要](https://segmentfault.com/a/1190000043357952)
-7. [《张鑫旭12年技术写作经验》live 笔记](https://segmentfault.com/a/1190000043356203)
-8. [《认知觉醒》阅读摘要](https://segmentfault.com/a/1190000043356158)
-9. [《论持久战》阅读摘要](https://www.zhihu.com/question/30674909/answer/2290872826)
-10. [《快速阅读》阅读摘要](https://segmentfault.com/a/1190000039912076)
-11. [《白帽子讲Web安全》阅读摘要](https://segmentfault.com/a/1190000039906667)
-12. [《高效能人士的七个习惯》阅读摘要](https://segmentfault.com/a/1190000039882788)
-13. [《图解 HTTP》 阅读摘要](https://juejin.im/post/5c938812e51d4539fc2d61a5)
-14. [《HTTP/2 基础教程》 阅读摘要](https://juejin.im/post/5cb54286e51d456e235d9be6)
-15. [《你不知道的JavaScript》 \(上\) 阅读摘要](https://juejin.im/post/5c3473215188252593123478)
-16. [《你不知道的JavaScript》 \(中\) 阅读摘要](https://juejin.im/post/5c31b9816fb9a049b78084e8)
-17. [《你不知道的JavaScript》 \(下\) 阅读摘要](https://segmentfault.com/a/1190000017812997)
-18. [《单核工作法图解》阅读摘要](https://juejin.im/post/5ccbaa2be51d456e671c7e55)
-19. [《JavaScript 面向对象精要》 阅读摘要](https://juejin.im/post/5c94452ae51d45341b068369)
-20. [《JavaScript DOM 编程艺术》 阅读摘要](https://segmentfault.com/a/1190000011051108)
+1. [《白帽子讲Web安全》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2Web%E5%AE%89%E5%85%A8%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+2. [《把时间当作朋友》李笑来 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E6%8A%8A%E6%97%B6%E9%97%B4%E5%BD%93%E4%BD%9C%E6%9C%8B%E5%8F%8B%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+3. [《小强升职记》、《心流》 、《拖延心理学》、《微习惯》、《前方高能》、《自律 100 天》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E5%B0%8F%E5%BC%BA%E5%8D%87%E8%81%8C%E8%AE%B0%E3%80%8B%E3%80%81%E3%80%8A%E5%BF%83%E6%B5%81%E3%80%8B%20%E3%80%81%E3%80%8A%E6%8B%96%E5%BB%B6%E5%BF%83%E7%90%86%E5%AD%A6%E3%80%8B%20%E3%80%81%E3%80%8A%E5%BE%AE%E4%B9%A0%E6%83%AF%E3%80%8B%E3%80%81%E3%80%8A%E5%89%8D%E6%96%B9%E9%AB%98%E8%83%BD%E3%80%8B%E3%80%81%E3%80%8A%E8%87%AA%E5%BE%8B%20100%20%E5%A4%A9%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+4. [《Effective C++》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8AEffective%20C++%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+5. [掌控情绪，做人生的主人](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%8E%8C%E6%8E%A7%E6%83%85%E7%BB%AA%EF%BC%8C%E5%81%9A%E4%BA%BA%E7%94%9F%E7%9A%84%E4%B8%BB%E4%BA%BA.md)
+6. [《认知驱动》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+7. [《刻意练习》+《刻意学习》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0%E3%80%8B+%E3%80%8A%E5%88%BB%E6%84%8F%E5%AD%A6%E4%B9%A0%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+8. [《张鑫旭12年技术写作经验》live 笔记](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%BC%A0%E9%91%AB%E6%97%AD12%E5%B9%B4%E6%8A%80%E6%9C%AF%E5%86%99%E4%BD%9C%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB.md)
+9. [《认知觉醒》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+10. [《快速阅读》博赞 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E5%BF%AB%E9%80%9F%E9%98%85%E8%AF%BB%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+11. [《高效能人士的七个习惯》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E9%AB%98%E6%95%88%E8%83%BD%E4%BA%BA%E5%A3%AB%E7%9A%84%E4%B8%83%E4%B8%AA%E4%B9%A0%E6%83%AF%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+12. [我最近在看什么 -《富爸爸穷爸爸》](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E5%AF%8C%E7%88%B8%E7%88%B8%E7%A9%B7%E7%88%B8%E7%88%B8%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+13. [《单核工作法图解》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E5%8D%95%E6%A0%B8%E5%B7%A5%E4%BD%9C%E6%B3%95%E5%9B%BE%E8%A7%A3%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+14. [《HTTP/2 基础教程》 读书笔记](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8AHTTP2%20%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%8B%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.md)
+15. [《JavaScript 面向对象精要》 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8AJavaScript%20%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%B2%BE%E8%A6%81%E3%80%8B%20%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+16. [《图解 HTTP》 读书笔记](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E5%9B%BE%E8%A7%A3%20HTTP%E3%80%8B%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.md)
+17. [《你不知道的JavaScript》 (下) 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E3%80%8B%20(%E4%B8%8B)%20%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+18. [《你不知道的JavaScript》 (上) 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E3%80%8B%20(%E4%B8%8A)%20%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+19. [《你不知道的JavaScript》 (中) 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E3%80%8B%20(%E4%B8%AD)%20%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+20. [《JavaScript DOM 编程艺术》 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8AJavaScript%20DOM%20%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF%E3%80%8B%20%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+21. [《活着》余华 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E6%B4%BB%E7%9D%80%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+22. [《了不起的盖兹比》菲兹杰拉德 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%E7%9B%96%E5%85%B9%E6%AF%94%E3%80%8B%20%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+23. [《论持久战》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E8%AE%BA%E6%8C%81%E4%B9%85%E6%88%98%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+24. [《如何阅读一本书》 艾德勒 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B%20%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+25. [《杀死一只知更鸟》哈珀·李 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+26. [《实现财富自由的科学路径——量化投资》阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E5%AE%9E%E7%8E%B0%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1%E7%9A%84%E7%A7%91%E5%AD%A6%E8%B7%AF%E5%BE%84%E2%80%94%E2%80%94%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84%E3%80%8B%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.md)
+27. [《乌合之众》 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97%E3%80%8B%20%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+28. [《湘行散记》沈从文 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E6%B9%98%E8%A1%8C%E6%95%A3%E8%AE%B0%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+29. [《月亮与六便士》毛姆 阅读摘要](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E6%9C%88%E4%BA%AE%E4%B8%8E%E5%85%AD%E4%BE%BF%E5%A3%AB%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
 
 ### 那些好用的工具
 
-1. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://juejin.im/post/5ee9fca5f265da02d3377e38)
-2. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)
-3. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)
-4. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)
-5. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903689654797598728)
-6. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://juejin.cn/post/7315304715809390592)
-7. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://juejin.cn/post/7067703148734840869)
-
-### 理财
-
-1. [我最近在看什么 - 富爸爸穷爸爸](https://juejin.cn/post/6910778442489430023)
+1. [在 C++ 的 VS 项目中引入跨平台包管理工具 conan](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%20conan.md)
+2. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E5%9B%9B%E5%BC%B9%EF%BC%89.md)
+3. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%A5%BD%E7%94%A8%E4%B8%8D%E5%8D%A1%EF%BC%8C%E8%BF%99%E4%BA%9B%E6%8F%92%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE%E8%AE%A9%E4%BD%A0%E7%9A%84%20Webstorm%20%E6%9B%B4%E7%89%9B%E9%80%BC%EF%BC%81.md)
+4. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%89%E5%BC%B9%EF%BC%89.md)
+5. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://github.com/SHERlocked93/blog/blob/master/Docs/%E7%94%9F%E5%91%BD%E5%9C%A8%E4%BA%8E%E6%8A%98%E8%85%BE%EF%BC%81%E8%BF%99%E4%BA%9B%E6%A1%8C%E9%9D%A2%E5%A5%BD%E7%89%A9%E6%8F%90%E5%8D%87%E4%BD%A0%E7%9A%84%E6%90%AC%E7%A0%96%E5%B9%B8%E7%A6%8F%E5%BA%A6.md)
+6. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%BC%B9%EF%BC%89.md)
+7. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%80%E5%BC%B9%EF%BC%89.md)
+8. [推介几款 windows 下非常好用的工具](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20windows%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7.md)
 
 ---
 
@@ -299,7 +298,7 @@
 
 下面是我推介的算法书籍，按需自取，个人觉得每个等级看一两本即可
 
-![算法书籍推介](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/%E7%AE%97%E6%B3%95%E4%B9%A6%E7%B1%8D%E6%8E%A8%E4%BB%8B-tintFB.png)
+![算法书籍推介](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/%E7%AE%97%E6%B3%95%E4%B9%A6%E7%B1%8D%E6%8E%A8%E4%BB%8B-tintFB.png)
 
 ### 程序员素养 & 成长方法论
 
@@ -366,16 +365,58 @@
 > | **摆渡人**                                                             | `2018` | ★☆☆    |
 > | **追风筝的人**                                                           | `2018` | ★☆☆    |
 
-
 ---
 
-来自南京的程序员，慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38)
-作者，[《React Cookbook中文版》](https://item.jd.com/13680953.html)首译、[《斯坦福程序设计入门课：JavaScript实现》](https://item.jd.com/13096560.html)合作译者，[掘金专栏](https://juejin.im/user/5962fe1d6fb9a06bac5b9899/posts)、[SegmentFault专栏](https://segmentfault.com/blog/sherlocked93)，在下的博客都是学习过程中的总结，公众号 [**前端下午茶**](https://image-static.segmentfault.com/274/490/2744909290-311727a744d14c3b_articlex) 也可以关注一下，期待在这里和大家共同进步 ～
+## 关于作者
 
-![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
+慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38)作者，[《React Cookbook 中文版》](https://item.jd.com/13680953.html)首译、[《斯坦福程序设计入门课：JavaScript 实现》](https://item.jd.com/13096560.html)合作译者。
 
-> PS：对设计模式感兴趣的同学可以看一下我在慕课网写的专栏 [<JavaScript 设计模式精讲>](https://www.imooc.com/read/38)
->
-> 另外，如果你苦于编程之路无人交流，可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
+## 本地阅读与维护
 
-![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)
+需要 Node.js 24，可通过 `nvm use` 选择版本。
+
+```bash
+npm ci --ignore-scripts
+npm run docs:dev
+```
+
+生产构建与预览：
+
+```bash
+npm test
+npm run docs:build
+npm run docs:preview
+```
+
+在 `Docs/` 中维护文章，并在 `.vitepress/data/articles.json` 中登记标题、分类和排序时间。新增文章或调整分类后执行 `npm run docs:catalog`，同步 README 与在线文章索引。`excluded: true` 的推广专题保留原文，不进入站点、搜索和导航。
+
+文章正文和 README 中的本人文章链接指向 GitHub Markdown；在线站点菜单与文章索引进入 Pages 阅读页。图片使用个人 GitHub 图床，上传并确认可读取后再引用。尚未找回的原图记录在 [缺失图片清单](.vitepress/data/missing-images.json)，保留文章中的原始引用。
+
+### 从公开平台核对文章
+
+抓取工具只读取公开文章；目录与正文候选保存在 Git 忽略的 `.migration-cache/` 中，不会自动覆盖 `Docs/`。
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r scripts/requirements.txt
+.venv/bin/python scripts/archive.py discover
+.venv/bin/python scripts/archive.py fetch
+.venv/bin/python scripts/reconcile.py
+.venv/bin/python -m unittest discover -s tests -p 'test_*.py'
+```
+
+逐篇核对 `.migration-cache/comparison.json`、`diffs/` 和 `candidates/`，将确定的内容扩充合并到原文件，保留本地独有内容。更新已有请求时，可给抓取命令添加 `--refresh`。文章来源与文件的对应关系保存在仅本机使用的 `migration/articles.json`，图片和链接映射也保存在 `migration/`；该目录被 Git 忽略。站点只使用 `.vitepress/data/` 下的分类和缺图清单。
+
+合并正文后，可以通过 `scripts/links.py` 的 `resolve`、`recover`、`apply` 步骤解析旧链接并应用已确认的文章映射。第三方参考资料和代码示例中的地址保留原用途，不能解析的链接留在缓存报告中供核对。
+
+图片迁移需要先使用 `gh auth login` 登录具有图床写入权限的 GitHub 账户。`prepare` 下载并核验原图，`upload` 向 `SHERlocked93/pic` 的 `picgo/` 提交缺失图片并校验公开地址，`apply` 只替换校验成功的引用：
+
+```bash
+.venv/bin/python scripts/images.py prepare
+.venv/bin/python scripts/images.py upload
+.venv/bin/python scripts/images.py apply
+```
+
+### GitHub Pages 发布
+
+仓库的 Settings → Pages → Build and deployment → Source 选择 GitHub Actions。推送到 `master` 后，工作流会检查文章目录、构建站点并发布到 [在线博客](https://sherlocked93.github.io/blog/)，也可以在 Actions 中手动触发。站点部署在 `/blog/` 子路径，文章保留 `.html` 地址。

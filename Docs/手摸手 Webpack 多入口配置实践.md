@@ -1,7 +1,5 @@
 # 手摸手 Webpack 多入口配置实践
 
-[TOC]
-
 最近在做项目的时候遇到了一个场景：一个项目有多个入口，不同的入口，路由、组件、资源等有重叠部分，也有各自不同的部分。由于不同入口下的路由页面有一些是重复的，因此我考虑使用 Webpack 多入口配置来解决这个需求。
 
 再一次，在网上找的不少文章都不合我的需求，很多文章都是只简单介绍了生产环境下配置，没有介绍开发环境下的配置，有的也没有将多入口结合 `vue-router`、`vuex`、`ElementUI` 等进行配置，因此在下通过不断探坑，然后将思路和配置过程记录下来，留给自己作为笔记，同时也分享给大家，希望可以帮助到有同样需求的同学们～
@@ -16,7 +14,7 @@
 
 示意图如下：
 
-![](https://i.loli.net/2019/09/10/RnSujYWBcDxLyar.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/28d7eff9404b6876486f8a38fb40221c92dc31035e3cfaf7fa8ab27afe3bf56e.png)
 
 ## 2. 准备工作
 
@@ -158,7 +156,7 @@ module.exports = {
 
 打包的结果如下：
 
-![](https://i.loli.net/2019/09/09/JHwEIeSms1Yv8jQ.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/7f1dfb6c8a196eaeb1c0104d855c119359c683346617f9feaa04df6c782d9dbb.png)
 
 当前代码：[Github - multi\-entry\-vue1](https://github.com/SHERlocked93/multi-entry-vue/tree/entry-output)
 
@@ -207,15 +205,15 @@ module.exports = {
 
 打包完的结果如下：
 
-![](https://i.loli.net/2019/09/09/18CiRxPU3OfBFH5.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/a3162dfedd0bb69f56f2c8fbcb4da79368c36085ec972db548b80ddc755d1981.png)
 
 文件结构：
 
-![](https://i.loli.net/2019/09/09/gpRChPz69WGvBFq.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/538870bb1a6cc86171f952304da715e4b6cfdf95fda5a80103e7280c2f59885b.png)
 
 现在打包出来的样式正是我们所需要的，此时我们在 `dist` 目录下启动 `live-server`（如果你没安装的话可以先安装 `npm i -g live-server`），就可以看到效果出来了：
 
-![](https://i.loli.net/2019/09/10/C1tA7fbdEN5zB6D.gif)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/028176199171aa9393186721ada7d8d31fece6ea4947f670d48520a4ef16a375.gif)
 
 当前代码：[Github - multi\-entry\-vue2](https://github.com/SHERlocked93/multi-entry-vue/tree/import-htmlwebpackplugin)
 
@@ -308,7 +306,7 @@ exports.htmlPlugin = function() {
       chunks: [filename],
       inject: true
     }
-    
+
     // production 生产模式下配置
     if (process.env.NODE_ENV === 'production') {
       conf = merge(conf, {
@@ -403,32 +401,18 @@ const webpackConfig = merge(baseWebpackConfig, {
 
 现在我们再 `npm run build`，看看生成的目录是什么样的：
 
-![](https://i.loli.net/2019/09/10/5oXcM4f7JkvSEGb.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/eacdf21e170f88ad544f421f09369feab1d7a864099e06620a0a79569833041a.png)
 
 此时我们在 `dist` 目录下启动 `live-server` 看看是什么效果：
 
-![](https://i.loli.net/2019/09/10/DVzkWfm1ci4MpXy.gif)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/edee28270c9caf4c72c35e70f53eec099a81e0572b2049ba16b946d934504220.gif)
 
 当前代码：[Github - multi\-entry\-vue3](https://github.com/SHERlocked93/multi-entry-vue/tree/config-gene)
 
-
-
 ---
-
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
-
 
 > 参考：
 >
 > 1. [webpack解惑：多入口文件打包策略](https://www.cnblogs.com/lvdabao/p/5944420.html)
 > 2. [webpack配置文件：入口和出口，多入口、多出口配置](https://www.cnblogs.com/hezihao/p/7928051.html)
 > 3. [一看就懂之webpack高级配置与优化](https://segmentfault.com/a/1190000020320871)
-
-
-PS：欢迎大家关注我的公众号【前端下午茶】，一起加油吧~
-
-![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
-
-另外可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
-
-![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)

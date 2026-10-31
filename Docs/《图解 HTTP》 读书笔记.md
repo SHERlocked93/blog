@@ -1,9 +1,6 @@
 《图解 HTTP》 读书笔记
 
-[TOC]
-
-![](https://i.loli.net/2019/03/21/5c9388a6b7ad5.jpg)
-
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/efc1273db650de2d6a4ddd87237ecfc0762115ec77a02bb2accae0b39806c4b4.jpg)
 
 这本 HTTP 方面的小册子还蛮不错，已经二刷了 😜
 
@@ -22,7 +19,7 @@
 3. **网络层：** 用来处理在网络上流动的数据包，该层规定了通过怎样的路径（所谓的传输路线）到达对方计算机，并把数据包传送给对方；与对方计算机之间通过多台计算机或网络设备进行传输时，网络层所起的作用就是在众多的选项内选择一条传输路线。
 4. **数据链路层：** 用来处理连接网络的硬件部分
 
-![](https://i.loli.net/2019/03/17/5c8dffebe6891.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/00b1cf2877adef2f528ed96bb0ab851edd5bc445b01bd116846c79c0f3a93ff1.png)
 
 利用 TCP/IP 协议族进行网络通信时，会通过分层顺序与对方进行通信。发送端从应用层往下走，接收端则往应用层往上走。
 
@@ -33,7 +30,7 @@
 3. 在网络层（IP 协议），增加作为通信目的地的 MAC 地址后转发给链路层。这样一来，发往网络的通信请求就准备齐全了
 4. 接收端的服务器在链路层接收到数据，按序往上层发送，一直到应用层。当传输到应用层，才能算真正接收到由客户端发送过来的 HTTP 请求。
 
-![](https://i.loli.net/2019/03/17/5c8e0128be5f2.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/1ae4bee3d9e230813aa0e06e9bf6614e95da92c7d1d3a5f4c180cad562a453d5.png)
 
 发送端在层与层之间传输数据时，每经过一层时必定会被打上一个该层所属的首部信息。反之，接收端在层与层传输数据时，每经过一层时会把对应的首部消去。
 
@@ -47,25 +44,25 @@
 
 发送端首先发送一个带 SYN 标志的数据包给对方。接收端收到后，回传一个带有 SYN/ACK 标志的数据包以示传达确认信息。最后，发送端再回传一个带 ACK 标志的数据包，代表“握手”结束。
 
-![](https://i.loli.net/2019/03/17/5c8e063ccd90f.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/e8066af08ca30b2e5f3042bb39826e46b4916340e03cc66f7fa29904554b4244.png)
 
 ### 1.3 负责域名解析的 DNS 服务
 
 DNS（Domain Name System）服务是和 HTTP 协议一样位于应用层的协议。它提供域名到 IP 地址之间的解析服务。
 
-![](https://i.loli.net/2019/03/17/5c8e068e3bd98.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/a67d47be3018c271508a6ce82986b8ee6a13cb4989b8395659d00ca758bf45ca.png)
 
 ### 1.4 各协议与 HTTP 协议的关系
 
 通过这张图来了解下 IP 协议、TCP 协议和 DNS 服务在使用 HTTP 协议的通信过程中各自发挥了哪些作用。
 
-![](https://i.loli.net/2019/03/17/5c8e06d08a033.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/c80248344995d3ce6310e0b1bc83cdabc18f941ace8f15845c86f40dc2a0e656.png)
 
 ### 1.5 URI 和 URL
 
 了解一下 URI 的各部分
 
-![](https://i.loli.net/2019/03/21/5c938dc46a79f.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/0e85d1daaa3af86ec5b344e6c878dea5951e403f67269da2c955737306986ef9.png)
 
 1. **协议方案名：** 使用 `http:` 或 `https:` 等协议方案名获取访问资源时要指定协议类型。不区分字母大小写，最后附一个冒号。也可使用 `data:` 或 `javascript:` 这类指定数据或脚本程序的方案名。
 2. **登录信息（认证）：** 指定用户名和密码作为从服务器端获取资源时必要的登录信息（身份认证）。此项是可选项。
@@ -198,8 +195,6 @@ HTTP 可以在传输过程中通过编码提升传输速率。
 2. **客户端驱动协商：** 用户从浏览器显示的可选项列表中手动选择。还可以利用 JavaScript 脚本在 Web 页面上自动进行上述选择。比如按 OS 的类型或浏览器类型，自行切换成 PC 版页面或手机版页面。
 3. **透明协商：** 是服务器驱动和客户端驱动的结合体，是由服务器端和客户端各自进行内容协商的一种方法。
 
-
-
 ## 4. 返回结果的 HTTP 状态码
 
 状态码的职责是当客户端向服务器端发送请求时，描述返回的请求结果。借助状态码，用户可以知道服务器端是正常处理了请求，还是出现了错误。
@@ -282,7 +277,7 @@ HTTP1.1 规范允许一个服务器搭建多个 Web 站点，这是虚拟主机�
 
 HTTP 协议的请求和响应报文中必定包含 HTTP 首部，请求报文大约是下面的结构，响应报文类似
 
-![](https://i.loli.net/2019/03/18/5c8fa854ad295.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/ab75edf049f90d66e00bd2aaa1b4baf9ab6756f1800a73e138a9b2c33e2838b0.png)
 
 ### 6.1 HTTP 首部字段
 
@@ -555,7 +550,7 @@ HTTP 协议中有可能存在信息窃听或身份伪装等安全问题，使用
 
 把添加了加密及认证机制的 HTTP 称为 HTTPS（HTTP Secure）。HTTPS 并非是应用层的一种新协议，只是 HTTP 通信接口部分用 SSL（Secure Socket Layer）和 TLS（Transport Layer Security）协议代替而已。SSL 是独立于 HTTP 的协议，所以其他运行在应用层的 SMTP 和 Telnet 等协议均可配合 SSL 协议使用。
 
-![](https://i.loli.net/2019/03/20/5c9241c58aecc.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/4f072c0183893f319b2593de3fda74b4ddb44f02c2440b1c11d821aa33186a37.png)
 
 HTTPS 采用共享密钥加密和公开密钥加密两者并用的混合加密机制。若密钥能够实现安全交换，那么有可能会考虑仅使用公开密钥加密来通信。但是公开密钥加密与共享密钥加密相比，其处理速度要慢。
 
@@ -563,7 +558,7 @@ HTTPS 采用共享密钥加密和公开密钥加密两者并用的混合加密�
 
 数字证书认证机构（CA，Certificate Authority）和其相关机关颁发的公开密钥证书就是认证的可以信赖的公开密钥，服务器会将这份由数字证书认证机构颁发的公钥证书发送给客户端，以进行公开密钥加密方式通信。公钥证书也可叫做数字证书或直接称为证书。
 
-![](https://i.loli.net/2019/03/20/5c9246669ba65.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/624778268570fd448ae8f79b181e7defef60183f0ed49608ee4c5ba1c1156f54.png)
 
 HTTPS 通信的步骤：
 
@@ -580,7 +575,7 @@ HTTPS 通信的步骤：
 11. 应用层协议通信，即发送 HTTP 响应。
 12. 最后由客户端断开连接。断开连接时，发送 close_notify 报文。上图做了一些省略，这步之后再发送 TCP FIN 报文来关闭与 TCP 的通信。
 
-![](https://i.loli.net/2019/03/20/5c9248475d0a3.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/a8db97b8335b7ba185977c4ee771b1cacd3bf8e5151248d8dc795ff3c056e49f.png)
 
 在以上流程中，应用层发送数据时会附加一种叫做 MAC（Message Authentication Code）的报文摘要。MAC 能够查知报文是否遭到篡改，从而保护报文的完整性。
 
@@ -651,7 +646,7 @@ HTTP1.1 常用的认证方式：
 
    成功握手建立 WebSocket 连接之后，通信时不再使用 HTTP 的数据帧，而采用 WebSocket 独立的数据帧。
 
-![](https://i.loli.net/2019/03/21/5c92f51964381.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/0c795a991592b85a395ff44f7ccc67fd4e8c2ef1d27b5f288a1938399e36c120.png)
 
 ### 9.2  HTTP/2.0
 
@@ -715,7 +710,7 @@ HTTP 就是一个通用的单纯协议机制，开发者需要自行设计并开
 3. 中招后的用户浏览器会把含有攻击代码的 HTTP 请求发送给作为攻击目标的 Web 应用，运行攻击代码。
 4. 执行完攻击代码，存在安全漏洞的 Web 应用会成为攻击者的跳板，可能导致用户所持的 Cookie 等个人信息被窃取，登录状态中的用户权限遭恶意滥用等后果。
 
-![](https://i.loli.net/2019/03/21/5c9349be32db7.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/2a6c18a42838dd812870584f9f6fa3f522ac9631f7632dd48d79c4a90c7cb28e.png)
 
 ### 11.2 因输出值转义不完全引发的安全漏洞
 
@@ -843,19 +838,19 @@ http://example.com/?redirect=http://hackr.jp
 
 会话劫持（Session Hijack）是指攻击者通过某种手段拿到了用户的会话 ID，并非法使用此会话 ID 伪装成用户，达到攻击的目的。
 
-![会话劫持](https://i.loli.net/2019/03/21/5c9380669dac5.png)
+![会话劫持](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/b113d08b399ebc5d0214393bbf0ad80fba6abc5dae9e814f861c5f0dc27d60fa.png)
 
 攻击者在得知该 Web 网站存在可跨站攻击 XSS 的安全漏洞后，就设置好用 JavaScript 脚本调用 `document.cookie` 以窃取 Cookie 信息的陷阱，获取含有会话 ID 的 Cookie。
 
 拿到用户的会话 ID 后，往自己的浏览器的 Cookie 中设置该会话 ID，即可伪装成会话 ID 遭窃的用户，访问 Web 网站。
 
-![](https://i.loli.net/2019/03/21/5c9381bb15762.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8c89c99394491a554d1aa9d31d555f68d29eada987efbf60141ecfae5bb0d291.png)
 
 #### 会话固定攻击
 
 对以窃取目标会话 ID 为主动攻击手段的会话劫持而言，会话固定攻击（Session Fixation）攻击会强制用户使用攻击者指定的会话 ID，属于被动攻击。
 
-![](https://i.loli.net/2019/03/21/5c9383143da7d.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/63f66b8f6afff60d4b152bd0fd64ebba44fd508865d1c4c24eddfb974d9eeca1.png)
 
 攻击者设置好强制用户使用该会话 ID 的陷阱，并等待用户拿着这个会话 ID 前去认证。一旦用户触发陷阱并完成认证，会话在服务器上的状态（用户 A 已认证）就会被记录下来，再利用之前这个会话 ID 访问网站。
 
@@ -863,7 +858,7 @@ http://example.com/?redirect=http://hackr.jp
 
 跨站点请求伪造（Cross-Site Request Forgeries，CSRF）攻击是指攻击者通过设置好的陷阱，强制对已完成认证的用户进行非预期的个人信息或设定信息等某些状态更新，属于被动攻击。
 
-![](https://i.loli.net/2019/03/21/5c9383b29ac98.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/d51f35bb2e54fc8397b906a582321997ddedc78ce10eaa711dffd82c64842f5b.png)
 
 比如这个留言板功能，只允许已认证并登录的用户发表内容。用户的 Cookie 持有已认证的会话 ID。用户如果点击了攻击者留下的恶意代码链接，则会利用用户的信息执行操作。
 

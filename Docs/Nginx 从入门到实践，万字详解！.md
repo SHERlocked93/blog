@@ -1,12 +1,10 @@
 # Nginx 从入门到实践，万字详解！
 
-[TOC]
-
-![2020-04-29-oEH7uWdab5w](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-29-oEH7uWdab5w.jpg)
+![2020-04-29-oEH7uWdab5w](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/62746f2c0fc28a5e0056cd028015c1c3ad45ab3b2d1096aa3dc06f2effea6a5b.jpg)
 
 最近越来越频繁地遇到需要配置反向代理的场景，在自己搭建博客的时候，也不可避免要用到 Nginx，所以这段时间集中学习了一下 Nginx，同时做了一些笔记，希望也可以帮助到大家～ 😜
 
-这篇文章会在 CentOS 环境下安装和使用 Nginx，如果对 CentOS 基本操作还不太清楚的，可以先看看 [<半小时搞会 CentOS 入门必备基础知识>](https://juejin.im/post/5e5f13936fb9a07cdf534c62) 一文先做了解。
+这篇文章会在 CentOS 环境下安装和使用 Nginx，如果对 CentOS 基本操作还不太清楚的，可以先看看 [<半小时搞会 CentOS 入门必备基础知识>](https://github.com/SHERlocked93/blog/blob/master/Docs/CentOS%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md) 一文先做了解。
 
 相信作为开发者，大家都知道 Nginx 的重要，废话不多说，一起来学习吧。
 
@@ -18,7 +16,7 @@ Nginx 版本： `1.16.1`
 
 传统的 Web 服务器，每个客户端连接作为一个单独的进程或线程处理，需在切换任务时将 CPU 切换到新的任务并创建一个新的运行时上下文，消耗额外的内存和 CPU 时间，当并发请求增加时，服务器响应变慢，从而对性能产生负面影响。
 
-![Nginx](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-13-NGINX-logo-rgb-large.png)
+![Nginx](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/37c865c1c0eeaeea2e321999767f9bde25f24f97f611a5ece538b054838d7669.png)
 
 Nginx 是开源、高性能、高可靠的 Web 和反向代理服务器，而且支持热部署，几乎可以做到 7 * 24 小时不间断运行，即使运行几个月也不需要重新启动，还能在不间断服务的情况下对软件版本进行热更新。性能是 Nginx 最重要的考量，其占用内存少、并发能力强、能支持高达 5w 个并发连接数，最重要的是，Nginx 是免费的并可以商业化，配置使用也比较简单。
 
@@ -101,7 +99,7 @@ http://example.com:8080
 
 正向代理和反向代理主要的原理区别可以参见下图：
 
-![正向代理与反向代理](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-08-5ce95a07b18a071444-20200308191723379.png)
+![正向代理与反向代理](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/142fdc55dbf8e0ba71d54d70e3d4fab2cad94124fbf071435d37e749c259d728.png)
 
 ### 2.4 负载均衡
 
@@ -115,13 +113,13 @@ http://example.com:8080
 
 举个具体的例子 🌰，晚高峰乘坐地铁的时候，入站口经常会有地铁工作人员大喇叭“请走 B 口，B 口人少车空....”，这个工作人员的作用就是负载均衡。
 
-![负载均衡](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-09-负载均衡.png)
+![负载均衡](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/f862e264197c286f9e94c89d494c566293052cfffd71f5667cc842ad4148fee4.png)
 
 ### 2.5 动静分离
 
-为了加快网站的解析速度，可以把动态页面和静态页面由不同的服务器来解析，加快解析速度，降低原来单个服务器的压力。
+为了加快网站的解析速度，可以把动态页面和静态页面由不同的服务器来解析，加快解析速度，降低原来单个服务器的压力。
 
-![动静分离](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-09-动静分离.png)
+![动静分离](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/76dbfbba5933ab2a9ed360983323376e137d59e18135409a9b1901491bbcf0a7.png)
 
 一般来说，都需要将动态资源和静态资源分开，由于 Nginx 的高并发和静态资源缓存等特性，经常将静态资源部署在 Nginx 上。如果请求的是静态资源，直接到静态资源目录获取资源，如果是动态资源的请求，则利用反向代理的原理，把请求转发给对应后台应用去处理，从而实现动静分离。
 
@@ -139,7 +137,7 @@ yum list | grep nginx
 
 来看看
 
-![image-20200307180412726](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-07-image-20200307180412726.png)
+![image-20200307180412726](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/19fbd969980212fdbc13ad2c8c9cf21e5703ab3e16a8b61c772448bef5713b61.png)
 
 然后
 
@@ -149,13 +147,13 @@ yum install nginx
 
 来安装 Nginx，然后我们在命令行中 `nginx -v` 就可以看到具体的 Nginx 版本信息，也就安装完毕了。
 
-![image-20200307180545816](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-07-image-20200307180545816.png)
+![image-20200307180545816](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/62e2efecbbb26573ed65da9dc24d4904f3453734824933f9063edf276fda4a92.png)
 
 ### 3.2 相关文件夹
 
 然后我们可以使用 `rpm -ql nginx` 来查看 Nginx 被安装到了什么地方，有哪些相关目录，其中位于 `/etc` 目录下的主要是配置文件，还有一些文件见下图：
 
-![Xnip2020-03-07_21-46-11](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-07-Xnip2020-03-07_21-46-11.png)
+![Xnip2020-03-07_21-46-11](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/6e44407203b3cca35c6c2e1570de7d2f0980aed05b7183a136aac4dba4c040fd.png)
 
 主要关注的文件夹有两个：
 
@@ -296,18 +294,18 @@ http {   # 配置使用最频繁的部分，代理、缓存、日志定义等绝
     default_type        application/octet-stream;   # 默认文件类型
 
     include /etc/nginx/conf.d/*.conf;   # 加载子配置项
-    
+
     server {
     	listen       80;       # 配置监听的端口
     	server_name  localhost;    # 配置的域名
-    	
+
     	location / {
     		root   /usr/share/nginx/html;  # 网站根目录
     		index  index.html index.htm;   # 默认首页文件
     		deny 172.168.22.11;   # 禁止访问的ip地址，可以为all
     		allow 172.168.33.44； # 允许访问的ip地址，可以为all
     	}
-    	
+
     	error_page 500 502 503 504 /50x.html;  # 默认50x对应的访问页面
     	error_page 400 404 error.html;   # 同上
     }
@@ -360,7 +358,7 @@ Nginx 有一些常用的全局变量，你可以在配置的任何位置使用�
 
 在某某云 ☁️ 上购买了域名之后，就可以配置虚拟主机了，一般配置的路径在 `域名管理 -> 解析 -> 添加记录` 中添加二级域名，配置后某某云会把二级域名也解析到我们配置的服务器 IP 上，然后我们在 Nginx 上配置一下虚拟主机的访问监听，就可以拿到从这个二级域名过来的请求了。
 
-![image-20200426150644768](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-26-image-20200426150644768.png)
+![image-20200426150644768](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/82e81fe74111bec9b2d2b0fdddc2ac3367841ca5a08176e2b83b9d1208ed26b1.png)
 
 现在我自己的服务器上配置了一个 fe 的二级域名，也就是说在外网访问 `fe.sherlocked93.club` 的时候，也可以访问到我们的服务器了。
 
@@ -382,7 +380,7 @@ server {
 
 然后在 `/usr/share/nginx/html` 文件夹下新建 fe 文件夹，新建文件 `index.html`，内容随便写点，改完 `nginx -s reload` 重新加载，浏览器中输入 `fe.sherlocked93.club`，发现从二级域名就可以访问到我们刚刚新建的 fe 文件夹：
 
-![image-20200426153006505](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-26-image-20200426153006505.png)
+![image-20200426153006505](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/ed6a3ca66cf6630c98c1507fef9def2ace123d02b9c3d24e6ed93bd23dbe0de5.png)
 
 ## 7. 配置反向代理
 
@@ -396,7 +394,7 @@ vim /etc/nginx/nginx.conf
 
 为了看起来方便，把行号显示出来 `:set nu` （个人习惯），然后我们去 `http` 模块的 `server` 块中的 `location /`，增加一行将默认网址重定向到最大学习网站 Bilibili 的 `proxy_pass` 配置 🤓 ：
 
-![image-20200311153131642](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-11-image-20200311153131642.png)
+![image-20200311153131642](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/b994cfb77d644672af8b727da696b299d4a401b579a65c40201c13ce78aab6d3.png)
 
 改完保存退出，`nginx -s reload` 重新加载，进入默认网址，那么现在就直接跳转到 B 站了，实现了一个简单的代理。
 
@@ -417,7 +415,7 @@ server {
   location ~ /edu/ {
     proxy_pass http://127.0.0.1:8080;
   }
-  
+
   location ~ /vod/ {
     proxy_pass http://127.0.0.1:8081;
   }
@@ -436,7 +434,7 @@ server {
 
 关于简单请求、非简单请求、跨域的概念，前面已经介绍过了，还不了解的可以看看前面的讲解。现在前后端分离的项目一统天下，经常本地起了前端服务，需要访问不同的后端地址，不可避免遇到跨域问题。
 
-![image-20200427220536208](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-27-image-20200427220536208.png)
+![image-20200427220536208](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/cbd43b555fa78556051376461347d17788b0d1186798072019171f5d349a0e6f.png)
 
 要解决跨域问题，我们来制造一个跨域问题。首先和前面设置二级域名的方式一样，先设置好 `fe.sherlocked93.club` 和 `be.sherlocked93.club` 二级域名，都指向本云服务器地址，虽然对应 IP 是一样的，但是在 `fe.sherlocked93.club` 域名发出的请求访问 `be.sherlocked93.club` 域名的请求还是跨域了，因为访问的 host 不一致（如果不知道啥原因参见前面跨域的内容）。
 
@@ -465,7 +463,7 @@ location ^~/apis/ {
     # 这里重写了请求，将正则匹配中的第一个分组的path拼接到真正的请求后面，并用break停止后续匹配
     rewrite ^/apis/(.*)$ /$1 break;
     proxy_pass be.sherlocked93.club;
-  
+
     # 两个域名之间cookie的传递与回写
     proxy_cookie_domain be.sherlocked93.club fe.sherlocked93.club;
 }
@@ -496,7 +494,7 @@ location ^~/apis/ {
 
 打开浏览器访问 `fe.sherlocked93.club/index.html` 的结果如下：
 
-![image-20200428191153736](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-28-image-20200428191153736.png)
+![image-20200428191153736](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/aaab2d840f16a6b9acff94e97bf25c2fdb7a288039069aeb6bed1d73b51f2feb.png)
 
 很明显这里是跨域请求，在浏览器中直接访问 `http://be.sherlocked93.club/index.html` 是可以访问到的，但是在 `fe.sherlocked93.club` 的 html 页面访问就会出现跨域。
 
@@ -508,21 +506,21 @@ location ^~/apis/ {
 server {
   listen       80;
   server_name  be.sherlocked93.club;
-  
+
 	add_header 'Access-Control-Allow-Origin' $http_origin;   # 全局变量获得当前请求origin，带cookie的请求不支持*
 	add_header 'Access-Control-Allow-Credentials' 'true';    # 为 true 可带上 cookie
 	add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';  # 允许请求方法
 	add_header 'Access-Control-Allow-Headers' $http_access_control_request_headers;  # 允许请求的 header，可以为 *
 	add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
-	
+
   if ($request_method = 'OPTIONS') {
 		add_header 'Access-Control-Max-Age' 1728000;   # OPTIONS 请求的有效期，在有效期内不用发出另一条预检请求
 		add_header 'Content-Type' 'text/plain; charset=utf-8';
 		add_header 'Content-Length' 0;
-    
+
 		return 204;                  # 200 也可以
 	}
-  
+
 	location / {
 		root  /usr/share/nginx/html/be;
 		index index.html;
@@ -532,7 +530,7 @@ server {
 
 然后 `nginx -s reload` 重新加载配置。这时再访问 `fe.sherlocked93.club/index.html` 结果如下，请求中出现了我们刚刚配置的 Header：
 
-![image-20200428192028636](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-28-image-20200428192028636.png)
+![image-20200428192028636](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/fd5f91c6ddf0a935f1f40e75735daf3487bfc785d34ec25b4909cef901d0ca43.png)
 
 解决了跨域问题。
 
@@ -542,7 +540,7 @@ gzip 是一种常用的网页压缩技术，传输的网页经过 gzip 压缩之
 
 百度可以找到很多检测站点来查看目标网页有没有开启 gzip 压缩，在下随便找了一个 [<网页GZIP压缩检测>](http://tool.chinaz.com/Gzips/Default.aspx?q=juejin.im) 输入掘金 `juejin.im` 来偷窥下掘金有没有开启 gzip。
 
-![image-20200427110415809](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-27-VCglo38pR7iLPu5.png)
+![image-20200427110415809](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/4a42e0f01b83e44f10c0a411fddbf203390614d6adc4dcb4c353438b6e5ec5ec.png)
 
 这里可以看到掘金是开启了 gzip 的，压缩效果还挺不错，达到了 52% 之多，本来 `34kb` 的网页体积，压缩完只需要 `16kb`，可以想象网页传输速度提升了不少。
 
@@ -583,15 +581,15 @@ gzip_http_version 1.1;
 
 其他更全的配置信息可以查看 [<官网文档ngx\_http\_gzip\_module>](http://nginx.org/en/docs/http/ngx_http_gzip_module.html)，配置前是这样的：
 
-![image-20200427161022215](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-27-xYMwVR9fsJ1SiXc.png)
+![image-20200427161022215](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8483de17b5ba04ef721666812b7b4e9a37e6077e6cf57032ae1e6b508f2a1ffe.png)
 
 配置之后 response 的 header 里面多了一个 `Content-Encoding: gzip`，返回信息被压缩了：
 
-![image-20200427164033577](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-27-dHPDZYlnC5WaFIX.png)
+![image-20200427164033577](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8645390cd4cb85173e97f5c76eeb5f8b398d1cace2720756796420eb9833f327.png)
 
 注意了，一般 gzip 的配置建议加上 `gzip_min_length 1k`，不加的话：
 
-![image-20200427164408389](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-27-image-20200427164408389.png)
+![image-20200427164408389](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/31b71e53a62237f382fbe1907ec71ccf04d39da85b72b7baeaff834cfe894a48.png)
 
 由于文件太小，gzip 压缩之后得到了 -48% 的体积优化，压缩之后体积还比压缩之前体积大了，所以最好设置低于 `1kb` 的文件就不要 gzip 压缩了 🤪
 
@@ -623,7 +621,7 @@ module.exports = {
 
 由此打包出来的文件如下图：
 
-![image-20200427144824829](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-27-image-20200427144824829.png)
+![image-20200427144824829](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/7bacfe15ae4f704eaa8492282e7c3fff4e10264976432985d15cbc117a0b0858.png)
 
 这里可以看到某些打包之后的文件下面有一个对应的 `.gz` 经过 `gzip` 压缩之后的文件，这是因为这个文件超过了 `10kb`，有的文件没有超过 `10kb` 就没有进行 `gzip` 打包，如果你期望压缩文件的体积阈值小一点，可以在 `compression-webpack-plugin` 这个插件的配置里进行对应配置。
 
@@ -646,7 +644,7 @@ http {
     server 127.0.0.1:8080;
     server 127.0.0.1:8082 weight=10;  # weight 方式，不写默认为 1
   }
- 
+
   server {
     location / {
     	proxy_pass http://myserver;
@@ -675,7 +673,7 @@ server {
   	root /data/;
     index index.html index.htm;
   }
-  
+
   location /image/ {
   	root /data/;
     autoindex on;
@@ -687,7 +685,7 @@ server {
 
 当主 Nginx 服务器宕机之后，切换到备份 Nginx 服务器
 
-![2020-03-13-双机热备](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-13-双机热备%20%281%29.png)
+![2020-03-13-双机热备](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/ee97edb8879ca86c13d4f83100fa3512f32fb6979665e6d70f7f52c47129ee4f.png)
 
 首先安装 keepalived，
 
@@ -787,7 +785,7 @@ server {
 
 在浏览器访问这个站点，然后 F12 中模拟使用手机访问：
 
-![62haogU3DtwMRiZ](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-04-27-u8wFOHYojQhRIT2.gif)
+![62haogU3DtwMRiZ](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/e827ab8cec321a7d427e5c1cab6ba575081654568a9dd821789194a047b20442.gif)
 
 可以看到在模拟使用移动端访问的时候，Nginx 返回的站点变成了移动端对应的 html 了。
 
@@ -809,7 +807,7 @@ server {
   ssl_protocols TLSv1 TLSv1.1 TLSv1.2;      #请按照以下协议配置
   ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE; 
   ssl_prefer_server_ciphers on;
-  
+
   location / {
     root         /usr/share/nginx/html;
     index        index.html index.htm;
@@ -839,7 +837,7 @@ server {
 
   location /download {
     alias	          /usr/share/nginx/html/static;  # 静态资源目录
-    
+
     autoindex               on;    # 开启静态资源列目录
     autoindex_exact_size    off;   # on(默认)显示文件的确切大小，单位是byte；off显示文件大概大小，单位KB、MB、GB
     autoindex_localtime     off;   # off(默认)时显示的文件时间为GMT时间；on显示的文件时间为服务器时间
@@ -856,7 +854,7 @@ server {
   
   # 图片防盗链
   location ~* \.(gif|jpg|jpeg|png|bmp|swf)$ {
-    valid_referers none blocked 192.168.0.2;  # 只允许本机 IP 外链引用
+    valid_referers none blocked server_names ~\.google\. ~\.baidu\. *.qq.com;  # 只允许本机 IP 外链引用，感谢 @木法传 的提醒，将百度和谷歌也加入白名单
     if ($invalid_referer){
       return 403;
     }
@@ -876,7 +874,7 @@ location / {
   # IP访问限制（只允许IP是 192.168.0.2 机器访问）
   allow 192.168.0.2;
   deny all;
-  
+
   root   html;
   index  index.html index.htm;
 }
@@ -902,21 +900,21 @@ expires -1;
 server {
   listen       80;
   server_name  fe.sherlocked93.club;
-  
+
   location / {
     root       /usr/share/nginx/html/dist;  # vue 打包后的文件夹
     index      index.html index.htm;
     try_files  $uri $uri/ /index.html @rewrites;  
-    
+
     expires -1;                          # 首页一般没有强制缓存
     add_header Cache-Control no-cache;
   }
-  
+
   # 接口转发，如果需要的话
   #location ~ ^/api {
   #  proxy_pass http://be.sherlocked93.club;
   #}
-  
+
   location @rewrites {
     rewrite ^(.+)$ /index.html break;
   }
@@ -993,11 +991,7 @@ server {
 6.  常用的、复用频率比较高的配置可以放到 `/etc/nginx/snippets` 文件夹，在 Nginx 的配置文件中需要用到的位置 include 进去，以功能来命名，并在每个 snippet 配置文件的开头注释标明主要功能和引入位置，方便管理。比如之前的 `gzip`、`cors` 等常用配置，我都设置了 snippet。
 7.  Nginx 日志相关目录，内以 `域名.type.log` 命名（比如 `be.sherlocked93.club.access.log` 和 `be.sherlocked93.club.error.log` ）位于 `/var/log/nginx/` 目录中，为每个独立的服务配置不同的访问权限和错误日志文件，这样查找错误时，会更加方便快捷。
 
-
-
 ---
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
-
 
 > 参考文档：
 >
@@ -1012,12 +1006,3 @@ server {
 > 9. [vue\-router history模式nginx配置并配置静态资源缓存 \| HolidayPenguin](https://www.holidaypenguin.com/blob/2019-02-18-vue-router-history-mode-nginx-configuration-and-configuration-of-static-resource-cache/)
 > 10. [nginx重定向，全局https，SSL配置，反代配置参考](https://blog.xinac.cn/archives/nginx%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E5%8F%82%E8%80%83%E5%A4%A7%E5%85%A8)
 > 11. [Nginx 入门教程](https://xuexb.github.io/learn-nginx/)
-
-
-PS：本人博客地址 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog)，也欢迎大家关注我的公众号【前端下午茶】，一起加油吧~
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-5cf08a479cd5d75372-20200304131909230.jpg)
-
-另外可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-5d2986f77e9bc11533-20200304131910068.jpg)

@@ -1,7 +1,5 @@
 # 这些 JS 中强大的操作符，总有几个你没听说过
 
-[TOC]
-
 JS 里的操作符大家每天都在使用，还有一些 ES2020、ES2021 新加的实用操作符，这些共同构成了 JS 灵活的语法生态。本文除介绍常用的操作符之外，还会介绍 JS 里一些不常用但是很强大的操作符，下面我们一起来看看吧～
 
 ## 1. 数值分割符 _
@@ -38,7 +36,6 @@ reverse(list)   // 返回 3，此时 list 为[2, 1]
 ```javascript
 expr1, expr2, expr3...
 ```
-
 
 会返回最后一个表达式 `expr3` 的结果，其他的表达式只会进行求值。
 
@@ -115,7 +112,7 @@ class Person {
   getDesc(){ 
     return this.#name +' '+ this.#getAge()
   }
-  
+
   #getAge(){ return this.#age } // 私有方法
 
   get #name(){ return 'foo' } // 私有访问器
@@ -196,6 +193,7 @@ console.log(a.getDesc()) // foo 23
 使用位运算符时会抛弃小数位，我们可以利用这个特性来给数字取整，比如给任意数字 `&` 上二进制的 32 个 1，或者 `|` 上 0，显而易见后者简单些。
 
 所以我们可以对一个数字 `| 0` 来取整，负数也同样适用
+
 ```js
 1.3 | 0         // 1
 -1.9 | 0        // -1
@@ -212,17 +210,20 @@ const num = 3
 ## 8. 双位运算符 ~~
 
 可以使用双位操作符来替代正数的 `Math.floor( )`，替代负数的 `Math.ceil( )`。双否定位操作符的优势在于它执行相同的操作运行速度更快。
+
 ```js
 Math.floor(4.9) === 4      // true
 // 简写为：
 ~~4.9 === 4      // true
 ```
+
 不过要注意，对正数来说 `~~` 运算结果与 `Math.floor( )` 运算结果相同，而对于负数来说与 `Math.ceil( )` 的运算结果相同：
+
 ```js
 ~~4.5                // 4
 Math.floor(4.5)      // 4
 Math.ceil(4.5)       // 5
- 
+
 ~~-4.5               // -4
 Math.floor(-4.5)     // -5
 Math.ceil(-4.5)      // -4
@@ -251,17 +252,21 @@ let param2 = expr1 || expr2
 | `!` | `!expr` | 如果单个表达式能转换为 true  的话返回 false，否则返回 true |
 
 因此可以用来做很多有意思的事，比如给变量赋初值：
+
 ```js
 let variable1
 let variable2 = variable1  || 'foo'
 ```
+
 如果 `variable1` 是真值就直接返回了，后面短路就不会被返回了，如果为假值，则会返回后面的`foo`。
 
 也可以用来进行简单的判断，取代冗长的`if`语句：
+
 ```js
 let variable = param && param.prop
 // 有了可选链之后可以直接 param?.prop
 ```
+
 如果 `param` 如果为真值则返回 `param.prop` 属性，否则返回 `param` 这个假值，这样在某些地方防止 `param` 为 `undefined` 的时候还取其属性造成报错。
 
 ## 10. void 运算符
@@ -297,18 +302,13 @@ const func = () => void customMethod()   // 特别是给一个事件或者回调
 
 下面的表将运算符按照优先级的不同从高（20）到低（1）排列，但这个不是最新的，至少没包括可选链，建议参考[这个表](https://github.com/SHERlocked93/blog/issues/1)或者 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)。
 
-[![运算符优先级](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/2704205206-57e4c6ebcbc0d_articlex.png)](https://github.com/SHERlocked93/blog/issues/1)
-
+[![运算符优先级](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/2704205206-57e4c6ebcbc0d_articlex.png)](https://github.com/SHERlocked93/blog/issues/1)
 
 ---
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下哦，你的点赞是我更新的最大动力！（收藏不点赞，都是耍流氓 🤣）~
-
 
 > 参考文档：
 >
 > 1. [运算符优先级 - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
-> 2. [JS 中可以提升幸福度的小技巧](https://juejin.cn/post/6844903641468403726)
+> 2. [JS 中可以提升幸福度的小技巧](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E4%B8%AD%E5%8F%AF%E4%BB%A5%E6%8F%90%E5%8D%87%E5%B9%B8%E7%A6%8F%E5%BA%A6%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.md)
 > 3. [4个未听说过的强大JavaScript操作符](https://mp.weixin.qq.com/s/ekZCR7BNVnIzHx5YoYl7qg)
 > 4. [聊聊JavaScript中的二进制数](https://zhuanlan.zhihu.com/p/22297104)
-
-PS：本文收录在在下的博客 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog) 系列文章中，欢迎大家关注我的公众号 `前端下午茶`，直接搜索即可添加或者点[这里](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/TJt4p2-19-56-21.jpg)添加，持续为大家推送前端以及前端周边相关优质技术文，共同进步，一起加油~

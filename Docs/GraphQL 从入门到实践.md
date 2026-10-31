@@ -1,7 +1,5 @@
 # GraphQL 从入门到实践
-[TOC]
-
-![](https://i.loli.net/2019/03/12/5c87a1cfe83e9.jpg)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/fa63b10d8592bf468203c554419cb07a281790c45265fdd8761e171ee77e5dae.jpg)
 
 本文首先介绍了 GraphQL，再通过 MongoDB + graphql + graph-pack 的组合实战应用 GraphQL，详细阐述如何使用 GraphQL 来进行增删改查和数据订阅推送，并附有使用示例，边用边学印象深刻~
 
@@ -25,7 +23,7 @@ GraphQL 是一种面向数据的 API 查询风格。
 
 简单使用可以参照下面这个图：
 
-![](https://i.loli.net/2019/03/10/5c84b1dca1c5f.gif)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8af526f518c154b269ed66139f7323d0be3c975d6c8a8dca2e609f5170390304.gif)
 
 比如前端希望返回一个 ID 为 `233` 的用户的名称和性别，并查找这个用户的前十个雇员的名字和 Email，再找到这个人父亲的电话，和这个父亲的狗的名字（别问我为什么有这么奇怪的查找 🤪），那么我们可以通过 GraphQL 的一次 query 拿到全部信息，无需从好几个异步 API 里面来回找：
 
@@ -270,7 +268,7 @@ npm i -S graphpack
 
 然后 `npm run dev` ，浏览器打开 `http://localhost:4000/` 就可以使用 GraphQL Playground 开始调试了，左边是请求信息栏，左下是请求参数栏和请求头设置栏，右边是返回参数栏，详细用法可以参考 [Prisma 文档](https://www.prisma.io/blog/introducing-graphql-playground-f1e0a018f05d/) 
 
-![](https://i.loli.net/2019/03/12/5c8743667c908.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/bea1de59b4c600ab670977aa0fa802c3360885b3ca5684549339b369baeab85b.png)
 
 ### 3.2 Query
 
@@ -547,7 +545,7 @@ subscription subsUser($id: ID!) {
 
 目前前后端的结构大概如下图。后端通过 DAO 层与数据库连接实现数据持久化，服务于处理业务逻辑的 Service 层，Controller 层接受 API 请求调用 Service 层处理并返回；前端通过浏览器 URL 进行路由命中获取目标视图状态，而页面视图是由组件嵌套组成，每个组件维护着各自的组件级状态，一些稍微复杂的应用还会使用集中式状态管理的工具，比如 Vuex、Redux、Mobx 等。前后端只通过 API 来交流，这也是现在前后端分离开发的基础。
 
-![](https://i.loli.net/2019/03/08/5c82222d15d80.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/a816fcf2001dfdad274e9fe62c32fe5355696f2773140f068004b48323616bba.png)
 
 如果使用 GraphQL，那么后端将不再产出 API，而是将 Controller 层维护为 Resolver，和前端约定一套 Schema，这个 Schema 将用来生成接口文档，前端直接通过 Schema 或生成的接口文档来进行自己期望的请求。
 
@@ -562,12 +560,7 @@ subscription subsUser($id: ID!) {
 
 大约可以概括为性能瓶颈和团队分工的原因，希望随着社区的发展，基础设施的完善，会渐渐有完善的解决方案提出，让广大前后端开发者们可以早日用上此利器。
 
-
-
 ---
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
-
-
 
 > 参考：
 >

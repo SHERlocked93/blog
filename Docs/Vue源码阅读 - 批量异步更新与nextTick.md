@@ -1,9 +1,5 @@
 # Vue源码阅读 - 批量异步更新与nextTick原理
 
-[TOC]
-
- 
-
 vue已是目前国内前端web端三分天下之一，同时也作为本人主要技术栈之一，在日常使用中知其然也好奇着所以然，另外最近的社区涌现了一大票vue源码阅读类的文章，在下借这个机会从大家的文章和讨论中汲取了一些营养，同时对一些阅读源码时的想法进行总结，出产一些文章，作为自己思考的总结，本人水平有限，欢迎留言讨论~
 
 目标Vue版本：`2.5.17-beta.0`
@@ -12,11 +8,9 @@ vue源码注释：[https://github.com/SHERlocked93/vue-analysis](https://github.
 
 声明：文章中源码的语法都使用 Flow，并且源码根据需要都有删节(为了不被迷糊 @_@)，如果要看完整版的请进入上面的[github地址](https://github.com/SHERlocked93/vue-analysis)，本文是系列文章，文章地址见底部~
 
+## 1. 异步更新
 
-
-## 1. 异步更新 
-
-[上一篇文章](https://juejin.im/post/5b38830de51d455888216675)我们在依赖收集原理的响应式化方法 `defineReactive` 中的 `setter` 访问器中有派发更新 `dep.notify()` 方法，这个方法会挨个通知在 `dep` 的 `subs` 中收集的订阅自己变动的watchers执行update。一起来看看 `update` 方法的实现：
+[上一篇文章](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.md)我们在依赖收集原理的响应式化方法 `defineReactive` 中的 `setter` 访问器中有派发更新 `dep.notify()` 方法，这个方法会挨个通知在 `dep` 的 `subs` 中收集的订阅自己变动的watchers执行update。一起来看看 `update` 方法的实现：
 
 ```js
 // src/core/observer/watcher.js
@@ -122,9 +116,9 @@ function flushSchedulerQueue () {
 
 ### 2.1 宏任务/微任务
 
-这里就来看看包含着每个watcher执行的方法被作为回调传入 `nextTick` 之后，`nextTick` 对这个方法做了什么。不过首先要了解一下浏览器中的 `EventLoop`、`macro task`、`micro task`几个概念，不了解可以参考一下 [JS与Node.js中的事件循环](https://segmentfault.com/a/1190000012362096#articleHeader6) 这篇文章，这里就用一张图来表明一下后两者在主线程中的执行关系：
+这里就来看看包含着每个watcher执行的方法被作为回调传入 `nextTick` 之后，`nextTick` 对这个方法做了什么。不过首先要了解一下浏览器中的 `EventLoop`、`macro task`、`micro task`几个概念，不了解可以参考一下 [JS与Node.js中的事件循环](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%E4%B8%8ENode.js%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.md#articleheader6) 这篇文章，这里就用一张图来表明一下后两者在主线程中的执行关系：
 
-![clipboard.png](https://segmentfault.com/img/bV3EIf?w=547&h=261) 
+![clipboard.png](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8d798347e1c7d9f7c116bf8cf4467d0af8c8118ed18a8391ec2d98790d24da71.png)
 
 解释一下，当主线程执行完同步任务后：
 
@@ -264,11 +258,11 @@ Vue源码中 `next-tick.js` 文件还有一段重要的[注释](https://github.c
 
 强制 `macro task` 的方法是在绑定 DOM 事件的时候，默认会给回调的 handler 函数调用 `withMacroTask` 方法做一层包装 `handler = withMacroTask(handler)`，它保证整个回调函数执行过程中，遇到数据状态的改变，这些改变都会被推到 `macro task` 中。以上实现在 [src/platforms/web/runtime/modules/events.js](https://github.com/SHERlocked93/vue-analysis/blob/12343b07f468bd4b6c2e7c078312b882cd7885ee/vue/src/platforms/web/runtime/modules/events.js#L48) 的 `add` 方法中，可以自己看一看具体代码。
 
-刚好在写这篇文章的时候思否上有人问了个问题 [vue 2.4 和2.5 版本的@input事件不一样](https://segmentfault.com/q/1010000015663316?_ea=4018873) ，这个问题的原因也是因为2.5之前版本的DOM事件采用 `micro task` ，而之后采用 `macro task`，解决的途径参考 [< Vue.js 升级踩坑小记>](https://juejin.im/post/5a1af88f5188254a701ec230) 中介绍的几个办法，这里就提供一个在mounted钩子中用 `addEventListener` 添加原生事件的方法来实现，参见 [CodePen](https://codepen.io/SHERlocked93/pen/WKGNKJ)。
+刚好在写这篇文章的时候思否上有人问了个问题 [vue 2.4 和2.5 版本的@input事件不一样](https://segmentfault.com/q/1010000015663316?_ea=4018873) ，这个问题的原因也是因为2.5之前版本的DOM事件采用 `micro task` ，而之后采用 `macro task`，解决的途径参考 [< Vue.js 升级踩坑小记>](https://juejin.cn/post/6844903516822044680) 中介绍的几个办法，这里就提供一个在mounted钩子中用 `addEventListener` 添加原生事件的方法来实现，参见 [CodePen](https://codepen.io/SHERlocked93/pen/WKGNKJ)。
 
 ## 3. 一个例子
 
-说这么多，不如来个例子，执行参见 [CodePen](https://codepen.io/SHERlocked93/pen/XBjOLq) 
+说这么多，不如来个例子，执行参见 [CodePen](https://codepen.io/SHERlocked93/pen/XBjOLq)
 
 ```html
 <div id="app">
@@ -302,10 +296,10 @@ Vue源码中 `next-tick.js` 文件还有一段重要的[注释](https://github.c
 执行以下看看结果：
 
 ```
-同步方式：SHERlocked93 
-setter前：SHERlocked93 
-setter后：name改喽 
-Promise方式：name改喽 
+同步方式：SHERlocked93
+setter前：SHERlocked93
+setter后：name改喽
+Promise方式：name改喽
 setTimeout方式：name改喽
 ```
 
@@ -321,16 +315,12 @@ setTimeout方式：name改喽
 
 另外，如果浏览器的宏任务队列里面有`setImmediate`、`MessageChannel`、`setTimeout/setInterval` 各种类型的任务，那么会按照上面的顺序挨个按照添加进event loop中的顺序执行，所以如果浏览器支持`MessageChannel`， `nextTick` 执行的是 `macroTimerFunc`，那么如果 macrotask queue 中同时有 `nextTick` 添加的任务和用户自己添加的 `setTimeout` 类型的任务，会优先执行 `nextTick` 中的任务，因为`MessageChannel` 的优先级比 `setTimeout`的高，`setImmediate` 同理。
 
-
-
 ---
 
 **本文是系列文章，随后会更新后面的部分，共同进步~**
-> 1. [Vue源码阅读 - 文件结构与运行机制](https://juejin.im/post/5b38830de51d455888216675)
-> 2. [Vue源码阅读 - 依赖收集原理](https://juejin.im/post/5b40c8495188251af3632dfa)
-> 3. [Vue源码阅读 - 批量异步更新与nextTick原理](https://juejin.im/post/5b50760f5188251ad06b61be)
-
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
+> 1. [Vue源码阅读 - 文件结构与运行机制](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.md)
+> 2. [Vue源码阅读 - 依赖收集原理](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E4%BE%9D%E8%B5%96%E6%94%B6%E9%9B%86%E5%8E%9F%E7%90%86.md)
+> 3. [Vue源码阅读 - 批量异步更新与nextTick原理](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E6%89%B9%E9%87%8F%E5%BC%82%E6%AD%A5%E6%9B%B4%E6%96%B0%E4%B8%8EnextTick.md)
 
 > 参考：
 > 1. [Vue2.1.7源码学习](http://hcysun.me/2017/03/03/Vue%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0/)
@@ -339,7 +329,6 @@ setTimeout方式：name改喽
 > 4. [Vue.js 文档](https://cn.vuejs.org/)
 > 5. [记录：window.MessageChannel那些事](https://zhuanlan.zhihu.com/p/37589777)
 > 6. [MDN - MessageChannel](https://developer.mozilla.org/zh-CN/docs/Web/API/MessageChannel)
-> 7. [JS与Node.js中的事件循环](https://segmentfault.com/a/1190000012362096#articleHeader6)
-> 8. [黄轶 - Vue.js 升级踩坑小记](https://juejin.im/post/5a1af88f5188254a701ec230)
-> 9. [Vue nextTick 机制](https://juejin.im/post/5ae3f0956fb9a07ac90cf43e)
-
+> 7. [JS与Node.js中的事件循环](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%E4%B8%8ENode.js%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.md#articleheader6)
+> 8. [黄轶 - Vue.js 升级踩坑小记](https://juejin.cn/post/6844903516822044680)
+> 9. [Vue nextTick 机制](https://juejin.cn/post/6844903599655370765)

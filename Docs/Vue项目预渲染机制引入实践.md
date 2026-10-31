@@ -1,6 +1,4 @@
 # Vue项目预渲染机制引入实践
-[TOC]
-
 周末想顺便把已经做好静态页面的webApp项目做一下SEO优化，由于不想写蹩脚的[SSR](https://ssr.vuejs.org/zh/)代码，所以准备采用预渲染，本来想着网上有这么多[预渲染](https://ssr.vuejs.org/zh/#%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%B8%B2%E6%9F%93-vs-%E9%A2%84%E6%B8%B2%E6%9F%93-ssr-vs-prerendering)的文章，随便找个来跟着做不就完了嘛，结果年轻的我付出了整个周末..... 这篇文章就记录一下最后是怎么配置的 T.T
 
 声明：
@@ -69,8 +67,6 @@ $ npm install prerender-spa-plugin --save-dev
 │ CompanyHonor.vue
 ```
 
-
-
 然后是router/index.js的配置，预渲染要求是histroy模式，有的文章说不需要history模式，这是错的，否则生成的页面都是同一个html。另外注意加上`base`否则如果你希望跳转到二级页面的`localhost/base/home`时候，在页面中点击`<router-link to="/home">home</router-link>`的时候会跳转`localhost/home`
 
 // src/router/index.js
@@ -109,6 +105,8 @@ module.exports = {
 然后是插件的配置，是放在`prod`中的，因为只有build的时候会用
 
 // build/webpack.prod.conf.js
+
+注意了，如果你的项目是部署在linux/centOS之类没有桌面的系统，需要把`headless: false`去掉，如果centOS报没有找到lib的错，请参考 [issue-200](https://github.com/chrisvfritz/prerender-spa-plugin/issues/200 "https://github.com/chrisvfritz/prerender-spa-plugin/issues/200") 的解决办法。
 
 ```js
 const path = require('path')
@@ -190,22 +188,29 @@ ExtractTextPlugin.extract({
 顺便贴一下nginx配置
 
 ```nginx
+server {
+        listen 80;
+        server_name localhost;
+        root /nginx-1.14.0/html;
+
+        error_page 500 502 503 504 /50x.html;
+
+        location ~ ^/base/ {
+          try_files $uri $uri/ /base/index.html;
+        }
+        location = /50x.html {
+            root html;
+        }
+}
+```
+
+```nginx
 location ~ ^/base/ {
   try_files $uri $uri/ /base/index.html =404;
 }
 ```
 
-
-
-
-
 ---
-
-
-
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
-
-
 
 > 参考：
 >
@@ -214,3 +219,8 @@ location ~ ^/base/ {
 > 3. [vue-cli v3, can't get it to work.. issue #215](https://github.com/chrisvfritz/prerender-spa-plugin/issues/215#)
 > 4. [When assetsPublicPath is set, the... issue #176](https://github.com/chrisvfritz/prerender-spa-plugin/issues/176)
 > 5. [vue.js vue-router history模式路由，域名二级目录子目录nginx配置](https://segmentfault.com/a/1190000015753352?utm_source=tag-newest)
+
+> 补充参考：
+> 1. [webApp - 在线预览](http://sherlocked93.club/vue-style-codebase/)
+> 2. [Github - 配置了预渲染的demo](https://github.com/SHERlocked93/vue-style-codebase/tree/prerender)
+> 3. [处理 Vue 单页面 Meta SEO的另一种思路](https://zhuanlan.zhihu.com/p/29148760?group_id=890298677627879424)

@@ -1,8 +1,6 @@
 # 开发微信小程序，我为什么放弃 setData，使用 upData
 
-[TOC]
-
-![2020-07-22-HC2B7ingmKo](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-07-22-HC2B7ingmKo.jpg)
+![2020-07-22-HC2B7ingmKo](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/d617a5720a4ab69acc2942be9259a739340e6bbd11f7c7fc609cff9eab763889.jpg)
 
 鉴于在下使用微信小程序开发时使用 `setData` 的蹩脚体验，开发了个库函数 `wx-updata`，项目上线之后，我把这个自用的库函数整理放到 Github 上开源出来 [wx-updata](https://github.com/SHERlocked93/wx-updata)，这个库函数在开发的时候对我很有帮助，希望也可以帮到大家 👏
 
@@ -116,7 +114,6 @@ this.upData({
 
 使用 `npm`、`yarn` 安装方式：
 
-
 ```bash
 $ npm i -S wx-updata
 # or
@@ -139,7 +136,6 @@ $ yarn add wx-updata
 ```javascript
 // app.js
 import { updataInit } from './miniprogram_npm/wx-updata/index'  // 你的库文件路径
-
 
 App({
     onLaunch() {
@@ -197,6 +193,27 @@ this.upData({
 })
 ```
 
+如果数组空位你不习惯，或者不乐意数逗号个数，可以试试数组的对象路径方式，需要传递 config 的配置 `{arrObjPath: true}`
+
+```javascript
+// 页面代码中
+import { Empty } from './miniprogram_npm/wx-updata/index'
+
+// 原来的方式
+this.upData({
+    info: { height: 155 },
+    desc: [, '靓仔'],
+    family: [, , [, , , { color: '灰色' }]]
+})
+
+// 使用数组路径方式
+this.upData({
+    info: { height: 155 },
+    desc: {'[1]': '靓仔'},
+    family: { '[2]': { '[3]': { color: '灰色' } } }
+})
+```
+
 ## 5. wx-updata 相关 API
 
 `Page.prototype.upData(Object data, Function callback)`
@@ -204,34 +221,18 @@ this.upData({
 1. `data`： 你希望设置的 data
 2. `callback`： 跟 [setData](https://developers.weixin.qq.com/miniprogram/dev/reference/api/Page.html#Page.prototype.setData(Object%20data,%20Function%20callback)) 第二个参数一样，引起界面更新渲染完毕后的回调函数
 
-
-
 `updataInit(Page, config)`
 
 1. `Page`： 页面对象，需要在 `app.js` 中调用；
-2. `config`： 若提供配置参数 `{ debug: true }`，会将路径化后的 data 打印出来，帮助用户进行调试；
+2. `config`：`{ debug: true }` 打印路径化后的 data，`{ arrObjPath: true }` 开启数组的对象路径方式；默认均不启用
 
-
-
-`objToPath(Object data)`
+`objToPath(Object data, Object config)`
 
 1. `data`： 你希望设置的 data 对象
-
-
+2. `config`：`{ arrObjPath: true }` 开启数组的对象路径方式，默认不启用
 
 ---
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
-
 
 > 参考文档：
 >
-> 1. [小程序开发实用技巧——扩展 Page 页面对象 - 掘金](https://juejin.im/post/5b55c1056fb9a04f951d1d4b)
-
-
-PS：本人博客地址 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog)，也欢迎大家关注我的公众号【前端下午茶】，一起加油吧~
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-5cf08a479cd5d75372-20200304131909230.jpg)
-
-另外可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-5d2986f77e9bc11533-20200304131910068.jpg)
+> 1. [小程序开发实用技巧——扩展 Page 页面对象 - 掘金](https://juejin.cn/post/6844903645180329991)

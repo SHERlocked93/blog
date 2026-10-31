@@ -1,0 +1,9 @@
+node_modules/
+.vitepress/cache/
+.vitepress/dist/
+.migration-cache/
+.venv/
+__pycache__/
+.obsidian/
+Docs/*.html.md
+migration

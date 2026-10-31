@@ -2,9 +2,9 @@
 
 经常碰到offset、scroll、client这几个关键字，这里总结一下。
 
-![img](file:///C:/Users/qiany/Documents/My%20Knowledge/temp/a0b082bf-d98e-4118-83a4-5c587b923857/128/index_files/44e942d3-a4f0-48fc-9931-f2dfab61b03f.png)
+![img](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/6f587b769d9a0ad3244a24df159c8fedd42ab811d486a7c421afd7cccf8ef09a.png)
 
-![img](file:///C:\Users\qiany\Documents\My Knowledge\temp\a0b082bf-d98e-4118-83a4-5c587b923857\128\index_files\0.4192579735080717.png)
+![img](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/12e8050aff01ab197156f9aa07c8061dabad6a84660212cefff2118c7f59bf5b.png)
 
 ## 1. offset 
 
@@ -26,8 +26,6 @@
 5. **obj.offsetLeft** 指 obj 相对于版面或由 `offsetParent` 属性指定的父坐标的计算左侧位置，整型，单位：像素。
    `offsetLeft`= `offsetParent`的padding-left + 中间元素的offsetWidth + 当前元素的margin-left
 
-
-
 ## 2. scroll
 
 `scroll`指**滚动**，包括这个元素没显示出来的实际宽度，包括`padding`，不包括滚动条、`border`
@@ -45,26 +43,10 @@
 2. **clientHeight** 对象可见的高度
 3. **clientTop**、**clientLeft** 这两个返回的是元素周围边框的厚度，一般它的值就是0。因为滚动条不会出现在顶部或者左侧
 
-
-
-
-
-
-
-
-
 ---
-
-
-
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
-
-
 
 > 参考：
 > 
 > 1. [javascript的offset、client、scroll的总结笔记](https://www.jianshu.com/p/cd0567797d5e)
 > 2. [轻松弄清JavaScript中的offset、scroll、client](<https://my.oschina.net/longteng2013/blog/167023)
 > 3. [offset client scroll screen 关键字整理](https://zhuanlan.zhihu.com/p/22077165)
-
- 

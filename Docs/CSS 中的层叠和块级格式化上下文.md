@@ -1,13 +1,10 @@
 # CSS 中的层叠和块级格式化上下文
 
-[TOC]
-
 之前在项目的过程中遇到了一个问题，某个 `div` 希望始终显示在最上面，而在之后的元素都显示在它之下，当时设置了 `z-index` 也没有效果，不知道什么原因，因此找了一下 `CSS` 相关资料，解决了这个问题的同时，也学习了很多知识，特此和大家分享一下。
 
 屏幕是一个二维平面，然而 HTML 元素却是排列在三维坐标系中，`x` 为水平方向，`y` 为垂直方向，`z` 为屏幕由内向外方向，我们在看屏幕的时候是沿着 `z` 轴方向从外向内的。由此，元素在用户视角就形成了层叠的关系，某个元素可能覆盖了其他元素也可能被其他元素覆盖；
 
-
-![](https://i.loli.net/2019/08/01/5d4274450983795657.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/559c4a86a1c47f23e4e86cb608af11a580d52e8bec7a21608c7c6b3498867207.png)
 
 图片来源于：[z\-index \| Codrops CSS Reference](https://tympanus.net/codrops/css_reference/z-index/)
 
@@ -25,13 +22,15 @@
 
 文章 [<关于z-index 那些你不知道的事>](https://webdesign.tutsplus.com/zh-hans/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892) 有一个很好的比喻，这里引用一下；
 
+每一个网页都有一个默认的层叠上下文。 这个层叠上下文（桌子）的根源就是`<html></html>`。 html标签中的一切都被置于这个默认的层叠上下文的一个层叠层上（物品放在桌子上）。
+
 可以想象一张桌子，上面有一堆物品，这张桌子就代表着一个层叠上下文。 如果在第一张桌子旁还有第二张桌子，那第二张桌子就代表着另一个层叠上下文。现在想象在第一张桌子上有四个小方块，他们都直接放在桌子上。 在这四个小方块之上有一片玻璃，而在玻璃片上有一盘水果。 这些方块、玻璃片、水果盘，各自都代表着层叠上下文中一个不同的层叠层，而这个层叠上下文就是桌子。
 
 每一个网页都像一个房间，这个房间就是 `<html></html>`，其他层叠上下文就像这个房间里的桌子，HTML 标签中的一切都被置于这个房间中。
 
 当给一个元素的 `position` 值赋为 `fixed` 或 `sticky` 值时，你就创建了一个新的层叠上下文，其中有着独立于页面上其他层叠上下文和层叠层的层叠层，这就相当于你把另一张桌子带到了房间里。
 
-![](https://i.loli.net/2019/08/01/5d42745a5e83c71317.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/515def3ccee40f69ac83a7f5aef2efa46d9be8c43d8f861f5e3367890abbb675.png)
 
 图片来源于：[z\-index \| Codrops CSS Reference](https://tympanus.net/codrops/css_reference/z-index/)
 
@@ -98,9 +97,7 @@
 
 第 7 级顺序的元素会显示在之前顺序元素的上方，也就是看起来覆盖了更低级的元素：
 
-![](https://i.loli.net/2019/08/01/5d42751cab91d84415.png)
-
-
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/dc35e755db516a9e63c0d1ec4d0384410da31d5cf57d5407d6f9747364e2b3df.png)
 
 除层叠顺序优先级规则之外，还有一条**后来居上**规则：同一个层叠顺序的元素按照在 HTML 里出现的顺序依次层叠。这两个规则共同决定浏览器元素在文档中是如何层叠的。
 
@@ -155,6 +152,14 @@
 
 **注意：** `display: table` 也可以生成 BFC 的原因在于 Table 会默认生成一个匿名的 `table-cell`，是这个匿名的 `table-cell` 生成了 BFC。
 
+1. 内部的Box会在垂直方向上一个接一个的放置
+2. 内部的Box垂直方向上的距离由margin决定。（完整的说法是：属于同一个BFC的两个相邻Box的margin会发生折叠，不同BFC不会发生折叠。）
+3. 每个元素的左外边距与包含块的左边界相接触（从左向右），即使浮动元素也是如此。（这说明BFC中子元素不会超出他的包含块，而position为absolute的元素可以超出他的包含块边界）
+4. BFC的区域不会与float的元素区域重叠
+5. 计算BFC的高度时，浮动子元素也参与计算
+
+BFC是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面元素，反之亦然。我们可以利用BFC的这个特性来做很多事。
+
 ### 6.2 用法
 
 #### 1. 阻止相邻元素的 margin 合并
@@ -162,6 +167,12 @@
 属于同一个 BFC 的两个相邻块级子元素的上下 `margin` 会发生重叠，(设置 `writing-mode:tb-rl` 时，水平 `margin` 会发生重叠)。所以当两个相邻块级子元素分属于不同的 BFC 时可以阻止 `margin` 重叠。可以给任一个相邻块级盒子的外面包一个 div，通过改变此 div 的属性使两个原盒子分属于两个不同的 BFC，以此来阻止 `margin` 重叠。
 
 代码和预览参见： [Codepen - 使用BFC阻止margin合并](https://codepen.io/SHERlocked93/pen/eVOevN)
+
+但是这里有个[疑问](https://codepen.io/SHERlocked93/pen/VQZrxQ "https://codepen.io/SHERlocked93/pen/VQZrxQ")：
+如果外面包一层div，设置能触发BFC的任何属性都能阻止相邻元素的margin合并。因为分属不同BFC不会发生margin合并。
+而如果在外面不包一个div的话，当设置display为inline-block、inline-flex、table-captain，和position为absolute、fixed，float为left、right是可以阻止margin合并的。这里问题来了：
+
+我们知道设置position和float会让元素脱离文档流并且又创建新的BFC，所以两个元素就不是相邻元素了，因此可以阻止相邻元素margin合并，但是inline-block、inline-flex、inline-grid、table-captain为什么可以呢？如果有人知道为什么，请告知~
 
 #### 2. 阻止元素被浮动元素覆盖
 一个正常文档流的块级元素可能被一个 `float` 元素覆盖，挤占正常文档流，因此可以设置一个元素的 `float`、`display`、`position` 值等方式触发 BFC，以阻止被浮动盒子覆盖。
@@ -172,6 +183,12 @@
 通过改变包含浮动子元素的父盒子的属性值，触发 BFC，以此来包含子元素的浮动盒子。
 
 代码和预览参见： [Codepen - 使用BFC包含浮动元素](https://codepen.io/SHERlocked93/pen/OQLOqG)
+
+#### 4. 避免多列布局最后一列换行
+
+有时候因为多列布局采用小数点位的width导致因为浏览器因为四舍五入造成的换行的情况，可以在最后一列触发BFC的形式来阻止换行的发生。比如下面栗子的特殊情况
+
+![BFC 阻止多列布局最后一列换行](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/75bc53b28e0d4d9a518c4a2412b0caee7f30130083e08a4467ee98c92d147018.gif)
 
 ## 7. 实战
 
@@ -192,7 +209,7 @@
 
 红绿蓝都属于 `z-index` 为 `auto` 的定位元素，因此按照 7 层层叠顺序规则来说同属于层叠顺序第 6 级，所以按 HTML 中的出现顺序层叠：`红->绿->蓝`
 
-![](https://i.loli.net/2019/07/31/5d41331473e2f39584.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/e731d8be07008ef29e44fe04496623e95fcef0f7234e9012215c4c953340b2e9.jpg)
 
 ### 7.2 在相同层叠上下文的父元素内的情况
 
@@ -202,7 +219,7 @@
 
 这个例子中，红蓝绿元素的父元素 `first-box` 与 `second-box` 都没有生成新的层叠上下文，都属于根层叠上下文中的元素，且都是层叠顺序第 6 级，所以按 HTML 中的出现顺序层叠：`红->绿->蓝`
 
-![](https://i.loli.net/2019/07/31/5d4133426053874305.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/2bf3b47b9f87708dc69c8755c4e76d799033dc4d03ed0b57775a88fcde01f648.png)
 
 ### 7.3 给子元素增加 z-index
 
@@ -220,7 +237,7 @@
 
 所以这个例子中的从底到高显示的顺序就是：`黄->红->蓝->绿`
 
-![](https://i.loli.net/2019/07/31/5d41342e8be1667176.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/44e3584c2cb63f3d69edb0638c94bc5b3b3a0352326c36b6a9371387b45e0410.png)
 
 ### 7.4 在不同层叠上下文的父元素内的情况
 
@@ -241,7 +258,7 @@
 
 (我遇到的的情况就属于这个例子类似情形)
 
-![](https://i.loli.net/2019/07/31/5d413447885dd89324.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/350e8107711347bae51b1f7b9126c0bb5d7dde3b7f259bb3afe56981f25af150.png)
 
 ### 7.5 给子元素设置 opacity
 
@@ -261,4 +278,4 @@
 
 所以这个例子中从低到到显示的顺序：`黄->红->绿->蓝`
 
-![](https://i.loli.net/2019/07/31/5d41347f0992f67788.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/4d4aaef90552b7e4fa6a72c70efa895fbc7d34f9949721eae3e85312f2697c6e.jpg)

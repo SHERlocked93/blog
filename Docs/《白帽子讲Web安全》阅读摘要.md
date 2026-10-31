@@ -1,8 +1,6 @@
 #  《白帽子讲Web安全》阅读摘要
 
-[TOC]
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/白帽子讲Web安全-20210427-tjkFXY.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2Web%E5%AE%89%E5%85%A8-20210427-tjkFXY.png)
 
 对互联网安全的思考
 
@@ -26,7 +24,6 @@
 
 ### 安全评估
 
-
 **安全评估**可以简单地分为4个阶段：资产等级划分、威胁分析、风险分析、确认解决方案。
 
 **资产等级划分**是所有工作的基础，帮助我们明确目标是什么，要保护什么。
@@ -41,15 +38,13 @@
 
 在本书中介绍一种威胁建模的方法，它最早是由微软提出的，叫做 STRIDE 模型。我们在分析威胁时，可以从以下6个方面去考虑。
 
-![STRIDE](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/gKSd4K-20210420-SEdG52.png)
-
+![STRIDE](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/gKSd4K-20210420-SEdG52.png)
 
 **风险分析**，Risk = Probability * Damage Potential ，风险 = 可能性 * 损失程度
 
 如何更科学地衡量风险呢?这里再介绍一个 DREAD 模型，它也是由微软提出，指导我们应该从哪些方面去判断一个威胁的风险程度。
 
-![DREAD](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/zbRVyj-20210420-uWLvZm.png)
-
+![DREAD](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/zbRVyj-20210420-uWLvZm.png)
 
 **安全解决方案**是安全评估的产出物。解决方案一定要有针对性，这种针对性是由资产等级划分、威胁分析、风险分析等阶段的结果给出的。
 
@@ -64,15 +59,13 @@
 
 ### 白帽子兵法
 
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/hWTTnW-20210420-Z17ret.jpg)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/hWTTnW-20210420-Z17ret.jpg)
 
 1. **黑名单 & 白名单**：设置信任和不信任的来源。
 2. **最小权限原则**：只授予主体必要的权限，而不要过度授权，这样能有效地减少系统、网络、应用、数据库出错的机会。
 3. **纵深防御原则**：包含两层含义：首先，要在各个不同层面、不同方面实施安全方案，避免出现疏漏，不同安全方案之间需要相互配合，构成一个整体。其次，要在正确的地方做正确的事情，即：在解决根本问题的地方实施针对性的安全方案。
 4. **数据与代码分离原则**：广泛适用于各种由于“注入”而引发安全问题的场景。混淆了数据和代码的边界，导致安全问题的发生。
 5. **不可预测性原则**：从克服攻击方法的角度，让漏洞的攻击方法失效。使得攻击者无法容易的猜到期望值，从而提高攻击门槛。
-
 
 ## 2. 浏览器安全
 
@@ -94,14 +87,13 @@ Chrome 是第一个采取多进程架构的浏览器，Chrome 的主要进程分
 
 浏览器的多进程架构将浏览器的各个功能模块分开，各个浏览器实例分开，当一个进程崩溃时，也不会影响到其他的进程。
 
-![Chrome架构](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/e1AnBi-20210420-JCd5dt.png)
+![Chrome架构](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/e1AnBi-20210420-JCd5dt.png)
 
 渲染引擎由 Sandbox 隔离，网页代码要与浏览器内核进程通信、与操作系统通信都需要通过IPCchannel，在其中会进行一些安全检查。
 
 Sandbox 设计是为了让不可信任的代码运行在一定的环境中，限制不可信任的代码访问隔离区之外的资源。Sandbox需要考虑用户代码针对本地文件系统、内存、数据库、网络的可能请求，可以采用默认拒绝的策略，如果一定要跨越 Sandbox 边界产生数据交换，则只能通过指定的数据通道，比如经过封装的 API 来完成，在这些 API 中会严格检查请求的合法性。
 
 Sandbox 可以让不受信任的网页代码、JS 代码运行在一个受到限制的环境中，从而保护本地桌面系统的安全。
-
 
 ### 恶意网址拦截
 
@@ -144,7 +136,7 @@ function test(){
 <input type="button" id="s" value="write" onclick="test()" />
 ```
 
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/HDNLQC-20210420-bFE7rw.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/HDNLQC-20210420-bFE7rw.png)
 
 用户可以输入这样一个字段 `' onclick=alert(/xss/) //` ，这个字段首先用一个单引号闭合掉 href 的第一个单引号，然后插入一个 onclick 事件，最后再用注释符 `//` 注释掉第二个单引号。点击这个新生成的链接，脚本将被执行。
 
@@ -196,7 +188,7 @@ console.log(window.name);
 // test~ User Cookie is: ...
 ```
 
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/image-20210421155425374-20210421-5pfg3b.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/image-20210421155425374-20210421-5pfg3b.png)
 
 ### XSS 防御
 
@@ -302,7 +294,7 @@ CSRF 攻击的过程中，如果出现用户交互的页面，则攻击可能会
 
 比如我们看到 [SegmentFault](https://segmentfault.com/) 的页面就使用了这个 HTTP 头来作为点击劫持的防御手段
 
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/image-20210426195340878-20210426-m0OtBu.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/image-20210426195340878-20210426-m0OtBu.png)
 
 ## 6. HTML5 安全
 
@@ -383,24 +375,8 @@ SDL 实战经验：
 5. 给工程师培训安全方案；
 6. 记录所有的安全 bug，激励程序员编写安全的代码；
 
-
-
-
-
-
-
-
-
-
-
 ---
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下哦，你的点赞是我更新的最大动力！（收藏不点赞，都是耍流氓 🤣）~
-
 
 > 参考文档：
 >
 > 1. [白帽子讲Web安全](https://book.douban.com/subject/10546925/)
-
-PS：本文收录在在下的博客 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog) 系列文章中，欢迎大家关注我的公众号 `前端下午茶`，直接搜索即可添加或者点[这里](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/TJt4p2-19-56-21.jpg)添加，持续为大家推送前端以及前端周边相关优质技术文，共同进步，一起加油~
-
-另外可以加入「前端下午茶交流群」，微信搜索  `sherlocked_93` 加我好友，备注**加群**，我拉你入群～

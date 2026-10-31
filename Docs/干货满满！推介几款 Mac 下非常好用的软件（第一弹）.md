@@ -1,8 +1,6 @@
 # 干货满满！推介几款 Mac 下非常好用的软件（第一弹）
 
-[TOC]
-
-![](https://i.loli.net/2019/12/03/ArBxMoNzQ2hwPfC.jpg)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/053851b9a65ad42c02a6a9ae177ddbce956543afcc2e26efac119f92eaba0a1e.jpg)
 
 作为一个工具控，一直在社区索取别人的营养，今天在下将我搜集的一些应用贡献出来，推介二十几个我常用的软件。一些是其他人反复推介确实经典，另一些是我偶然发现但经过使用感觉非常好用，一并献上，大家可以根据自己的需要，看看是不是正需要这些软件，并解决自己生产生活中的痛点。
 
@@ -10,13 +8,13 @@
 
 本文是 [<那些好用的工具>](https://github.com/SHERlocked93/blog?tab=readme-ov-file#%E9%82%A3%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7) 系列文章之一：
 
-1. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://juejin.im/post/5ee9fca5f265da02d3377e38)
-2. [推介几款 windows 下非常好用的工具](https://juejin.im/post/5c2eca54f265da61171cdc48)
-3. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://juejin.im/post/5de664e5f265da33b82bcfce)
-4. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://juejin.im/post/5e037fe2518825123f0c70cb)
-5. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://juejin.cn/post/6903689654797598728)
-6. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://juejin.cn/post/7315304715809390592)
-7. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://juejin.cn/post/7067703148734840869)
+1. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://github.com/SHERlocked93/blog/blob/master/Docs/%E7%94%9F%E5%91%BD%E5%9C%A8%E4%BA%8E%E6%8A%98%E8%85%BE%EF%BC%81%E8%BF%99%E4%BA%9B%E6%A1%8C%E9%9D%A2%E5%A5%BD%E7%89%A9%E6%8F%90%E5%8D%87%E4%BD%A0%E7%9A%84%E6%90%AC%E7%A0%96%E5%B9%B8%E7%A6%8F%E5%BA%A6.md)
+2. [推介几款 windows 下非常好用的工具](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20windows%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7.md)
+3. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%80%E5%BC%B9%EF%BC%89.md)
+4. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%BC%B9%EF%BC%89.md)
+5. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%89%E5%BC%B9%EF%BC%89.md)
+6. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E5%9B%9B%E5%BC%B9%EF%BC%89.md)
+7. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%A5%BD%E7%94%A8%E4%B8%8D%E5%8D%A1%EF%BC%8C%E8%BF%99%E4%BA%9B%E6%8F%92%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE%E8%AE%A9%E4%BD%A0%E7%9A%84%20Webstorm%20%E6%9B%B4%E7%89%9B%E9%80%BC%EF%BC%81.md)
 
 另外，我弄了个 [Github 仓库](https://github.com/SHERlocked93/awesome-tools)记录这些好用的软件，包含 Mac/Win/IDE/浏览器 里好用的应用和插件，将经常会更新，也可以给我提 issue，人生苦短，如果你不知道使用什么样的软件，不妨试试我推荐的这些软件，可称为 SHERlocked93 严选。
 
@@ -24,29 +22,29 @@
 
 正如 Windows 系统上，[Listary](https://www.listary.com/) 必须排在第一个一样，Mac 平台 Alfred 也必须排在第一个。
 
-![](https://i.loli.net/2019/11/29/LdfoWyUV3EZ56zC.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8df4a8f219ff3f8fbcea8ea48ab9556ad6ce48e914f8f7752cdd630629bfc172.png)
 
 有的人说 Alfred 是 Mac 上最强大的工具台，不亲自体验一下，你是无法理解 Alfred 的强大之处，比如我，安装并使用之后 5 分钟，我就把聚焦的快捷键取消，一年中使用的次数屈指可数，而 Alfred 却基本上成为我使用频率最高的工具。
 
 **快捷搜索** ，快捷搜索是 Listary 也具有的功能，除了可以搜索本地文件、安装的应用、MacOS 设置项等，还可以使用网页搜索，比如输入 `gg 我的存款呢？` 就可以直接打开默认浏览器在谷歌搜索中搜索，还可以自定义输入其他关键字，只需把 Search URL 中的关键字换成 `{query}` 即可。
 
-![](https://i.loli.net/2019/11/29/hYHA6cozu5KZIrU.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8429e713dda17a6608106b479ccf56a204e15366a8b2fb6c4090dfcc38799b2e.png)
 
 **快捷打开** ，我们也可以使用快捷打开链接的方式，快速打开默认网页，比如我设置 `blog` 命令为快速打开我的博客 https://github.com/SHERlocked93/blog，那么只要输入 `blog` 并 `Enter` 即可在默认浏览器完成打开博客地址的功能。
 
-![](https://i.loli.net/2019/11/29/pwduvNeD2oxM34g.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/446133bd48a632e4b401ad02f2251e10857267c3b542792b77892e58bb6ee1ec.png)
 
 **搜索标签** ，我们可以在 Alfred 里快捷访问我们保存在浏览器中的标签，比如你可以把 Vue、vue-router、vuex 等的官网收藏在浏览器的标签，然后在 Alfred 中键入 `bm vue`，就可以搜索出我们标签中所有含有 vue 标签的网址。
 
-![](https://i.loli.net/2019/11/29/GwVT8bSY9ghURz2.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/4e24a69ded1216fc0ff9a30d170ccd1fbaf1bbb5304a4dfbcd26be982345e19b.png)
 
 **文字段自动扩展** ，在下会经常使用一些文字段，比如我会经常键入我的手机号，但是我并不很喜欢经常手打这么长的数字，那么我就设置 `zsj` 自动扩展成我设置好的手机号。
 
-![](https://i.loli.net/2019/11/29/DHJ3ZQroeWlCSfg.gif)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/2ba62a1f5fe9d4f2b701382ae7ef64b6c91841667ceb4b13a9c3eb5c2dd63d3b.gif)
 
 想设置的同学在 `Features -> Snippets` 即可设置，下面列举一些我常用的自动扩展，仅供大家参考。
 
-![](https://i.loli.net/2019/11/29/1cUpIRLtKw3rhJX.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8898a3ab3bad0971f44790fe3d7599fac28b476bb2ec8173e08d96742e12f50e.png)
 
 Alfred 还有其他很多优秀的功能，比如自定义 Workflow、LargeType、计算器等等好玩的功能，不亲自试试是无法理解它好玩的地方的。
 
@@ -62,7 +60,7 @@ App Store 里就可以获取 Alfred，不过不便宜，所以你可以购买，
 
 另外，在复制时还可以去掉原复制源的格式信息，把任意内容复制为纯文本。
 
-![](https://i.loli.net/2019/11/29/mkQx87BDCSZXrvu.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/b3222e2b3d88f130413928cd33179937f6f07ea50872fca32bc65250360b8ba5.png)
 
 按住 `Shift + left/right` 可以一次选择多个剪切板对象复制，我把激活 Paste 的快捷键设置为 `Option + ~`，就是数字键 1 左边那个，然后把快速粘贴设置为 `Option + 1、2...` ，这样就可以在打开的之后，左手拇指按着 Option 不用动，就可以快捷选中其他的选项了。
 
@@ -72,11 +70,11 @@ App Store 上搜索就可以直达，售价 68 块（也可以在网上找到资
 
 如果你经常使用 Markdown，那么你一定遇到一个问题，图片怎么转化为图床链接，在用过好几款免费或收费图床工具之后，对这款开源的图床工具使用的功能强大、使用简单印象深刻，而且还支持常用的几种图床，所以这里推介给大家。
 
-![](https://i.loli.net/2019/12/01/FzicT9nGmrRU7uy.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/b8fe663c17180e72edaf052f46b2638da1594f1f6b5f2f7092c0f1de57f69960.png)
 
 你可以把图片拖拽到 Menubar 上的小图标上上传，也可以拖拽到软件首页的上传区上传，也可以把图片复制到剪切板中使用快捷键上传。其中第三种方式使用最为方便，也是在下使用最多的一种方式。
 
-![](https://i.loli.net/2019/11/29/hfOjNBAPJ6X79cs.gif)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/cb172d87a7c66c7fffc7c163c1fb23d224c688a316b84f5951ed03db83129ba6.gif)
 
 图床这里我推介使用两个图床，免费图床可以使用 SM.MS 图床，这个图床是免费图床里速度比较靠谱的，只是偶尔会发生上传失败的情况。如果你比较介意的话，可以选择 Github 的图床，这个图床的原理就是在 Github 创建一个仓库，然后把你的图片上传到这个仓库里，缺点是速度比较慢，而且有时候会因为你懂得原因，需要自备科学上网工具 😅。
 
@@ -88,11 +86,11 @@ App Store 上搜索就可以直达，售价 68 块（也可以在网上找到资
 
 有时候你需要并排比较数据，或是要在一个屏幕上排列三个应用的时候，窗口管理工具就显得必不可少了。这里推介一个我用了一下感觉十分好用的窗口管理工具 Magnet，类似的管理工具似乎有好几个，其他的没用不做评价。
 
-![](https://i.loli.net/2019/12/02/GqPJuZmzOWaEvrh.png)把目标窗口进行拖动就可以快速调整窗口位置，比如拖动窗口到边缘，可将窗口大小调整到屏幕的一半。拖动窗口到角落，可将窗口缩小到屏幕的四分之一。将窗口滑动到显示器的底部边缘可创建三等分宽度的窗口。
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8ec84ec1939caaec7cb954a9a2531e3e2ddcdf83658598ec976c0334518450d6.png)把目标窗口进行拖动就可以快速调整窗口位置，比如拖动窗口到边缘，可将窗口大小调整到屏幕的一半。拖动窗口到角落，可将窗口缩小到屏幕的四分之一。将窗口滑动到显示器的底部边缘可创建三等分宽度的窗口。
 
 Magnet 同时支持键盘快捷方式，可顺利适配所有命令。您可通过菜单栏上的小图标，找到预定设置或创建自己的设置集。
 
-![](https://i.loli.net/2019/12/02/CcP9AZy1z3QTmEK.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/f7feca0b0a44cfc2825620533aff6dee5b8041c2582fc8a7d003053888ddbb6e.png)
 
 也可以使用快捷键的方式，当焦点在某个窗口的时候，可以使用快捷键来快速将窗口进行排列，也可以通过菜单栏上的小图标，来进行自己希望的窗口排列，常用的有居左、居右、最大化、左 2/3、右 2/3，具体如何使用还是看你的个人习惯和屏幕大小了。
 
@@ -104,15 +102,15 @@ Magnet 在 App Store 上搜索即可获取，买的话也挺便宜的，经常�
 
 有时候你手里有一张图片，图片上很多文字，你想把图片上的文字复制到本地，又或者你发现一个网页，但是这个网页是禁止复制的（比如 App Store 上的软件介绍），你可以选择 QQ 上的识图功能，但我这里推介一个更强大的工具 Text Scanner。
 
-![](https://i.loli.net/2019/12/02/6ZlEVH9P7W8idQ1.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/f4d2ac0f84391cde1ddcb020dc55a3b8c70b194baf16a71c17bc371523536b6d.png)
 
 在用过五六个识图软件之后，终于选出了识别速度、识别准确率、人机工程最符合我的预期的软件，扫描速度和辨识率都可以称得上惊艳，，除了可以准确识别中文，还可以识别英文、泰语、韩语、俄语、法语等语言，也可以批量识别图片、驾驶证、身份证、表格、证件照等。
 
-![](https://i.loli.net/2019/12/02/UBdoHs7C4GLTvbZ.gif)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/9c37fc2e4aad42d032218cabca548589620349ac2af9799c17b794163d939d2a.gif)
 
 这款软件也是通过 App Store 来获取，我购买了正版，当然和前面一样，也可以找到资源 🙃，不过这款软件还经常升级，购买的话会省却很多麻烦，推介购买正版。
 
-![](https://i.loli.net/2019/12/02/AmwqTil6fPkJIsC.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/950afaaf0186c77cda67de197ec89fe6952d94b1880b7651f156dfbf211a6e47.png)
 
 我的快捷键是 `command + shift + 3`，跟截图的相对应，仅供参考。
 
@@ -129,7 +127,9 @@ Magnet 在 App Store 上搜索即可获取，买的话也挺便宜的，经常�
 
 还有截图高亮工具、马赛克等等功能，在截图的时候在旁边可以选择生成一圈阴影，和 Mac 自带的截图工具一样，甚至更强大，强烈推介。值得一提的是，你可以选择截图的格式 jpg/png，如果你选择 png 格式，那么你的截图阴影部分背景是透明的，十分贴心。 
 
-![](https://i.loli.net/2019/12/02/iAsgLhTOqMRkf2r.png)
+在 App Store 里就可以搜索到 Xnip，我的快捷键是 `Command + Shift + 1`，软件是免费的，购买的话可以去除某些功能下的水印，不过免费版的已经足够平常使用了。
+
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/3167b01a55123aa9ee35eb19814adb1fcc12cdccf3e72a3bca36152e628052e9.png)
 
 在 App Store 里就可以搜索到 Xnip，我的快捷键是 `Command + Shift + 1`，在下特地购买了一个永久版，没几块钱（如果不愿意花钱的话也有资源 🤫）。
 
@@ -139,7 +139,7 @@ Magnet 在 App Store 上搜索即可获取，买的话也挺便宜的，经常�
 
 SwitchKey 可以根据当前焦点所在应用自动切换指定的输入法，让你无需关注输入法切换这种琐碎的操作。
 
-![](https://i.loli.net/2019/12/02/TVmkHYJfSW9D5Xu.jpg)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/fae204ec851e322e223c55531e87bedbc1e75cb8b6653cd03d58b60f64b7d560.jpg)
 
 确定要为某个软件添加何种输入法很简单，切换好输入法，打开目标软件之后，然后在 Menubar 的软件菜单内点击 Add Current （上图最上方那个按钮）即可将其对应的输入法这项选择配置加入进来，下次打开该软件时就会自动恢复指定输入状态。如果不小心配置错误，选中记录值后按 `Delete` 键即可，轻松高效。
 
@@ -149,7 +149,7 @@ SwitchKey 可以根据当前焦点所在应用自动切换指定的输入法，�
 
 外观精致设计感十足的 Mac 当然要配上精美的壁纸，[pap\.er](https://paper.meiyuan.in/) 就是这样一款可以给你提供精美壁纸的应用，它在 Unsplash 图片站上获取授权的图片，并提供给用户。
 
-![](https://i.loli.net/2019/12/03/SbAoL2d8pKyua5f.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/3762444b56743331604d99ec9ef0473209401261ed4e9da4dbdb9b548040655c.png)
 
 安装好之后，Menubar 上点击 pap.er 的图标，就会弹出壁纸列表，单击「设为桌面」就可以自动下载并使用图片作为壁纸了，在设置中还可以选择每小时或每日自动更换壁纸，也可以在在二级菜单中查看以前下载过的壁纸。
 
@@ -159,7 +159,7 @@ SwitchKey 可以根据当前焦点所在应用自动切换指定的输入法，�
 
 如果你需要经常使用终端，那么 FinderGo 可以帮助你快速打开终端，并定位到当前文件夹目录下，是日常使用时的一个很实用的小工具。
 
-![](https://i.loli.net/2019/12/03/5iPLHMSTqND9lrc.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/2c81d39c276084db0ed2a185336e5bd0d205a4b886e599647501f544e95e8961.png)
 
 具体下载和配置可以百度一下，网上很多教程。
 
@@ -169,13 +169,13 @@ SwitchKey 可以根据当前焦点所在应用自动切换指定的输入法，�
 
 在使用了多款 GIF 录制工具之后，终于选择了这款功能强大的软件，强烈推介！
 
-![](https://i.loli.net/2019/12/03/1XgWoOKxTB4ynDU.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/fbe387718a355813a2e54f7828360cece0ac3ff8fa3b58b3f5b70a6ba07916f0.png)
 
 GIF Brewery 3 可以在录制好之后，调整动画播放速度、帧率的时长、截取动画的某个部分、在某些帧下增加文字或贴图、增加水印或字幕、重新调整视频尺寸、调整色彩数等功能，可以说，它已经具备一个视频编辑软件大部分的功能了。
 
 有时候我在录制完一个比较长的 GIF 并生成的时候发现体积太大，这时可以把播放速度调快一点， 色彩数减小一点，再把 GIF 的尺寸调整小一点，经常可以把体积减少一半还多，这也是为什么经常我们看到的 GIF 图的尺寸比较小的原因，因为大了的话直接导致整个 GIF 文件体积变大，加载缓慢。
 
-![](https://i.loli.net/2019/12/03/6TdJcDVaziU1wGk.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/d883bec769543f799b940646679648686f86e7ad937151d3bb604aad9eeee393.png)
 
 你可以在 [App Store](https://apps.apple.com/cn/app/gif-brewery-3-by-gfycat/id1081413713?mt=12) 里免费获取 GIF Brewery 3，当然也可以从其他地方获取，唯一的遗憾是不支持中文，不过界面上都是一些常用的单词，相信你可以的 🤣。
 
@@ -187,19 +187,6 @@ GIF Brewery 3 可以在录制好之后，调整动画播放速度、帧率的时
 
 在下最喜欢 Misty 和 Catfish 这两个主题，并根据自己的喜好在原主题 CSS 的基础上稍加修改（可以直接找我要 CSS 文件😉）。
 
-![](https://i.loli.net/2019/12/03/ds3IV6gpQKRPDNz.gif)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/0cd9c4d74f9dd835e3c4c60c12c10f75bd351c2734b1535522b0f01d40740ec0.gif)
 
 你可以到 Typora 的[官网](https://www.typora.io/)下载，是免费的。
-
----
-本人博客地址 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog)，欢迎关注～
-
-
-
-PS：欢迎大家关注我的公众号【前端下午茶】，一起加油吧~
-
-![](https://i.loli.net/2019/05/31/5cf08a479cd5d75372.jpg)
-
-另外可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
-
-![](https://i.loli.net/2019/07/13/5d2986f77e9bc11533.jpg)

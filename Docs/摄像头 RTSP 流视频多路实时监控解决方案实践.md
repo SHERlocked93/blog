@@ -186,10 +186,5 @@ sudo intel_gpu_top
 
 ---
 
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下，你的点赞是我更新的最大动力！~
-
 > 1. [SRS Getting Started](https://ossrs.io/lts/zh-cn/docs/v5/doc/getting-started)
 > 2. [Qt WebEngine H.264 Feature](https://doc.qt.io/qt-6/qtwebengine-features.html#feature-h264)
-
-PS：本文同步更新于在下的博客 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog)
-系列文章中，欢迎大家关注我的公众号 `CPP下午茶`，直接搜索即可添加，持续为大家推送 CPP 以及 CPP 周边相关优质技术文，共同进步，一起加油\~

@@ -1,8 +1,6 @@
 # CentOS 基础知识
 
-[TOC]
-
-![HH8Sk2LfeCk](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-HH8Sk2LfeCk.jpg)
+![HH8Sk2LfeCk](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/1c1699708897333312ef1dc679939e47389519c1837435c602c35699e8d139c7.jpg)
 
 这里记录一下我的学习过程，相当于自己记个笔记，同时分享出来，如果有同学刚好有需要而这个文章帮助到了你的话，在下也会十分开心。
 
@@ -14,7 +12,7 @@
 
 当 `cd /` 进入到根目录，`ls` 可以看到一大堆子目录，如下图：
 
-![image-20200229213130445](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-02-29-image-20200229213130445.png)
+![image-20200229213130445](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/3735b1691296774934e932ec95146b668ddb5e88607ea7806698200855525da2.png)
 
 这些文件是有颜色的：
 
@@ -71,7 +69,7 @@
 
 我们可以使用 `tree` 命令方便地查看目录树，但是系统本身却并没有安装 `tree` 命令，所以我们要首先安装一下 `sudo yum -y install tree`，然后我们就可以快乐使用了：
 
-![image-20200304133618996](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-image-20200304133618996.png)
+![image-20200304133618996](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/02651d0da278e5f60418d669ecf9dc752bd00c835ef086401d78f5ae2268b8a8.png)
 
 ## 2. vim 编辑器使用方法
 
@@ -79,7 +77,7 @@ vim 编辑器是 CentOS 系统中使用频率比较高的编辑器，掌握基�
 
 通过 `vim <文件名>` 的方式可以编辑某文档，如果文档名不存在，那么会新建一个文档来进行编辑。
 
-![image-20200301142523562](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-01-image-20200301142523562.png)
+![image-20200301142523562](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/91dcb649797d7f92896e8684bf5587c2ea789e08d757177148120a425f0d9b8b.png)
 
 vim 共分为三种模式，分别是**命令模式（Command mode）**，**输入模式（Insert mode）**和**底线命令模式（Last line mode）**。
 
@@ -170,7 +168,7 @@ vim 共分为三种模式，分别是**命令模式（Command mode）**，**输�
 
 `ps` 命令输出大约如下图所示：
 
-![image-20200301190653585](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-01-image-20200301190653585.png)
+![image-20200301190653585](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/c031b29e8bc02c524ce729049e69f3363bac8b784e406734f6f5c962217e8e73.png)
 
 输出的格式含义：
 
@@ -188,11 +186,11 @@ vim 共分为三种模式，分别是**命令模式（Command mode）**，**输�
 
 还有个命令 `pstree`，显示进程树：
 
-![image-20200301191720755](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-01-image-20200301191720755.png)
+![image-20200301191720755](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8f29938a86c743a4724d7d6805ad213284b3bd4cc80e037a9b3076f43141383d.png)
 
 `top` 命令可以查看系统健康状态，和 Windows 系统中的系统管理器类似。
 
-![image-20200301192500240](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-01-image-20200301192500240.png)
+![image-20200301192500240](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/a3493f5457672501d10cdb2ce46e91e30ac6867055d7e2979bf611a2a4ac1954.png)
 
 `top` 命令的交互模式中可以执行下面命令：
 
@@ -233,7 +231,7 @@ Tasks 后面的 zombie，意思为僵尸进程，一般是进程无法正常运�
 
 我们可以 `ps -le | more` 来查看进程优先级：
 
-![image-20200303103127195](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-image-20200303103127195.png)
+![image-20200303103127195](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/442d72adeb412199e1fd73a91f9040ac279a89b4dd0dac8e46606c2f966b4b66.png)
 
 PRI 代表 Priority ， NI 代表 Nice，这两个值都是优先级，数字越小代表该进程优先级越高。用户只能修改 NI，不能直接修改 PRI，但系统最终取 PRI + NI 的值。NI 值的范围是 -20 到 19，普通用户调整 NI 值的范围是 0-19，而且只能调整自己的进程，root 用户才能设定进程 NI 值为负值。
 
@@ -245,7 +243,7 @@ PRI 代表 Priority ， NI 代表 Nice，这两个值都是优先级，数字越
 
 比如 `renice -10 2125` 修改 ID 2125 的进程 NI 值为 -10。
 
-## 4. 工作管理
+## 4. 工作管理
 
 1. 当前的登录终端，只能管理当前终端的工作，而不能管理其他登录终端的工作；
 2. 放入后台的命令必须可以持续运行一段时间，这样我们才能扑捉和操作这个工作；
@@ -258,7 +256,7 @@ PRI 代表 Priority ， NI 代表 Nice，这两个值都是优先级，数字越
 
 查看正在后台的工作，可以使用 `jobs [-l]` 命令，`-l` 是显示工作的 PID。
 
-![image-20200303110244268](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-03-image-20200303110244268.png)
+![image-20200303110244268](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/9d93177356a0fb5be4695a73bceef2af989eab27c1ee90cff5afd890f58e0174.png)
 
 `+` 代表最近一个放入后台的工作，也是工作恢复时，默认恢复的工作，`-` 代表倒数第二个放入后台的工作。
 
@@ -293,7 +291,7 @@ ssh <username>@<hostname or IP address>
 
 连接上 CentOS 之后，命令行左侧的命令提示符含义如下：
 
-![image-20200229204354263](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-2020-02-29-image-20200229204354263.png)
+![image-20200229204354263](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/7380fda55884947b70c373d3931c08edad4222d97b362acca5de7ab73573cf12.png)
 
 ### 5.2 SSH 上传/下载文件
 
@@ -331,7 +329,7 @@ ServerAliveInterval 60
 
 还有种方法设置 `$TMOUT` 系统环境变量
 
-![image-20200307211243796](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-07-image-20200307211243796.png)
+![image-20200307211243796](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/8ffd24442c9b4ac06c1fda1c5aa0118f2a562e3f2d0250ba2870f869dd73b4d0.png)
 
 `vim /etc/profile` 在最后一行加上：
 
@@ -351,11 +349,3 @@ export TMOUT=0
 4. [Linux系统编辑管理视频教程II\-慕课网](https://www.imooc.com/learn/111)
 5.  [基于CentOS7的Linux操作系统的入门与服务器的配置-bilibili](https://www.bilibili.com/video/av55883609)
 6. [解决ssh登录后闲置时间过长而断开连接](https://blog.csdn.net/abld99/article/details/69388858)
-
-PS：本人博客地址 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog)，也欢迎大家关注我的公众号【前端下午茶】，一起加油吧~
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-5cf08a479cd5d75372.jpg)
-
-另外可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-5d2986f77e9bc11533.jpg)

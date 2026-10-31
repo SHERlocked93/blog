@@ -78,7 +78,6 @@ import os
 from conan import ConanFile
 from conan.tools.files import copy
 
-
 class MyProjectConan(ConanFile):
     name = "cef_131_mytest"
     version = "0.1"
@@ -115,7 +114,6 @@ class MyProjectConan(ConanFile):
 
 然后在项目根目录下：
 
-
 ```bash
 conan install . -s build_type=Debug --build=missing --deployer-package=*
 ```
@@ -126,7 +124,7 @@ conan install . -s build_type=Debug --build=missing --deployer-package=*
 conan install . -s build_type=Release --build=missing --deployer-package=*
 ```
 
-此时会在 `thirdparty/conan` 目录下生成 `conandeps.props` 等 VS 属性表，然后我们可以通过公共配置文件的方式引入生成的 VS 属性表，关于 VS 公共配置文件的使用方式参考 [<C++ 中 VS 项目引入公共配置文件>](https://juejin.cn/post/7500070714624540682) 
+此时会在 `thirdparty/conan` 目录下生成 `conandeps.props` 等 VS 属性表，然后我们可以通过公共配置文件的方式引入生成的 VS 属性表，关于 VS 公共配置文件的使用方式参考 [<C++ 中 VS 项目引入公共配置文件>](https://github.com/SHERlocked93/blog/blob/master/Docs/C%2B%2B%20%E4%B8%AD%20VS%20%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BC%95%E5%85%A5%E5%85%AC%E5%85%B1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
 
 ### 2.2 引入 VS 项目
 
@@ -149,19 +147,11 @@ conan install . -s build_type=Release --build=missing --deployer-package=*
 
 ![conandeps.props](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/202505031506521.png)
 
-第三方库的 props 配置文件中会分别引入其 Debug 和 Rlease 版本的目录配置和变量配置，其中指定了将第三方库目录和包含目录存放的具体位置，在项目 `.vcxproj` 中cli引入 `conandeps.props` 之后重启 VS，就可以从 conan 的缓存目录里直接 `#include` 相应库的头文件了。 
+第三方库的 props 配置文件中会分别引入其 Debug 和 Rlease 版本的目录配置和变量配置，其中指定了将第三方库目录和包含目录存放的具体位置，在项目 `.vcxproj` 中cli引入 `conandeps.props` 之后重启 VS，就可以从 conan 的缓存目录里直接 `#include` 相应库的头文件了。
 
 ---
-
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下，你的点赞是我更新的最大动力！~
 
 > 参考文档：
 >
 > 1. [conan使用(一)--安装和应用 - 星星,风,阳光 - 博客园](https://www.cnblogs.com/xl2432/p/11873394.html)
 > 2. [chu's blog - 从零开始的C++包管理器CONAN上手指南](http://chu-studio.com/posts/2019/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84C++%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8CONAN%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97)
-
-
-PS：本文同步更新于在下的博客 [Github - SHERlocked93/blog](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FSHERlocked93%2Fblog) 系列文章中，欢迎大家关注我的公众号 `CPP下午茶`，直接搜索即可添加，持续为大家推送 CPP 以及 CPP 周边相关优质技术文，共同进步，一起加油~
-
-另外可以加入「前端下午茶交流qun」，vx 搜索  `sherlocked_93` 加我，备注 **1**，我拉你～
-

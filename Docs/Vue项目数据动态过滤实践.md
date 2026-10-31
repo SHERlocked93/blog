@@ -1,6 +1,6 @@
 # Vue项目数据动态过滤实践
 
-这个问题是在下在做一个Vue项目中遇到的实际场景，这里记录一下我遇到问题之后的思考和最后怎么解决的(记性不好 -。-)，过程中会涉及到一些Vue的源码，如果不太了解的话可以瞅瞅 [Vue源码阅读系列文章](https://juejin.im/post/5b38830de51d455888216675)~
+这个问题是在下在做一个Vue项目中遇到的实际场景，这里记录一下我遇到问题之后的思考和最后怎么解决的(记性不好 -。-)，过程中会涉及到一些Vue的源码，如果不太了解的话可以瞅瞅 [Vue源码阅读系列文章](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.md)~
 
 问题是这样的：页面从后台拿到的数据是由`0`、`1`之类的key，而这个key代表的value比如`0`代表女、`1`代表男的对应关系是要从另外一个数据字典接口拿到的；类似于[这样的Api](https://easy-mock.com/mock/59e6f5dd34be4b482ca23abe/ele-template/manage/config/sys-param/list-all)：
 
@@ -21,14 +21,11 @@
 
 我想到的解决方法有两个，一是接口变为[同步](https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests)，在`beforeCreate`或`created`钩子中同步地获取数据字典接口，保证在 `$mount`的时候可以拿到注册好的filter，保证时序，但是这样会阻塞挂载，延长白屏时间，因此不推介；二是把filter的注册变为异步，在获取filter之后通知 `render watcher` 更新自己，这样可以利用vue自己的响应式化更新视图，不会阻塞渲染，因此在下初步采用了这个方法。
 
-
-
 ## 2. 实现
 
 ### 2.1 使用根组件的filters
 
 因为filter属于 [asset_types](https://github.com/vuejs/vue/blob/3b43c81216c2e29bd519c447e930d6512b5782e8/src/shared/constants.js#L3) ，关于在Vue实例中asset_types的访问有以下几个结论；具体代码实践可以参考： [Codepen - filter test](https://codepen.io/SHERlocked93/pen/GXmXrM)
-
 
 1. `asset_types`包括`filters`、`components`、`directives`，以下所有的`asset_types`都自行替换成前面几项
 2. 子组件中的`asset_types`访问不到父组件中的`asset_types`，但是可以访问到全局注册的挂载在`$root.$options.asset_types.__proto__`上的`asset_types`，这里对应源码 [src/core/util/options.js](https://github.com/vuejs/vue/blob/3b43c81216c2e29bd519c447e930d6512b5782e8/src/core/util/options.js#L412)
@@ -48,7 +45,7 @@
 <script type='text/javascript'>
   import Vue from 'vue'
   import { registerFilters } from 'utils/filters'
-  
+
   export default {
     data() {
       return {
@@ -183,7 +180,7 @@ export default {
 <script type='text/javascript'>
   import * as Api from 'api'
   import sysParamsMixin from 'mixins/sysParamsMixin'
-  
+
   export default {
     mixins: [sysParamsMixin],
     data() {
@@ -201,21 +198,54 @@ export default {
 
 这里不仅注册了过滤器，而且也暴露了数据字典，以方便某些地方的列表显示，毕竟这是实际项目中常见的场景。
 
+### 2.3 在根组件共享过滤器
 
+除了给各组件引入 mixin，也可以把 mixin 挂载在根组件，通过 `$root` 共享过滤器和数据字典。
+
+那在我们的**根组件**中怎么使用呢：
+
+```js
+// src/main.js
+
+import sysParamsMixin from 'mixins/sysParamsMixin'
+
+new Vue({
+  el: '#app',
+  mixins: [sysParamsMixin],
+  render: h => h(App),
+})
+```
+
+在需要用过滤器的组件中：
+
+```html
+<template>
+  <div>
+    {{ $root._rootFilters( sexVal )}}
+  </div>
+</template>
+
+<script type='text/javascript'>
+  export default {
+    data() {
+      return { sexVal: 1 }
+    },
+    mounted() {
+      this.$root._getSysParamsFunc()
+        .then(data =>
+          // 这里获取到数据字典的data
+        )
+    }
+  }
+</script>
+```
 
 如果有更好的方法可以讨论一下啊~
 
-
-
-
-
 ---
-
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
-
 
 > 参考：
 >
 > 1. [Vue.js 2.5.17 源码](https://github.com/vuejs/vue)
-> 2. [Vue源码阅读系列](https://juejin.im/post/5b38830de51d455888216675)
+> 2. [Vue源码阅读系列](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%20-%20%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.md)
 > 3. [Vue 2.5.17 filter test](https://codepen.io/SHERlocked93/pen/GXmXrM)

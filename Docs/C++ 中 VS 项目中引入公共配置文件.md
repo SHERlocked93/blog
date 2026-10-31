@@ -82,13 +82,6 @@ hello_sln
 
 ---
 
-
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下，你的点赞是我更新的最大动力！~
-
 > 参考文档：
 >
 > 1. [.vcxproj 和 .props 文件结构 | Microsoft Learn](https://learn.microsoft.com/zh-cn/cpp/build/reference/vcxproj-file-structure?view=msvc-170)
-
-PS：本文同步更新于在下的博客 [Github - SHERlocked93/blog](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FSHERlocked93%2Fblog) 系列文章中，欢迎大家关注我的公众号 `CPP下午茶`，直接搜索即可添加，持续为大家推送 CPP 以及 CPP 周边相关优质技术文，共同进步，一起加油~
-
-另外可以加入「前端下午茶交流qun」，vx 搜索  `sherlocked_93` 加我，备注 **1**，我拉你～

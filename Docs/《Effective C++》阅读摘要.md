@@ -1,9 +1,5 @@
 #  《Effective C++》阅读摘要
 
-[TOC]
-
-
-
 声明 `declaration` 告诉编译器某个东西的名称和类型。
 
 - 函数的声明称为签名 `signature`，也就是参数和返回类型。
@@ -420,7 +416,7 @@ class Font {
 public:
     explicit Font(FontHandle fh) : f(fh){}
 	  ~Font() { releaseFont(f); }
-    
+
     // 显示转换函数
     FontHandle get() const { return f; }
     // 隐式转换函数
@@ -550,13 +546,13 @@ public:
         return Rational(numerator_ * rhs.numerator_(),	
                         denominator_ * rhs.denominator());
     }
-    
+
     int numerator() const { return numerator_; }     // 分子
     int denominator() const { return denominator_; } // 分母
-    
+
 private:
     int numerator_ = 0;
-  
+
     int denominator_ = 1;
 };
 ```
@@ -633,7 +629,7 @@ const_cast<T> (expression)     // 移除 const
 dynamic_cast<T> (expression)   // 安全向下转型
 reinterpret_cast<T> (expression)  // 处理无关类型之间的低级转型
 static_cast<T> (expression)    // 强制隐式转换
-    
+
 // C++11 推出针对智能指针的转型
 const_pointer_cast<T> (expression)
 dynamic_pointer_cast<T> (expression)
@@ -907,4 +903,3 @@ pr->draw();		            // 调用Rectangle::draw(ShapeColor::Red)
 对于类而言，接口是显式的，多态是通过虚函数实现的**运行期**多态。
 
 对于模板而言，接口是隐式的，多态则是通过模板具现化和函数重载解析（function overloading resolution）实现的**编译期**多态。
-

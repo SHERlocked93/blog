@@ -1,9 +1,5 @@
 # C++ 并发编程实战
 
-[TOC]
-
-
-
 ## 第 1 章 你好， C++并发世界
 
 多进程并发
@@ -431,6 +427,7 @@ std::future<int> f = std::async(some_task);
 if(f.wait_for(std::chrono::milliseconds(35))==std::future_status::ready)
   do_something_with(f.get());
 ```
+
 等待函数会返回状态值，表示是等待是超时，还是继续等待。等待 future 超时返回 `std::future_status::timeout`，当 future 状态改变，则会返回 `std::future_status::ready` 。当与future相关的任务延迟了，则会返回 `std::future_status::deferred` 。
 
 基于时间点的等待常使用带有后缀 `_until` 的等待函数。
@@ -440,8 +437,6 @@ if(f.wait_for(std::chrono::milliseconds(35))==std::future_status::ready)
 `std::barrier` 是 C++20 引入的循环同步工具，主要用于多阶段线程协作。
 
 ## 第 5 章 C++内存模型和原子操作
-
-
 
 ## 第 6 章 设计基于锁的并发数据结构
 ## 第 7 章 设计无锁数据结构

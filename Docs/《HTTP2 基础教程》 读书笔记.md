@@ -1,6 +1,6 @@
 # 《HTTP/2 基础教程》 读书笔记
 
-![](https://i.loli.net/2019/04/16/5cb544ab1be4d.jpg)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/f49c1dcc42798afe92dcc58bcff80e3df2f99084bdec8a6a6df2e9fdd2f2a376.jpg)
 
 最近粗线了不少 HTTP2 相关的帖子和讨论，感觉新一轮的潮流在形成，所以最近找了本 HTTP2 相关书籍做知识储备，刚好记成笔记以备后询 ~
 
@@ -56,7 +56,7 @@ HTTP2 被希望达到以下特性：
 
 资源请求流程图：
 
-![](https://i.loli.net/2019/04/04/5ca5fc9ac69f0.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/d428360846ce9fdba36307b53fedb5f4fa6826ee9914833843b517fbd6a13e62.png)
 
 流程为：
 
@@ -68,7 +68,7 @@ HTTP2 被希望达到以下特性：
 
 资源响应流程图：
 
-![](https://i.loli.net/2019/04/04/5ca5fcf27e979.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/d4dbbc4e107d765aa54c77a2bf8ef8b89a247fe69cb00a48f4108000dc364ae9.png)
 
 1. 接收响应
 2. 如果（接收的）是主体 HTML，那么解析它，并针对页面中的资源触发优先获取机制（A）
@@ -106,7 +106,7 @@ HTTP/1 的问题自然是 HTTP/2 要解决的核心问题
 
 TCP 有个概念叫**慢启动**（Slow Start），它用来探索当前连接对应拥塞窗口的合适大小。慢启动的设计目标是为了**让新连接搞清楚当前网络状况，避免给已经拥堵的网络继续添乱**。它允许发送者在收到每个确认回复后额外发送 1 个未确认包。这意味着新连接在收到 1 个确认回复之后，可以发送 2 个数据包；在收到 2 个确认回复之后，可以发 4 个，以此类推。这种几何级数增长很快到达协议规定的发包数上限，这时候连接将进入拥塞避免阶段。
 
-![TCP拥塞控制](https://i.loli.net/2019/04/04/5ca60c2e57689.png)
+![TCP拥塞控制](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/4b5d139f13bd003dd6f23ae157ed379ce64b49c18e15c1706ee42a67362ac7f1.png)
 
 这种机制需要几次往返数据请求才能得知最佳拥塞窗口大小。但在解决性能问题时，就这区区几次数据往返也是非常宝贵的时间成本。如果你把一个数据包设置为最大值下限 1460 字节，那么只能先发送 5840 字节（假定拥塞窗口为 4），然后就需要等待接收确认回复。理想情况下，这需要大约 9 次往返请求来传输完整个页面。除此之外，浏览器一般会针对同一个域名开启 6 个并发连接，每个连接都免不了拥塞窗口调节。
 
@@ -253,7 +253,7 @@ HTTP/1.1 孕育了各种性能优化手段与诀窍，可以帮助我们深入�
 
 任何不支持 h2 的客户端都将简单地退回到 h1，并仍然可以访问你的站点基础设施。
 
-![](https://i.loli.net/2019/04/05/5ca707c99d79a.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/1160a446b1f2fd650d3bfb7d771afc827492035d9d26440896a16ec02d989a2b.png)
 
 ### 4.2 迁移到 TLS
 
@@ -264,7 +264,6 @@ HTTP/1.1 孕育了各种性能优化手段与诀窍，可以帮助我们深入�
 Web 开发者之前花费了大量心血来充分使用 h1，并且已经总结了一些诀窍，例如资源合并、域名拆分、极简化、禁用 cookie 的域名、生成精灵图，等等。所以，当得知这些实践中有些在 h2 下变成反模式时，你可能会感到吃惊。例如，资源合并（把很多 CSS/JS 文件拼合成一个）能避免浏览器发出多个请求。对 h1 而言这很重要，因为发起请求的代价很高；但是在 h2 的世界里，这部分已经做了深度优化。放弃资源合并的结果可能是，针对单个资源发起请求的代价很低，但浏览器端可以进行更细粒度的缓存。
 
 详细看 6.7 节
-
 
 ## 5. HTTP/2 协议
 
@@ -304,7 +303,7 @@ HTTP/2 是基于帧（frame）的协议，采用分帧是为了将重要信息�
 
 从另一方面来说，有了帧，处理协议的程序就能预先知道会收到什么。下图是一个 HTTP/2 帧的结构
 
-![HTTP/2 帧结构](https://i.loli.net/2019/04/08/5cab4bbc7def3.png)
+![HTTP/2 帧结构](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/dfae789850a7035fa15e77c16931e933ff2f71fc6ea08fc51e64c64869d34c48.png)
 
 前 9 个字节对于每个帧是一致的。解析时只需要读取这些字节，就可以准确地知道在整个帧中期望的字节数。其中每个字段的说明如下
 
@@ -346,11 +345,11 @@ HTTP/2 规范中的流（stream）：HTTP/2 连接上独立的、双向的帧序
 
 HTTP 消息泛指 HTTP 请求或响应。一个消息至少由 HEADERS 帧（用来初始化流）组成，并且可以另外包含 `CONTINUATION` 和 `DATA` 帧，以及其他的 `HEADERS` 帧。 下图是普通 GET 请求的示例流程
 
-![普通 GET 请求的示例流程](https://i.loli.net/2019/04/08/5cab5a09d0d41.png)
+![普通 GET 请求的示例流程](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/98c51a6de27067a56f15590377b5570a23a528ad903ece294ac71b7bbcabe8d5.png)
 
 POST 和 GET 的主要差别之一就是 POST 请求通常包含客户端发出的大量数据。下图是 POST 消息对应的各帧可能的样子
 
-![普通 POST 请求的示例流程](https://i.loli.net/2019/04/08/5cab5a3bc6c5d.png)
+![普通 POST 请求的示例流程](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/21498bd393a0db7b7179950a0400de3a3185e22fcd835ca4624a95ac3757f3e5.png)
 
 h1 的请求和响应都分成消息首部和消息体两部分；与之类似，h2 的请求和响应分成 `HEADERS` 帧和 `DATA` 帧。HTTP/1 和 HTTP/2 消息的下列差别是需要注意
 
@@ -400,7 +399,7 @@ h2 通过流的依赖关系来解决上面这个问题。通过 `HEADERS` 帧和
 
 假设客户端不拒收推送，服务端会继续进行推送流程，用 `PUSH_PROMISE` 中指明 ID 对应的流来发送对象 
 
-![服务端推送消息处理](https://i.loli.net/2019/04/09/5caca9bde6350.png)
+![服务端推送消息处理](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/9f92057fb23fb66d3aece1902e2c9f699f45164c538b637f4e6ca1a057dbede0.png)
 
 #### 5.5.2 选择要推送的资源
 
@@ -528,7 +527,7 @@ HTTP/2 大部分情况下传输 web 页面比 HTTP/1.1 快。
 
 理想情况下，服务端正在处理 HTML 页面主体请求时才会发起推送。有时候，服务端需要做一些后台工作来生成 HTML 页面。这时候服务端在忙，客户端却在等待，这正是开始向客户端推送所需资源的绝佳时机。
 
-![在后台处理的同时进行推送](https://i.loli.net/2019/04/15/5cb489ffe0740.png)
+![在后台处理的同时进行推送](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/e577363cda2f208a7c5a9d3c4ca442e278715ea361e92a099232da288cce09a0.png)
 
 ### 6.5 首字节时间
 
@@ -549,7 +548,7 @@ HTTP/2 比 h1 确实做了更多的工作，其目的就是为了从总体上提
 
 下图是使用 h1 和 h2 加载同一个页面的加载时序对比，总体来说 h2 体验更好
 
-![h1 与 h2 请求的时间序列](https://i.loli.net/2019/04/15/5cb490542b6d4.png)
+![h1 与 h2 请求的时间序列](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/20496a0c47c26e7d5388b68025d4b26f71ff90abb07d64136af5e6ffd8dcc8bf.png)
 
 ### 6.6 第三方资源
 
@@ -663,7 +662,7 @@ Chrome 开发者工具中的 Network 栏，有助于简单直观地跟踪客户�
 
 打开 devtools 的 Network 栏，鼠标放在瀑布流 Waterfall 的资源上，就会看到资源加载过程中各个阶段的详细时间
 
-![](https://i.loli.net/2019/04/16/5cb537916fc55.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/9177e9b0b90010997030c11a21496d02bee9154aad7c0cfce2f0360a417d72ad.png)
 
 1. **Connection Setup** (连接设置)
 
@@ -699,19 +698,8 @@ Chrome 开发者工具中的 Network 栏，有助于简单直观地跟踪客户�
 
 HTTP/2 的弱点之一就是依赖主流 TCP 实现。在 3.1.3 节中已经讨论过，TCP 连接受制于 TCP 慢启动、拥塞规避，以及不合理的丢包处理机制。用单个链接承载页面涉及的所有资源请求，就能享受多路复用带来的好处；然而面对 TCP 层级的队首阻塞时，我们还是束手无策。所以 Google 开发的 QUIC 采纳了 HTTP/2 的优点，并且避免了这些缺点。
 
-
-
-
-
 ---
-
-
 
 > 推介阅读：
 >
 > 1. [HTTP2 详解 \| Wangriyu’s Blog](https://blog.wangriyu.wang/2018/05-HTTP2.html#%E6%B5%81%E4%BE%9D%E8%B5%96-Stream-Dependencies)
-
-
-PS：欢迎大家关注我的公众号【前端下午茶】，一起加油吧~
-
-![](https://user-gold-cdn.xitu.io/2019/3/26/169b8df9c9827baf?w=536&h=154&f=png&s=43808)

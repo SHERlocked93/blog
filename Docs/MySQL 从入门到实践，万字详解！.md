@@ -1,14 +1,10 @@
 # MySQL 从入门到实践，万字详解！
 
-
-
-[TOC]
-
 数据库是往全栈发展不得不跨过的一道坎，大家不可避免会学到用到相关知识，最近查资料的时候发现网上很多内容要么就特别深，要么不成体系，对一些希望浅尝辄止仅仅是使用一下的人不太友好。最近刚好有机会学到 MySQL，集中一些时间学习了一下同时做了一些笔记，每个概念基本都有代码示例，每一行都是在下手打，读者可以直接复制了代码到命令行中运行，希望对大家有所帮助～  😜
 
 本文介绍的知识都不是特别深，目标用户是对 MySQL 零基础或弱基础的小伙伴们，可以帮助建立一些概念，至少碰到相关问题知道怎么去百度，也不会碰到后端给的数据库文件看不懂。
 
-对于 Docker 和 CentOS 相关知识不了解的小伙伴可以看看 [<手摸手带你 Docker 从入门到实践>](https://juejin.cn/post/6875323565479034894) 和 [<半小时搞会 CentOS 入门必备基础知识>](https://juejin.cn/post/6844904080972709901) 两篇文章，反正 Docker 和 CentOS 也早晚会用到 😂
+对于 Docker 和 CentOS 相关知识不了解的小伙伴可以看看 [<手摸手带你 Docker 从入门到实践>](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%E5%B8%A6%E4%BD%A0%20Docker%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5.md) 和 [<半小时搞会 CentOS 入门必备基础知识>](https://github.com/SHERlocked93/blog/blob/master/Docs/CentOS%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md) 两篇文章，反正 Docker 和 CentOS 也早晚会用到 😂
 
 所有代码保存在 [Github](https://github.com/SHERlocked93/FE_Daily/tree/20210906/20210830_mysql) 上，可以自行 Clone 下来阅读和执行。
 
@@ -16,7 +12,7 @@ CentOS 版本： `7.6`
 
 MySQL 版本：`8.0.21`
 
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/MySQL-20210906-in6J0O.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/MySQL-20210906-in6J0O.png)
 
 上面这个脑图可以加文末公众号回复 「mysql脑图」 获取 xmind 源文件。
 
@@ -36,7 +32,7 @@ MySQL 版本：`8.0.21`
 
 ### 1.2 MySQL 安装
 
-MySQL 建议使用 Docker 安装，几行命令就安装好了，参见 [<手摸手带你 Docker 从入门到实践> - 安装 MySQL](https://juejin.cn/post/6875323565479034894#heading-18)
+MySQL 建议使用 Docker 安装，几行命令就安装好了，参见 [<手摸手带你 Docker 从入门到实践> - 安装 MySQL](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%E5%B8%A6%E4%BD%A0%20Docker%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5.md#6-%E5%AE%89%E8%A3%85-mysql)
 
 我这里的命令是：
 
@@ -56,22 +52,21 @@ mysql -u root -p888888
 
 如果你机子上安装了 navicate，可以参考一下下面这个配置
 
-![选择 New Connection](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20210830164756294-16-47-56.png)
+![选择 New Connection](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20210830164756294-16-47-56.png)
 
 选择 New Connection 之后填一下配置：
 
-![navicat配置](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20210830164651195-16-46-51.png)
+![navicat配置](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20210830164651195-16-46-51.png)
 
 就可以看到你数据库里面的内容了。
 
 就可以啦，效果如下图：
 
-![image-20210830202717904](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20210830202717904-20-27-18.png)
+![image-20210830202717904](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20210830202717904-20-27-18.png)
 
 不用 Docker 可以去官网 [MySQL Community Server](https://dev.mysql.com/downloads/mysql/) 下载对应版本的 MySQL 安装包，Community Server 社区版本是不要钱的，下载安装完毕也可以，基本一直下一步就行了。
 
 废话少说，下面直接开始知识灌体！
-
 
 ## 2. MySQL  简单使用
 
@@ -108,7 +103,6 @@ mysql -u root -p888888
 2. 不重用主键列的值；
 3. 不在主键列中使用可能会更改的值。
 
-
 ### 2.3 语法规范
 
 语法规范：
@@ -130,7 +124,7 @@ mysql -u root -p888888
 
 常见的简单命令：
 
-```mysql
+```sql
 mysql -u root -p      # –h 主机名 –u 用户名 -P 端口号 –p密码，注意-p跟密码之间不能加空格其他可以加可以不加
 select version();     # 查看 mysql 服务版本
 show databases;       # 查看所有数据库，注意最后有 s
@@ -165,13 +159,13 @@ mysql -u root -p888888     # 输入用户名密码，进入mysql命令行
 
 如果你用的是 navicate，在上一章创建到 localhost-mysql 的连接后，运行一下即可：
 
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20210830213034657-21-30-35.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20210830213034657-21-30-35.png)
 
 同理运行另一个文件 [populate.sql](https://github.com/SHERlocked93/FE_Daily/blob/20210906/20210830_mysql/mysql_scripts/populate.sql)，填充每个表中的数据。
 
 运行之后在命令行中 `show tables` 就可以看到库中的表了，如下图：
 
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20210830215111896-21-51-12.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20210830215111896-21-51-12.png)
 
 ### 2.5 关系表
 
@@ -207,7 +201,6 @@ MySQL 数据类型定义了列中可以存储什么数据以及该数据怎样�
 1. 定点数：`dec(M，D)`、`decimal(M，D)`
 2. 浮点数：`float(M, D)`、`double(M, D)`
 
-
 M 为整数部位+小数部位，D 为小数部位，M 和 D 都可以省略。如果是 `decimal`，则 M 默认为 10，D 默认为 0。
 
 #### 字符型
@@ -230,7 +223,7 @@ M 为整数部位+小数部位，D 为小数部位，M 和 D 都可以省略。�
 
 用来查询的 `select` 语句大概是最常用的了，用来从一个或多个表中检索信息，一条 `select` 语句必须至少给出两条信息：想选择什么、从什么地方选择。
 
-```mysql
+```sql
 # 基本语法
 select [查询列表] from [表名];
 
@@ -247,13 +240,13 @@ select 100%98;
 select version();
 ```
 
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20210831105804099-11-09-53.png)
+![](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20210831105804099-11-09-53.png)
 
 ### 3.1 去重 distinct
 
 查询出来的结果可能有多个重复值，可以使用 `distinct` 关键字来去重
 
-```mysql
+```sql
 select order_num from orderitems;           # 有一些重复值
 select distinct order_num from orderitems;  # 将重复值去重
 ```
@@ -266,18 +259,17 @@ select 语句返回所有匹配的行，它们可能是指定表中的每个行�
 
 注意，检索出来的第一行的索引为 0 行。
 
-![image-20210831110913412](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20210831110913412-11-09-40.png)
+![image-20210831110913412](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20210831110913412-11-09-40.png)
 
 ### 3.3 完全限定表名与列名
 
 在某些情况下，语句可能使用完全限定的列明与表名：
 
-```mysql
+```sql
 select orderitems.order_num from mysql_demo1.orderitems;
 # 上面这句等价于
 select order_num from orderitems;
 ```
-
 
 ## 4. 排序检索数据 order by
 
@@ -287,7 +279,7 @@ select order_num from orderitems;
 
 `order by` 子句中可以支持单个字段、多个字段、表达式、函数、别名，一般放在句子的最后面，除了 `limit` 之外。
 
-```mysql
+```sql
 select * from orderitems order by item_price;           # 按item_price升序排列
 
 # 先按 quantity 升序排列，quantity 的值一样时按 item_price 的值升序排列
@@ -304,14 +296,14 @@ select * from orderitems order by item_price desc limit 1;
 
 在 `from` 子句后使用 `where` 关键字可以增加筛选条件，过滤数据。
 
-```mysql
+```sql
 # 基本语法
 select [查询列表] from [表名] where [筛选条件] order by [排序条件];
 ```
 
 按条件表达式来筛选 `>`、`=`、`<`、`>=`、`<=`、`!=`、`<>`、`<=>`
 
-```mysql
+```sql
 # 找出产品价格为 2.5 的产品名字
 select prod_name, prod_price from products where prod_price=2.5;
 
@@ -328,7 +320,7 @@ select vend_id, prod_name from products where vend_id <> 1003;
 
 注意 `between and` 左右数字是按小大的顺序的，调过来不行。
 
-```mysql
+```sql
 # 查询产品价格在 3 到 10 内的产品
 select prod_name, prod_price from products where prod_price between 3 and 10;
 
@@ -347,7 +339,7 @@ select prod_name, prod_price from products where prod_price <= 10 and prod_price
 1. 等于 `=` 和不等于 `<>`、`!=` 不能用来判断 `null`，只能用 `is null` 和 `is not null` 来判断 `null`
 2. `<=>` 安全等于号可以用来判断 `null`
 
-```mysql
+```sql
 # 找出顾客中邮箱不是 null 的顾客信息
 select * from customers where cust_email is not null;
 
@@ -361,7 +353,7 @@ select * from customers where cust_email <=> null;
 
 前文提到了 `and` 操作符，通过这个操作符可以增加限定条件：
 
-```mysql
+```sql
 # 找出供应商为 1003 提供的价格小于等于 10 的产品
 select * from products where vend_id = 1003 and prod_price <= 10;
 ```
@@ -370,14 +362,14 @@ select * from products where vend_id = 1003 and prod_price <= 10;
 
 `or` 操作符和 `and` 操作符相反，这是逻辑或操作符，返回匹配任一条件的行：
 
-```mysql
+```sql
 # 找出id为 1003 或 1001 的供应商
 select * from products where vend_id = 1003 or vend_id = 1001;
 ```
 
 在 `and` 和 `or` 同时出现时，会优先处理 `and`，比如这句：
 
-```mysql
+```sql
 select * from products where vend_id = 1001 or vend_id = 1003 and prod_price >= 10;
 ```
 
@@ -385,7 +377,7 @@ select * from products where vend_id = 1001 or vend_id = 1003 and prod_price >= 
 
 遇到这种情况，可以通过增加圆括号：
 
-```mysql
+```sql
 select * from products where (vend_id = 1001 or vend_id = 1003) and prod_price >= 10;
 ```
 
@@ -397,7 +389,7 @@ select * from products where (vend_id = 1001 or vend_id = 1003) and prod_price >
 
 使用 `in` 操作符可以指定条件范围，范围中的每个条件都可以进行匹配。`in` 要匹配的值放在其后的圆括号中：
 
-```mysql
+```sql
 # 找出id为 1003 或 1001 的供应商
 select * from products where vend_id in (1001, 1003);
 ```
@@ -413,7 +405,7 @@ select * from products where vend_id in (1001, 1003);
 
 `not` 否操作符可以和前面的 `in` 和 `between and` 一起使用，表示对范围取反：
 
-```mysql
+```sql
 # 找出id不为 1001 1003 的产品
 select * from products where vend_id not in (1001, 1003);
 
@@ -429,7 +421,7 @@ select * from products where prod_price not between 5 and 15;
 
 最常使用的通配符是 `%` 操作符，`%` 表示任意多个字符，包括没有字符。
 
-```mysql
+```sql
 # 找出产品名字以 jet 开头的产品
 select * from products where prod_name like 'jet%';
 
@@ -446,13 +438,13 @@ select * from products where prod_name like 's%e';
 
 `_` 表示任意单个字符。
 
-```mysql
+```sql
 select * from products where prod_name like '_ ton anvil';
 ```
 
 另外，转译使用 `\`，比如 `\_`
 
-```mysql
+```sql
 # 找到描述中有 % 的产品
 select * from products where prod_desc like '%\%%';
 ```
@@ -464,18 +456,18 @@ select * from products where prod_desc like '%\%%';
 
 ### 5.8 正则表达式 regexp
 
-关于正则表达式，可以先简单看一下 [「正则表达式必知必会」](https://juejin.cn/post/6844903650054111245) 这篇博客。
+关于正则表达式，可以先简单看一下 [「正则表达式必知必会」](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A.md) 这篇博客。
 
 使用 `regexp` 关键字来表示匹配其后的正则表达式：
 
-```mysql
+```sql
 # 找到产品名以 1000 或 anvil 结尾的产品
 select * from products where prod_name regexp '1000|anvil$';
 ```
 
 正则表达式中转译使用 `\\`，比如希望查找 `.` 这个字符而不是正则中的 `.` 通配符，使用 `\\.`，为了转移 `\` 这个字符，使用 `\\\`
 
-```mysql
+```sql
 # 找到产品名以 . 字符开头的产品
 select * from products where prod_name regexp '^\\.';
 ```
@@ -488,7 +480,7 @@ select * from products where prod_name regexp '^\\.';
 
 查询出来的虚拟表格可以起一个别名，方便理解，可读性好，另外如果查询的字段有重名的情况，可以使用别名 `as` 来区分开来。
 
-```mysql
+```sql
 # 使用 as 关键字
 select cust_name as name from customers;
 
@@ -503,7 +495,7 @@ select cust_name name, cust_city location from customers;
 
 想把多个字段连接成一个字段，可以使用到拼接字段函数 `concat`：
 
-```mysql
+```sql
 # 将供应商的名字和地点拼接好后返回，并命名为 vend
 select concat(vend_name, '(', vend_country, ')') vend from vendors;
 ```
@@ -512,14 +504,14 @@ select concat(vend_name, '(', vend_country, ')') vend from vendors;
 
 所以对某些可能为 `null` 的字段要使用 `ifnull` 函数判断一下，第一个参数为要判断的字段，第二个参数是如果是 `null` 希望返回的结果：
 
-```mysql
+```sql
 # 将顾客信息拼接起来
 select concat(cust_name, '(', ifnull(cust_email, '-'), ')') customerInfo from customers;
 ```
 
 如果表中的数据前后有空格，可以使用 `rtrim()` 函数去除右边空格，`ltrim()` 去除左边空格，或者 `trim()` 去除前后空格：
 
-```mysql
+```sql
 # 将顾客信息处理后拼接起来
 select concat(rtrim(vend_name), '(', trim(vend_country), ')') vend from vendors;
 ```
@@ -528,7 +520,7 @@ select concat(rtrim(vend_name), '(', trim(vend_country), ')') vend from vendors;
 
 基本的算术运算符在 `select` 语句中也是支持的：
 
-```mysql
+```sql
 # 计算订单每种总额，并按照总金额降序排列
 select prod_id as id, quantity, quantity*item_price as totalPrice 
 from orderitems order by totalPrice desc;
@@ -565,7 +557,7 @@ from orderitems order by totalPrice desc;
 
 示例：
 
-```mysql
+```sql
 # upper、lower 将姓变大写，名变小写，然后拼接
 select concat(upper(last_name), lower(first_name)) 姓名 from employees;
 
@@ -607,7 +599,7 @@ select replace('abcabcabc', 'bc', '--');   # a--a--a--
 
 示例：
 
-```mysql
+```sql
 # round 四舍五入，第二个参数是小数点后保留的位数
 select round(-1.55);      # -2
 select round(1.446, 2);   # 1.45
@@ -646,7 +638,7 @@ select 10%3;         # 1
 
 示例：
 
-```mysql
+```sql
 # now 返回当前系统日期和时间
 select now();    # 2020-07-08 12:29:56
 
@@ -704,7 +696,7 @@ select order_num orderId,date_format(order_date, '%Y/%m') orderMonth from orders
 
 示例：
 
-```mysql
+```sql
 # 计算产品价格平均值
 select avg(prod_price) as avgPrice from products;
 
@@ -741,7 +733,7 @@ select count(*) prodNums, min(prod_price) priceMin, max(prod_price) priceMax, av
 
 使用 `group by` 子句可以指示 MySQL 按某个数据排序并分组数据，然后对每个组而不是整个结果集进行聚集。
 
-```mysql
+```sql
 # 分别查询每个供应商提供的产品种类数
 select vend_id, count(*) num_prods from products group by vend_id;
 
@@ -764,7 +756,7 @@ select vend_id, avg(prod_price) avg_price from products group by vend_id;
 
 语法顺序如下：
 
-```mysql
+```sql
 # 语法顺序
 select [查询列表] from [表名] where [筛选条件] group by [分组列表] having [分组后筛选] order by [排序列表] limit [要检索行数];
 ```
@@ -775,7 +767,7 @@ select [查询列表] from [表名] where [筛选条件] group by [分组列表]
 
 能用分组前筛选 `where` 的，优先考虑分组前筛选。
 
-```mysql
+```sql
 # 找到提供大于 2 个产品的供应商，并列出其提供的产品数量，这里使用 having 来过滤掉产品数不大于2的供应商
 select vend_id, count(*) prodCount from products group by vend_id having prodCount > 2;
 
@@ -793,14 +785,14 @@ select vend_id, avg(prod_price) avgPrice from products group by vend_id having a
 
 之前所有查询都是在同一张表中的，如果我们想获取的信息分散在两张甚至多张表呢，比如要从订单表 orders 中获取顾客 ID，然后用顾客 ID 去顾客表 custormers 找到对应顾客信息。
 
-```mysql
+```sql
 # 首先在 orderitems 表中找到产品 TNT2 对应的订单编号
 select order_num from orderitems where prod_id = 'TNT2'
 
 # 然后在 orders 表中找到订单编号对应的顾客 id
 select cust_id from orders where order_num in (
   select order_num from orderitems where prod_id = 'TNT2');
-  
+
 # 然后去 customers 表中找到顾客 id 对应的顾客名字
 select cust_id, cust_name from customers where cust_id in ( 
   select cust_id from orders where order_num in (  
@@ -817,7 +809,7 @@ select cust_id, cust_name from customers where cust_id in (
 
 使用子查询的另一方法是创建计算字段。假如需要显示 customers 表中每个顾客的订单总数。订单与相应的顾客 ID 存储在 orders 表中。
 
-```mysql
+```sql
 # 首先找到用户 ID 对应的订单数量
 select count(*) from orders where cust_id = 10003;
 
@@ -843,7 +835,7 @@ select cust_name, cust_state, (
 
 联结的创建非常简单，规定要联结的所有表以及它们如何关联即可。
 
-```mysql
+```sql
 # 列出产品的供应商及其价格
 select vend_name, prod_name, prod_price from vendors, products 
 where vendors.vend_id = products.vend_id order by prod_price desc;
@@ -855,7 +847,7 @@ where vendors.vend_id = products.vend_id order by prod_price desc;
 
 在联结两个表时，实际上做的是将一个表的每一行与另一个表的每一行配对，所以 `where` 子句作为过滤条件，过滤出只包含指定联结条件的列 `where vendors.vend_id = products.vend_id`，没有 where 子句，将返回两个表的长度乘积个字段，这叫**笛卡尔积**（cartesian product），可以运行一下这句看看：
 
-```mysql
+```sql
 # 返回两个表长度乘积行
 select vend_name, prod_name, prod_price from vendors, products;
 ```
@@ -866,7 +858,7 @@ select vend_name, prod_name, prod_price from vendors, products;
 
 一条 `select` 语句也可以联结多个表，比如需要把某个订单的产品信息、订单信息、供应商信息都列出来，要找的产品信息分散在供应商、产品、订单信息三个表中。
 
-```mysql
+```sql
 # 将订单 20005 的产品信息、订单信息、供应商信息找出来
 select prod_name, vend_name, prod_price, quantity
 from orderitems,
@@ -883,7 +875,7 @@ where products.vend_id = vendors.vend_id
 
 这里可以使用联结来实现 9.1 节的例子，之前是使用子查询来实现的，从订单表 orders 中获取顾客 ID，然后用顾客 ID 去顾客表 custormers 找到对应顾客信息。
 
-```mysql
+```sql
 # 使用联结来实现 9.1 的例子
 select customers.cust_id, cust_name
 from orders, customers, orderitems
@@ -894,7 +886,7 @@ where orders.order_num = orderitems.order_num
 
 这里提一句，不仅仅列可以起别名，表也可以起，用法跟列的别名一样：
 
-```mysql
+```sql
 # 把前面这个句子起别名
 select c.cust_id, cust_name
 from orders o, customers c, orderitems oi
@@ -909,7 +901,7 @@ where o.order_num = oi.order_num
 
 目前为止所用的联结称为**等值联结**(equijoin)，它基于两个表之间的相等测试，也称为**内部联结**。其实，对于这种联结可以使用稍微不同的语法来明确指定联结的类型。下面的 `select` 语句返回与前面例子完全相同的数据：
 
-```mysql
+```sql
 # 列出产品的供应商及其价格
 select vend_name, prod_name, prod_price
 from vendors
@@ -923,7 +915,7 @@ from vendors
 
 比如某个产品出现了质量问题，现在希望找出这个产品的供应商提供的所有产品信息。按照之前介绍的子查询，我们可以先找到对应产品的供应商，然后找到具有这个供应商 ID 的产品列表：
 
-```mysql
+```sql
 # 先找到产品 ID 为 TNT1 的供应商 ID，然后找到对应供应商 ID 提供的产品列表
 select prod_id, prod_name, vend_id
 from products
@@ -936,7 +928,7 @@ where vend_id in (
 
 使用子查询确实可以实现，使用联结也可以做到，这就是自联结：
 
-```mysql
+```sql
 # 自联结
 select p1.prod_id, p1.prod_name, p1.vend_id
 from products p1,
@@ -955,7 +947,7 @@ where p1.vend_id = p2.vend_id
 
 自然联结就是你只选择那些唯一的列，这一般是通过对表使用通配符，对所有其他表的列使用明确的子集来完成的。
 
-```mysql
+```sql
 # 自选择唯一的通配符只对第一个表使用。所有其他列明确列出，所以没有重复的列被检索出来。
 select v.*, p.prod_id
 from vendors v,
@@ -977,19 +969,19 @@ where v.vend_id = p.vend_id;
 
 比如检索所有用户，及其所下的订单，没有订单的也要列举出来：
 
-```mysql
+```sql
 # 内部联结，查找用户对应的订单
 select c.cust_id, o.order_num
 from customers c
          inner join orders o
                     on c.cust_id = o.cust_id;
-                    
+
 # 左外部联结，将没有下单过的顾客行也列出来
 select c.cust_id, o.order_num
 from customers c
          left outer join orders o
                          on c.cust_id = o.cust_id;
-                         
+
 # 右外部联结，列出所有订单及其顾客，这样没下单过的顾客就不会被列举出来
 select c.cust_id, o.order_num
 from customers c
@@ -1005,7 +997,7 @@ from customers c
 
 比如想检索一个顾客下过的订单数量，即使没有也要写 0，此时使用分组和 `count` 聚集函数来统计数量：
 
-```mysql
+```sql
 # 找到每个顾客所下订单的数量，并降序排列
 select c.cust_id, c.cust_name, count(o.order_num) count_orders
 from customers c
@@ -1031,7 +1023,7 @@ MySQL 允许执行多条select语句，并将结果作为单个查询结果集�
 
 当查询结果来自于多张表，但多张表之间没有关联，这个时候往往使用组合查询。在每条 `select` 语句之间放上关键字 `union` 即可。
 
-```mysql
+```sql
 # 比如需要列出商品价格小于等于 10 而且是供应商 ID 为 1005 或 1003 的产品信息
 select prod_id, prod_name, prod_price, vend_id from products where prod_price <= 10
 union
@@ -1050,7 +1042,7 @@ select prod_id, prod_name, prod_price from products where prod_price <= 10 or ve
 
 两行 `union` 分开的语句可能会返回重复的行，但前面那个例子实际结果却并没有包含重复行，这是因为 `union` 关键字自动去除了重复的行，如果不希望去重，可以使用 `union all` 关键字。
 
-```mysql
+```sql
 # 不去重重复行
 select prod_id, prod_name, prod_price, vend_id from products where prod_price <= 10
 union all
@@ -1067,7 +1059,7 @@ select prod_id, prod_name, prod_price, vend_id from products where vend_id in (1
 
 数据插入使用 `insert` 关键字，它可以插入一行、多行数据，也可以插入某些查询的结果。
 
-```mysql
+```sql
 # 插入一条数据到顾客表中
 insert into customers
 values (null, 'Zhang San', '001 street', 'ShangHai', 'SH', '666666', 'ZH', null, null);
@@ -1079,7 +1071,7 @@ values (null, 'Zhang San', '001 street', 'ShangHai', 'SH', '666666', 'ZH', null,
 
 安全的数据插入方式是这样的：
 
-```mysql
+```sql
 # 安全但繁琐的插入方式
 insert into customers(cust_name, cust_address, cust_city, cust_state, cust_zip, cust_country, cust_contact, cust_email)
 values ('Zhang San', '001 street', 'ShangHai', 'SH', '666666', 'ZH', null, null);
@@ -1100,7 +1092,7 @@ values ('Zhang San', '001 street', 'ShangHai', 'SH', '666666', 'ZH', null, null)
 
 上面介绍的 `insert` 语句可以一次插入一个行，如果想一次插入多个行，每次都列出列名就比较繁琐了，可以使用下面这种方式：
 
-```mysql
+```sql
 # 插入多个行
 insert into customers(cust_name, cust_address, cust_city, cust_state, cust_zip, cust_country, cust_contact, cust_email)
 values ('Zhang San', '001 street', 'ShangHai', 'SH', '666666', 'ZH', null, null),
@@ -1113,7 +1105,7 @@ values ('Zhang San', '001 street', 'ShangHai', 'SH', '666666', 'ZH', null, null)
 
 `insert` 可以将一条 `select` 语句的结果插入表中，这就是 `insert select`。比如你想将另一个表中查询的数据插入到这个表中：
 
-```mysql
+```sql
 # 从别的表中找出数据，并插入 customers 表中
 insert into customers(cust_id, cust_name, cust_address, cust_city, cust_state, cust_zip, cust_country, cust_contact, cust_email)
 select id, name, address, city, state, zip, country, contact, email
@@ -1126,7 +1118,7 @@ from custnew;
 
 `update` 语句用来修改表中的数据，使用 `update` 的时候一定要小心，不要忘了添加 `where` 子句，因为一不小心就会更新表中所有行。
 
-```mysql
+```sql
 # 更新 id 为 10005 的用户的信息
 update customers set cust_email = '888@qq.com' where cust_id = 10005;
 ```
@@ -1137,7 +1129,7 @@ update customers set cust_email = '888@qq.com' where cust_id = 10005;
 
 更新多个字段的方式也很简单：
 
-```mysql
+```sql
 # 更新多个字段
 update customers
 set cust_email   = '666@qq.com',
@@ -1153,7 +1145,7 @@ where cust_id = 10005;
 
 `delete` 语句可以用来从表中删除特定的行或者所有行。使用 `delete` 语句的时候要小心，不要忘了添加 `where` 子句，因为一不小心就会删除表中所有行。
 
-```mysql
+```sql
 # 删除顾客表中顾客 id 为 10008 的行
 delete from customers where cust_id = 10008;
 ```
@@ -1168,7 +1160,7 @@ delete from customers where cust_id = 10008;
 
 我们可以打开之前为了整点数据执行的 [create.sql](https://github.com/SHERlocked93/FE_Daily/blob/20210906/20210830_mysql/mysql_scripts/create.sql) 文件看看，用 VSCode/Webstorm/Navivate/文本 都能打开，这个文件除了注释的第一行就是创建表语句：
 
-```mysql
+```sql
 CREATE TABLE customers
 (
   cust_id      int       NOT NULL AUTO_INCREMENT,
@@ -1208,11 +1200,11 @@ CREATE TABLE customers
 
 修改表使用 `alter table` 语句，一般情况下，当表中开始存储数据后，就不应该再修改表。所以表在设计时需要大量时间来考虑，尽量在后期不对表进行大的改动。
 
-```mysql
+```sql
 # 给供应商表增加一列 vend_phone 字段
 alter table vendors
     add vend_phone char(20) default 12212341234;
-    
+
 # 删除这个添加的 vend_phone 字段
 alter table vendors
     drop column vend_phone;
@@ -1224,7 +1216,7 @@ alter table vendors
 
 可以从 [create.sql](https://github.com/SHERlocked93/FE_Daily/blob/20210906/20210830_mysql/mysql_scripts/create.sql#L103-L104) 文件最下面看到外键的例子，这里列举一行：
 
-```mysql
+```sql
 # 将订单信息表的 order_num 设置为订单表的外键
 alter table orderitems
     add constraint fk_orderitems_orders foreign key (order_num) references orders (order_num);
@@ -1232,7 +1224,7 @@ alter table orderitems
 
 设置外键之后，如果外键已经有对应数据，就不能直接删除主表的这个外键行了：
 
-```mysql
+```sql
 # 直接删除外键行报错，不允许删
 delete from orders where order_num = 20009;
 
@@ -1249,7 +1241,7 @@ delete from orderitems where order_num = 20009;
 
 删除一个表可以使用 `drop  table` 关键字。
 
-```mysql
+```sql
 drop table customers2;
 ```
 
@@ -1257,7 +1249,7 @@ drop table customers2;
 
 如果删除时不存在这个表会报错，可以在 `drop table` 关键字后加上 `if exists`，这样数据库会先检查这个目标表是不是存在：
 
-```mysql
+```sql
 # 删除一个表，如果没加 if exists 表又不存在则会报错
 drop table if exists customers2;
 ```
@@ -1268,7 +1260,7 @@ drop table if exists customers2;
 
 重命名一个表可以使用 `rename table` 关键字。
 
-```mysql
+```sql
 # 重命名一个表
 rename table customers to customers2;
 
@@ -1285,7 +1277,7 @@ rename table customers to customers2,
 
 比如说现在要查询购买了 TNT2 产品的顾客信息，按之前介绍的知识使用联结从三个表中查找：
 
-```mysql
+```sql
 # 找到购买了 TNT2 的顾客信息
 select cust_name, cust_contact, cust_email, prod_id
 from customers c,
@@ -1298,7 +1290,7 @@ where c.cust_id = o.cust_id
 
 那如果现在要换成找到购买了另一个产品的顾客信息呢，重新写一遍查询语句似乎有点重复。程序员永远不做重复的事，如果有一个虚拟表，名为 prod_cust，然后使用 `select * from prod_cust where prod_id = 'TNT1'` 就可以轻松找到对应的行了，这就是视图。
 
-```mysql
+```sql
 # 创建视图
 create view prod_cust as
 select cust_name, cust_contact, cust_email, prod_id
@@ -1307,7 +1299,7 @@ from customers c,
      orderitems oi
 where c.cust_id = o.cust_id
   and o.order_num = oi.order_num;
-  
+
 # 使用视图查询购买了产品 TNT2 的顾客信息
 select cust_name, cust_email from prod_cust
 where prod_id = 'TNT2';
@@ -1317,7 +1309,7 @@ where prod_id = 'TNT2';
 
 视图的使用如下：
 
-```mysql
+```sql
 create view prod_cust  as ...;       # 创建视图
 show create view prod_cust;          # 查看创建视图的语句
 drop view prod_cust;                 # 删除视图
@@ -1342,7 +1334,7 @@ create or replace view prod_cust  as ...;     # 更新视图
 
 顺便说一句，创建视图之后，`show tables` 也会显示视图，所以你可以通过下面方式查询所有基表或者视图：
 
-```mysql
+```sql
 # 显示当前database中不包括视图的所有基表
 select table_name
 from information_schema.tables
@@ -1360,7 +1352,7 @@ where table_schema = 'mysql_demo1'
 
 比如某个场景，经常会使用到一些格式化的数据，那么就可以使用视图把数据格式化的形式先拼接好：
 
-```mysql
+```sql
 # 经常用到的供应商信息，可以先组装成视图
 create or replace view vend_infos as
 select vend_id, concat(vend_name, '(', vend_city, ', ', vend_country, ')') vend_info
@@ -1376,7 +1368,7 @@ where products.vend_id = vend_infos.vend_id;
 
 比如某个场景，需要找到邮箱地址不为 null 的顾客下的订单：
 
-```mysql
+```sql
 # 找到 email 不是 null 的顾客下的订单
 select order_num, cust_name, cust_email
 from customers, orders
@@ -1386,7 +1378,7 @@ where customers.cust_id = orders.cust_id
 
 但是另一个场景又需要找到邮箱地址不为 null 的顾客购买的所有商品列表，此时我们可以使用视图，把邮箱地址不为 null 的顾客创建为一个视图，在其他场景使用：
 
-```mysql
+```sql
 # 创建邮箱地址不为 null 的顾客的视图
 create view cust_has_email as
 select * from customers
@@ -1411,7 +1403,7 @@ where c.cust_id = o.cust_id
 
 视图对于简化计算字段的使用很有用，比如希望查找 20008 的订单的订单总额：
 
-```mysql
+```sql
 # 查找 20008 订单的订单总额
 select order_num, sum(quantity * item_price) sum_price
 from orderitems
@@ -1420,7 +1412,7 @@ where order_num = 20008;
 
 那么希望查找另一个订单总额时，可以使用视图来改造一下：
 
-```mysql
+```sql
 # 查找订单总额视图
 create or replace view sum_orders as
 select order_num, sum(quantity * item_price) sum_price
@@ -1440,7 +1432,7 @@ where order_num = 20009;
 
 更新视图的数据会更新其基表，但并非所有视图都可以更新的，如果数据库不冷确定被更新的基数据，则不允许更新。比如分组、联结、子查询、并、聚集函数、`distinct` 等等。
 
-```mysql
+```sql
 # 比如给上面的 email 不为 null 的视图添加一行数据，插入会成功
 insert into cust_has_email(cust_id, cust_name, cust_address, cust_city, cust_state, cust_zip, cust_country, cust_contact)
 values (10010, 'Zhang San', '001 street', 'ShangHai', 'SH', '9999', 'ZH', 'Li S');
@@ -1469,7 +1461,7 @@ values (20009, 5, 'OL1', 2, 8.99);
 
 创建存储过程使用 `create procedure`，可以设置参数，存储过程体使用 `begin ... end` 分隔开，调用使用 `call`
 
-```mysql
+```sql
 # 创建一个计算平均价格的存储过程
 create procedure product_pricing(vend_id int)
 begin
@@ -1491,7 +1483,7 @@ call product_pricing(1002);
 
 删除使用 `drop` 关键字，如果不存在这个存储过程会报错，此时可以增加 `if exists` 关键字：
 
-```mysql
+```sql
 # 删除存储过程    
 drop procedure product_pricing;
 
@@ -1507,7 +1499,7 @@ drop procedure if exists product_pricing;
 
 MySQL 中的变量都必须以 @ 开始，存储过程中检索得到的值使用 `into` 保存到相应变量，之后可以就可以查询到变量中存储的值了。
 
-```mysql
+```sql
 # 存储过程输入输出参数
 create procedure product_pricing(
     in vend_id int,
@@ -1536,7 +1528,7 @@ select @minprice, @maxprice, @avgprice;
 
 再试个例子，使用存储过程计算出指定订单号的总价，并输出到变量中：
 
-```mysql
+```sql
 # 计算指定订单号的总价格，并输出到变量中
 create procedure order_pricing(
     in order_num int,
@@ -1560,7 +1552,7 @@ select @totalprice;
 
 存储过程也可以使用 `if (条件) then ... elseif (条件) then ... else` 语句，比如现在要计算折扣后的商品价格，总商品数量 3 件 8 折，4 件 7 折，这里使用存储过程：
 
-```mysql
+```sql
 # 首先为了方便后面计算订单总金额，创建一个查询订单总金额的视图
 create or replace view sum_order_price as
 select sum(quantity * item_price) as total_price, order_num
@@ -1626,7 +1618,7 @@ MySQL 中的游标只能用于存储过程或函数。
 
 下面直接看例子：
 
-```mysql
+```sql
 drop procedure if exists process_orders;
 
 # 使用游标将每个订单的实际价格填写到一个表中
@@ -1687,7 +1679,7 @@ select * from ordertotals;
 
 创建触发器使用 `create trigger` 关键字，格式如下：
 
-```mysql
+```sql
 # 语法
 create trigger [触发器名]
 [after/before] [insert/update/delete] on [表名]
@@ -1699,9 +1691,10 @@ end;
 # 删除
 drop trigger [if exists] [触发器名];
 ```
+
 `for each row` 表示对每个插入行执行触发器。只有表
 
-```mysql
+```sql
 # 创建一个触发器，在新的产品插入时给临时变量赋值
 create trigger newproduct
     after insert
@@ -1725,7 +1718,7 @@ select @newprod;
 2. `before insert` 语句中可以通过更改 `new` 虚拟表中的值来修改插入行的数据；
 3. 对于 `auto_increment` 自增列，在 `before` 中 `new` 中的值为 0，在 `after` 中为自动生成的自增值。
 
-```mysql
+```sql
 # 插入用户后获取这个新用户自动生成的的 ID 并且赋值给临时变量
 create trigger newcust
     after insert
@@ -1748,7 +1741,7 @@ select @newcust_after;
 1. `delete` 触发器内可以通过访问名为 `old` 的虚拟表来访问被删除的行；
 2. `old` 虚拟表中的字段都是只读的，不能修改。
 
-```mysql
+```sql
 drop trigger if exists deletecustomer;
 
 # 创建触发器，当从顾客表中删除时将删除的数据插入到另一个存档表中
@@ -1774,7 +1767,7 @@ select * from customers2;
 2. `before update` 触发器中，`new` 中的值是可以被修改的；
 3. `old` 虚拟表中的字段都是只读的，不能修改。
 
-```mysql
+```sql
 drop trigger if exists updatecustomer;
 
 # 使用触发器，将每次更新的 cust_country 转化为大写
@@ -1835,7 +1828,7 @@ update customers set cust_country ='zh' where cust_id = 10005;
 
 `start transaction` 标识事务开始，使用 `rollback` 可以进行回退从 `start` 到 `rollback` 中间的所有语句。
 
-```mysql
+```sql
 # 开始事务
 start transaction; 
 delete from customers where cust_id > 10005;   # 删除几个行
@@ -1855,7 +1848,7 @@ MySQL 中用户的任何一个更新操作（写操作）都被视为一个事�
 
 但在事务处理块中，提交不会隐含地进行，需要你自己来显式的调用：
 
-```mysql
+```sql
 # 删除订单详情表总中 20007 相关订单详情，再删除订单表中的 20007
 start transaction;
 delete from orderitems where order_num = 20007;
@@ -1873,7 +1866,7 @@ commit;
 
 此时可以使用保留点，这样在发生问题时回滚到保留点处即可。保留点使用比较简单：
 
-```mysql
+```sql
 # 创建保留点
 savepoint sav1;
 
@@ -1904,7 +1897,7 @@ rollback to sav1;
 
 用户信息存储在 MySQL 的 mysql 库中：
 
-```mysql
+```sql
 # 查看用户列表
 use mysql;
 select user from user;
@@ -1912,7 +1905,7 @@ select user from user;
 
 创建用户账号：
 
-```mysql
+```sql
 # 创建用户及其密码
 create user zhangsan identified by '888888';
 
@@ -1925,7 +1918,7 @@ drop user if exists lisi;
 
 设置权限用 `grant` 关键字：
 
-```mysql
+```sql
 # 显示用户张三的权限
 show grants for zhangsan;
 
@@ -1992,31 +1985,9 @@ revoke select on mysql_demo1.* from zhangsan;
 5. 一般组合查询比在 `select` 中使用 `or` 快。
 6. 一般 `fulltext` 比 `like` 快。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下哦，你的点赞是我更新的最大动力！~
-
 
 > 参考文档：
 >
 > 1. [《MySQL必知必会》](https://book.douban.com/subject/3354490/)
 > 2. [MySQL 中文文档](https://www.mysqlzh.com/)
-
-PS：本文收录在在下的博客 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog) 系列文章中，欢迎大家关注我的公众号 `前端下午茶`，直接搜索即可添加或者点[这里](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/TJt4p2-19-56-21.jpg)添加，持续为大家推送前端以及前端周边相关优质技术文，共同进步，一起加油~
-
-另外可以加入「前端下午茶交流群」微信群，微信搜索  `sherlocked_93` 加我好友，备注**加群**，我拉你入群～

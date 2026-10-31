@@ -1,7 +1,5 @@
 # Web Worker 初探
 
-[TOC]
-
 以前我们总说，JS是单线程没有多线程，当JS在页面中运行长耗时同步任务的时候就会导致页面假死影响用户体验，从而需要设置把任务放在任务队列中；执行任务队列中的任务也并非多线程进行的，然而现在HTML5提供了我们前端开发这样的能力 - [Web Workers API](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Workers_API)，我们一起来看一看 Web Worker 是什么，怎么去使用它，在实际生产中如何去用它来进行产出。
 
 ## 1. 概述 
@@ -35,8 +33,6 @@ worker线程的使用有一些注意点
 5. 脚本限制
    worker线程不能执行`alert`、`confirm`，但可以使用 `XMLHttpRequest` 对象发出ajax请求。
 
-
-
 ### 2.2 例子 
 
 在主线程中生成 Worker 线程很容易：
@@ -44,7 +40,6 @@ worker线程的使用有一些注意点
 ```js
 var myWorker = new Worker(jsUrl, options)
 ```
-
 
 Worker()构造函数，第一个参数是脚本的网址（必须遵守同源政策），该参数是必需的，且只能加载 JS 脚本，否则报错。第二个参数是配置对象，该对象可选。它的一个作用就是指定 Worker 的名称，用来区分多个 Worker 线程。
 
@@ -98,17 +93,17 @@ self.onmessage = ev => {
     window.w.onmessage = ev => {
       document.getElementById('app').innerHTML = ev.data
     }
-    
+
     window.w.onerror = err => {
       w.terminate()
       console.log(error.filename, error.lineno, error.message)       // 发生错误的文件名、行号、错误内容
     }
-    
+
     function sendMessage() {
       const msg = document.getElementById('msg')
       window.w.postMessage(msg.value)
     }
-    
+
     function stopWorker() {
       window.w.terminate()
     }
@@ -135,12 +130,11 @@ Worker线程中全局对象为 `self`，代表子线程自身，这时 `this`指
 更详细的API参见 [MDN - WorkerGlobalScope](https://developer.mozilla.org/zh-CN/docs/Web/API/WorkerGlobalScope)。
 
 worker线程中加载脚本的api：
+
 ```js
 importScripts('script1.js')	// 加载单个脚本
 importScripts('script1.js', 'script2.js')	// 加载多个脚本
 ```
-
-
 
 ## 3. 实战场景
 
@@ -164,7 +158,7 @@ importScripts('script1.js', 'script2.js')	// 加载多个脚本
 
 5. 预加载图片
 
-   有时候一个页面有很多图片，或者有几个很大的图片的时候，如果业务限制不考虑懒加载，也可以使用Web Worker来加载图片，可以参考一下[这篇文章的探索](https://juejin.im/post/5a0875fcf265da431f4a8ddc)，这里简单提要一下。
+   有时候一个页面有很多图片，或者有几个很大的图片的时候，如果业务限制不考虑懒加载，也可以使用Web Worker来加载图片，可以参考一下[这篇文章的探索](https://juejin.cn/post/6844903510673211400)，这里简单提要一下。
 
    ```js
    // 主线程
@@ -174,7 +168,7 @@ importScripts('script1.js', 'script2.js')	// 加载多个脚本
      img.src = window.URL.createObjectURL(event.data);
      document.querySelector('#result').appendChild(img)
    }
-   
+
    // worker线程
    let arr = [...好多图片路径];
    for (let i = 0, len = arr.length; i < len; i++) {
@@ -191,30 +185,19 @@ importScripts('script1.js', 'script2.js')	// 加载多个脚本
    }
    ```
 
-   
-
 在实战的时候注意
 
 - 虽然使用worker线程不会占用主线程，但是启动worker会比较耗费资源
 - 主线程中使用XMLHttpRequest在请求过程中浏览器另开了一个异步http请求线程，但是交互过程中还是要消耗主线程资源
 
-
-
-在 Webpack 项目里面使用 Web Worker 请参照：[怎么在 ES6+Webpack 下使用 Web Worker](https://juejin.im/post/5acf348151882579ef4f5a77)
-
-
+在 Webpack 项目里面使用 Web Worker 请参照：[怎么在 ES6+Webpack 下使用 Web Worker](https://juejin.cn/post/6844903590503383054)
 
 至于还有Shared Worker、Service Worker什么的，我们就不看了，IE不喜欢
 
-
-
 ---
 
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
-> 参考：
->
-> 1. [MDN - Web Workers 概念与用法](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Workers_API)
+> 补充参考：
+> 1. [怎么在 ES6+Webpack 下使用 Web Worker](https://juejin.im/post/6844903590503383054)
 > 2. [阮一峰 - Web Worker 使用教程](http://www.ruanyifeng.com/blog/2018/07/web-worker.html)
 > 3. [JavaScript 工作原理之七－Web Workers 分类及 5 个使用场景](https://segmentfault.com/a/1190000014938305)
-> 4. [Web Worker在项目中的妙用](https://juejin.im/post/5a0875fcf265da431f4a8ddc)
-> 5. [怎么在 ES6+Webpack 下使用 Web Worker](https://juejin.im/post/5acf348151882579ef4f5a77)
+> 4. [Web Worker在项目中的妙用](https://juejin.im/post/6844903510673211400)

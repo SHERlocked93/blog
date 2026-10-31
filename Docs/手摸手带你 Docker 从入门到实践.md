@@ -1,12 +1,10 @@
 # 手摸手带你 Docker 从入门到实践
 
-[TOC]
-
-![bg](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/dimitris-kiriakakis-fDo_EgwFnG8-unsplash-2020-09-22.jpg)
+![bg](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/dimitris-kiriakakis-fDo_EgwFnG8-unsplash-2020-09-22.jpg)
 
 在下最近遇到要在服务器上安装 Mysql、Nginx、EasyMock 等工具的场景，这里记录一下我使用 Docker 安装的过程，希望也能在类似的场景中帮助到大家～ 
 
-本文前备知识需要一些 Linux 的一些基本命令，推介先看一下 [<半小时搞会 CentOS 入门必备基础知识>](https://juejin.im/post/6844904080972709901) 这篇文章。
+本文前备知识需要一些 Linux 的一些基本命令，推介先看一下 [<半小时搞会 CentOS 入门必备基础知识>](https://github.com/SHERlocked93/blog/blob/master/Docs/CentOS%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md) 这篇文章。
 
 CentOS 版本： `7.6`
 
@@ -24,7 +22,7 @@ Docker 版本： `19.03.12`
 
 折腾过环境配置的人都明白其中麻烦，换一台系统、虚拟机、机器，就又要重来一次，费力费时。由于环境和配置的原因，各种奇奇怪怪因为环境和配置的 Bug，总是像打地鼠游戏里面的地鼠一样不断冒出来 🐹
 
-![Docker](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/docker-cloud-twitter-card-20200831215025290-2020-08-31.png)
+![Docker](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/docker-cloud-twitter-card-20200831215025290-2020-08-31.png)
 
 Docker 对这个问题给出了一个很好的解决方案，通过镜像将除了系统之外所需要的系统环境由下而上打包，达到服务跨平台的无缝运作。也就是说，安装的时候，把特定的环境一模一样地搬过来，从而解决「在我的电脑上能跑，在 xx 环境就跑不了」的情况。
 
@@ -80,7 +78,7 @@ $ sudo systemctl start docker
 
 在 MacOS 的 Docker 配置 `Perferences -> Docker Engine` 或者 Windows 的 `Settings -> Deamon` 中的 JSON 中增加一项 `registry-mirrors` 如下
 
-![Docker镜像加速配置](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-07-06-image-20200706190251866.png)
+![Docker镜像加速配置](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/33f699d14f24f2a6799e02799f72b08ad9509f68df400040d55c6e59d224a4cb.png)
 
 配置完之后在命令行中 `docker info` 就可以查看到我们配置的镜像加速地址了。
 
@@ -119,7 +117,7 @@ $ sudo systemctl restart docker
 
 然后就可以快乐跑起来我们第一个 Docker 指令 Hello World 了
 
-![Docker跑起Helloworld](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-07-06-image-20200706192734962.png)
+![Docker跑起Helloworld](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/901cb6d706940f90bb2cd48dc4297719cdbf7146c06287dac3833f4f17241238.png)
 
 Good start ！ 🎉
 
@@ -127,7 +125,7 @@ Good start ！ 🎉
 
 镜像和容器的关系就像类和类的实例，一个镜像可以同时跑多个容器，单个容器实例又可以创建新的镜像。如下图：
 
-![镜像容器仓库](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/576507-docker1-20200831221734983-2020-08-31.png)
+![镜像容器仓库](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/576507-docker1-20200831221734983-2020-08-31.png)
 
 下面解释一下这个图里面出现的元素
 
@@ -143,7 +141,7 @@ Good start ！ 🎉
 
 容器的生命周期图示
 
-![容器的生命周期](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-07-06-165e53743e730432?w=1829&h=932&f=png&s=215394.png)
+![容器的生命周期](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/7bbdc125e84504f05c210d9b94a9f84c857a5087e6c39f39d408cf9c736aaefc.png)
 
 容器的五个核心状态，也就是图中色块表示的：Created、Running、Paused、Stopped、Deleted：
 
@@ -188,6 +186,7 @@ $ docker search [关键字]
 # 下载镜像，标签 tag 不写默认为 lastest，也可以自己加比如 :3.2.0
 $ docker pull [镜像名][:标签Tag]
 ```
+
 ### 5.3 容器命令
 
 ```bash
@@ -262,7 +261,7 @@ $ docker   # bash: docker: command not found 这个容器没有安装docker
 
 是不是很神奇，我们可以在一开始的 CentOS 下面执行  `docker ps` 来查看容器列表：
 
-![image-20200901225909737](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20200901225909737-2020-09-01.png)
+![image-20200901225909737](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20200901225909737-2020-09-01.png)
 
 你会发现上面那个 ID，正是下面列表中跑起来的这个容器的 ID，镜像的 ID 也是我们前面 `pull` 下来的 CentOS 镜像 ID，名字也是我们起的 `mycentos0901`。
 
@@ -278,13 +277,13 @@ $ docker   # bash: docker: command not found 这个容器没有安装docker
 
 比如这里在后台运行一个命令，这个命令一直在打印 `docker run -d centos /bin/sh -c "while true; do echo hello zzyy; sleep 2; done"`，然后我们 `logs` 查看一下：
 
-![docker_logs](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20200911135543820-2020-09-11.png)
+![docker_logs](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20200911135543820-2020-09-11.png)
 
 #### 退出容器后对容器操作
 
 退出容器后可以通过 `exec` 方法对正在运行的容器进行操作：
 
-![image-20200911142617186](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20200911142617186-2020-09-11.png)
+![image-20200911142617186](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20200911142617186-2020-09-11.png)
 
 #### 在容器中拷贝文件到外部
 
@@ -299,7 +298,7 @@ $ docker cp [本机目录] [容器ID]/[容器Names]:[要拷贝的文件目录]  
 
 演示一下，这里先到容器里面创建一个无聊的文件 `xixi.txt`，然后拷贝到本机：
 
-![image-20200921210352644](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20200921210352644-2020-09-21.png)
+![image-20200921210352644](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20200921210352644-2020-09-21.png)
 
 实用的时候，我们可以拷贝配置、日志等文件到本地。
 
@@ -330,7 +329,7 @@ $ docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=888888 -v /Users/sherlocked9
 
 运行截图：
 
-![安装Mysql](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-07-06-image-20200706202011922.png)
+![安装Mysql](https://raw.githubusercontent.com/SHERlocked93/pic/master/picgo/d16bf527878293c5f0128dd680220496956f9543562deecc8e07e444c362c463.png)
 
 然后去 Navicat 中就可以连接到 MySQL 了。
 
@@ -338,7 +337,7 @@ $ docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=888888 -v /Users/sherlocked9
 
 ## 7. 安装 Nginx
 
-Nginx 的安装和其他的类似，如果你还不太了解 Nginx 如何使用，可以参看 [<Nginx 从入门到实践，万字详解>](https://juejin.im/post/6844904144235413512) 这篇文章，看完基本就了解如何使用和配置了。
+Nginx 的安装和其他的类似，如果你还不太了解 Nginx 如何使用，可以参看 [<Nginx 从入门到实践，万字详解>](https://github.com/SHERlocked93/blog/blob/master/Docs/Nginx%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%EF%BC%8C%E4%B8%87%E5%AD%97%E8%AF%A6%E8%A7%A3%EF%BC%81.md) 这篇文章，看完基本就了解如何使用和配置了。
 
 ```bash
 # 查询/下载镜像
@@ -346,7 +345,7 @@ $ docker search nginx
 $ docker pull nginx
 ```
 
-![image-20200922203203685](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20200922203203685-2020-09-22.png)
+![image-20200922203203685](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20200922203203685-2020-09-22.png)
 
 然后创建一个临时的容器，目的是把默认配置拷贝到本机，我这里把配置文件放到 `/mnt` 目录下，主要是三个配置文件夹：
 
@@ -370,7 +369,7 @@ $ docker run -d --name localhost-nginx -p 8082:80 \
 
 其他配置刚刚上面之前已经讲过，应该不用讲了。
 
-![image-20200922204931582](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/image-20200922204931582-2020-09-22.png)
+![image-20200922204931582](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/image-20200922204931582-2020-09-22.png)
 
 然后在你自己浏览器上就可以访问了，如果是云服务器，记得开放对应端口。
 
@@ -380,7 +379,7 @@ $ docker run -d --name localhost-nginx -p 8082:80 \
 
 ### 安装 docker\-compose
 
-> 官方文档：[https://docs.docker.com/compose/install/](https://link.zhihu.com/?target=https%3A//docs.docker.com/compose/install/)
+> 官方文档：[https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
 首先你得确定拥有 docker 环境，如果你是 Windows / Mac 用户，那么安装客户端，就会自带 docker\-compose 了。
 
@@ -470,13 +469,13 @@ $ chmod 777 /yourfile/logs
 
 然后就可以通过浏览器上的 `你的域名.com:7300` 访问到 easy-mock 了！
 
-如果你觉得域名后面跟着端口号挺难看的，你可以通过配置 Nginx 的二级域名来访问你部署的 easy-mock，配置二级域名的方法参见 [这篇文章](https://juejin.im/post/6844904144235413512#heading-16)
+如果你觉得域名后面跟着端口号挺难看的，你可以通过配置 Nginx 的二级域名来访问你部署的 easy-mock，配置二级域名的方法参见 [这篇文章](https://github.com/SHERlocked93/blog/blob/master/Docs/Nginx%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%EF%BC%8C%E4%B8%87%E5%AD%97%E8%AF%A6%E8%A7%A3%EF%BC%81.md#heading-16)
 
 ## 9. 可视化管理
 
 关于可视化查询工具，这里就简单推介一个 [LazyDocker](https://github.com/jesseduffield/lazydocker)，由于是在终端运行的，而且支持键盘操作和鼠标点击，就挺骚气的，有了这个一些查询语句可以少打几次了。
 
-![lzd](https://oscimg.oschina.net/oscnet/4ad1a013236976fa04761509d03d4fbeecf.jpg)
+![lzd](https://raw.githubusercontent.com/SHERlocked93/pic/master/uPic/4ad1a013236976fa04761509d03d4fbeecf-2020-09-22.jpg)
 
 安装比较简单，运行下面的命令：
 
@@ -502,8 +501,6 @@ $ alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v
 篇幅原因 Docker 还有一些内容本文没有介绍，但上面的内容已基本满足日常的使用，其他 Docker 的内容可以关注一下在下的后续文章～
 
 ---
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出~
-
 
 > 参考文档：
 >
@@ -518,19 +515,9 @@ $ alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v
 > 4. [easymock官方docker仓库：easy-mock/easy-mock-docker](https://github.com/easy-mock/easy-mock-docker)
 > 10. [使用docker安装nginx](https://juejin.im/post/6844904016086827016)
 
-作者其他高赞文章：
-
-> 1.  [JS 中可以提升幸福度的小技巧](https://juejin.im/post/6844903641468403726)
-> 2.  [Vue 使用中的小技巧](https://juejin.im/post/6844903598409646088)
-> 3.  [Nginx 从入门到实践，万字详解！](https://juejin.im/post/6844904144235413512)
-> 4.  [半小时搞会 CentOS 入门必备基础知识](https://juejin.im/post/6844904080972709901)
-> 5.  [手摸手 Webpack 多入口配置实践](https://juejin.im/post/6844903939289120782)
-> 6.  [前端路由跳转基本原理](https://juejin.im/post/6844903773219848206)
-
-PS：本人博客地址 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog)，也欢迎大家关注我的公众号【前端下午茶】，一起加油吧~
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-5cf08a479cd5d75372-20200304131909230.jpg)
-
-另外可以加入「前端下午茶交流群」微信群，长按识别下面二维码即可加我好友，备注**加群**，我拉你入群～
-
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@env/uPic/2020-03-04-5d2986f77e9bc11533-20200304131910068.jpg)
+> 1.  [JS 中可以提升幸福度的小技巧](https://github.com/SHERlocked93/blog/blob/master/Docs/JS%20%E4%B8%AD%E5%8F%AF%E4%BB%A5%E6%8F%90%E5%8D%87%E5%B9%B8%E7%A6%8F%E5%BA%A6%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.md)
+> 2.  [Vue 使用中的小技巧](https://github.com/SHERlocked93/blog/blob/master/Docs/Vue%20%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.md)
+> 3.  [Nginx 从入门到实践，万字详解！](https://github.com/SHERlocked93/blog/blob/master/Docs/Nginx%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%EF%BC%8C%E4%B8%87%E5%AD%97%E8%AF%A6%E8%A7%A3%EF%BC%81.md)
+> 4.  [半小时搞会 CentOS 入门必备基础知识](https://github.com/SHERlocked93/blog/blob/master/Docs/CentOS%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
+> 5.  [手摸手 Webpack 多入口配置实践](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%20Webpack%20%E5%A4%9A%E5%85%A5%E5%8F%A3%E9%85%8D%E7%BD%AE%E5%AE%9E%E8%B7%B5.md)
+> 6.  [前端路由跳转基本原理](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)

@@ -1,7 +1,5 @@
 # Chrome 89 新功能一览，性能提升明显，大量 DevTools 新特性
 
-[TOC]
-
 今天 Chrome 更新了最新版本 Chrome89，新版本在启动、响应速度上更快，同时 CPU 占用率大幅下降。
 
 比如，提供前进后退缓存（20%的页面可瞬时进退）等特性，号称启动速度快了 25%、载入页面速度快了 7%、CPU 占用减少了 5 倍、可增加额外 1.25 小时续航，内存占用量也优化了。
@@ -20,7 +18,7 @@
 
 当 URL 中的 hash 和 DOM 元素的 id 相同时，将触发该元素的 `:target` 伪类。可以点击这个 [Demo](https://jec.fyi/demo/css-target#section-2) 看看效果，这个新的 DevTools 特性可以让你测试这些样式，而不必一直手动更改 URL。
 
-![forcing the CSS `:target` state](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/force-target-20210303-qXklNj.png)
+![forcing the CSS `:target` state](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/force-target-20210303-qXklNj.png)
 
 对应 Chromium issue: [1156628](https://crbug.com/1156628)
 
@@ -33,7 +31,7 @@
 - Mac: `Shift` + `Option` + `⬇️`
 - Window/ Linux: `Shift` + `Alt` + `⬇️`
 
-![Duplicate element](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/duplicate-element-20210303-577kMn.png)
+![Duplicate element](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/duplicate-element-20210303-577kMn.png)
 
 对应 Chromium issue: [1150797](https://crbug.com/1150797), [1150797](https://crbug.com/1150797)
 
@@ -43,7 +41,7 @@
 
 此外，按住 Shift 键并单击颜色选择器，可以切换颜色值的 RGBA、 HSLA 和 Hex 表示。
 
-![Color pickers for custom CSS properties](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/color-picker-20210303-ofah7M.png)
+![Color pickers for custom CSS properties](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/color-picker-20210303-ofah7M.png)
 
 对应 Chromium issue: [1147016](https://crbug.com/1147016)
 
@@ -53,8 +51,7 @@
 
 在 Elements 面板中，选择一个元素。然后，在 Styles 窗格中右键单击 CSS 类或 CSS 属性以复制该值。
 
-![New shortcuts to copy CSS properties](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/copy-css-20210303-apDVKT.png)
-
+![New shortcuts to copy CSS properties](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/copy-css-20210303-apDVKT.png)
 
 类的复制选项:
 
@@ -76,7 +73,7 @@
 
 DevTools 现在始终保持记录网络日志（Record network log）设置。以前，每当页面重新加载时，DevTools 都会重置用户的选择。
 
-![Record network log](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/network-log-20210303-QVgAa7.png)
+![Record network log](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/network-log-20210303-QVgAa7.png)
 
 对应 Chromium issue: [1122580](https://crbug.com/1122580)
 
@@ -84,7 +81,7 @@ DevTools 现在始终保持记录网络日志（Record network log）设置。�
 
 网络面板现在显示 WebTransport 连接。
 
-![WebTransport connections](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/webtransport-20210303-kO5FmW.png)
+![WebTransport connections](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/webtransport-20210303-kO5FmW.png)
 
 [WebTransport](https://web.dev/webtransport/) 是一个新的 API，可以提供低延迟的客户端与服务端的双向消息传递。
 
@@ -94,7 +91,7 @@ DevTools 现在始终保持记录网络日志（Record network log）设置。�
 
 网络模拟选项 Online 现在被重命名为 No Throttling。
 
-![Record network log](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/no-throttling-20210303-3kAO5A.png)
+![Record network log](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/no-throttling-20210303-3kAO5A.png)
 
 对应 Chromium issue: [1028078](https://crbug.com/1028078)
 
@@ -104,9 +101,9 @@ DevTools 现在始终保持记录网络日志（Record network log）设置。�
 
 现在可以使用 Console 和 Sources 面板中的新选项来快捷复制对象值。这非常方便，尤其是当需要复制一个比较大的对象（例如一个长数组）时。
 
-![Copy object in the Console](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/copy-object-console-20210303-KSIfqt.png)
+![Copy object in the Console](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/copy-object-console-20210303-KSIfqt.png)
 
-![Copy object in the Sources panel](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/copy-object-sources-20210303-YEMD55.png)
+![Copy object in the Sources panel](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/copy-object-sources-20210303-YEMD55.png)
 
 对应 Chromium issues: [1149859](https://crbug.com/1149859), [1148353](https://crbug.com/1148353)
 
@@ -119,9 +116,9 @@ DevTools 现在始终保持记录网络日志（Record network log）设置。�
 
 从上下文菜单中选择 Copy file name 以复制文件名。
 
-![Copy file name in the Sources panel](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/copy-file-name-20210303-l77jUx.png)
+![Copy file name in the Sources panel](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/copy-file-name-20210303-l77jUx.png)
 
-![Copy file name in the Styles pane](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/copy-file-name-2-20210303-S0hZ2n.png)
+![Copy file name in the Styles pane](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/copy-file-name-2-20210303-S0hZ2n.png)
 
 对应 Chromium issue: [1155120](https://crbug.com/1155120)
 
@@ -135,7 +132,7 @@ DevTools 现在始终保持记录网络日志（Record network log）设置。�
 
 你可以自己试试这个[演示页面](https://tt-enforced.glitch.me/)中尝试一下，在 Sources 面板中，打开右侧调试器。展开 CSP Violation Breakpoints 部分，并启用 Trusted Type violations 复选框来在异常发生时暂停 script 运行。
 
-![Breakpoint on Trusted Type violations](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/trusted-type-violations-20210303-OXOoWd.png)
+![Breakpoint on Trusted Type violations](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/trusted-type-violations-20210303-OXOoWd.png)
 
 对应 Chromium issue: [1142804](https://crbug.com/1142804)
 
@@ -143,7 +140,7 @@ DevTools 现在始终保持记录网络日志（Record network log）设置。�
 
 现在，Sources 面板在违反 Trusted Type 的代码行旁边显示了一个警告图标，将鼠标悬停在这个图标上时可以预览异常。单击它展开 Issues 选项卡，选项卡提供了关于异常的更多细节，以及如何修复异常的提示。
 
-![Link issue in the Sources panel to the Issues tab](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/trusted-type-link-20210303-VrsFhd.png)
+![Link issue in the Sources panel to the Issues tab](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/trusted-type-link-20210303-VrsFhd.png)
 
 对应 Chromium issue: [1150883](https://crbug.com/1150883)
 
@@ -155,7 +152,7 @@ DevTools 现在始终保持记录网络日志（Record network log）设置。�
 
 在 Element 面板中，右键单击一个 DOM 元素并选择 Capture node screenshot 可以使用元素截图功能。
 
-![Capture node screenshot beyond viewport](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/node-screenshot-20210303-Cm5AFt.png)
+![Capture node screenshot beyond viewport](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/node-screenshot-20210303-Cm5AFt.png)
 
 对应 Chromium issue: [1003629](https://crbug.com/1003629)
 
@@ -167,7 +164,7 @@ DevTools 现在始终保持记录网络日志（Record network log）设置。�
 
 进一步的调试支持将在 Chrome 下一个版本中提供。
 
-![New Trust Token tab for network requests](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/trust-token-20210303-6lC9qG.png)
+![New Trust Token tab for network requests](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/trust-token-20210303-6lC9qG.png)
 
 对应 Chromium issue: [1126824](https://crbug.com/1126824)
 
@@ -175,11 +172,9 @@ DevTools 现在始终保持记录网络日志（Record network log）设置。�
 
 Lighthouse 现在升级到了 Lighthouse7，点击[这里](https://github.com/GoogleChrome/lighthouse/releases/tag/v7.0.0)了解具体变更明细。
 
-![Lighthouse 7 in the Lighthouse panel](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/lighthouse-20210303-nQtPGK.png)
+![Lighthouse 7 in the Lighthouse panel](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/lighthouse-20210303-nQtPGK.png)
 
 对应 Chromium issue: [772558](https://crbug.com/772558)
-
-
 
 ## 8. Cookies 相关更新
 
@@ -189,7 +184,7 @@ Lighthouse 现在升级到了 Lighthouse7，点击[这里](https://github.com/Go
 
 转到 Application 面板并选择左侧的 Cookies 选项。选择列表中的任何 cookie。启用新的 Show URL decoded 复选框可以查看解码后的 cookie。
 
-![Option to show URL-decoded cookies](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/cookies-decoded-20210303-F1NpzU.png)
+![Option to show URL-decoded cookies](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/cookies-decoded-20210303-F1NpzU.png)
 
 对应 Chromium issue: [997625](https://crbug.com/997625)
 
@@ -199,7 +194,7 @@ Cookies 选项窗格中的 Clear all cookies 按钮现在被 Clear filtered cook
 
 在 Application > Cookies 窗格中，在文本框中输入文本以过滤 cookie。下图我们使用 PREF 过滤列表。单击 Clear filtered cookies 按钮删除可见的 cookie。清除过滤文本后，你将看到其他 cookie 仍然保留在列表中。以前，你只能选择清除所有 cookie。
 
-![Clear only visible cookies](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/clear-cookies-20210303-9YE1z2.png)
+![Clear only visible cookies](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/clear-cookies-20210303-9YE1z2.png)
 
 对应 Chromium issue: [978059](https://crbug.com/978059)
 
@@ -207,7 +202,7 @@ Cookies 选项窗格中的 Clear all cookies 按钮现在被 Clear filtered cook
 
 当清除 Storage 窗格中的站点数据时，DevTools 现在默认情况下只清除本站 cookie。选中 including third-party cookies 复选框后，浏览器也会清除第三方 cookies。
 
-![Option to clear third-party cookies](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/third-party-cookies-20210303-a97vAR.png)
+![Option to clear third-party cookies](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/third-party-cookies-20210303-a97vAR.png)
 
 对应 Chromium issue: [1012337](https://crbug.com/1012337)
 
@@ -217,13 +212,11 @@ Cookies 选项窗格中的 Clear all cookies 按钮现在被 Clear filtered cook
 
 进入 Settings > Devices，然后点击 Add custom device。展开 User agent client hints 部分来编辑客户端提示。
 
-![Edit User-Agent Client Hints](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/ua-ch-20210303-Mqr6YI.png)
+![Edit User-Agent Client Hints](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/ua-ch-20210303-Mqr6YI.png)
 
 [User-Agent Client Hints](https://web.dev/user-agent-client-hints/) 是字符串形式 User-Agent 的替代，它使得开发人员可以以更符合人体工程学的方式访问 User-Agent 的信息，并且有利于保护用户隐私。
 
 对应 Chromium issue: [1073909](https://crbug.com/1073909)
-
-
 
 ## 10. Frames 面板更新
 
@@ -233,7 +226,7 @@ DevTools 现在独立显示 Service Workers 信息。
 
 在 Application 面板中，在 Service Workers 选项中选择一个 Service Worker 以查看详细信息。
 
-![Service Workers information in the Frame details view](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/sw-20210303-K5COKR.png)
+![Service Workers information in the Frame details view](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/sw-20210303-K5COKR.png)
 
 对应 Chromium issue: [1122507](https://crbug.com/1122507)
 
@@ -243,7 +236,7 @@ DevTools 现在独立显示 Service Workers 信息。
 
 `performance.measureMemory()` API 可以统计当前整个网页的内存使用量，可以在[这篇文章](https://web.dev/monitor-total-page-memory-usage)中学习使用这个 API 的使用。
 
-![Measure Memory](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/measure-memory-20210303-QfQBqa.png)
+![Measure Memory](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/measure-memory-20210303-QfQBqa.png)
 
 对应 Chromium issue: [1139899](https://crbug.com/1139899)
 
@@ -251,13 +244,13 @@ DevTools 现在独立显示 Service Workers 信息。
 
 如果你想改善一个问题的消息，转到 Console > Issues 标签，或者 More Settings > More tools > Issues 来打开 Issues 标签。展开一个 Issues 消息，并单击 Is the issue message helpful to you? ，然后你可以在弹出窗口中提供反馈。
 
-![Issue feedback link](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/issues-feedback-20210303-8qAHYu.png)
+![Issue feedback link](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/issues-feedback-20210303-8qAHYu.png)
 
 ## 12. Performance 面板的掉帧提示
 
 在 [Performance 面板中分析加载性能](https://developers.google.com/chrome-devtools/evaluate-performance/reference#record-load)时，Frames 现在将掉帧部分标记为红色。将鼠标悬停在上面，可以看到帧速率。
 
-![Dropped frames](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/dropped-frames-20210303-Wabh7a.png)
+![Dropped frames](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/dropped-frames-20210303-Wabh7a.png)
 
 对应 Chromium issue: [1075865](https://crbug.com/1075865)
 
@@ -271,7 +264,7 @@ DevTools 现在独立显示 Service Workers 信息。
 
 启用 Web Platform 实验特性后，可以使用 CSS 的 `screen-spanning` 特性和 JavaScript 的 `getWindowSegments` API。右边的实验小图标显示了 Experimental Web Platform features 开关状态，如果图标高亮则表示开关已被打开。在浏览器中访问 `chrome://flags` 可以切换这个开关。
 
-![Emulate dual-screen](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/dual-screen-20210303-X37FKZ.png)
+![Emulate dual-screen](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/dual-screen-20210303-X37FKZ.png)
 
 对应 Chromium issue: [1054281](https://crbug.com/1054281)
 
@@ -291,7 +284,7 @@ DevTools 现在独立显示 Service Workers 信息。
 
 请注意，这是一个早期阶段的实验特性，以后这个功能可能会有所变更。
 
-![Puppeteer Recorder](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/recorder-20210303-hN6iNP.png)
+![Puppeteer Recorder](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/recorder-20210303-hN6iNP.png)
 
 对应 Chromium issue: [1144127](https://crbug.com/1144127)
 
@@ -303,7 +296,7 @@ Styles 面板中新的字体编辑器是一个字体相关的属性编辑功能�
 
 弹出窗口提供了一个简洁的用户界面，可以使用一系列直观的输入动态地操作字体。
 
-![Font editor in the Styles pane](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/font-20210303-YnzCk7.png)
+![Font editor in the Styles pane](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/font-20210303-YnzCk7.png)
 
 对应 Chromium issue: [1093229](https://crbug.com/1093229)
 
@@ -315,7 +308,7 @@ Styles 面板中新的字体编辑器是一个字体相关的属性编辑功能�
 
 DevTools 现在绘制了一条指导线，更好地可视化 `align-items` 属性。同时也更好的支持了 `gap` 属性。在这里的例子中，设置了 `gap: 12px; `,注意下图缝隙的阴影图案。
 
-![flexbox](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/flexbox-20210303-RqXWZA.png)
+![flexbox](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/flexbox-20210303-RqXWZA.png)
 
 对应 Chromium issue: [1139949](https://crbug.com/1139949)
 
@@ -325,7 +318,7 @@ DevTools 现在绘制了一条指导线，更好地可视化 `align-items` 属�
 
 在新的 CSP Violations 标签中查看所有内容安全策略（CSP）违规。这个新标签是一个实验性特性，用来方便的处理存在大量 CSP 与可信类型报错的页面。
 
-![CSP Violations tab](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/csp-20210303-2ZWsHK.png)
+![CSP Violations tab](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/csp-20210303-2ZWsHK.png)
 
 对应 Chromium issue: [1137837](https://crbug.com/1137837)
 
@@ -337,18 +330,12 @@ DevTools 现在绘制了一条指导线，更好地可视化 `align-items` 属�
 
 APCA 是在现代色觉研究的基础上发展起来的一种新的计算对比度的方法。与 AA/AAA 相比，APCA 更依赖于上下文。对比度是根据文本的空间属性（字体重量和大小）、颜色（文本和背景之间可感知的明度差）和上下文（环境光线、环境、文本的预期目的）来计算的。
 
-![APCA in Color Picker](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/apca-20210303-1m01Sk.png)
+![APCA in Color Picker](https://raw.githubusercontent.com/SHERlocked93/pic/master/upic/apca-20210303-1m01Sk.png)
 
 对应 Chromium issue: [1121900](https://crbug.com/1121900)
 
 ---
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下哦，你的点赞是我更新的最大动力！（收藏不点赞，都是耍流氓 🤣）~
-
 
 > 参考文档：
 >
 > 1. [What's New In DevTools (Chrome 89)  |  Web  |  Google Developers](https://developers.google.com/web/updates/2021/01/devtools?utm_source=devtools#trusted-types)
-
-PS：本文收录在在下的博客 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog) 系列文章中，欢迎大家关注我的公众号 `前端下午茶`，直接搜索即可添加或者点[这里](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/uPic/TJt4p2-19-56-21.jpg)添加，持续为大家推送前端以及前端周边相关优质技术文，共同进步，一起加油~
-
-另外可以加入「前端下午茶交流群」微信群，微信搜索  `qianyu443033099` 加我好友，备注**加群**，我拉你入群～

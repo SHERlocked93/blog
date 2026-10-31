@@ -1,14 +1,12 @@
 # C++ 为什么需要 extern "C"
 
-[toc]
-
 在 C++ 调用 C 语言编译器编译的库时，是不是经常遇到下面这个报错：
 
 ```bash
 error LNK2019: 无法解析的外部符号 "int __cdecl add(int,int)" (?add@@YAHHH@Z)，函数 main 中引用了该符号
 ```
 
-正如 [《Effective C++》](https://juejin.cn/post/7429677850514784308) 开篇所说， C++ 是一个 C 语言、OO 风格、模板、STL 风格组成的语言联邦，C++ 是可以直接引入 C 语言代码编译的库的，而 C 语言和 C++ 由于链接器符号设计的差异，引发了一些问题，下面一起讨论一下。
+正如 [《Effective C++》](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8AEffective%20C%2B%2B%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md) 开篇所说， C++ 是一个 C 语言、OO 风格、模板、STL 风格组成的语言联邦，C++ 是可以直接引入 C 语言代码编译的库的，而 C 语言和 C++ 由于链接器符号设计的差异，引发了一些问题，下面一起讨论一下。
 
 ## 1. C++ 与 C 的符号差异
 
@@ -107,12 +105,6 @@ objdump -T libmylibc.so
 
 ---
 
-网上的帖子大多深浅不一，甚至有些前后矛盾，在下的文章都是学习过程中的总结，如果发现错误，欢迎留言指出，如果本文帮助到了你，别忘了点赞支持一下，你的点赞是我更新的最大动力！~
-
 > 参考文档：
 >
 > 1. [高级C/C++编译技术](https://book.douban.com/subject/26414485/)
-
-PS：本文同步更新于在下的博客 [Github - SHERlocked93/blog](https://github.com/SHERlocked93/blog) 系列文章中，欢迎大家关注我的公众号 `CPP下午茶`，直接搜索即可添加，持续为大家推送 CPP 以及 CPP 周边相关优质技术文，共同进步，一起加油~
-
-另外可以加入「前端下午茶交流qun」，vx 搜索  `sherlocked_93` 加我，备注 **1**，我拉你～
