@@ -7,3 +7,4 @@ __pycache__/
 .obsidian/
 Docs/*.html.md
 migration
+/memory-bank/

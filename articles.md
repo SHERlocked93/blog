@@ -8,6 +8,7 @@
 
 - [摄像头 RTSP 流视频多路实时监控解决方案实践](/Docs/%E6%91%84%E5%83%8F%E5%A4%B4%20RTSP%20%E6%B5%81%E8%A7%86%E9%A2%91%E5%A4%9A%E8%B7%AF%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%AE%9E%E8%B7%B5.html)
 - [C++ 中的编译和链接](/Docs/C++%20%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E9%93%BE%E6%8E%A5.html)
+- [在 C++ 的 VS 项目中引入跨平台包管理工具 conan](/Docs/C++%20%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%20conan.html)
 - [C++ 中 VS 项目引入公共配置文件](/Docs/C++%20%E4%B8%AD%20VS%20%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BC%95%E5%85%A5%E5%85%AC%E5%85%B1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html)
 - [C++ 为什么需要 extern "C"](/Docs/C++%20%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%20extern%20C.html)
 - [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](/Docs/%E4%BD%BF%E7%94%A8%20Windows%20%E8%B0%83%E8%AF%95%E5%A5%97%E4%BB%B6%20gflags%20%E8%A7%A3%E5%86%B3%20CefSharp%20%E5%8A%A0%E8%BD%BD%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF%E6%A8%A1%E7%B3%8A%E7%9A%84%E9%97%AE%E9%A2%98.html)
@@ -87,17 +88,16 @@
 - [Webpack 打包太慢? 试试 Dllplugin](/Docs/Webpack%20%E6%89%93%E5%8C%85%E5%A4%AA%E6%85%A2%20%E8%AF%95%E8%AF%95%20Dllplugin.html)
 - [手摸手 Webpack 多入口配置实践](/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%20Webpack%20%E5%A4%9A%E5%85%A5%E5%8F%A3%E9%85%8D%E7%BD%AE%E5%AE%9E%E8%B7%B5.html)
 
-### 前端周边技术栈
+### 周边技术栈
 
 - [CPP 从 0 到 1 完成一个支持 future/promise 的 Windows 异步串口通信库](/Docs/C++%20%E4%BB%8E%200%20%E5%88%B0%201%20%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AA%E6%94%AF%E6%8C%81%20futurepromise%20%E7%9A%84%20Windows%20%E5%BC%82%E6%AD%A5%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1%E5%BA%93.html)
-- [我与思否一起成长这4年丨思否 9 周年](/Docs/%E6%88%91%E4%B8%8E%E6%80%9D%E5%90%A6%E4%B8%80%E8%B5%B7%E6%88%90%E9%95%BF%E8%BF%99%E5%87%A0%E5%B9%B4%E4%B8%A8%E6%80%9D%E5%90%A6%209%20%E5%91%A8%E5%B9%B4.html)
 - [这些 JS 中强大的操作符，总有几个你没听说过](/Docs/%E8%BF%99%E4%BA%9BJS%E4%B8%AD%E7%9A%84%E6%93%8D%E4%BD%9C%E7%AC%A6%EF%BC%8C%E6%80%BB%E6%9C%89%E5%87%A0%E4%B8%AA%E4%BD%A0%E6%B2%A1%E5%90%AC%E8%AF%B4%E8%BF%87.html)
 - [强烈推介的几个微信小程序开发小技巧，简单又实用](/Docs/%E5%BC%BA%E7%83%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E5%87%A0%E4%B8%AA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%8C%E7%AE%80%E5%8D%95%E5%8F%88%E5%AE%9E%E7%94%A8.html)
 - [开发微信小程序，我为什么放弃 setData，使用 upData](/Docs/%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E6%94%BE%E5%BC%83%20setData%EF%BC%8C%E4%BD%BF%E7%94%A8%20upData.html)
 - [GraphQL 从入门到实践](/Docs/GraphQL%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5.html)
 - [前端路由跳转基本原理](/Docs/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html)
 - [使用API自动生成工具优化前端工作流](/Docs/%E4%BD%BF%E7%94%A8API%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%E4%BC%98%E5%8C%96%E5%89%8D%E7%AB%AF%E5%B7%A5%E4%BD%9C%E6%B5%81.html)
-- [Git](/Docs/Git%E7%AC%94%E8%AE%B0.html)
+- [Git学习笔记](/Docs/Git%E7%AC%94%E8%AE%B0.html)
 - [windows本地安装部署 Easy Mock](/Docs/windows%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%20Easy%20Mock.html)
 - [一个骚气的文章目录自动生成器了解一下](/Docs/%E4%B8%80%E4%B8%AA%E9%AA%9A%E6%B0%94%E7%9A%84%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%99%A8%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B.html)
 - [Web Worker 初探](/Docs/Web%20Worker%20%E5%88%9D%E6%8E%A2.html)
@@ -142,13 +142,13 @@
 
 ### 年终总结
 
-- [SHERlocked93 的 2023 年终总结](/Docs/2023%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
-- [SHERlocked93 的 2022 年终总结](/Docs/2022%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
-- [2021年终总结](/Docs/2021%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
-- [2020 年终总结](/Docs/2020%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
-- [SHERlocked93 的 2019 年终总结](/Docs/2019%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
-- [SHERlocked93 的 2018 年终总结](/Docs/2018%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
-- [SHERlocked93 的 2017 年终总结](/Docs/2017%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
+- [我的 2023 年终总结](/Docs/2023%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
+- [我的 2022 年终总结](/Docs/2022%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
+- [我的 2021 年终总结](/Docs/2021%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
+- [我的 2020 年终总结](/Docs/2020%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
+- [我的 2019 年终总结](/Docs/2019%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
+- [我的 2018 年终总结](/Docs/2018%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
+- [我的 2017 年终总结](/Docs/2017%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html)
 
 ### 阅读摘要
 
@@ -184,7 +184,6 @@
 
 ### 那些好用的工具
 
-- [在 C++ 的 VS 项目中引入跨平台包管理工具 conan](/Docs/C++%20%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%20conan.html)
 - [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E5%9B%9B%E5%BC%B9%EF%BC%89.html)
 - [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](/Docs/%E5%A5%BD%E7%94%A8%E4%B8%8D%E5%8D%A1%EF%BC%8C%E8%BF%99%E4%BA%9B%E6%8F%92%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE%E8%AE%A9%E4%BD%A0%E7%9A%84%20Webstorm%20%E6%9B%B4%E7%89%9B%E9%80%BC%EF%BC%81.html)
 - [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%89%E5%BC%B9%EF%BC%89.html)

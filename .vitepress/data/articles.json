@@ -12,7 +12,7 @@
     "数据库",
     "Node",
     "Webpack",
-    "前端周边技术栈",
+    "周边技术栈",
     "Linux",
     "JavaScript 设计模式",
     "翻译",
@@ -22,49 +22,49 @@
   "articles": [
     {
       "file": "Docs/2017 年终总结.md",
-      "title": "SHERlocked93 的 2017 年终总结",
+      "title": "我的 2017 年终总结",
       "category": "年终总结",
       "excluded": false,
       "created": 1518588268
     },
     {
       "file": "Docs/2018 年终总结.md",
-      "title": "SHERlocked93 的 2018 年终总结",
+      "title": "我的 2018 年终总结",
       "category": "年终总结",
       "excluded": false,
       "created": 1548331564
     },
     {
       "file": "Docs/2019 年终总结.md",
-      "title": "SHERlocked93 的 2019 年终总结",
+      "title": "我的 2019 年终总结",
       "category": "年终总结",
       "excluded": false,
       "created": 1582680827
     },
     {
       "file": "Docs/2020 年终总结.md",
-      "title": "2020 年终总结",
+      "title": "我的 2020 年终总结",
       "category": "年终总结",
       "excluded": false,
       "created": 1616911963
     },
     {
       "file": "Docs/2021 年终总结.md",
-      "title": "2021年终总结",
+      "title": "我的 2021 年终总结",
       "category": "年终总结",
       "excluded": false,
       "created": 1674906342
     },
     {
       "file": "Docs/2022 年终总结.md",
-      "title": "SHERlocked93 的 2022 年终总结",
+      "title": "我的 2022 年终总结",
       "category": "年终总结",
       "excluded": false,
       "created": 1675089661
     },
     {
       "file": "Docs/2023 年终总结.md",
-      "title": "SHERlocked93 的 2023 年终总结",
+      "title": "我的 2023 年终总结",
       "category": "年终总结",
       "excluded": false,
       "created": 1708075476
@@ -100,7 +100,7 @@
     {
       "file": "Docs/C++ 从 0 到 1 完成一个支持 futurepromise 的 Windows 异步串口通信库.md",
       "title": "CPP 从 0 到 1 完成一个支持 future/promise 的 Windows 异步串口通信库",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1749395150
     },
@@ -114,7 +114,7 @@
     {
       "file": "Docs/C++ 跨平台包管理工具 conan.md",
       "title": "在 C++ 的 VS 项目中引入跨平台包管理工具 conan",
-      "category": "那些好用的工具",
+      "category": "C/CPP & QT",
       "excluded": false,
       "created": 1746889072
     },
@@ -148,15 +148,15 @@
     },
     {
       "file": "Docs/Git笔记.md",
-      "title": "Git",
-      "category": "前端周边技术栈",
+      "title": "Git学习笔记",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1539336597
     },
     {
       "file": "Docs/GraphQL 从入门到实践.md",
       "title": "GraphQL 从入门到实践",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1552396738
     },
@@ -247,7 +247,7 @@
     {
       "file": "Docs/Web Worker 初探.md",
       "title": "Web Worker 初探",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1531639613
     },
@@ -366,7 +366,7 @@
     {
       "file": "Docs/《把自己作为方法》阅读摘要.md",
       "title": "把自己作为方法",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 0
     },
@@ -429,14 +429,14 @@
     {
       "file": "Docs/「中高级前端进阶」一小时教你手写前端脚手架.md",
       "title": "「中高级前端进阶」一小时教你手写前端脚手架",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 0
     },
     {
       "file": "Docs/一个骚气的文章目录自动生成器了解一下.md",
       "title": "一个骚气的文章目录自动生成器了解一下",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1533815395
     },
@@ -457,14 +457,14 @@
     {
       "file": "Docs/关于公众号广告，我想和大家聊聊.md",
       "title": "关于公众号广告，我想和大家聊聊",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": true,
       "created": 0
     },
     {
       "file": "Docs/前端性能优化技术分享-钱昱.md",
       "title": "前端性能优化技术分享",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 0
     },
@@ -506,7 +506,7 @@
     {
       "file": "Docs/开发微信小程序，我为什么放弃 setData，使用 upData.md",
       "title": "开发微信小程序，我为什么放弃 setData，使用 upData",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1595404448
     },
@@ -520,16 +520,9 @@
     {
       "file": "Docs/强烈推介的几个微信小程序开发小技巧，简单又实用.md",
       "title": "强烈推介的几个微信小程序开发小技巧，简单又实用",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1598322000
-    },
-    {
-      "file": "Docs/我与思否一起成长这几年丨思否 9 周年.md",
-      "title": "我与思否一起成长这4年丨思否 9 周年",
-      "category": "前端周边技术栈",
-      "excluded": false,
-      "created": 1624375281
     },
     {
       "file": "Docs/手摸手 Webpack 多入口配置实践.md",
@@ -548,7 +541,7 @@
     {
       "file": "Docs/手摸手带你实现一个张一鸣年会上念的互联网黑话的生成器.md",
       "title": "手摸手带你实现一个张一鸣年会上念的互联网黑话的生成器",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 0
     },
@@ -576,7 +569,7 @@
     {
       "file": "Docs/框架这么多，到底怎么学？.md",
       "title": "框架这么多，到底怎么学？",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 0
     },
@@ -590,7 +583,7 @@
     {
       "file": "Docs/这些JS中的操作符，总有几个你没听说过.md",
       "title": "这些 JS 中强大的操作符，总有几个你没听说过",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1610932641
     },
@@ -688,7 +681,7 @@
     {
       "file": "Docs/前端路由跳转基本原理.md",
       "title": "前端路由跳转基本原理",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1548933856
     },
@@ -723,14 +716,14 @@
     {
       "file": "Docs/使用API自动生成工具优化前端工作流.md",
       "title": "使用API自动生成工具优化前端工作流",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1542894778
     },
     {
       "file": "Docs/windows本地安装部署 Easy Mock.md",
       "title": "windows本地安装部署 Easy Mock",
-      "category": "前端周边技术栈",
+      "category": "周边技术栈",
       "excluded": false,
       "created": 1536913327
     },

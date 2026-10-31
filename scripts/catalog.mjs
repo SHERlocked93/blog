@@ -11,7 +11,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 const catalog = JSON.parse(readFileSync(new URL('../.vitepress/data/articles.json', import.meta.url), 'utf8'))
 const articles = catalog.articles.filter(article => !article.excluded)
 const order = ['年终总结', 'C/CPP & QT', 'Vue 实践', '源码阅读', 'JavaScript', 'CSS', '浏览器',
-  'Nginx', 'Docker', '数据库', 'Node', 'Webpack', '前端周边技术栈', 'Linux', 'JavaScript 设计模式',
+  'Nginx', 'Docker', '数据库', 'Node', 'Webpack', '周边技术栈', 'Linux', 'JavaScript 设计模式',
   '翻译', '阅读摘要', '那些好用的工具']
 
 // 页面 URL 与 GitHub Markdown 的用途不同，分别生成

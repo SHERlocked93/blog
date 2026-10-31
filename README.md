@@ -2,7 +2,7 @@
 
 > 做程序员，不做码农
 
-[在线博客](https://sherlocked93.github.io/blog/) 使用 VitePress 默认主题，支持文章分类、全文搜索与深浅色阅读。
+[在线博客](https://sherlocked93.github.io/blog/)
 
 ### 作品
 
@@ -16,25 +16,26 @@
 
 ### 年终总结
 
-1. [SHERlocked93 的 2023 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2023%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
-2. [SHERlocked93 的 2022 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2022%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
-3. [2021年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2021%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
-4. [2020 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2020%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
-5. [SHERlocked93 的 2019 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2019%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
-6. [SHERlocked93 的 2018 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2018%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
-7. [SHERlocked93 的 2017 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2017%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+1. [我的 2023 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2023%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+2. [我的 2022 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2022%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+3. [我的 2021 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2021%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+4. [我的 2020 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2020%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+5. [我的 2019 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2019%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+6. [我的 2018 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2018%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
+7. [我的 2017 年终总结](https://github.com/SHERlocked93/blog/blob/master/Docs/2017%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.md)
 
 ### C/CPP & QT
 
 1. [摄像头 RTSP 流视频多路实时监控解决方案实践](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%91%84%E5%83%8F%E5%A4%B4%20RTSP%20%E6%B5%81%E8%A7%86%E9%A2%91%E5%A4%9A%E8%B7%AF%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%AE%9E%E8%B7%B5.md)
 2. [C++ 中的编译和链接](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E9%93%BE%E6%8E%A5.md)
-3. [C++ 中 VS 项目引入公共配置文件](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%AD%20VS%20%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BC%95%E5%85%A5%E5%85%AC%E5%85%B1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
-4. [C++ 为什么需要 extern "C"](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%20extern%20C.md)
-5. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%BD%BF%E7%94%A8%20Windows%20%E8%B0%83%E8%AF%95%E5%A5%97%E4%BB%B6%20gflags%20%E8%A7%A3%E5%86%B3%20CefSharp%20%E5%8A%A0%E8%BD%BD%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF%E6%A8%A1%E7%B3%8A%E7%9A%84%E9%97%AE%E9%A2%98.md)
-6. [Mac 上使用 CLion开发 QT6 配置](https://github.com/SHERlocked93/blog/blob/master/Docs/Mac%E4%B8%8A%E4%BD%BF%E7%94%A8CLion%E5%BC%80%E5%8F%91QT6%E9%85%8D%E7%BD%AE.md)
-7. [C++ 中 Linux 下 Socket 编程](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%AD%20Linux%20%E4%B8%8B%20Socket%20%E7%BC%96%E7%A8%8B.md)
-8. [C++ 中左值引用和右值引用](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%AD%E7%9A%84%E5%B7%A6%E5%80%BC%E5%BC%95%E7%94%A8%E5%92%8C%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8.md)
-9. [C++ 并发编程实战](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8AC++%20%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+3. [在 C++ 的 VS 项目中引入跨平台包管理工具 conan](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%20conan.md)
+4. [C++ 中 VS 项目引入公共配置文件](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%AD%20VS%20%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BC%95%E5%85%A5%E5%85%AC%E5%85%B1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
+5. [C++ 为什么需要 extern "C"](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%20extern%20C.md)
+6. [使用 Windows 调试套件 gflags 解决 CefSharp 加载报错信息模糊的问题](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%BD%BF%E7%94%A8%20Windows%20%E8%B0%83%E8%AF%95%E5%A5%97%E4%BB%B6%20gflags%20%E8%A7%A3%E5%86%B3%20CefSharp%20%E5%8A%A0%E8%BD%BD%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF%E6%A8%A1%E7%B3%8A%E7%9A%84%E9%97%AE%E9%A2%98.md)
+7. [Mac 上使用 CLion开发 QT6 配置](https://github.com/SHERlocked93/blog/blob/master/Docs/Mac%E4%B8%8A%E4%BD%BF%E7%94%A8CLion%E5%BC%80%E5%8F%91QT6%E9%85%8D%E7%BD%AE.md)
+8. [C++ 中 Linux 下 Socket 编程](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%AD%20Linux%20%E4%B8%8B%20Socket%20%E7%BC%96%E7%A8%8B.md)
+9. [C++ 中左值引用和右值引用](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%B8%AD%E7%9A%84%E5%B7%A6%E5%80%BC%E5%BC%95%E7%94%A8%E5%92%8C%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8.md)
+10. [C++ 并发编程实战](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8AC++%20%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
 
 ### Vue 实践
 
@@ -107,25 +108,24 @@
 1. [Webpack 打包太慢? 试试 Dllplugin](https://github.com/SHERlocked93/blog/blob/master/Docs/Webpack%20%E6%89%93%E5%8C%85%E5%A4%AA%E6%85%A2%20%E8%AF%95%E8%AF%95%20Dllplugin.md)
 2. [手摸手 Webpack 多入口配置实践](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%20Webpack%20%E5%A4%9A%E5%85%A5%E5%8F%A3%E9%85%8D%E7%BD%AE%E5%AE%9E%E8%B7%B5.md)
 
-### 前端周边技术栈
+### 周边技术栈
 
 1. [CPP 从 0 到 1 完成一个支持 future/promise 的 Windows 异步串口通信库](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E4%BB%8E%200%20%E5%88%B0%201%20%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AA%E6%94%AF%E6%8C%81%20futurepromise%20%E7%9A%84%20Windows%20%E5%BC%82%E6%AD%A5%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1%E5%BA%93.md)
-2. [我与思否一起成长这4年丨思否 9 周年](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%88%91%E4%B8%8E%E6%80%9D%E5%90%A6%E4%B8%80%E8%B5%B7%E6%88%90%E9%95%BF%E8%BF%99%E5%87%A0%E5%B9%B4%E4%B8%A8%E6%80%9D%E5%90%A6%209%20%E5%91%A8%E5%B9%B4.md)
-3. [这些 JS 中强大的操作符，总有几个你没听说过](https://github.com/SHERlocked93/blog/blob/master/Docs/%E8%BF%99%E4%BA%9BJS%E4%B8%AD%E7%9A%84%E6%93%8D%E4%BD%9C%E7%AC%A6%EF%BC%8C%E6%80%BB%E6%9C%89%E5%87%A0%E4%B8%AA%E4%BD%A0%E6%B2%A1%E5%90%AC%E8%AF%B4%E8%BF%87.md)
-4. [强烈推介的几个微信小程序开发小技巧，简单又实用](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%BC%BA%E7%83%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E5%87%A0%E4%B8%AA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%8C%E7%AE%80%E5%8D%95%E5%8F%88%E5%AE%9E%E7%94%A8.md)
-5. [开发微信小程序，我为什么放弃 setData，使用 upData](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E6%94%BE%E5%BC%83%20setData%EF%BC%8C%E4%BD%BF%E7%94%A8%20upData.md)
-6. [GraphQL 从入门到实践](https://github.com/SHERlocked93/blog/blob/master/Docs/GraphQL%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5.md)
-7. [前端路由跳转基本原理](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)
-8. [使用API自动生成工具优化前端工作流](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%BD%BF%E7%94%A8API%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%E4%BC%98%E5%8C%96%E5%89%8D%E7%AB%AF%E5%B7%A5%E4%BD%9C%E6%B5%81.md)
-9. [Git](https://github.com/SHERlocked93/blog/blob/master/Docs/Git%E7%AC%94%E8%AE%B0.md)
-10. [windows本地安装部署 Easy Mock](https://github.com/SHERlocked93/blog/blob/master/Docs/windows%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%20Easy%20Mock.md)
-11. [一个骚气的文章目录自动生成器了解一下](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%B8%80%E4%B8%AA%E9%AA%9A%E6%B0%94%E7%9A%84%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%99%A8%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B.md)
-12. [Web Worker 初探](https://github.com/SHERlocked93/blog/blob/master/Docs/Web%20Worker%20%E5%88%9D%E6%8E%A2.md)
-13. [「中高级前端进阶」一小时教你手写前端脚手架](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8C%E4%B8%AD%E9%AB%98%E7%BA%A7%E5%89%8D%E7%AB%AF%E8%BF%9B%E9%98%B6%E3%80%8D%E4%B8%80%E5%B0%8F%E6%97%B6%E6%95%99%E4%BD%A0%E6%89%8B%E5%86%99%E5%89%8D%E7%AB%AF%E8%84%9A%E6%89%8B%E6%9E%B6.md)
-14. [把自己作为方法](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E6%8A%8A%E8%87%AA%E5%B7%B1%E4%BD%9C%E4%B8%BA%E6%96%B9%E6%B3%95%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
-15. [框架这么多，到底怎么学？](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%A1%86%E6%9E%B6%E8%BF%99%E4%B9%88%E5%A4%9A%EF%BC%8C%E5%88%B0%E5%BA%95%E6%80%8E%E4%B9%88%E5%AD%A6%EF%BC%9F.md)
-16. [前端性能优化技术分享](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB-%E9%92%B1%E6%98%B1.md)
-17. [手摸手带你实现一个张一鸣年会上念的互联网黑话的生成器](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%BC%A0%E4%B8%80%E9%B8%A3%E5%B9%B4%E4%BC%9A%E4%B8%8A%E5%BF%B5%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E9%BB%91%E8%AF%9D%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8.md)
+2. [这些 JS 中强大的操作符，总有几个你没听说过](https://github.com/SHERlocked93/blog/blob/master/Docs/%E8%BF%99%E4%BA%9BJS%E4%B8%AD%E7%9A%84%E6%93%8D%E4%BD%9C%E7%AC%A6%EF%BC%8C%E6%80%BB%E6%9C%89%E5%87%A0%E4%B8%AA%E4%BD%A0%E6%B2%A1%E5%90%AC%E8%AF%B4%E8%BF%87.md)
+3. [强烈推介的几个微信小程序开发小技巧，简单又实用](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%BC%BA%E7%83%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E5%87%A0%E4%B8%AA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%8C%E7%AE%80%E5%8D%95%E5%8F%88%E5%AE%9E%E7%94%A8.md)
+4. [开发微信小程序，我为什么放弃 setData，使用 upData](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E6%94%BE%E5%BC%83%20setData%EF%BC%8C%E4%BD%BF%E7%94%A8%20upData.md)
+5. [GraphQL 从入门到实践](https://github.com/SHERlocked93/blog/blob/master/Docs/GraphQL%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5.md)
+6. [前端路由跳转基本原理](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)
+7. [使用API自动生成工具优化前端工作流](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%BD%BF%E7%94%A8API%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%E4%BC%98%E5%8C%96%E5%89%8D%E7%AB%AF%E5%B7%A5%E4%BD%9C%E6%B5%81.md)
+8. [Git学习笔记](https://github.com/SHERlocked93/blog/blob/master/Docs/Git%E7%AC%94%E8%AE%B0.md)
+9. [windows本地安装部署 Easy Mock](https://github.com/SHERlocked93/blog/blob/master/Docs/windows%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%20Easy%20Mock.md)
+10. [一个骚气的文章目录自动生成器了解一下](https://github.com/SHERlocked93/blog/blob/master/Docs/%E4%B8%80%E4%B8%AA%E9%AA%9A%E6%B0%94%E7%9A%84%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%99%A8%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B.md)
+11. [Web Worker 初探](https://github.com/SHERlocked93/blog/blob/master/Docs/Web%20Worker%20%E5%88%9D%E6%8E%A2.md)
+12. [「中高级前端进阶」一小时教你手写前端脚手架](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8C%E4%B8%AD%E9%AB%98%E7%BA%A7%E5%89%8D%E7%AB%AF%E8%BF%9B%E9%98%B6%E3%80%8D%E4%B8%80%E5%B0%8F%E6%97%B6%E6%95%99%E4%BD%A0%E6%89%8B%E5%86%99%E5%89%8D%E7%AB%AF%E8%84%9A%E6%89%8B%E6%9E%B6.md)
+13. [把自己作为方法](https://github.com/SHERlocked93/blog/blob/master/Docs/%E3%80%8A%E6%8A%8A%E8%87%AA%E5%B7%B1%E4%BD%9C%E4%B8%BA%E6%96%B9%E6%B3%95%E3%80%8B%E9%98%85%E8%AF%BB%E6%91%98%E8%A6%81.md)
+14. [框架这么多，到底怎么学？](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%A1%86%E6%9E%B6%E8%BF%99%E4%B9%88%E5%A4%9A%EF%BC%8C%E5%88%B0%E5%BA%95%E6%80%8E%E4%B9%88%E5%AD%A6%EF%BC%9F.md)
+15. [前端性能优化技术分享](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB-%E9%92%B1%E6%98%B1.md)
+16. [手摸手带你实现一个张一鸣年会上念的互联网黑话的生成器](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%89%8B%E6%91%B8%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%BC%A0%E4%B8%80%E9%B8%A3%E5%B9%B4%E4%BC%9A%E4%B8%8A%E5%BF%B5%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E9%BB%91%E8%AF%9D%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8.md)
 
 ### Linux
 
@@ -192,14 +192,13 @@
 
 ### 那些好用的工具
 
-1. [在 C++ 的 VS 项目中引入跨平台包管理工具 conan](https://github.com/SHERlocked93/blog/blob/master/Docs/C++%20%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%20conan.md)
-2. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E5%9B%9B%E5%BC%B9%EF%BC%89.md)
-3. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%A5%BD%E7%94%A8%E4%B8%8D%E5%8D%A1%EF%BC%8C%E8%BF%99%E4%BA%9B%E6%8F%92%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE%E8%AE%A9%E4%BD%A0%E7%9A%84%20Webstorm%20%E6%9B%B4%E7%89%9B%E9%80%BC%EF%BC%81.md)
-4. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%89%E5%BC%B9%EF%BC%89.md)
-5. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://github.com/SHERlocked93/blog/blob/master/Docs/%E7%94%9F%E5%91%BD%E5%9C%A8%E4%BA%8E%E6%8A%98%E8%85%BE%EF%BC%81%E8%BF%99%E4%BA%9B%E6%A1%8C%E9%9D%A2%E5%A5%BD%E7%89%A9%E6%8F%90%E5%8D%87%E4%BD%A0%E7%9A%84%E6%90%AC%E7%A0%96%E5%B9%B8%E7%A6%8F%E5%BA%A6.md)
-6. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%BC%B9%EF%BC%89.md)
-7. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%80%E5%BC%B9%EF%BC%89.md)
-8. [推介几款 windows 下非常好用的工具](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20windows%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7.md)
+1. [干货满满！推介几款 Mac 下非常好用的软件（第四弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E5%9B%9B%E5%BC%B9%EF%BC%89.md)
+2. [好用不卡，这些插件和配置让你的 Webstorm 更牛逼！](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%A5%BD%E7%94%A8%E4%B8%8D%E5%8D%A1%EF%BC%8C%E8%BF%99%E4%BA%9B%E6%8F%92%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE%E8%AE%A9%E4%BD%A0%E7%9A%84%20Webstorm%20%E6%9B%B4%E7%89%9B%E9%80%BC%EF%BC%81.md)
+3. [干货满满！推介几款 Mac 下非常好用的软件（第三弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%89%E5%BC%B9%EF%BC%89.md)
+4. [打造舒适搬砖环境，这些是我最想推介的桌面好物](https://github.com/SHERlocked93/blog/blob/master/Docs/%E7%94%9F%E5%91%BD%E5%9C%A8%E4%BA%8E%E6%8A%98%E8%85%BE%EF%BC%81%E8%BF%99%E4%BA%9B%E6%A1%8C%E9%9D%A2%E5%A5%BD%E7%89%A9%E6%8F%90%E5%8D%87%E4%BD%A0%E7%9A%84%E6%90%AC%E7%A0%96%E5%B9%B8%E7%A6%8F%E5%BA%A6.md)
+5. [干货满满！推介几款 Mac 下非常好用的软件（第二弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%BC%B9%EF%BC%89.md)
+6. [干货满满！推介几款 Mac 下非常好用的软件（第一弹）](https://github.com/SHERlocked93/blog/blob/master/Docs/%E5%B9%B2%E8%B4%A7%E6%BB%A1%E6%BB%A1%EF%BC%81%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20Mac%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%88%E7%AC%AC%E4%B8%80%E5%BC%B9%EF%BC%89.md)
+7. [推介几款 windows 下非常好用的工具](https://github.com/SHERlocked93/blog/blob/master/Docs/%E6%8E%A8%E4%BB%8B%E5%87%A0%E6%AC%BE%20windows%20%E4%B8%8B%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7.md)
 
 ---
 
@@ -370,53 +369,3 @@
 ## 关于作者
 
 慕课专栏 [「JavaScript 设计模式精讲」](https://www.imooc.com/read/38)作者，[《React Cookbook 中文版》](https://item.jd.com/13680953.html)首译、[《斯坦福程序设计入门课：JavaScript 实现》](https://item.jd.com/13096560.html)合作译者。
-
-## 本地阅读与维护
-
-需要 Node.js 24，可通过 `nvm use` 选择版本。
-
-```bash
-npm ci --ignore-scripts
-npm run docs:dev
-```
-
-生产构建与预览：
-
-```bash
-npm test
-npm run docs:build
-npm run docs:preview
-```
-
-在 `Docs/` 中维护文章，并在 `.vitepress/data/articles.json` 中登记标题、分类和排序时间。新增文章或调整分类后执行 `npm run docs:catalog`，同步 README 与在线文章索引。`excluded: true` 的推广专题保留原文，不进入站点、搜索和导航。
-
-文章正文和 README 中的本人文章链接指向 GitHub Markdown；在线站点菜单与文章索引进入 Pages 阅读页。图片使用个人 GitHub 图床，上传并确认可读取后再引用。尚未找回的原图记录在 [缺失图片清单](.vitepress/data/missing-images.json)，保留文章中的原始引用。
-
-### 从公开平台核对文章
-
-抓取工具只读取公开文章；目录与正文候选保存在 Git 忽略的 `.migration-cache/` 中，不会自动覆盖 `Docs/`。
-
-```bash
-python3 -m venv .venv
-.venv/bin/pip install -r scripts/requirements.txt
-.venv/bin/python scripts/archive.py discover
-.venv/bin/python scripts/archive.py fetch
-.venv/bin/python scripts/reconcile.py
-.venv/bin/python -m unittest discover -s tests -p 'test_*.py'
-```
-
-逐篇核对 `.migration-cache/comparison.json`、`diffs/` 和 `candidates/`，将确定的内容扩充合并到原文件，保留本地独有内容。更新已有请求时，可给抓取命令添加 `--refresh`。文章来源与文件的对应关系保存在仅本机使用的 `migration/articles.json`，图片和链接映射也保存在 `migration/`；该目录被 Git 忽略。站点只使用 `.vitepress/data/` 下的分类和缺图清单。
-
-合并正文后，可以通过 `scripts/links.py` 的 `resolve`、`recover`、`apply` 步骤解析旧链接并应用已确认的文章映射。第三方参考资料和代码示例中的地址保留原用途，不能解析的链接留在缓存报告中供核对。
-
-图片迁移需要先使用 `gh auth login` 登录具有图床写入权限的 GitHub 账户。`prepare` 下载并核验原图，`upload` 向 `SHERlocked93/pic` 的 `picgo/` 提交缺失图片并校验公开地址，`apply` 只替换校验成功的引用：
-
-```bash
-.venv/bin/python scripts/images.py prepare
-.venv/bin/python scripts/images.py upload
-.venv/bin/python scripts/images.py apply
-```
-
-### GitHub Pages 发布
-
-仓库的 Settings → Pages → Build and deployment → Source 选择 GitHub Actions。推送到 `master` 后，工作流会检查文章目录、构建站点并发布到 [在线博客](https://sherlocked93.github.io/blog/)，也可以在 Actions 中手动触发。站点部署在 `/blog/` 子路径，文章保留 `.html` 地址。

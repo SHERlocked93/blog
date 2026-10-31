@@ -1,0 +1,361 @@
+/* 基于默认主题，局部调整首页视觉与桌面宽屏布局。 */
+.blog-home {
+  --vp-c-brand-1: #236e65;
+  --vp-c-brand-2: #2c8074;
+  --vp-c-brand-3: #26786d;
+  --vp-c-bg: #f5f8f7;
+  --vp-home-hero-name-color: var(--vp-c-text-2);
+  --vp-home-hero-name-background: none;
+  --vp-button-brand-bg: #26786d;
+  --vp-button-brand-hover-bg: #1e655d;
+  --blog-photo-frame: #fff;
+  --blog-heading: #243d35;
+  background: var(--vp-c-bg);
+}
+
+.dark .blog-home {
+  --vp-c-brand-1: #9ad4c8;
+  --vp-c-brand-2: #b4e3d9;
+  --vp-c-brand-3: #26786d;
+  --vp-c-bg: #1b211f;
+  --blog-photo-frame: #252d29;
+  --blog-heading: #e7f0eb;
+}
+
+/* 首页只在内容区显示站名，导航与主题入口对齐。 */
+.blog-home .VPNavBar > .wrapper > .container > .title {
+  display: none;
+}
+
+.blog-home .VPNavBar > .wrapper > .container {
+  max-width: 1152px;
+}
+
+.blog-home .VPNavBarSearch {
+  padding-left: 0;
+}
+
+.blog-home .VPHomeHero {
+  margin-top: 0;
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
+.blog-home .VPHomeHero.has-image .container {
+  align-items: center;
+  gap: 64px;
+  text-align: left;
+}
+
+.blog-home .VPHomeHero .main {
+  flex: 1;
+  min-width: 0;
+}
+
+.blog-home .VPHomeHero.has-image .name,
+.blog-home .VPHomeHero.has-image .text,
+.blog-home .VPHomeHero.has-image .tagline {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.blog-home .VPHomeHero .name {
+  max-width: none;
+  padding-left: 14px;
+  border-left: 3px solid var(--vp-c-brand-1);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.5px;
+}
+
+.blog-home .VPHomeHero .text {
+  margin-top: 24px;
+  color: var(--blog-heading);
+  font-size: clamp(28px, 3.5vw, 56px);
+  line-height: 1.3;
+  letter-spacing: -1.5px;
+}
+
+.blog-home .VPHomeHero .tagline {
+  padding-top: 24px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.blog-home .VPHomeHero.has-image .actions {
+  justify-content: flex-start;
+  padding-top: 32px;
+}
+
+.blog-home .VPHomeHero .VPButton {
+  min-height: 44px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.blog-home .VPHomeHero .image {
+  flex: 1.25;
+  min-width: 0;
+  margin: 0;
+}
+
+.blog-home .VPHomeHero .image-container {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  transform: none;
+}
+
+.blog-home .VPHomeHero .image-bg {
+  display: none;
+}
+
+.home-topics-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1152px;
+  margin: 0 auto 20px;
+}
+
+.home-topics-heading h2 {
+  color: var(--blog-heading);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.home-topics-heading a {
+  color: var(--vp-c-brand-1);
+  font-size: 14px;
+}
+
+.home-topics-heading a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.home-topics-heading a:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 4px;
+}
+
+.blog-home .VPHomeFeatures .VPFeature {
+  border: 0;
+  border-top: 1px solid var(--vp-c-divider);
+  border-radius: 0;
+  background: transparent;
+}
+
+.blog-home .VPHomeFeatures .VPFeature:hover {
+  border-top-color: var(--vp-c-brand-1);
+}
+
+.blog-home .VPHomeFeatures .box {
+  padding: 24px 24px 20px 0;
+}
+
+.blog-home .VPHomeFeatures .title {
+  color: var(--blog-heading);
+  font-size: 18px;
+}
+
+.blog-home .VPHomeFeatures .details {
+  padding-top: 12px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.blog-home .VPHomeFeatures .link-text {
+  padding-top: 24px;
+}
+
+.blog-home .VPFooter {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (max-width: 1279px) {
+  .home-topics-heading {
+    margin-right: 64px;
+    margin-left: 64px;
+  }
+}
+
+@media (max-width: 959px) {
+  .blog-home .VPHomeHero {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+
+  .blog-home .VPHomeHero.has-image .container {
+    gap: 36px;
+  }
+
+  .blog-home .VPHomeHero .main {
+    order: 1;
+    width: 100%;
+  }
+
+  .blog-home .VPHomeHero .text {
+    font-size: 48px;
+  }
+
+  .blog-home .VPHomeHero .image {
+    order: 2;
+    width: 100%;
+  }
+
+  .blog-home .VPHomeHero .image-container {
+    aspect-ratio: 16 / 11;
+  }
+
+  .home-topics-heading {
+    margin-right: 48px;
+    margin-left: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .blog-home .VPHomeHero .name {
+    font-size: 18px;
+  }
+
+  .blog-home .VPHomeHero .text {
+    margin-top: 20px;
+    font-size: clamp(28px, 8.7vw, 43px);
+  }
+
+  .blog-home .VPHomeHero .tagline {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+
+  .blog-home .VPHomeHero.has-image .actions {
+    padding-top: 24px;
+  }
+
+  .blog-home .VPHomeHero .image-container {
+    aspect-ratio: 4 / 3.4;
+  }
+
+  .home-topics-heading {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .home-topics-heading h2 {
+    font-size: 19px;
+  }
+
+  .home-topics-heading a {
+    font-size: 13px;
+  }
+
+  .blog-home .VPHomeFeatures .box {
+    padding-right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog-home .VPFeature,
+  .blog-home .VPButton {
+    transition: none;
+  }
+}
+
+/* 从 1080px 起扩展可用宽度，保留手机和平板的默认布局。
+ * 布局上限同时受视口约束，避免主题在 1440px 断点的居中公式产生负偏移。
+ */
+@media (min-width: 1080px) {
+  :root {
+    --vp-layout-max-width: min(100%, 1920px);
+    --vp-sidebar-width: 248px;
+    --blog-home-max-width: 1760px;
+    --blog-doc-max-width: 1120px;
+    --blog-aside-width: 208px;
+  }
+
+  /* 导航容器自带两侧留白，避免百分比上限再次扣除这部分空间。 */
+  .Layout .VPNavBar.has-sidebar > .wrapper > .container {
+    max-width: 1856px;
+  }
+
+  .blog-home .VPNavBar > .wrapper {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+
+  .blog-home .VPNavBar > .wrapper > .container,
+  .blog-home .VPHomeHero > .container,
+  .blog-home .VPHomeFeatures > .container {
+    max-width: var(--blog-home-max-width);
+  }
+
+  .blog-home .VPHomeHero,
+  .blog-home .VPHomeFeatures {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+
+  .blog-home .VPHomeHero.has-image .container {
+    gap: clamp(48px, 4vw, 80px);
+  }
+
+  .blog-home .VPHomeHero.has-image .main {
+    flex: 0 0 38%;
+    max-width: none;
+  }
+
+  .blog-home .VPHomeHero .image {
+    flex: 1;
+  }
+
+  .blog-home .VPHomeHero .image-container {
+    max-height: 560px;
+    aspect-ratio: 16 / 10;
+  }
+
+  .blog-home .home-topics-heading {
+    width: calc(100% - 96px);
+    max-width: var(--blog-home-max-width);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* 正文与两侧导航分别限宽，长代码、图片和表格可以使用更多空间。 */
+  .Layout .VPDoc {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .Layout .VPDoc > .container {
+    max-width: calc(var(--blog-doc-max-width) + var(--blog-aside-width) + 32px);
+  }
+
+  .Layout .VPDoc > .container > .content {
+    flex: 1;
+    min-width: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .Layout .VPDoc > .container > .content > .content-container {
+    max-width: var(--blog-doc-max-width);
+  }
+
+  .Layout .VPDoc > .container > .aside {
+    flex: 0 0 var(--blog-aside-width);
+    width: var(--blog-aside-width);
+    max-width: none;
+    padding-inline-start: 24px;
+  }
+
+  .Layout .VPDoc .aside-container,
+  .Layout .VPDoc .aside-curtain {
+    width: calc(var(--blog-aside-width) - 24px);
+  }
+}

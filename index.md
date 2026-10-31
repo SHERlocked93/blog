@@ -1,9 +1,12 @@
 ---
 layout: home
+pageClass: blog-home
 hero:
   name: SHERlocked93 个人博客
-  text: 做程序员，不做码农
-  tagline: 技术实践、源码阅读与读书笔记
+  text: |-
+    多学一样本事，
+    就少说一句求人的话
+  tagline: 记录技术实践，也记录阅读与生活。
   actions:
     - theme: brand
       text: 阅读文章
@@ -12,10 +15,16 @@ hero:
       text: GitHub
       link: https://github.com/SHERlocked93/blog
 features:
-  - title: 技术实践
-    details: C++、前端、Linux 与工程实践中的思考和经验
-    link: /articles#技术实践
+  - title: C++ 与工程实践
+    details: 从编译链接到跨平台工具，记录工程中的问题与解法。
+    link: /articles#c-cpp-qt
+    linkText: 阅读工程笔记
+  - title: 前端与浏览器
+    details: Vue、JavaScript、CSS，以及浏览器背后的运行机制。
+    link: /articles#vue-实践
+    linkText: 探索前端技术
   - title: 阅读与成长
-    details: 阅读摘要、工具推荐与生活记录
+    details: 把书中的收获、生活的观察，和每年的思考留在这里。
     link: /articles#阅读与成长
+    linkText: 翻阅阅读记录
 ---

@@ -27,11 +27,12 @@ export default defineConfig({
       }
     }
   },
-  srcExclude: ['README.md', 'scripts/**', 'tests/**', 'migration/**', '.migration-cache/**',
+  srcExclude: ['README.md', 'scripts/**', 'tests/**', 'migration/**', '.migration-cache/**', 'memory-bank/**',
     '.obsidian/**', 'Docs/*.html.md',
     ...catalog.articles.filter((article: { excluded?: boolean }) => article.excluded)
       .map((article: { file: string }) => article.file)],
-  head: [['meta', { name: 'theme-color', content: '#3451b2' }]],
+  head: [['meta', { name: 'theme-color', content: '#3451b2' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/blog/favicon.ico' }]],
   sitemap: { hostname: 'https://sherlocked93.github.io/blog/' },
   themeConfig: {
     nav: [{ text: '首页', link: '/' }, { text: '文章索引', link: '/articles' }],
